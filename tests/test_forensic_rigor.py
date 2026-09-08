@@ -218,3 +218,46 @@ class Identifiability(unittest.TestCase):
         self.assertAlmostEqual(s['L3']['abstention'], 1 / 3)
         self.assertAlmostEqual(s['L3']['overclaim'], 1 / 3)
         self.assertEqual(s['L0']['assert_when_nonseparable'], 1.0)
+
+
+class CacheExposure(unittest.TestCase):
+    def setUp(self):
+        import analyze_cache_exposure as ace
+        self.ace = ace
+
+    def test_mirror_logs_and_corpora_excluded(self):
+        """steps/calls logs duplicate generations nested in rollouts.jsonl; corpora hold no decisions."""
+        for path in ['results/workflow_completion/qwen/steps.jsonl', 'results/opportunity_cost/qwen3/calls.jsonl',
+                     'results/opportunity_cost/qwen3/rollouts_original_aliasing.jsonl', 'results/cooperation/pilot_context.jsonl',
+                     'results/identifiability/simulation/rollouts.jsonl']:
+            self.assertTrue(self.ace.SKIP.search(path), path)
+        for path in ['results/peer_claims_v2/qwen3/rollouts.jsonl', 'results/escalation/continuations/rollouts.jsonl']:
+            self.assertFalse(self.ace.SKIP.search(path), path)
+
+    def test_split_classification(self):
+        rec = {'case': {'id': 'x', 'world_name': 'costly'}, 'phase': 'main',
+               'steps': [{'response': {'timings': {'cache_n': 0, 'prompt_n': 300}}},
+                         {'response': {'timings': {'cache_n': 280, 'prompt_n': 20}}}]}
+        found = list(self.ace.responses(rec))
+        self.assertEqual(len(found), 2)
+        lab = self.ace.labels(rec, 'results/peer_claims_v2/qwen3/rollouts.jsonl')
+        self.assertEqual((lab['study'], lab['case_id'], lab['world_name']), ('peer_claims_v2', 'x', 'costly'))
+
+    def test_block_rates(self):
+        eps = [{'calls': 2, 'split_calls': 1, 'first_split': False, 'final_split': True, 'any_split': True, 'fresh_suffix_tokens': [20]},
+               {'calls': 1, 'split_calls': 0, 'first_split': False, 'final_split': False, 'any_split': False, 'fresh_suffix_tokens': []}]
+        b = self.ace.block(eps)
+        self.assertEqual((b['episodes'], b['calls'], b['split_calls']), (2, 3, 1))
+        self.assertAlmostEqual(b['final_call_split_rate'], 0.5)
+        self.assertAlmostEqual(b['first_call_split_rate'], 0.0)
+
+    def test_recorded_result_matches_the_documented_claims(self):
+        p = ROOT / 'results/determinism/cache_exposure.json'
+        if not p.exists():
+            self.skipTest('exposure analysis not run')
+        d = json.loads(p.read_text())
+        # cache_prompt=false studies must be the unexposed set; anything else means the metric is not tracking the setting.
+        self.assertEqual(d['summary']['unexposed_rows'], ['X10', 'X11', 'X14'])
+        for row in ['X01', 'X04', 'X06', 'X12']:
+            self.assertEqual(d['ach_rows'][row]['any_call_split_rate'], 1.0, row)
+        self.assertGreater(d['overall']['split_call_rate'], 0.8)

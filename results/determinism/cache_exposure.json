@@ -1,0 +1,836 @@
+{
+ "summary": {
+  "exposed_rows": [
+   "X01",
+   "X02",
+   "X03",
+   "X04",
+   "X05",
+   "X06",
+   "X07",
+   "X08",
+   "X09",
+   "X12",
+   "X13"
+  ],
+  "unexposed_rows": [
+   "X10",
+   "X11",
+   "X14"
+  ],
+  "reading": "Exposure is close to all-or-nothing per study, because the setting was per-study: every cache_prompt=true row is at ~1.0 and every cache_prompt=false row is at 0.0. Exposure therefore does not by itself rank which findings are fragile. What ranks them is effect size against the size of the perturbation: the measured cached deviation was at most ~0.22 nats, which flips only near-ties, so a large contrast that is uniform across matched pairs and checkpoints (X06) survives full exposure, while a four-case cell whose own field-order diagnostic already failed 2/8 replays (X04) does not. The unexposed rows are the subset carrying no artifact risk at all."
+ },
+ "method": "A call is split when the saved response reports timings.cache_n > 0, meaning a prefix was served from the resident KV cache and only a suffix was freshly evaluated.",
+ "caveat": "Exposure is an upper bound on how many decisions could have been perturbed, not an estimate of how many were. No study recorded n_probs, so no decision margins exist in the record.",
+ "overall": {
+  "episodes": 825,
+  "calls": 1598,
+  "split_calls": 1337,
+  "split_call_rate": 0.837,
+  "first_call_split_rate": 0.807,
+  "final_call_split_rate": 0.812,
+  "any_call_split_rate": 0.812,
+  "fresh_suffix_tokens_min_median_max": [
+   1,
+   126,
+   1116
+  ]
+ },
+ "by_file": {
+  "results/behavioral_pilot/v3-7b/rollouts-7B.jsonl": {
+   "episodes": 52,
+   "calls": 52,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/escalation/arithmetic_checks/rollouts.jsonl": {
+   "episodes": 4,
+   "calls": 12,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/escalation/continuations/rollouts.jsonl": {
+   "episodes": 48,
+   "calls": 66,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/escalation/pilot/rollouts.jsonl": {
+   "episodes": 1,
+   "calls": 6,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/escalation/pilot_v2/rollouts.jsonl": {
+   "episodes": 36,
+   "calls": 107,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/opportunity_cost/qwen/rollouts.jsonl": {
+   "episodes": 22,
+   "calls": 35,
+   "split_calls": 34,
+   "split_call_rate": 0.971,
+   "first_call_split_rate": 0.955,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    49,
+    196,
+    454
+   ]
+  },
+  "results/opportunity_cost/qwen3/rollouts.jsonl": {
+   "episodes": 22,
+   "calls": 61,
+   "split_calls": 61,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    4,
+    283,
+    510
+   ]
+  },
+  "results/opportunity_cost/smol/rollouts.jsonl": {
+   "episodes": 22,
+   "calls": 22,
+   "split_calls": 21,
+   "split_call_rate": 0.955,
+   "first_call_split_rate": 0.955,
+   "final_call_split_rate": 0.955,
+   "any_call_split_rate": 0.955,
+   "fresh_suffix_tokens_min_median_max": [
+    47,
+    119,
+    228
+   ]
+  },
+  "results/opportunity_cost/v2/qwen/replays.jsonl": {
+   "episodes": 8,
+   "calls": 8,
+   "split_calls": 8,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    1,
+    225,
+    249
+   ]
+  },
+  "results/opportunity_cost/v2/qwen/rollouts.jsonl": {
+   "episodes": 86,
+   "calls": 86,
+   "split_calls": 85,
+   "split_call_rate": 0.988,
+   "first_call_split_rate": 0.988,
+   "final_call_split_rate": 0.988,
+   "any_call_split_rate": 0.988,
+   "fresh_suffix_tokens_min_median_max": [
+    20,
+    262,
+    405
+   ]
+  },
+  "results/opportunity_cost/v2/qwen3/replays.jsonl": {
+   "episodes": 8,
+   "calls": 8,
+   "split_calls": 8,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    1,
+    229,
+    253
+   ]
+  },
+  "results/opportunity_cost/v2/qwen3/rollouts.jsonl": {
+   "episodes": 86,
+   "calls": 86,
+   "split_calls": 85,
+   "split_call_rate": 0.988,
+   "first_call_split_rate": 0.988,
+   "final_call_split_rate": 0.988,
+   "any_call_split_rate": 0.988,
+   "fresh_suffix_tokens_min_median_max": [
+    24,
+    266,
+    409
+   ]
+  },
+  "results/opportunity_cost/v2/smol/rollouts.jsonl": {
+   "episodes": 22,
+   "calls": 22,
+   "split_calls": 21,
+   "split_call_rate": 0.955,
+   "first_call_split_rate": 0.955,
+   "final_call_split_rate": 0.955,
+   "any_call_split_rate": 0.955,
+   "fresh_suffix_tokens_min_median_max": [
+    34,
+    349,
+    437
+   ]
+  },
+  "results/peer_claim_order/qwen3/rollouts.jsonl": {
+   "episodes": 16,
+   "calls": 16,
+   "split_calls": 15,
+   "split_call_rate": 0.938,
+   "first_call_split_rate": 0.938,
+   "final_call_split_rate": 0.938,
+   "any_call_split_rate": 0.938,
+   "fresh_suffix_tokens_min_median_max": [
+    37,
+    82,
+    351
+   ]
+  },
+  "results/peer_claim_status/qwen/rollouts.jsonl": {
+   "episodes": 12,
+   "calls": 14,
+   "split_calls": 13,
+   "split_call_rate": 0.929,
+   "first_call_split_rate": 0.917,
+   "final_call_split_rate": 0.917,
+   "any_call_split_rate": 0.917,
+   "fresh_suffix_tokens_min_median_max": [
+    41,
+    69,
+    330
+   ]
+  },
+  "results/peer_claim_status/qwen3/rollouts.jsonl": {
+   "episodes": 12,
+   "calls": 12,
+   "split_calls": 11,
+   "split_call_rate": 0.917,
+   "first_call_split_rate": 0.917,
+   "final_call_split_rate": 0.917,
+   "any_call_split_rate": 0.917,
+   "fresh_suffix_tokens_min_median_max": [
+    45,
+    167,
+    334
+   ]
+  },
+  "results/peer_claims/qwen/rollouts.jsonl": {
+   "episodes": 10,
+   "calls": 14,
+   "split_calls": 13,
+   "split_call_rate": 0.929,
+   "first_call_split_rate": 0.9,
+   "final_call_split_rate": 0.9,
+   "any_call_split_rate": 0.9,
+   "fresh_suffix_tokens_min_median_max": [
+    1,
+    79,
+    240
+   ]
+  },
+  "results/peer_claims/qwen3/rollouts.jsonl": {
+   "episodes": 10,
+   "calls": 16,
+   "split_calls": 15,
+   "split_call_rate": 0.938,
+   "first_call_split_rate": 0.9,
+   "final_call_split_rate": 0.9,
+   "any_call_split_rate": 0.9,
+   "fresh_suffix_tokens_min_median_max": [
+    4,
+    93,
+    244
+   ]
+  },
+  "results/peer_claims_v2/qwen/rollouts.jsonl": {
+   "episodes": 10,
+   "calls": 14,
+   "split_calls": 13,
+   "split_call_rate": 0.929,
+   "first_call_split_rate": 0.9,
+   "final_call_split_rate": 0.9,
+   "any_call_split_rate": 0.9,
+   "fresh_suffix_tokens_min_median_max": [
+    1,
+    85,
+    246
+   ]
+  },
+  "results/peer_claims_v2/qwen3/rollouts.jsonl": {
+   "episodes": 74,
+   "calls": 94,
+   "split_calls": 93,
+   "split_call_rate": 0.989,
+   "first_call_split_rate": 0.986,
+   "final_call_split_rate": 0.986,
+   "any_call_split_rate": 0.986,
+   "fresh_suffix_tokens_min_median_max": [
+    1,
+    99,
+    256
+   ]
+  },
+  "results/workflow_completion/qwen/rollouts.jsonl": {
+   "episodes": 64,
+   "calls": 103,
+   "split_calls": 102,
+   "split_call_rate": 0.99,
+   "first_call_split_rate": 0.984,
+   "final_call_split_rate": 0.984,
+   "any_call_split_rate": 0.984,
+   "fresh_suffix_tokens_min_median_max": [
+    6,
+    153,
+    936
+   ]
+  },
+  "results/workflow_completion/qwen3/rollouts.jsonl": {
+   "episodes": 64,
+   "calls": 69,
+   "split_calls": 68,
+   "split_call_rate": 0.986,
+   "first_call_split_rate": 0.984,
+   "final_call_split_rate": 0.984,
+   "any_call_split_rate": 0.984,
+   "fresh_suffix_tokens_min_median_max": [
+    10,
+    291,
+    857
+   ]
+  },
+  "results/workflow_completion/wording_control/rollouts.jsonl": {
+   "episodes": 20,
+   "calls": 24,
+   "split_calls": 23,
+   "split_call_rate": 0.958,
+   "first_call_split_rate": 0.95,
+   "final_call_split_rate": 0.95,
+   "any_call_split_rate": 0.95,
+   "fresh_suffix_tokens_min_median_max": [
+    10,
+    374,
+    1116
+   ]
+  },
+  "results/workflow_obligations/qwen/rollouts.jsonl": {
+   "episodes": 5,
+   "calls": 21,
+   "split_calls": 20,
+   "split_call_rate": 0.952,
+   "first_call_split_rate": 0.8,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    35,
+    102,
+    260
+   ]
+  },
+  "results/workflow_obligations/v2/phi/rollouts.jsonl": {
+   "episodes": 5,
+   "calls": 50,
+   "split_calls": 49,
+   "split_call_rate": 0.98,
+   "first_call_split_rate": 0.8,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    39,
+    125,
+    321
+   ]
+  },
+  "results/workflow_obligations/v2/qwen/rollouts.jsonl": {
+   "episodes": 53,
+   "calls": 326,
+   "split_calls": 326,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    1,
+    102,
+    306
+   ]
+  },
+  "results/workflow_obligations/v2/qwen3/rollouts.jsonl": {
+   "episodes": 53,
+   "calls": 254,
+   "split_calls": 253,
+   "split_call_rate": 0.996,
+   "first_call_split_rate": 0.981,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    4,
+    129,
+    277
+   ]
+  }
+ },
+ "peer_claims_v2_qwen3_cells": {
+  "blocked/hopeless/automatic": {
+   "episodes": 4,
+   "calls": 4,
+   "split_calls": 4,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    92,
+    152,
+    152
+   ]
+  },
+  "blocked/hopeless/optional": {
+   "episodes": 4,
+   "calls": 4,
+   "split_calls": 4,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    42,
+    102,
+    102
+   ]
+  },
+  "blocked/hopeless/required": {
+   "episodes": 4,
+   "calls": 4,
+   "split_calls": 4,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    1,
+    102,
+    102
+   ]
+  },
+  "blocked/none/automatic": {
+   "episodes": 4,
+   "calls": 4,
+   "split_calls": 4,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    92,
+    118,
+    118
+   ]
+  },
+  "blocked/none/optional": {
+   "episodes": 4,
+   "calls": 8,
+   "split_calls": 8,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    42,
+    99,
+    99
+   ]
+  },
+  "blocked/none/required": {
+   "episodes": 4,
+   "calls": 8,
+   "split_calls": 8,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    37,
+    99,
+    252
+   ]
+  },
+  "costly/hopeless/automatic": {
+   "episodes": 4,
+   "calls": 4,
+   "split_calls": 4,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    92,
+    152,
+    152
+   ]
+  },
+  "costly/hopeless/optional": {
+   "episodes": 4,
+   "calls": 4,
+   "split_calls": 4,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    42,
+    102,
+    102
+   ]
+  },
+  "costly/hopeless/required": {
+   "episodes": 4,
+   "calls": 4,
+   "split_calls": 4,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    102,
+    102,
+    102
+   ]
+  },
+  "costly/none/automatic": {
+   "episodes": 4,
+   "calls": 4,
+   "split_calls": 4,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    37,
+    118,
+    118
+   ]
+  },
+  "costly/none/optional": {
+   "episodes": 4,
+   "calls": 8,
+   "split_calls": 8,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    4,
+    99,
+    99
+   ]
+  },
+  "costly/none/required": {
+   "episodes": 4,
+   "calls": 8,
+   "split_calls": 8,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    68,
+    99,
+    256
+   ]
+  }
+ },
+ "ach_rows": {
+  "X01": {
+   "selection": {
+    "file_contains": "peer_claims_v2/qwen3",
+    "phase": "main",
+    "world_name": "costly",
+    "policy": "optional",
+    "claim": [
+     "none",
+     "hopeless"
+    ]
+   },
+   "episodes": 8,
+   "calls": 12,
+   "split_calls": 12,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    4,
+    99,
+    102
+   ]
+  },
+  "X02": {
+   "selection": {
+    "file_contains": "peer_claims_v2/qwen3",
+    "phase": "main",
+    "world_name": "costly",
+    "policy": "required",
+    "claim": "hopeless"
+   },
+   "episodes": 4,
+   "calls": 4,
+   "split_calls": 4,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    102,
+    102,
+    102
+   ]
+  },
+  "X03": {
+   "selection": {
+    "file_contains": "peer_claims_v2/qwen3",
+    "phase": "main",
+    "world_name": "costly",
+    "policy": "automatic",
+    "claim": "hopeless"
+   },
+   "episodes": 4,
+   "calls": 4,
+   "split_calls": 4,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    92,
+    152,
+    152
+   ]
+  },
+  "X04": {
+   "selection": {
+    "file_contains": "peer_claims_v2/qwen3",
+    "phase": "main",
+    "world_name": "costly",
+    "policy": "required",
+    "claim": "none"
+   },
+   "episodes": 4,
+   "calls": 8,
+   "split_calls": 8,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    68,
+    99,
+    256
+   ]
+  },
+  "X05": {
+   "selection": {
+    "file_contains": "peer_claim_order/qwen3"
+   },
+   "episodes": 16,
+   "calls": 16,
+   "split_calls": 15,
+   "split_call_rate": 0.938,
+   "first_call_split_rate": 0.938,
+   "final_call_split_rate": 0.938,
+   "any_call_split_rate": 0.938,
+   "fresh_suffix_tokens_min_median_max": [
+    37,
+    82,
+    351
+   ]
+  },
+  "X06": {
+   "selection": {
+    "file_contains": "opportunity_cost/v2",
+    "phase": "main",
+    "control": null,
+    "probe": false,
+    "world_name": [
+     "costly",
+     "blocked"
+    ]
+   },
+   "episodes": 64,
+   "calls": 64,
+   "split_calls": 64,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    20,
+    247,
+    409
+   ]
+  },
+  "X07": {
+   "selection": {
+    "file_contains": "opportunity_cost/v2",
+    "phase": "main",
+    "control": null,
+    "probe": false,
+    "world_name": "slack"
+   },
+   "episodes": 32,
+   "calls": 32,
+   "split_calls": 32,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    20,
+    215,
+    345
+   ]
+  },
+  "X08": {
+   "selection": {
+    "file_contains": "opportunity_cost/v2",
+    "phase": "main",
+    "control": null,
+    "probe": false,
+    "world_name": "shared"
+   },
+   "episodes": 32,
+   "calls": 32,
+   "split_calls": 32,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    20,
+    281,
+    340
+   ]
+  },
+  "X09": {
+   "selection": {
+    "file_contains": "opportunity_cost/v2",
+    "phase": "main",
+    "control": null,
+    "probe": false
+   },
+   "episodes": 128,
+   "calls": 128,
+   "split_calls": 128,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    20,
+    249,
+    409
+   ]
+  },
+  "X10": {
+   "selection": {
+    "file_contains": "escalation/pilot_v2"
+   },
+   "episodes": 36,
+   "calls": 107,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "X11": {
+   "selection": {
+    "file_contains": "escalation/continuations"
+   },
+   "episodes": 48,
+   "calls": 66,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "X12": {
+   "selection": {
+    "file_contains": "workflow_obligations/v2",
+    "control": false
+   },
+   "episodes": 96,
+   "calls": 532,
+   "split_calls": 532,
+   "split_call_rate": 1.0,
+   "first_call_split_rate": 1.0,
+   "final_call_split_rate": 1.0,
+   "any_call_split_rate": 1.0,
+   "fresh_suffix_tokens_min_median_max": [
+    1,
+    104,
+    273
+   ]
+  },
+  "X13": {
+   "selection": {
+    "file_contains": "workflow_completion"
+   },
+   "episodes": 148,
+   "calls": 196,
+   "split_calls": 193,
+   "split_call_rate": 0.985,
+   "first_call_split_rate": 0.98,
+   "final_call_split_rate": 0.98,
+   "any_call_split_rate": 0.98,
+   "fresh_suffix_tokens_min_median_max": [
+    6,
+    227,
+    1116
+   ]
+  },
+  "X14": {
+   "selection": {
+    "file_contains": "behavioral_pilot/v3"
+   },
+   "episodes": 52,
+   "calls": 52,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  }
+ },
+ "control": "escalation studies requested cache_prompt=false; their split rates are the internal check that the metric detects the configuration."
+}

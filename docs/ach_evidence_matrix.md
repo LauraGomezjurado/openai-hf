@@ -43,6 +43,27 @@ A second rater worked in a separate context from `experiments/ach/blind_packet.j
 
 Robust across the first rating, the blind rating and the consensus: **H1 is last by a wide margin; H3 has zero inconsistent rows; H4 has exactly one (X04)**. The one systematic disagreement concerns H6: the blind rater counted five matched-presentation content effects (X01, X02, X03, X06, X11) as inconsistent with a pure artifact account, which is a defensible reading that the first rating left as N. Under it the artifact account falls to sixth and the fragile H6/H3 leave-one-out flip disappears; under the consensus it survives only because the disputed cells are neutralized. That question — whether content effects with fixed presentation count against artifact explanations — is what a human adjudicator should settle first.
 
+## Cache exposure of each row (added later on September 8)
+
+`scripts/analyze_cache_exposure.py` extends the determinism audit from the 76 replay pairs to **every recorded decision in the project**: 825 episodes, 1,598 generation calls. A call is classified `split` when its saved response reports `timings.cache_n > 0`, meaning a prefix was served from the resident KV cache and only a suffix was freshly evaluated — the condition under which the greedy choice can flip. Full table in `results/determinism/cache_exposure.json`.
+
+**83.7% of all recorded calls were split, and exposure is all-or-nothing per study** because `cache_prompt` was set per study, not per case:
+
+| Exposure | Rows |
+|---|---|
+| ~100% of episodes | X01, X02, X03, X04, X05, X06, X07, X08, X09, X12, X13 |
+| 0% of episodes | X10 (escalation pilot), X11 (duty continuations), X14 (behavioral pilot) |
+
+The zero rows are the studies that requested `cache_prompt=false`, which is the internal check that the metric measures the configuration rather than noise. The smallest freshly evaluated suffixes are extreme: **1 token** in the blocked/hopeless/required cell and **4 tokens** in the costly/none/optional cell that supplies X01 — the most severe batch splits in the record, and the same regime in which the tiny-model gate produced greedy-token flips.
+
+**This widens the scope of the caveat but does not change the ranking, and it is worth being precise about why.** Exposure is uniform across the affected studies, so it cannot by itself say which findings are fragile. What discriminates is effect size against the size of the perturbation. The measured cached deviation was at most ~0.22 nats, which flips only near-ties. So:
+
+- **X06 survives full exposure**: +100 pp on every matched pair, both checkpoints, both option orders. A sub-0.25-nat perturbation does not manufacture a uniform 16/16-versus-0/16 split.
+- **X04 does not**: four cases, and its own field-order diagnostic independently failed 2/8 exact replays. Exposure plus a small cell plus demonstrated replay failure is the combination that makes it fragile, not exposure alone.
+- **X10, X11 and X14 carry no artifact risk at all.** That raises their standing relative to the rest, and X11 is among the widest-spread rows in the matrix, so the obligation-competition evidence (H5) is now the best-protected experimental result in the project.
+
+Exposure is an upper bound on how many decisions *could* have been perturbed, not an estimate of how many were. No study recorded `n_probs`, so no decision margins exist in the record and the question cannot be settled from the saved data — only by re-running under the fixed backend, which is V3's P1 and P5.
+
 ## Limits
 
 Ratings are ordinal judgments by one rater; the scoring weights are conventional, not estimated; rows are not independent (several come from the same checkpoint and task skeleton); and a hypothesis with zero inconsistencies can still be false. ACH ranks by what the evidence fails to refute. It does not identify a mechanism, and it does not transfer to the original HF agents.
