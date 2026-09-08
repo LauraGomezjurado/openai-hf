@@ -1,0 +1,17 @@
+{
+ "models": {
+  "selftest_tiny": {
+   "family": "selftest",
+   "gate": {
+    "passed": 4,
+    "n": 20
+   },
+   "P1": "not replicated",
+   "stages": [
+    "A"
+   ]
+  }
+ },
+ "cross_family_eligible": [],
+ "overall": "no eligible cross-family checkpoint"
+}

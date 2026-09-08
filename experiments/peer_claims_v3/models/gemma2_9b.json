@@ -1,0 +1,17 @@
+{
+  "key": "gemma2_9b",
+  "priority": 5,
+  "family": "gemma",
+  "repository": "bartowski/gemma-2-9b-it-GGUF",
+  "revision": null,
+  "files": ["gemma-2-9b-it-Q4_K_M.gguf"],
+  "original_model": "google/gemma-2-9b-it",
+  "quantization": "third-party Q4_K_M",
+  "gguf_path": "data/models/peer_claims_v3/gemma-2-9b-it-Q4_K_M.gguf",
+  "gguf_sha256": null,
+  "reasoning_mode": "scratchpad",
+  "template_kwargs": null,
+  "system_role": false,
+  "acquisition": "Not acquired. The chat template rejects a system role; running it requires a frozen rendering amendment that merges the system text into the first user turn for this model only, recorded before its stage A.",
+  "status": "listed for family diversity; not eligible until the rendering amendment is frozen"
+}

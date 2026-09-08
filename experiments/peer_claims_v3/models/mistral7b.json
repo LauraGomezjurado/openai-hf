@@ -1,0 +1,17 @@
+{
+  "key": "mistral7b",
+  "priority": 1,
+  "family": "mistral",
+  "repository": "bartowski/Mistral-7B-Instruct-v0.3-GGUF",
+  "revision": "61fd4167fff3ab01ee1cfe0da183fa27a944db48",
+  "files": ["Mistral-7B-Instruct-v0.3-Q4_K_M.gguf"],
+  "original_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "quantization": "third-party Q4_K_M; do not treat as original precision",
+  "gguf_path": "data/models/peer_claims_v3/Mistral-7B-Instruct-v0.3-Q4_K_M.gguf",
+  "gguf_sha256": null,
+  "reasoning_mode": "scratchpad",
+  "template_kwargs": null,
+  "system_role": true,
+  "acquisition": "Download on the study machine, record the SHA-256 here as an amendment before freezing stage A. The workflow-obligations attempt in September failed on HTTP timeouts and an unsuccessful Xet transfer (experiments/workflow_obligations/v2/model_availability_amendment.md).",
+  "status": "not on the study machine as of 2026-09-08"
+}

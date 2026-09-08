@@ -1,0 +1,13 @@
+{
+  "key": "selftest_tiny",
+  "family": "selftest",
+  "repository": null,
+  "gguf_path": "data/models/selftest/tiny-Q4_K_M.gguf",
+  "gguf_sha256": "ececfb1671c95db55847498551f42e6200db6675a0d436c9713bbe08c7023ab3",
+  "quantization": "Q4_K_M via llama-quantize from scripts/make_tiny_gguf.py --seed 0 (F16), llama.cpp f3f1a8f",
+  "reasoning_mode": "scratchpad",
+  "template_kwargs": null,
+  "system_role": true,
+  "acquisition": "python3 scripts/make_tiny_gguf.py data/models/selftest/tiny-f16.gguf && llama-quantize data/models/selftest/tiny-f16.gguf data/models/selftest/tiny-Q4_K_M.gguf Q4_K_M",
+  "status": "random weights; exercises the pipeline mechanically. Its decisions are meaningless and are excluded from every analysis of behavior."
+}

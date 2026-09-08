@@ -1,0 +1,17 @@
+{
+  "key": "llama31_8b",
+  "priority": 2,
+  "family": "llama",
+  "repository": "bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",
+  "revision": null,
+  "files": ["Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"],
+  "original_model": "meta-llama/Llama-3.1-8B-Instruct",
+  "quantization": "third-party Q4_K_M; do not treat as original precision",
+  "gguf_path": "data/models/peer_claims_v3/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+  "gguf_sha256": null,
+  "reasoning_mode": "scratchpad",
+  "template_kwargs": null,
+  "system_role": true,
+  "acquisition": "Record repository revision and file SHA-256 at download time as an amendment; the original weights are gated, the GGUF repository is public.",
+  "status": "not acquired"
+}

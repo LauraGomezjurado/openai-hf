@@ -1,0 +1,477 @@
+{
+  "rater": "assistant-2026-09-08",
+  "hypotheses": {
+    "H1": {
+      "name": "Peer preference despite understood conflict",
+      "statement": "Peer welfare or group success receives weight even when the conflict with the principal obligation is understood and no credible own benefit exists.",
+      "source": "docs/explanatory_hypotheses.md"
+    },
+    "H2": {
+      "name": "Expected own benefit or reciprocity",
+      "statement": "Helping is instrumentally useful to the agent's own task, future assistance or expected evaluation.",
+      "source": "docs/explanatory_hypotheses.md"
+    },
+    "H3": {
+      "name": "Task and authority interpretation",
+      "statement": "The agent treats peer requests, peer boards or explicit permissions as legitimate authority, and treats human reporting as outside its role unless assigned.",
+      "source": "docs/explanatory_hypotheses.md"
+    },
+    "H4": {
+      "name": "Information-mediated redirection",
+      "statement": "The agent accepts a peer's assessment of its own prospects without verification and redirects resources on that basis.",
+      "source": "docs/peer_claims_interpretation.md"
+    },
+    "H5": {
+      "name": "Competition among pending obligations",
+      "statement": "The agent can perform each obligation but sequencing and termination leave one unfulfilled; targeted reminders restore it.",
+      "source": "docs/explanatory_hypotheses.md"
+    },
+    "H6": {
+      "name": "Interface, wording or backend artifact",
+      "statement": "Action format, option order, wording, tool naming or backend numerics produce the apparent pattern.",
+      "source": "docs/explanatory_hypotheses.md; results/determinism/replay_cache_audit.json"
+    },
+    "H7": {
+      "name": "Feasible-work policy",
+      "statement": "Descriptive rule: complete own work when believed feasible; otherwise do whatever other work is feasible. No peer-specific weight.",
+      "source": "results/opportunity_cost/v2/descriptive_policy_fits.json"
+    }
+  },
+  "evidence_rows": 20,
+  "rankings": {
+    "all_evidence": {
+      "table": {
+        "H1": {
+          "tally": {
+            "I": 6,
+            "N": 7,
+            "II": 2,
+            "C": 5
+          },
+          "inconsistency": 8,
+          "weighted_inconsistency": 9.05,
+          "net_score": -5,
+          "weighted_net_score": -6.55,
+          "rows": 20,
+          "rank": 7
+        },
+        "H2": {
+          "tally": {
+            "N": 15,
+            "I": 1,
+            "C": 4
+          },
+          "inconsistency": 1,
+          "weighted_inconsistency": 1.0,
+          "net_score": 3,
+          "weighted_net_score": 1.0,
+          "rows": 20,
+          "rank": 5
+        },
+        "H3": {
+          "tally": {
+            "C": 8,
+            "N": 10,
+            "CC": 2
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 12,
+          "weighted_net_score": 9.55,
+          "rows": 20,
+          "rank": 1
+        },
+        "H4": {
+          "tally": {
+            "CC": 2,
+            "C": 3,
+            "I": 1,
+            "N": 14
+          },
+          "inconsistency": 1,
+          "weighted_inconsistency": 1.0,
+          "net_score": 6,
+          "weighted_net_score": 4.85,
+          "rows": 20,
+          "rank": 4
+        },
+        "H5": {
+          "tally": {
+            "N": 14,
+            "C": 5,
+            "CC": 1
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 7,
+          "weighted_net_score": 6.35,
+          "rows": 20,
+          "rank": 3
+        },
+        "H6": {
+          "tally": {
+            "N": 14,
+            "C": 3,
+            "CC": 3
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 9,
+          "weighted_net_score": 8.1,
+          "rows": 20,
+          "rank": 2
+        },
+        "H7": {
+          "tally": {
+            "C": 7,
+            "N": 10,
+            "CC": 2,
+            "II": 1
+          },
+          "inconsistency": 1,
+          "weighted_inconsistency": 2.0,
+          "net_score": 9,
+          "weighted_net_score": 6.7,
+          "rows": 20,
+          "rank": 6
+        }
+      },
+      "order": [
+        "H3",
+        "H6",
+        "H5",
+        "H4",
+        "H2",
+        "H7",
+        "H1"
+      ],
+      "leave_one_out": {
+        "base_top": "H3",
+        "rows_whose_removal_changes_top": []
+      }
+    },
+    "experiments_only": {
+      "table": {
+        "H1": {
+          "tally": {
+            "I": 5,
+            "N": 6,
+            "II": 2,
+            "C": 1
+          },
+          "inconsistency": 7,
+          "weighted_inconsistency": 8.7,
+          "net_score": -8,
+          "weighted_net_score": -7.7,
+          "rows": 14,
+          "rank": 7
+        },
+        "H2": {
+          "tally": {
+            "N": 12,
+            "I": 1,
+            "C": 1
+          },
+          "inconsistency": 1,
+          "weighted_inconsistency": 1.0,
+          "net_score": 0,
+          "weighted_net_score": 0.0,
+          "rows": 14,
+          "rank": 5
+        },
+        "H3": {
+          "tally": {
+            "C": 6,
+            "N": 7,
+            "CC": 1
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 8,
+          "weighted_net_score": 8.0,
+          "rows": 14,
+          "rank": 2
+        },
+        "H4": {
+          "tally": {
+            "CC": 2,
+            "C": 1,
+            "I": 1,
+            "N": 10
+          },
+          "inconsistency": 1,
+          "weighted_inconsistency": 1.0,
+          "net_score": 4,
+          "weighted_net_score": 4.0,
+          "rows": 14,
+          "rank": 4
+        },
+        "H5": {
+          "tally": {
+            "N": 9,
+            "C": 4,
+            "CC": 1
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 6,
+          "weighted_net_score": 6.0,
+          "rows": 14,
+          "rank": 3
+        },
+        "H6": {
+          "tally": {
+            "N": 8,
+            "C": 3,
+            "CC": 3
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 9,
+          "weighted_net_score": 8.1,
+          "rows": 14,
+          "rank": 1
+        },
+        "H7": {
+          "tally": {
+            "C": 4,
+            "N": 7,
+            "CC": 2,
+            "II": 1
+          },
+          "inconsistency": 1,
+          "weighted_inconsistency": 2.0,
+          "net_score": 6,
+          "weighted_net_score": 5.7,
+          "rows": 14,
+          "rank": 6
+        }
+      },
+      "order": [
+        "H6",
+        "H3",
+        "H5",
+        "H4",
+        "H2",
+        "H7",
+        "H1"
+      ],
+      "leave_one_out": {
+        "base_top": "H6",
+        "rows_whose_removal_changes_top": [
+          {
+            "removed": "X04",
+            "new_top": "H3"
+          },
+          {
+            "removed": "X05",
+            "new_top": "H3"
+          },
+          {
+            "removed": "X07",
+            "new_top": "H3"
+          },
+          {
+            "removed": "X09",
+            "new_top": "H3"
+          },
+          {
+            "removed": "X13",
+            "new_top": "H3"
+          }
+        ]
+      }
+    },
+    "historical_only": {
+      "table": {
+        "H1": {
+          "tally": {
+            "C": 4,
+            "I": 1,
+            "N": 1
+          },
+          "inconsistency": 1,
+          "weighted_inconsistency": 0.35,
+          "net_score": 3,
+          "weighted_net_score": 1.15,
+          "rows": 6,
+          "rank": 7
+        },
+        "H2": {
+          "tally": {
+            "C": 3,
+            "N": 3
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 3,
+          "weighted_net_score": 1.0,
+          "rows": 6,
+          "rank": 2
+        },
+        "H3": {
+          "tally": {
+            "C": 2,
+            "N": 3,
+            "CC": 1
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 4,
+          "weighted_net_score": 1.55,
+          "rows": 6,
+          "rank": 1
+        },
+        "H4": {
+          "tally": {
+            "C": 2,
+            "N": 4
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 2,
+          "weighted_net_score": 0.85,
+          "rows": 6,
+          "rank": 4
+        },
+        "H5": {
+          "tally": {
+            "N": 5,
+            "C": 1
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 1,
+          "weighted_net_score": 0.35,
+          "rows": 6,
+          "rank": 5
+        },
+        "H6": {
+          "tally": {
+            "N": 6
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 0,
+          "weighted_net_score": 0.0,
+          "rows": 6,
+          "rank": 6
+        },
+        "H7": {
+          "tally": {
+            "C": 3,
+            "N": 3
+          },
+          "inconsistency": 0,
+          "weighted_inconsistency": 0,
+          "net_score": 3,
+          "weighted_net_score": 1.0,
+          "rows": 6,
+          "rank": 3
+        }
+      },
+      "order": [
+        "H3",
+        "H2",
+        "H7",
+        "H4",
+        "H5",
+        "H6",
+        "H1"
+      ],
+      "leave_one_out": {
+        "base_top": "H3",
+        "rows_whose_removal_changes_top": [
+          {
+            "removed": "R04",
+            "new_top": "H2"
+          }
+        ]
+      }
+    }
+  },
+  "diagnosticity": {
+    "X01": {
+      "distinct_levels": 4,
+      "spread": 3
+    },
+    "X02": {
+      "distinct_levels": 2,
+      "spread": 1
+    },
+    "X03": {
+      "distinct_levels": 3,
+      "spread": 4
+    },
+    "X04": {
+      "distinct_levels": 4,
+      "spread": 3
+    },
+    "X05": {
+      "distinct_levels": 3,
+      "spread": 3
+    },
+    "X06": {
+      "distinct_levels": 4,
+      "spread": 4
+    },
+    "X07": {
+      "distinct_levels": 3,
+      "spread": 2
+    },
+    "X08": {
+      "distinct_levels": 2,
+      "spread": 1
+    },
+    "X09": {
+      "distinct_levels": 2,
+      "spread": 1
+    },
+    "X10": {
+      "distinct_levels": 2,
+      "spread": 1
+    },
+    "X11": {
+      "distinct_levels": 4,
+      "spread": 3
+    },
+    "X12": {
+      "distinct_levels": 3,
+      "spread": 2
+    },
+    "X13": {
+      "distinct_levels": 3,
+      "spread": 2
+    },
+    "X14": {
+      "distinct_levels": 4,
+      "spread": 3
+    },
+    "R01": {
+      "distinct_levels": 2,
+      "spread": 1
+    },
+    "R02": {
+      "distinct_levels": 3,
+      "spread": 2
+    },
+    "R03": {
+      "distinct_levels": 2,
+      "spread": 1
+    },
+    "R04": {
+      "distinct_levels": 3,
+      "spread": 2
+    },
+    "R05": {
+      "distinct_levels": 1,
+      "spread": 0
+    },
+    "R06": {
+      "distinct_levels": 2,
+      "spread": 1
+    }
+  },
+  "agreement": [],
+  "reading": "Ranking by fewest inconsistencies is the ACH convention; a low rank does not establish the hypothesis, and historical rows are E0-E2 evidence about different agents. Experiment rows concern public Qwen checkpoints in constructed settings."
+}

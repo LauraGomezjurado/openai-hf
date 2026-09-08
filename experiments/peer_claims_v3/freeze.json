@@ -1,0 +1,58 @@
+{
+  "utc": "2026-09-08T21:33:59Z",
+  "models": [
+    "gemma2_9b",
+    "llama31_8b",
+    "mistral7b",
+    "phi35mini",
+    "qwen3_think"
+  ],
+  "hashes": {
+    "experiments/peer_claims_v3/cases.json": "771ac1c77c1ae667afed1ef6f76b8678ad51e9127962368fbad9656e940e6976",
+    "experiments/peer_claims_v3/gate_prompts.json": "352fb4803acc8d4ae785c1281f243abe75faf783ac373891f7e12ccf81b84381",
+    "experiments/peer_claims_v3/protocol.md": "e3e184737ee388f2e908ee3ccf3daffd10a520fe5fef21515b233778ced19139",
+    "experiments/peer_claims_v3/predictions.md": "064bf9f8dabe52477f23c84c88ef806a01e4b1999dddcab4b291b3c27a61c486",
+    "scripts/peer_claims_v3.py": "05e5031dd940639c69ce243ca37d13a9c4fc0502955d2995c6b819f695992d6d",
+    "scripts/reasoning_capture.py": "68e1eb808f01429f97966a5e252de2961be14bd2d7f1b0eeffda65492ced4d3f",
+    "scripts/determinism_gate.py": "7e83abdd62b768347edb6e60ac98c6b35eb5b3e8a0c1a714a5cbbf17955a1876",
+    "scripts/peer_claims_v2.py": "921f4723afb164a66c10cfd55fab11d7d0bd05275b382010c438d39383d1396e",
+    "scripts/opportunity_allocation.py": "c915ff5456d804bc09acf8597c53d26b4cb3bead77f87dbb57b89e405b8634ce",
+    "scripts/opportunity_cost.py": "b85743fee72516d4da833818281abce0345db8886099bc5446cf836023ac5e5e",
+    "experiments/peer_claims_v3/models/gemma2_9b.json": "3ceef2e50be56897a1245c3a76893714976f5e243a8387355760bc5c58dd1fdd",
+    "experiments/peer_claims_v3/models/llama31_8b.json": "9cbda9934a92771d269a63863b84ed2734f4db857addbabdf2a0a8bf452c0d6a",
+    "experiments/peer_claims_v3/models/mistral7b.json": "a00d09d1ad4942ca4defc5d08383adb3a3d722fa215c7c00d01e5fd4890001dc",
+    "experiments/peer_claims_v3/models/phi35mini.json": "e402b5d11c1c93a0644dcd9e09c4df0d4876cc23f23dbe2b4e084175a764a832",
+    "experiments/peer_claims_v3/models/qwen3_think.json": "73237fa5110d56af06cc14033439b1ac7c06f8c852f9ab8f9aefff4752d18f66"
+  },
+  "counts": {
+    "controls": 20,
+    "core": 96,
+    "paraphrase": 64,
+    "secondary": 24,
+    "direct": 16,
+    "replay": 8,
+    "menu": {
+      "uncertain": 16,
+      "nonpeer": 16,
+      "selfinterest": 16,
+      "salience": 16
+    }
+  },
+  "gate": {
+    "controls": 20,
+    "determinism": "results/determinism/gate_<model>.json must report verdict pass for the same model path"
+  },
+  "generation": {
+    "temperature": 0,
+    "seed": 9092026,
+    "cache_prompt": false,
+    "reasoning_budget": 512,
+    "decision_budget": 192,
+    "n_probs": 10
+  },
+  "stages": {
+    "A": "controls + core optional cells (claims none, hopeless_a)",
+    "B": "requires frozen hypotheses_from_reasoning/<model>.md; remaining core, paraphrase, secondary, direct, replay",
+    "D": "requires frozen stage_d_<model>.json naming at most two menu interventions"
+  }
+}

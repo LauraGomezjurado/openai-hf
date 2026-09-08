@@ -1,0 +1,15 @@
+{
+  "key": "phi35mini",
+  "priority": 3,
+  "family": "phi",
+  "repository": "microsoft/Phi-3.5-mini-instruct",
+  "revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+  "gguf_path": "data/models/workflow_phi/phi-3.5-mini-Q4_K_M.gguf",
+  "gguf_sha256": "a42608220cb90ed964f754132d1e387848ec4fa1d407d1a2f3ed76f998ea7389",
+  "quantization": "Q4_K_M locally converted from cached weights (conversion commit 5266f24da)",
+  "reasoning_mode": "scratchpad",
+  "template_kwargs": null,
+  "system_role": true,
+  "acquisition": "Already on the study machine (experiments/workflow_obligations/phi_source.json).",
+  "status": "available; failed 4/4 workflow-obligation task controls in September. Its V3 eligibility is decided only by the V3 control gate; a failure is recorded, not interpreted."
+}

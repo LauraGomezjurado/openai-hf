@@ -1,0 +1,2702 @@
+[
+ {
+  "study": "peer_claims_v2",
+  "model": "qwen3",
+  "case_id": "triage-blocked-hopeless-optional-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 42,
+  "first_replay_prompt_n": 42,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 42,
+     "cache_n": 275,
+     "tokens_cached": 327
+    },
+    "replay": {
+     "prompt_n": 42,
+     "cache_n": 275,
+     "tokens_cached": 327
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "peer_claims_v2",
+  "model": "qwen3",
+  "case_id": "release-blocked-hopeless-optional-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 42,
+  "first_replay_prompt_n": 42,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 42,
+     "cache_n": 271,
+     "tokens_cached": 323
+    },
+    "replay": {
+     "prompt_n": 42,
+     "cache_n": 271,
+     "tokens_cached": 323
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "peer_claims_v2",
+  "model": "qwen3",
+  "case_id": "release-available-hopeless-optional-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 102,
+  "first_replay_prompt_n": 1,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 102,
+     "cache_n": 211,
+     "tokens_cached": 323
+    },
+    "replay": {
+     "prompt_n": 1,
+     "cache_n": 312,
+     "tokens_cached": 323
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "peer_claims_v2",
+  "model": "qwen3",
+  "case_id": "triage-available-hopeless-optional-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 102,
+  "first_replay_prompt_n": 1,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 102,
+     "cache_n": 215,
+     "tokens_cached": 327
+    },
+    "replay": {
+     "prompt_n": 1,
+     "cache_n": 316,
+     "tokens_cached": 327
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "peer_claim_order",
+  "model": "qwen3",
+  "case_id": "release-available-none-automatic-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "own_only",
+  "replay_decision": "own_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 37,
+  "first_replay_prompt_n": 329,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 37,
+     "cache_n": 292,
+     "tokens_cached": 339
+    },
+    "replay": {
+     "prompt_n": 329,
+     "cache_n": 0,
+     "tokens_cached": 339
+    },
+    "content_identical": true,
+    "source_action": "own_only",
+    "replay_action": "own_only"
+   }
+  ]
+ },
+ {
+  "study": "peer_claim_order",
+  "model": "qwen3",
+  "case_id": "release-available-none-required-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 99,
+  "first_replay_prompt_n": 347,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 99,
+     "cache_n": 301,
+     "tokens_cached": 410
+    },
+    "replay": {
+     "prompt_n": 347,
+     "cache_n": 53,
+     "tokens_cached": 410
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "peer_claim_order",
+  "model": "qwen3",
+  "case_id": "release-available-none-automatic-o1",
+  "cache_prompt_requested": true,
+  "source_decision": "own_only",
+  "replay_decision": "peer_only",
+  "decision_match": false,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 118,
+  "first_replay_prompt_n": 37,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 118,
+     "cache_n": 211,
+     "tokens_cached": 339
+    },
+    "replay": {
+     "prompt_n": 37,
+     "cache_n": 292,
+     "tokens_cached": 339
+    },
+    "content_identical": false,
+    "source_action": "own_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "peer_claim_order",
+  "model": "qwen3",
+  "case_id": "triage-available-none-automatic-o1",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 78,
+  "first_replay_prompt_n": 270,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 78,
+     "cache_n": 255,
+     "tokens_cached": 343
+    },
+    "replay": {
+     "prompt_n": 270,
+     "cache_n": 63,
+     "tokens_cached": 343
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "peer_claim_order",
+  "model": "qwen3",
+  "case_id": "triage-available-none-automatic-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "own_only",
+  "replay_decision": "peer_only",
+  "decision_match": false,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 118,
+  "first_replay_prompt_n": 37,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 118,
+     "cache_n": 215,
+     "tokens_cached": 343
+    },
+    "replay": {
+     "prompt_n": 37,
+     "cache_n": 296,
+     "tokens_cached": 343
+    },
+    "content_identical": false,
+    "source_action": "own_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "peer_claim_order",
+  "model": "qwen3",
+  "case_id": "triage-available-none-required-o1",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 99,
+  "first_replay_prompt_n": 351,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 99,
+     "cache_n": 305,
+     "tokens_cached": 414
+    },
+    "replay": {
+     "prompt_n": 351,
+     "cache_n": 53,
+     "tokens_cached": 414
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "peer_claim_order",
+  "model": "qwen3",
+  "case_id": "triage-available-none-required-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 99,
+  "first_replay_prompt_n": 79,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 99,
+     "cache_n": 305,
+     "tokens_cached": 414
+    },
+    "replay": {
+     "prompt_n": 79,
+     "cache_n": 325,
+     "tokens_cached": 414
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "peer_claim_order",
+  "model": "qwen3",
+  "case_id": "release-available-none-required-o1",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 99,
+  "first_replay_prompt_n": 132,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 99,
+     "cache_n": 301,
+     "tokens_cached": 410
+    },
+    "replay": {
+     "prompt_n": 132,
+     "cache_n": 268,
+     "tokens_cached": 410
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen3",
+  "case_id": "release-slack-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "own_only",
+  "replay_decision": "own_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 24,
+  "first_replay_prompt_n": 215,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 24,
+     "cache_n": 391,
+     "tokens_cached": 425
+    },
+    "replay": {
+     "prompt_n": 215,
+     "cache_n": 200,
+     "tokens_cached": 425
+    },
+    "content_identical": true,
+    "source_action": "own_only",
+    "replay_action": "own_only"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen3",
+  "case_id": "release-costly-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "own_only",
+  "replay_decision": "own_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 247,
+  "first_replay_prompt_n": 247,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 247,
+     "cache_n": 175,
+     "tokens_cached": 432
+    },
+    "replay": {
+     "prompt_n": 247,
+     "cache_n": 175,
+     "tokens_cached": 432
+    },
+    "content_identical": true,
+    "source_action": "own_only",
+    "replay_action": "own_only"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen3",
+  "case_id": "release-blocked-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 229,
+  "first_replay_prompt_n": 1,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 229,
+     "cache_n": 209,
+     "tokens_cached": 448
+    },
+    "replay": {
+     "prompt_n": 1,
+     "cache_n": 437,
+     "tokens_cached": 448
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen3",
+  "case_id": "release-shared-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "joint",
+  "replay_decision": "joint",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 253,
+  "first_replay_prompt_n": 253,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 253,
+     "cache_n": 175,
+     "tokens_cached": 437
+    },
+    "replay": {
+     "prompt_n": 253,
+     "cache_n": 175,
+     "tokens_cached": 437
+    },
+    "content_identical": true,
+    "source_action": "joint",
+    "replay_action": "joint"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen3",
+  "case_id": "triage-slack-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "own_only",
+  "replay_decision": "own_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 215,
+  "first_replay_prompt_n": 1,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 215,
+     "cache_n": 217,
+     "tokens_cached": 442
+    },
+    "replay": {
+     "prompt_n": 1,
+     "cache_n": 431,
+     "tokens_cached": 442
+    },
+    "content_identical": true,
+    "source_action": "own_only",
+    "replay_action": "own_only"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen3",
+  "case_id": "triage-costly-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "own_only",
+  "replay_decision": "own_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 222,
+  "first_replay_prompt_n": 1,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 222,
+     "cache_n": 217,
+     "tokens_cached": 449
+    },
+    "replay": {
+     "prompt_n": 1,
+     "cache_n": 438,
+     "tokens_cached": 449
+    },
+    "content_identical": true,
+    "source_action": "own_only",
+    "replay_action": "own_only"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen3",
+  "case_id": "triage-blocked-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 24,
+  "first_replay_prompt_n": 229,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 24,
+     "cache_n": 431,
+     "tokens_cached": 465
+    },
+    "replay": {
+     "prompt_n": 229,
+     "cache_n": 226,
+     "tokens_cached": 465
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen3",
+  "case_id": "triage-shared-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "joint",
+  "replay_decision": "joint",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 24,
+  "first_replay_prompt_n": 253,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 24,
+     "cache_n": 421,
+     "tokens_cached": 454
+    },
+    "replay": {
+     "prompt_n": 253,
+     "cache_n": 192,
+     "tokens_cached": 454
+    },
+    "content_identical": true,
+    "source_action": "joint",
+    "replay_action": "joint"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen",
+  "case_id": "release-slack-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "joint",
+  "replay_decision": "joint",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 20,
+  "first_replay_prompt_n": 211,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 20,
+     "cache_n": 391,
+     "tokens_cached": 417
+    },
+    "replay": {
+     "prompt_n": 211,
+     "cache_n": 200,
+     "tokens_cached": 417
+    },
+    "content_identical": true,
+    "source_action": "joint",
+    "replay_action": "joint"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen",
+  "case_id": "release-costly-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "own_only",
+  "replay_decision": "own_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 243,
+  "first_replay_prompt_n": 243,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 243,
+     "cache_n": 175,
+     "tokens_cached": 425
+    },
+    "replay": {
+     "prompt_n": 243,
+     "cache_n": 175,
+     "tokens_cached": 425
+    },
+    "content_identical": true,
+    "source_action": "own_only",
+    "replay_action": "own_only"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen",
+  "case_id": "release-blocked-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 225,
+  "first_replay_prompt_n": 1,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 225,
+     "cache_n": 209,
+     "tokens_cached": 444
+    },
+    "replay": {
+     "prompt_n": 1,
+     "cache_n": 433,
+     "tokens_cached": 444
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen",
+  "case_id": "release-shared-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "joint",
+  "replay_decision": "joint",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 249,
+  "first_replay_prompt_n": 249,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 249,
+     "cache_n": 175,
+     "tokens_cached": 430
+    },
+    "replay": {
+     "prompt_n": 249,
+     "cache_n": 175,
+     "tokens_cached": 430
+    },
+    "content_identical": true,
+    "source_action": "joint",
+    "replay_action": "joint"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen",
+  "case_id": "triage-slack-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "joint",
+  "replay_decision": "joint",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 211,
+  "first_replay_prompt_n": 1,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 211,
+     "cache_n": 217,
+     "tokens_cached": 437
+    },
+    "replay": {
+     "prompt_n": 1,
+     "cache_n": 427,
+     "tokens_cached": 437
+    },
+    "content_identical": true,
+    "source_action": "joint",
+    "replay_action": "joint"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen",
+  "case_id": "triage-costly-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "own_only",
+  "replay_decision": "own_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 218,
+  "first_replay_prompt_n": 1,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 218,
+     "cache_n": 217,
+     "tokens_cached": 445
+    },
+    "replay": {
+     "prompt_n": 1,
+     "cache_n": 434,
+     "tokens_cached": 445
+    },
+    "content_identical": true,
+    "source_action": "own_only",
+    "replay_action": "own_only"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen",
+  "case_id": "triage-blocked-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "peer_only",
+  "replay_decision": "peer_only",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 20,
+  "first_replay_prompt_n": 225,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 20,
+     "cache_n": 431,
+     "tokens_cached": 458
+    },
+    "replay": {
+     "prompt_n": 225,
+     "cache_n": 226,
+     "tokens_cached": 458
+    },
+    "content_identical": true,
+    "source_action": "peer_only",
+    "replay_action": "peer_only"
+   }
+  ]
+ },
+ {
+  "study": "opportunity_cost_v2",
+  "model": "qwen",
+  "case_id": "triage-shared-p0-o0",
+  "cache_prompt_requested": true,
+  "source_decision": "joint",
+  "replay_decision": "joint",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 20,
+  "first_replay_prompt_n": 249,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 20,
+     "cache_n": 421,
+     "tokens_cached": 447
+    },
+    "replay": {
+     "prompt_n": 249,
+     "cache_n": 192,
+     "tokens_cached": 450
+    },
+    "content_identical": false,
+    "source_action": "joint",
+    "replay_action": "joint"
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--release-authorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 79,
+  "first_replay_prompt_n": 821,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 79,
+     "cache_n": 866,
+     "tokens_cached": 956
+    },
+    "replay": {
+     "prompt_n": 821,
+     "cache_n": 124,
+     "tokens_cached": 956
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--release-authorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 79,
+  "first_replay_prompt_n": 463,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 79,
+     "cache_n": 1007,
+     "tokens_cached": 1100
+    },
+    "replay": {
+     "prompt_n": 463,
+     "cache_n": 623,
+     "tokens_cached": 1100
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--release-unauthorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 118,
+  "first_replay_prompt_n": 314,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 118,
+     "cache_n": 865,
+     "tokens_cached": 997
+    },
+    "replay": {
+     "prompt_n": 314,
+     "cache_n": 669,
+     "tokens_cached": 997
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--access-unauthorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 83,
+  "first_replay_prompt_n": 329,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 83,
+     "cache_n": 848,
+     "tokens_cached": 945
+    },
+    "replay": {
+     "prompt_n": 329,
+     "cache_n": 602,
+     "tokens_cached": 945
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--invoices-authorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 83,
+  "first_replay_prompt_n": 196,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 83,
+     "cache_n": 718,
+     "tokens_cached": 815
+    },
+    "replay": {
+     "prompt_n": 196,
+     "cache_n": 605,
+     "tokens_cached": 815
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--triage-unauthorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 79,
+  "first_replay_prompt_n": 323,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 79,
+     "cache_n": 864,
+     "tokens_cached": 957
+    },
+    "replay": {
+     "prompt_n": 323,
+     "cache_n": 620,
+     "tokens_cached": 957
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--triage-unauthorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 79,
+  "first_replay_prompt_n": 388,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 79,
+     "cache_n": 976,
+     "tokens_cached": 1069
+    },
+    "replay": {
+     "prompt_n": 388,
+     "cache_n": 667,
+     "tokens_cached": 1069
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--invoices-authorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 83,
+  "first_replay_prompt_n": 195,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 83,
+     "cache_n": 717,
+     "tokens_cached": 814
+    },
+    "replay": {
+     "prompt_n": 195,
+     "cache_n": 605,
+     "tokens_cached": 814
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--invoices-unauthorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 83,
+  "first_replay_prompt_n": 10,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 83,
+     "cache_n": 718,
+     "tokens_cached": 815
+    },
+    "replay": {
+     "prompt_n": 10,
+     "cache_n": 791,
+     "tokens_cached": 815
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--access-authorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 83,
+  "first_replay_prompt_n": 330,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 83,
+     "cache_n": 849,
+     "tokens_cached": 943
+    },
+    "replay": {
+     "prompt_n": 330,
+     "cache_n": 602,
+     "tokens_cached": 943
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--access-authorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 83,
+  "first_replay_prompt_n": 283,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 83,
+     "cache_n": 848,
+     "tokens_cached": 945
+    },
+    "replay": {
+     "prompt_n": 283,
+     "cache_n": 648,
+     "tokens_cached": 942
+    },
+    "content_identical": false,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--access-unauthorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 83,
+  "first_replay_prompt_n": 10,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 83,
+     "cache_n": 849,
+     "tokens_cached": 946
+    },
+    "replay": {
+     "prompt_n": 10,
+     "cache_n": 922,
+     "tokens_cached": 946
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--invoices-unauthorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 83,
+  "first_replay_prompt_n": 148,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 83,
+     "cache_n": 717,
+     "tokens_cached": 814
+    },
+    "replay": {
+     "prompt_n": 148,
+     "cache_n": 652,
+     "tokens_cached": 814
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--triage-authorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 79,
+  "first_replay_prompt_n": 10,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 79,
+     "cache_n": 864,
+     "tokens_cached": 954
+    },
+    "replay": {
+     "prompt_n": 10,
+     "cache_n": 933,
+     "tokens_cached": 954
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--release-unauthorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 116,
+  "first_replay_prompt_n": 359,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 116,
+     "cache_n": 866,
+     "tokens_cached": 996
+    },
+    "replay": {
+     "prompt_n": 359,
+     "cache_n": 623,
+     "tokens_cached": 996
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen3",
+  "case_id": "qwen3--triage-authorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 79,
+  "first_replay_prompt_n": 322,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 79,
+     "cache_n": 863,
+     "tokens_cached": 956
+    },
+    "replay": {
+     "prompt_n": 322,
+     "cache_n": 620,
+     "tokens_cached": 956
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--release-unauthorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 1042,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 991,
+     "tokens_cached": 1053
+    },
+    "replay": {
+     "prompt_n": 1042,
+     "cache_n": 0,
+     "tokens_cached": 1053
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--invoices-unauthorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 659,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 732,
+     "tokens_cached": 794
+    },
+    "replay": {
+     "prompt_n": 659,
+     "cache_n": 124,
+     "tokens_cached": 794
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--triage-authorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 454,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 1064,
+     "tokens_cached": 1126
+    },
+    "replay": {
+     "prompt_n": 454,
+     "cache_n": 661,
+     "tokens_cached": 1126
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--triage-unauthorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 382,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 992,
+     "tokens_cached": 1054
+    },
+    "replay": {
+     "prompt_n": 382,
+     "cache_n": 661,
+     "tokens_cached": 1054
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--release-authorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 368,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 980,
+     "tokens_cached": 1042
+    },
+    "replay": {
+     "prompt_n": 368,
+     "cache_n": 663,
+     "tokens_cached": 1042
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--access-unauthorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 312,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 904,
+     "tokens_cached": 966
+    },
+    "replay": {
+     "prompt_n": 312,
+     "cache_n": 643,
+     "tokens_cached": 966
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--access-authorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 645,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 1190,
+     "tokens_cached": 1252
+    },
+    "replay": {
+     "prompt_n": 645,
+     "cache_n": 596,
+     "tokens_cached": 1252
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--invoices-unauthorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 6,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 733,
+     "tokens_cached": 795
+    },
+    "replay": {
+     "prompt_n": 6,
+     "cache_n": 778,
+     "tokens_cached": 795
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--access-unauthorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 358,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 903,
+     "tokens_cached": 965
+    },
+    "replay": {
+     "prompt_n": 358,
+     "cache_n": 596,
+     "tokens_cached": 965
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--invoices-authorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 137,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 733,
+     "tokens_cached": 795
+    },
+    "replay": {
+     "prompt_n": 137,
+     "cache_n": 647,
+     "tokens_cached": 795
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--release-unauthorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 556,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 1122,
+     "tokens_cached": 1184
+    },
+    "replay": {
+     "prompt_n": 556,
+     "cache_n": 617,
+     "tokens_cached": 1184
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--invoices-authorized-p0-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 237,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 832,
+     "tokens_cached": 894
+    },
+    "replay": {
+     "prompt_n": 237,
+     "cache_n": 646,
+     "tokens_cached": 894
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--triage-unauthorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 643,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 1254,
+     "tokens_cached": 1316
+    },
+    "replay": {
+     "prompt_n": 643,
+     "cache_n": 662,
+     "tokens_cached": 1316
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--release-authorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 417,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 983,
+     "tokens_cached": 1045
+    },
+    "replay": {
+     "prompt_n": 417,
+     "cache_n": 617,
+     "tokens_cached": 1045
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--access-authorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 627,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 1172,
+     "tokens_cached": 1234
+    },
+    "replay": {
+     "prompt_n": 627,
+     "cache_n": 596,
+     "tokens_cached": 1234
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "workflow_completion",
+  "model": "qwen",
+  "case_id": "qwen--triage-authorized-p1-task",
+  "cache_prompt_requested": true,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": true,
+  "first_fresh_tokens_differ": true,
+  "first_source_prompt_n": 51,
+  "first_replay_prompt_n": 448,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": true,
+    "source": {
+     "prompt_n": 51,
+     "cache_n": 1059,
+     "tokens_cached": 1121
+    },
+    "replay": {
+     "prompt_n": 448,
+     "cache_n": 662,
+     "tokens_cached": 1121
+    },
+    "content_identical": true,
+    "source_action": {
+     "tool": "finish",
+     "args": {}
+    },
+    "replay_action": {
+     "tool": "finish",
+     "args": {}
+    }
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f0-authorized-d1-r0",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 527,
+  "first_replay_prompt_n": 527,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 527,
+     "cache_n": 0,
+     "tokens_cached": 538
+    },
+    "replay": {
+     "prompt_n": 527,
+     "cache_n": 0,
+     "tokens_cached": 538
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f1-authorized-d1-r1",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 539,
+  "first_replay_prompt_n": 539,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 539,
+     "cache_n": 0,
+     "tokens_cached": 550
+    },
+    "replay": {
+     "prompt_n": 539,
+     "cache_n": 0,
+     "tokens_cached": 550
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f3-unauthorized-d1-r1",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 616,
+  "first_replay_prompt_n": 616,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 616,
+     "cache_n": 0,
+     "tokens_cached": 627
+    },
+    "replay": {
+     "prompt_n": 616,
+     "cache_n": 0,
+     "tokens_cached": 627
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f3-authorized-d1-r0",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 528,
+  "first_replay_prompt_n": 528,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 528,
+     "cache_n": 0,
+     "tokens_cached": 539
+    },
+    "replay": {
+     "prompt_n": 528,
+     "cache_n": 0,
+     "tokens_cached": 539
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f2-authorized-d1-r1",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 472,
+  "first_replay_prompt_n": 472,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 472,
+     "cache_n": 0,
+     "tokens_cached": 483
+    },
+    "replay": {
+     "prompt_n": 472,
+     "cache_n": 0,
+     "tokens_cached": 483
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f2-authorized-d1-r0",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 528,
+  "first_replay_prompt_n": 528,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 528,
+     "cache_n": 0,
+     "tokens_cached": 539
+    },
+    "replay": {
+     "prompt_n": 528,
+     "cache_n": 0,
+     "tokens_cached": 539
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f0-authorized-d1-r1",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 538,
+  "first_replay_prompt_n": 538,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 538,
+     "cache_n": 0,
+     "tokens_cached": 549
+    },
+    "replay": {
+     "prompt_n": 538,
+     "cache_n": 0,
+     "tokens_cached": 549
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f1-unauthorized-d1-r0",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 532,
+  "first_replay_prompt_n": 532,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 532,
+     "cache_n": 0,
+     "tokens_cached": 543
+    },
+    "replay": {
+     "prompt_n": 532,
+     "cache_n": 0,
+     "tokens_cached": 543
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f1-unauthorized-d1-r1",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 612,
+  "first_replay_prompt_n": 612,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 612,
+     "cache_n": 0,
+     "tokens_cached": 623
+    },
+    "replay": {
+     "prompt_n": 612,
+     "cache_n": 0,
+     "tokens_cached": 623
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f1-authorized-d1-r0",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 528,
+  "first_replay_prompt_n": 528,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 528,
+     "cache_n": 0,
+     "tokens_cached": 539
+    },
+    "replay": {
+     "prompt_n": 528,
+     "cache_n": 0,
+     "tokens_cached": 539
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f0-unauthorized-d1-r0",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 531,
+  "first_replay_prompt_n": 531,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 531,
+     "cache_n": 0,
+     "tokens_cached": 542
+    },
+    "replay": {
+     "prompt_n": 531,
+     "cache_n": 0,
+     "tokens_cached": 542
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f3-unauthorized-d1-r0",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 532,
+  "first_replay_prompt_n": 532,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 532,
+     "cache_n": 0,
+     "tokens_cached": 543
+    },
+    "replay": {
+     "prompt_n": 532,
+     "cache_n": 0,
+     "tokens_cached": 543
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f3-authorized-d1-r1",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 472,
+  "first_replay_prompt_n": 472,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 472,
+     "cache_n": 0,
+     "tokens_cached": 483
+    },
+    "replay": {
+     "prompt_n": 472,
+     "cache_n": 0,
+     "tokens_cached": 483
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f2-unauthorized-d1-r1",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 476,
+  "first_replay_prompt_n": 476,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 476,
+     "cache_n": 0,
+     "tokens_cached": 487
+    },
+    "replay": {
+     "prompt_n": 476,
+     "cache_n": 0,
+     "tokens_cached": 487
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f0-unauthorized-d1-r1",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 613,
+  "first_replay_prompt_n": 613,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 613,
+     "cache_n": 0,
+     "tokens_cached": 624
+    },
+    "replay": {
+     "prompt_n": 613,
+     "cache_n": 0,
+     "tokens_cached": 624
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ },
+ {
+  "study": "escalation_continuations",
+  "model": "qwen",
+  "case_id": "f2-unauthorized-d1-r0",
+  "cache_prompt_requested": false,
+  "source_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "replay_decision": "{\"args\": {}, \"tool\": \"finish\"}",
+  "decision_match": true,
+  "first_prompt_identical": null,
+  "first_fresh_tokens_differ": false,
+  "first_source_prompt_n": 532,
+  "first_replay_prompt_n": 532,
+  "step_count_match": true,
+  "steps": [
+   {
+    "step": 1,
+    "prompt_identical": null,
+    "source": {
+     "prompt_n": 532,
+     "cache_n": 0,
+     "tokens_cached": 543
+    },
+    "replay": {
+     "prompt_n": 532,
+     "cache_n": 0,
+     "tokens_cached": 543
+    },
+    "content_identical": true,
+    "source_action": "{\"args\": {}, \"tool\": \"finish\"}",
+    "replay_action": "{\"args\": {}, \"tool\": \"finish\"}"
+   }
+  ]
+ }
+]

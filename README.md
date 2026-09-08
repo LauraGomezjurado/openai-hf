@@ -1,5 +1,7 @@
 # Studying the OpenAI–Hugging Face incident using public historical data
 
+**Methodological upgrade — September 8, 2026 (later):** the replay non-determinism is diagnosed (`cache_prompt=true`) and fixed with a backend gate; reasoning capture, a preregistered cross-family V3 replication with staged explanation-before-intervention, and a formal ACH evidence matrix are in place. Read [the rigor memo](docs/forensic_rigor_upgrade.md) and [the ACH matrix](docs/ach_evidence_matrix.md). No new checkpoint inference has run; V3 is frozen for the machine that holds the models.
+
 **Current status — September 8, 2026:** the public-only peer-claim experiment and diagnostics are complete. Start with the [new interpretation](docs/peer_claims_interpretation.md), [full results](docs/peer_claims_results.md), [working plan](docs/working_plan.md) and [question map](docs/research_question_map.md). A peer assessment suppressed checking in one qualified public checkpoint; this is an incident-motivated behavioral analogue, not an explanation of original-HF motives. All local CPU runs are stopped. Earlier studies and failed controls remain preserved.
 
 The sections below preserve the earlier project history. Superseded proposals are not instructions to start remote compute or seek private access.

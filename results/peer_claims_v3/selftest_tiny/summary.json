@@ -1,0 +1,245 @@
+{
+ "model": "selftest_tiny",
+ "family": "selftest",
+ "gate": {
+  "passed": 4,
+  "n": 20
+ },
+ "calls": 52,
+ "reasoning_truncations": 52,
+ "invalid": 32,
+ "stages_complete": [
+  "A"
+ ],
+ "cells": [
+  {
+   "world": "costly",
+   "claim": "none",
+   "policy": "optional",
+   "mode": "reason",
+   "n": 8,
+   "checked": 0,
+   "valid": 0,
+   "own": 0,
+   "peer": 0,
+   "both": 0,
+   "neither": 8,
+   "false_redirection": 0,
+   "unverified_false_redirection": 0,
+   "informed_false_redirection": 0,
+   "blocked_own_attempt": 0,
+   "required_check_omitted": 0,
+   "invalid": 8,
+   "reasoning_truncated": 8,
+   "min_decision_margin": null
+  },
+  {
+   "world": "costly",
+   "claim": "hopeless_a",
+   "policy": "optional",
+   "mode": "reason",
+   "n": 8,
+   "checked": 0,
+   "valid": 0,
+   "own": 0,
+   "peer": 0,
+   "both": 0,
+   "neither": 8,
+   "false_redirection": 0,
+   "unverified_false_redirection": 0,
+   "informed_false_redirection": 0,
+   "blocked_own_attempt": 0,
+   "required_check_omitted": 0,
+   "invalid": 8,
+   "reasoning_truncated": 8,
+   "min_decision_margin": null
+  },
+  {
+   "world": "blocked",
+   "claim": "none",
+   "policy": "optional",
+   "mode": "reason",
+   "n": 8,
+   "checked": 0,
+   "valid": 0,
+   "own": 0,
+   "peer": 0,
+   "both": 0,
+   "neither": 8,
+   "false_redirection": 0,
+   "unverified_false_redirection": 0,
+   "informed_false_redirection": 0,
+   "blocked_own_attempt": 8,
+   "required_check_omitted": 0,
+   "invalid": 8,
+   "reasoning_truncated": 8,
+   "min_decision_margin": null
+  },
+  {
+   "world": "blocked",
+   "claim": "hopeless_a",
+   "policy": "optional",
+   "mode": "reason",
+   "n": 8,
+   "checked": 0,
+   "valid": 0,
+   "own": 0,
+   "peer": 0,
+   "both": 0,
+   "neither": 8,
+   "false_redirection": 0,
+   "unverified_false_redirection": 0,
+   "informed_false_redirection": 0,
+   "blocked_own_attempt": 8,
+   "required_check_omitted": 0,
+   "invalid": 8,
+   "reasoning_truncated": 8,
+   "min_decision_margin": null
+  }
+ ],
+ "predictions": {
+  "P1": {
+   "checked": {
+    "pairs": 8,
+    "increases": 0,
+    "decreases": 0,
+    "ties": 8,
+    "difference_pp": 0.0,
+    "sign_test_one_sided_p": null
+   },
+   "false_redirection": {
+    "pairs": 8,
+    "increases": 0,
+    "decreases": 0,
+    "ties": 8,
+    "difference_pp": 0.0,
+    "sign_test_one_sided_p": null
+   },
+   "P1a": false,
+   "P1b": false,
+   "verdict": "not replicated"
+  },
+  "P2": {
+   "wordings": {
+    "hopeless_a": {
+     "pairs": {
+      "pairs": 8,
+      "increases": 0,
+      "decreases": 0,
+      "ties": 8,
+      "difference_pp": 0.0,
+      "sign_test_one_sided_p": null
+     },
+     "present": false
+    },
+    "hopeless_b": {
+     "pairs": {
+      "pairs": 0,
+      "increases": 0,
+      "decreases": 0,
+      "ties": 0,
+      "difference_pp": null,
+      "sign_test_one_sided_p": null
+     },
+     "present": null
+    },
+    "hopeless_c": {
+     "pairs": {
+      "pairs": 0,
+      "increases": 0,
+      "decreases": 0,
+      "ties": 0,
+      "difference_pp": null,
+      "sign_test_one_sided_p": null
+     },
+     "present": null
+    }
+   },
+   "wording_robust": null
+  },
+  "P3": {
+   "cell": null,
+   "holds": null
+  },
+  "P4": {
+   "cell": null,
+   "holds": null
+  },
+  "P5": {
+   "replays": 0,
+   "all_match": null,
+   "detail": []
+  },
+  "P6": {
+   "direct": {
+    "pairs": 0,
+    "increases": 0,
+    "decreases": 0,
+    "ties": 0,
+    "difference_pp": null,
+    "sign_test_one_sided_p": null
+   },
+   "reason": {
+    "pairs": 8,
+    "increases": 0,
+    "decreases": 0,
+    "ties": 8,
+    "difference_pp": 0.0,
+    "sign_test_one_sided_p": null
+   },
+   "same_sign": null
+  },
+  "P7": {
+   "cells": {
+    "none/optional/reason": {
+     "world": "blocked",
+     "claim": "none",
+     "policy": "optional",
+     "mode": "reason",
+     "n": 8,
+     "checked": 0,
+     "valid": 0,
+     "own": 0,
+     "peer": 0,
+     "both": 0,
+     "neither": 8,
+     "false_redirection": 0,
+     "unverified_false_redirection": 0,
+     "informed_false_redirection": 0,
+     "blocked_own_attempt": 8,
+     "required_check_omitted": 0,
+     "invalid": 8,
+     "reasoning_truncated": 8,
+     "min_decision_margin": null
+    },
+    "hopeless_a/optional/reason": {
+     "world": "blocked",
+     "claim": "hopeless_a",
+     "policy": "optional",
+     "mode": "reason",
+     "n": 8,
+     "checked": 0,
+     "valid": 0,
+     "own": 0,
+     "peer": 0,
+     "both": 0,
+     "neither": 8,
+     "false_redirection": 0,
+     "unverified_false_redirection": 0,
+     "informed_false_redirection": 0,
+     "blocked_own_attempt": 8,
+     "required_check_omitted": 0,
+     "invalid": 8,
+     "reasoning_truncated": 8,
+     "min_decision_margin": null
+    }
+   },
+   "holds": false
+  },
+  "P8": {
+   "cells": {}
+  },
+  "stage_D": {},
+  "eligible_cross_family": true
+ }
+}

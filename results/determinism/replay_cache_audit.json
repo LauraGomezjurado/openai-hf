@@ -1,0 +1,83 @@
+{
+  "total_pairs": 76,
+  "by_study": {
+    "peer_claims_v2/qwen3": {
+      "pairs": 4,
+      "decision_mismatches": 0,
+      "prompt_identical": 4
+    },
+    "peer_claim_order/qwen3": {
+      "pairs": 8,
+      "decision_mismatches": 2,
+      "prompt_identical": 8
+    },
+    "opportunity_cost_v2/qwen3": {
+      "pairs": 8,
+      "decision_mismatches": 0,
+      "prompt_identical": 8
+    },
+    "opportunity_cost_v2/qwen": {
+      "pairs": 8,
+      "decision_mismatches": 0,
+      "prompt_identical": 8
+    },
+    "workflow_completion/qwen3": {
+      "pairs": 16,
+      "decision_mismatches": 0,
+      "prompt_identical": 16
+    },
+    "workflow_completion/qwen": {
+      "pairs": 16,
+      "decision_mismatches": 0,
+      "prompt_identical": 16
+    },
+    "escalation_continuations/qwen": {
+      "pairs": 16,
+      "decision_mismatches": 0,
+      "prompt_identical": 0
+    }
+  },
+  "cache_prompt_true": {
+    "pairs": 60,
+    "decision_mismatches": 2,
+    "prompt_identical": 60
+  },
+  "cache_prompt_false": {
+    "pairs": 16,
+    "decision_mismatches": 0,
+    "prompt_identical": 0
+  },
+  "fresh_token_count_differs": {
+    "pairs": 54,
+    "decision_mismatches": 2,
+    "prompt_identical": 54
+  },
+  "fresh_token_count_equal": {
+    "pairs": 22,
+    "decision_mismatches": 0,
+    "prompt_identical": 6
+  },
+  "mismatches": [
+    {
+      "study": "peer_claim_order",
+      "model": "qwen3",
+      "case_id": "release-available-none-automatic-o1",
+      "source_decision": "own_only",
+      "replay_decision": "peer_only",
+      "first_source_prompt_n": 118,
+      "first_replay_prompt_n": 37,
+      "first_prompt_identical": true
+    },
+    {
+      "study": "peer_claim_order",
+      "model": "qwen3",
+      "case_id": "triage-available-none-automatic-o0",
+      "source_decision": "own_only",
+      "replay_decision": "peer_only",
+      "first_source_prompt_n": 118,
+      "first_replay_prompt_n": 37,
+      "first_prompt_identical": true
+    }
+  ],
+  "reading": "Descriptive association within saved records. A prompt_n difference is a marker that the two requests were evaluated with different batch splits; it is not a measured logit difference. Mismatches with equal prompt_n would indicate a further source; equal outcomes with different prompt_n are expected whenever the decision margin is not near a tie."
+}

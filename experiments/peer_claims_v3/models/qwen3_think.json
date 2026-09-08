@@ -1,0 +1,15 @@
+{
+  "key": "qwen3_think",
+  "priority": 4,
+  "family": "qwen",
+  "repository": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "gguf_path": "data/models/workflow_qwen3/qwen3-8b-Q4_K_M.gguf",
+  "gguf_sha256": "4bbd605eaecad2e8ed614f5c2dd3c833150cbe26ba03b991cf1c7114cb9117ef",
+  "quantization": "Q4_K_M locally converted from cached weights (conversion commit 5266f24da)",
+  "reasoning_mode": "native_think",
+  "template_kwargs": null,
+  "system_role": true,
+  "acquisition": "Already on the study machine (experiments/workflow_obligations/qwen3_source.json). Served without enable_thinking=false so the native <think> channel is captured.",
+  "status": "available; same family and checkpoint as V2, so it is a reasoning-arm within-family comparison, not the cross-family replication."
+}

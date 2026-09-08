@@ -6,3 +6,8 @@ __pycache__/
 .env.*
 !.env.example
 data/models/
+
+# Mechanical self-test rollouts (random-weight model): regenerate with scripts/run_peer_claims_v3_cpu.py selftest_tiny
+results/peer_claims_v3/selftest_*/rollouts.jsonl
+results/peer_claims_v3/selftest_*/artifacts/
+results/peer_claims_v3/selftest_*_server.log
