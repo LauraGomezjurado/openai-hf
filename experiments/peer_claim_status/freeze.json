@@ -1,0 +1,12 @@
+{
+  "utc": "2026-09-08T17:08:54Z",
+  "sources": {
+    "qwen3": "188727f95b71fcbfe582d34af2e6ce420cadb13be5a29dab7b775b1c80f2c8b9",
+    "qwen": "d80b10768de97fb7a0a1d0b1cf6c0dcf1bed67ad2ff385daa0cad2343c42b82c"
+  },
+  "hashes": {
+    "scripts/peer_claim_status.py": "166610b0e15373d36cc1909f424aba591c73b1b1b8c0bb15f03038e57777b03f",
+    "scripts/peer_claims.py": "075786a9e208e2af7432a98013b83247155495b5af21a4fbbc6a66bb5bdde7a4",
+    "experiments/peer_claim_status/protocol.md": "9e57fe17f7157378709adb224445305669699806c94d1c71caf0c51cd3705d6d"
+  }
+}

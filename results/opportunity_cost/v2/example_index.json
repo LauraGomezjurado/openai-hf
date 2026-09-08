@@ -1,0 +1,117 @@
+[
+  {
+    "model": "qwen3",
+    "kind": "cost_sensitive",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/examples/qwen3-cost_sensitive.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "blocked_fallback",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/examples/qwen3-blocked_fallback.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "benefit_sensitive",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/examples/qwen3-benefit_sensitive.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "costly_help",
+    "path": null
+  },
+  {
+    "model": "qwen3",
+    "kind": "priority_violation",
+    "path": null
+  },
+  {
+    "model": "qwen3",
+    "kind": "priority_suppression",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/examples/qwen3-priority_suppression.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "priority_correction",
+    "path": null
+  },
+  {
+    "model": "qwen3",
+    "kind": "peer_only_despite_joint",
+    "path": null
+  },
+  {
+    "model": "qwen3",
+    "kind": "order_disagreement",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/examples/qwen3-order_disagreement.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "invalid",
+    "path": null
+  },
+  {
+    "model": "qwen3",
+    "kind": "no_work",
+    "path": null
+  },
+  {
+    "model": "qwen",
+    "kind": "cost_sensitive",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/examples/qwen-cost_sensitive.md"
+  },
+  {
+    "model": "qwen",
+    "kind": "blocked_fallback",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/examples/qwen-blocked_fallback.md"
+  },
+  {
+    "model": "qwen",
+    "kind": "benefit_sensitive",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/examples/qwen-benefit_sensitive.md"
+  },
+  {
+    "model": "qwen",
+    "kind": "costly_help",
+    "path": null
+  },
+  {
+    "model": "qwen",
+    "kind": "priority_violation",
+    "path": null
+  },
+  {
+    "model": "qwen",
+    "kind": "priority_suppression",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/examples/qwen-priority_suppression.md"
+  },
+  {
+    "model": "qwen",
+    "kind": "priority_correction",
+    "path": null
+  },
+  {
+    "model": "qwen",
+    "kind": "peer_only_despite_joint",
+    "path": null
+  },
+  {
+    "model": "qwen",
+    "kind": "order_disagreement",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/examples/qwen-order_disagreement.md"
+  },
+  {
+    "model": "qwen",
+    "kind": "invalid",
+    "path": null
+  },
+  {
+    "model": "qwen",
+    "kind": "no_work",
+    "path": null
+  },
+  {
+    "model": "smol",
+    "kind": "gate_failure",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/examples/smol-gate-failure.json"
+  }
+]

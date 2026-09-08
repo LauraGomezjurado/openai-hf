@@ -1,0 +1,37 @@
+{
+  "pid": 91548,
+  "command": [
+    "llama-server",
+    "-m",
+    "/Users/lauragomez/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct-GGUF/snapshots/bb5d59e06d9551d752d08b292a50eb208b07ab1f/qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+    "--device",
+    "none",
+    "-ngl",
+    "0",
+    "--no-op-offload",
+    "--no-kv-offload",
+    "--fit",
+    "off",
+    "-c",
+    "6144",
+    "-np",
+    "1",
+    "-t",
+    "6",
+    "-tb",
+    "6",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18973",
+    "--jinja"
+  ],
+  "source": {
+    "repository": "Qwen/Qwen2.5-7B-Instruct-GGUF",
+    "revision": "bb5d59e06d9551d752d08b292a50eb208b07ab1f",
+    "files": [
+      "qwen2.5-7b-instruct-q4_k_m-00001-of-00002.gguf",
+      "qwen2.5-7b-instruct-q4_k_m-00002-of-00002.gguf"
+    ]
+  }
+}

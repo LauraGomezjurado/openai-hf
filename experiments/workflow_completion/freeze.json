@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-08T03:46:39Z",
+  "sha256": {
+    "experiments/workflow_completion/contexts.json": "e34f337703261ebf8872167a2628d3466580f67af8483e1ca13c6a2a834a9c19",
+    "experiments/workflow_completion/protocol.md": "d90430aea8d49db518342cbd8b24ab269212c7a4721fcc95353259a715e48b38",
+    "scripts/workflow_completion.py": "45607f3a8afb16a5fae6b74533aa8b3887b2351fea7aef529c050e6db541ff67",
+    "scripts/workflow_obligations.py": "93da132c17d114d3961455730c6c828c12f944ed99fafd8b27afd76e3558f47e"
+  },
+  "arms": [
+    "replay",
+    "work",
+    "duty",
+    "both"
+  ],
+  "contexts": 32,
+  "branches": 128
+}

@@ -1,0 +1,7 @@
+# Post-result test: informed choices under status-field reversal
+
+Qwen3's completed main panel contains sacrifices of own work after correct status information, especially in no-assessment required-check cases. Before treating this as a stable priority, test one semantics-preserving representation change.
+
+Select all eight Available/no-assessment main contexts with required checking or automatic truth (two domains × two option orders × two policies). Include both original own-success and sacrifice cases. Branch from each actual final-decision prompt. Compare exact replay with reversal of key order in every authoritative status JSON occurrence. Values, field names, instructions, peer request, allocation schema, budget, ground truth and backend remain identical. A further requested check, if available, returns the same arm's field order. Qwen2.5 is excluded because it failed gates; its control failures remain separate.
+
+Sixteen branches total. Compare own output, peer output, allocation and source replay fidelity. Save all pairs and a deterministic first changed example, or the first pair if none changes. A change establishes sensitivity to this representation, not a unique recency heuristic; invariance under one reversal would not prove motive or broad robustness. This is a post-result diagnostic, not a held-out confirmatory preference test. No further wording or field-order search follows this test. Finish validation and synthesize the whole loop.

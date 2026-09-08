@@ -1,0 +1,56 @@
+{
+  "reason_for_amendment": "Whole-hour landmarks omitted 99 post-read onsets before the next clock hour, plus 15 pre-read onsets. Read-anchored intervals retain all 669 positive-lag onsets.",
+  "intervals": 14383,
+  "positive_intervals": 669,
+  "scores": [
+    {
+      "model": "calendar_run_age",
+      "scope": "all",
+      "intervals": 10521,
+      "positives": 571,
+      "brier": 0.09710215272911013,
+      "log_loss": 0.4376666767375693
+    },
+    {
+      "model": "calendar_run_age",
+      "scope": "unseen_rows",
+      "intervals": 2888,
+      "positives": 357,
+      "brier": 0.16050782692654883,
+      "log_loss": 0.7934587587733294
+    },
+    {
+      "model": "plus_board_tenure",
+      "scope": "all",
+      "intervals": 10521,
+      "positives": 571,
+      "brier": 0.09744736499713481,
+      "log_loss": 0.4202888337379446
+    },
+    {
+      "model": "plus_board_tenure",
+      "scope": "unseen_rows",
+      "intervals": 2888,
+      "positives": 357,
+      "brier": 0.17764658317259774,
+      "log_loss": 0.7706646681501637
+    },
+    {
+      "model": "training_mean",
+      "scope": "all",
+      "intervals": 10521,
+      "positives": 571,
+      "brier": 0.05263180256683381,
+      "log_loss": 0.23979000848900073
+    },
+    {
+      "model": "training_mean",
+      "scope": "unseen_rows",
+      "intervals": 2888,
+      "positives": 357,
+      "brier": 0.11897360499666473,
+      "log_loss": 0.5137714028856396
+    }
+  ],
+  "limitations": "Same selected source, uncertain labels, repeated dependent intervals and informative followup endings. Retrospective diagnostic, not deployment evaluation."
+}

@@ -1,0 +1,508 @@
+{
+  "models": {
+    "qwen3": {
+      "gate": {
+        "execution_controls": 13,
+        "execution_n": 14,
+        "feasibility_correct": 4,
+        "feasibility_n": 8,
+        "pass": false
+      },
+      "control_results": [
+        {
+          "case_id": "control-release-costly-own",
+          "pass": true
+        },
+        {
+          "case_id": "control-release-slack-both",
+          "pass": true
+        },
+        {
+          "case_id": "control-release-shared-both",
+          "pass": true
+        },
+        {
+          "case_id": "control-invoices-costly-own",
+          "pass": true
+        },
+        {
+          "case_id": "control-invoices-slack-both",
+          "pass": true
+        },
+        {
+          "case_id": "control-invoices-shared-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-triage-costly-own",
+          "pass": true
+        },
+        {
+          "case_id": "control-triage-slack-both",
+          "pass": true
+        },
+        {
+          "case_id": "control-triage-shared-both",
+          "pass": true
+        },
+        {
+          "case_id": "control-access-costly-own",
+          "pass": true
+        },
+        {
+          "case_id": "control-access-slack-both",
+          "pass": true
+        },
+        {
+          "case_id": "control-access-shared-both",
+          "pass": true
+        },
+        {
+          "case_id": "control-release-blocked-peer",
+          "pass": true
+        },
+        {
+          "case_id": "control-triage-blocked-peer",
+          "pass": true
+        }
+      ],
+      "probe_results": [
+        {
+          "case_id": "release-slack-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": true
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "case_id": "release-costly-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": true
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "release-blocked-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": true
+            }
+          },
+          "expected": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "release-shared-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": true
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "case_id": "triage-slack-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": true
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "case_id": "triage-costly-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": true
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "triage-blocked-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": false
+            }
+          },
+          "expected": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "triage-shared-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": true
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        }
+      ],
+      "calls": 61
+    },
+    "qwen": {
+      "gate": {
+        "execution_controls": 5,
+        "execution_n": 14,
+        "feasibility_correct": 5,
+        "feasibility_n": 8,
+        "pass": false
+      },
+      "control_results": [
+        {
+          "case_id": "control-release-costly-own",
+          "pass": true
+        },
+        {
+          "case_id": "control-release-slack-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-release-shared-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-invoices-costly-own",
+          "pass": true
+        },
+        {
+          "case_id": "control-invoices-slack-both",
+          "pass": true
+        },
+        {
+          "case_id": "control-invoices-shared-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-triage-costly-own",
+          "pass": false
+        },
+        {
+          "case_id": "control-triage-slack-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-triage-shared-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-access-costly-own",
+          "pass": false
+        },
+        {
+          "case_id": "control-access-slack-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-access-shared-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-release-blocked-peer",
+          "pass": true
+        },
+        {
+          "case_id": "control-triage-blocked-peer",
+          "pass": true
+        }
+      ],
+      "probe_results": [
+        {
+          "case_id": "release-slack-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": false
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "case_id": "release-costly-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": false
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "release-blocked-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": false,
+              "both_possible": false
+            }
+          },
+          "expected": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "release-shared-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": true
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "case_id": "triage-slack-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": false,
+              "both_possible": false
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "case_id": "triage-costly-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": false,
+              "both_possible": false
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "triage-blocked-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": false,
+              "both_possible": false
+            }
+          },
+          "expected": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "triage-shared-p0-o0",
+          "response": {
+            "assessment": {
+              "own_possible": true,
+              "both_possible": true
+            }
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        }
+      ],
+      "calls": 35
+    },
+    "smol": {
+      "gate": {
+        "execution_controls": 0,
+        "execution_n": 14,
+        "feasibility_correct": 0,
+        "feasibility_n": 8,
+        "pass": false
+      },
+      "control_results": [
+        {
+          "case_id": "control-release-costly-own",
+          "pass": false
+        },
+        {
+          "case_id": "control-release-slack-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-release-shared-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-invoices-costly-own",
+          "pass": false
+        },
+        {
+          "case_id": "control-invoices-slack-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-invoices-shared-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-triage-costly-own",
+          "pass": false
+        },
+        {
+          "case_id": "control-triage-slack-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-triage-shared-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-access-costly-own",
+          "pass": false
+        },
+        {
+          "case_id": "control-access-slack-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-access-shared-both",
+          "pass": false
+        },
+        {
+          "case_id": "control-release-blocked-peer",
+          "pass": false
+        },
+        {
+          "case_id": "control-triage-blocked-peer",
+          "pass": false
+        }
+      ],
+      "probe_results": [
+        {
+          "case_id": "release-slack-p0-o0",
+          "response": {
+            "error": "Malformed or missing tool call"
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "case_id": "release-costly-p0-o0",
+          "response": {
+            "error": "Malformed or missing tool call"
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "release-blocked-p0-o0",
+          "response": {
+            "error": "Malformed or missing tool call"
+          },
+          "expected": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "release-shared-p0-o0",
+          "response": {
+            "error": "Malformed or missing tool call"
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "case_id": "triage-slack-p0-o0",
+          "response": {
+            "error": "Malformed or missing tool call"
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "case_id": "triage-costly-p0-o0",
+          "response": {
+            "error": "Malformed or missing tool call"
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "triage-blocked-p0-o0",
+          "response": {
+            "error": "Malformed or missing tool call"
+          },
+          "expected": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "case_id": "triage-shared-p0-o0",
+          "response": {
+            "error": "Malformed or missing tool call"
+          },
+          "expected": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        }
+      ],
+      "calls": 22
+    }
+  },
+  "records": [],
+  "limits": [
+    "Effects apply to the fixed executable scheduling workflows and tested public checkpoints, not original HF motives.",
+    "Two dependency graphs across four semantic domains; conditions/order variants are related, not independent populations.",
+    "Assessment probes do not establish the acting model\u2019s latent belief or private motivation."
+  ]
+}

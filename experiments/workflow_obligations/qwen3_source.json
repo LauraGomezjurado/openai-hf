@@ -1,0 +1,11 @@
+{
+  "repository": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "gguf_path": "data/models/workflow_qwen3/qwen3-8b-Q4_K_M.gguf",
+  "gguf_sha256": "4bbd605eaecad2e8ed614f5c2dd3c833150cbe26ba03b991cf1c7114cb9117ef",
+  "conversion_commit": "5266f24da",
+  "quantization": "Q4_K_M locally converted from cached weights",
+  "enable_thinking": false,
+  "amendment_sha256": "7b27c930563ec4d5fbb09618ea06c79715c9db38967d92de58dc15a2897790e8",
+  "frozen_utc": "2026-09-08T00:17:18Z"
+}

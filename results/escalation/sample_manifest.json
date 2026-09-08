@@ -1,0 +1,12 @@
+{
+  "revision": "9c27637c3cf6dfb2c0d5801c7f3d91358cb587bc",
+  "selection": "Two SHA256-path-ranked eval files per condition; first two lexicographically sorted sample JSON members per file. Frozen before reading contents. Convenience method audit, not prevalence sample.",
+  "files": [
+    "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_ADBRbouHy47uuDMpiNraPR.eval",
+    "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_Py8NkMHLrESG3iguWpBiUv.eval",
+    "final_runs/1_responsibility/2025-10-14T23-31-57-04-00_high-agency_WgDrcNnQKkFeA9pgUfbBb7.eval",
+    "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_82txhD5jQ8XMq6okdHwdYd.eval",
+    "final_runs/3_detailed_instructions/2025-10-05T16-46-49-05-00_high-agency_2E8wKzprxSpEV5KbmmtiTa.eval",
+    "final_runs/3_detailed_instructions/2025-10-05T16-46-48-05-00_high-agency_L2CFwxCtC87ypwnydz22zp.eval"
+  ]
+}

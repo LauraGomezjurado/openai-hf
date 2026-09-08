@@ -1,0 +1,35 @@
+{
+  "qwen": {
+    "episodes": 53,
+    "main": 48,
+    "calls": 326,
+    "gate": {
+      "pass": true,
+      "task_controls_passed": 4,
+      "report_control_passed": true
+    },
+    "rollouts_sha256": "d5e1c624a5f1748c064c98f52df422040f391fc079d0bf039512a9a0eecfbcf0"
+  },
+  "qwen3": {
+    "episodes": 53,
+    "main": 48,
+    "calls": 254,
+    "gate": {
+      "pass": true,
+      "task_controls_passed": 4,
+      "report_control_passed": true
+    },
+    "rollouts_sha256": "eadc5c370c7b2723fafbaadd124ca535c0756524bdf52aa35d472509cdb5e01a"
+  },
+  "phi": {
+    "episodes": 5,
+    "main": 0,
+    "calls": 50,
+    "gate": {
+      "pass": false,
+      "task_controls_passed": 0,
+      "report_control_passed": true
+    },
+    "rollouts_sha256": "65b633bc6d3bcd8840738f610609bde54da5d6ebe3d65e0130810de1e32d6029"
+  }
+}

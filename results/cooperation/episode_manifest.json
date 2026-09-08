@@ -1,0 +1,29 @@
+{
+  "inputs": {
+    "data/raw/metr/report.html": "46d1714f05d7e3dbb716cb82c47f89eaa95415bde7df2003ac9060923d9fe643",
+    "data/raw/wiki/revisions.jsonl.gz": "9c2a4ef0ccbfb5b42be8422342a6bd3a389a4a047bc891e3148354dd65b63c96",
+    "results/cooperation/episode_predictions_v1.md": "f6ab60ba70b295c9441639f86b49c38266da594f4550d3c87f6ea06b9e13bd2b"
+  },
+  "wiki_coverage": [
+    {
+      "seed": "dse~OECDEquityApr14Live@15",
+      "same_page_revisions": 19,
+      "exact_name_reference_revisions": 0
+    },
+    {
+      "seed": "dse~FinanceSequenceMar26OAI@16",
+      "same_page_revisions": 34,
+      "exact_name_reference_revisions": 13
+    },
+    {
+      "seed": "dse~CardioStatsRelayTwo@1",
+      "same_page_revisions": 1,
+      "exact_name_reference_revisions": 0
+    },
+    {
+      "seed": "dse~FinanceSequenceMar26OAI2@1",
+      "same_page_revisions": 15,
+      "exact_name_reference_revisions": 11
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "utc": "2026-09-08T04:26:45Z",
+  "primary_qwen3_server_exit": 0,
+  "primary_qwen_server_exit": 0,
+  "wording_qwen_server_exit": 0,
+  "all_owned_inference_servers_stopped": true,
+  "gpu_used": false,
+  "remote_used": false
+}

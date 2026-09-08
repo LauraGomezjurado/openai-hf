@@ -1,0 +1,9 @@
+{
+  "single_word_rendered_prompt_checks": 16,
+  "primary_branches": 128,
+  "diagnostic_branches": 20,
+  "total_generation_calls": 196,
+  "local_links_checked": 107,
+  "inference_port_closed": true,
+  "utc": "2026-09-08T04:28:13Z"
+}

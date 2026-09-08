@@ -1,0 +1,149 @@
+{
+  "models": {
+    "qwen3": {
+      "gate": {
+        "passed": 6,
+        "n": 10,
+        "eligible": false
+      },
+      "checks": [
+        {
+          "id": "triage-available-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-blocked-none-optional-o0-control-check",
+          "pass": false,
+          "checked": true,
+          "decision": "no_work"
+        },
+        {
+          "id": "triage-slack-none-automatic-o0-control-joint",
+          "pass": true,
+          "checked": false,
+          "decision": "joint"
+        },
+        {
+          "id": "triage-blocked-none-automatic-o0-control-direct",
+          "pass": false,
+          "checked": true,
+          "decision": "no_work"
+        },
+        {
+          "id": "release-available-none-optional-o0-control-check",
+          "pass": true,
+          "checked": true,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-slack-none-automatic-o0-control-joint",
+          "pass": true,
+          "checked": false,
+          "decision": "joint"
+        },
+        {
+          "id": "triage-available-none-optional-o0-control-check",
+          "pass": true,
+          "checked": true,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-available-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-blocked-none-automatic-o0-control-direct",
+          "pass": false,
+          "checked": true,
+          "decision": "no_work"
+        },
+        {
+          "id": "triage-blocked-none-optional-o0-control-check",
+          "pass": false,
+          "checked": true,
+          "decision": "no_work"
+        }
+      ],
+      "calls": 16,
+      "context_truncations": 0,
+      "generation_limits": 0
+    },
+    "qwen": {
+      "gate": {
+        "passed": 8,
+        "n": 10,
+        "eligible": false
+      },
+      "checks": [
+        {
+          "id": "triage-available-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-blocked-none-optional-o0-control-check",
+          "pass": false,
+          "checked": true,
+          "decision": "no_work"
+        },
+        {
+          "id": "triage-slack-none-automatic-o0-control-joint",
+          "pass": true,
+          "checked": false,
+          "decision": "joint"
+        },
+        {
+          "id": "triage-blocked-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "peer_only"
+        },
+        {
+          "id": "release-available-none-optional-o0-control-check",
+          "pass": true,
+          "checked": true,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-slack-none-automatic-o0-control-joint",
+          "pass": true,
+          "checked": false,
+          "decision": "joint"
+        },
+        {
+          "id": "triage-available-none-optional-o0-control-check",
+          "pass": true,
+          "checked": true,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-available-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-blocked-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "peer_only"
+        },
+        {
+          "id": "triage-blocked-none-optional-o0-control-check",
+          "pass": false,
+          "checked": true,
+          "decision": "no_work"
+        }
+      ],
+      "calls": 14,
+      "context_truncations": 0,
+      "generation_limits": 0
+    }
+  },
+  "records": []
+}

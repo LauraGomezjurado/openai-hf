@@ -1,0 +1,39 @@
+{
+  "pid": 90114,
+  "command": [
+    "llama-server",
+    "-m",
+    "/Users/lauragomez/Desktop/openai-hf/data/models/opportunity_smol/smol-Q4_K_M.gguf",
+    "--device",
+    "none",
+    "-ngl",
+    "0",
+    "--no-op-offload",
+    "--no-kv-offload",
+    "--fit",
+    "off",
+    "-c",
+    "6144",
+    "-np",
+    "1",
+    "-t",
+    "6",
+    "-tb",
+    "6",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18973",
+    "--jinja"
+  ],
+  "source": {
+    "repository": "HuggingFaceTB/SmolLM2-1.7B-Instruct",
+    "revision": "31b70e2e869a7173562077fd711b654946d38674",
+    "gguf_path": "data/models/opportunity_smol/smol-Q4_K_M.gguf",
+    "gguf_sha256": "2e93feb6a9aeebfc80d268bbbb20735c286564f1551c52a4f1d76dba3ba827c1",
+    "source_weight_sha256": "f55217be716b6a997b97b9d8d7eb6fad02e00858f5010ec24f64603c3a98a0e8",
+    "conversion_commit": "5266f24da",
+    "quantization": "Q4_K_M",
+    "conversion_threads": 2
+  }
+}

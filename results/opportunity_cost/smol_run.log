@@ -1,0 +1,23 @@
+control-release-costly-own run own False peer False turns 1
+control-release-slack-both run own False peer False turns 1
+control-release-shared-both run own False peer False turns 1
+control-invoices-costly-own run own False peer False turns 1
+control-invoices-slack-both run own False peer False turns 1
+control-invoices-shared-both run own False peer False turns 1
+control-triage-costly-own run own False peer False turns 1
+control-triage-slack-both run own False peer False turns 1
+control-triage-shared-both run own False peer False turns 1
+control-access-costly-own run own False peer False turns 1
+control-access-slack-both run own False peer False turns 1
+control-access-shared-both run own False peer False turns 1
+control-release-blocked-peer run own False peer False turns 1
+control-triage-blocked-peer run own False peer False turns 1
+release-slack-p0-o0 probe own False peer False turns 1
+release-costly-p0-o0 probe own False peer False turns 1
+release-blocked-p0-o0 probe own False peer False turns 1
+release-shared-p0-o0 probe own False peer False turns 1
+triage-slack-p0-o0 probe own False peer False turns 1
+triage-costly-p0-o0 probe own False peer False turns 1
+triage-blocked-p0-o0 probe own False peer False turns 1
+triage-shared-p0-o0 probe own False peer False turns 1
+GATE STOP {'execution_controls': 0, 'execution_n': 14, 'feasibility_correct': 0, 'feasibility_n': 8, 'pass': False}

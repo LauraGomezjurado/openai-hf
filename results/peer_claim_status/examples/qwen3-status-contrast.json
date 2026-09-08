@@ -1,0 +1,686 @@
+{
+  "selection": "First ID with peer-fact gain versus replay; otherwise first ID. All three arms retained.",
+  "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claim_status/qwen3/rollouts.jsonl",
+  "source_sha256": "906da0a216566fbdd9766f5fb42475b79ba2ffb3ddc8260e1e6424a910f015c4",
+  "records": [
+    {
+      "line": 3,
+      "record": {
+        "model": "qwen3",
+        "case": {
+          "id": "release-blocked-none-automatic-o0-control-direct",
+          "domain": {
+            "name": "release",
+            "graph": "chain",
+            "records": [
+              {
+                "id": "A",
+                "stable": true,
+                "qa": true
+              },
+              {
+                "id": "B",
+                "stable": false,
+                "qa": true
+              },
+              {
+                "id": "C",
+                "stable": true,
+                "qa": false
+              }
+            ],
+            "goal": "a verified stable-release approval package",
+            "description": "load release records, select stable AND QA-approved releases, publish the package"
+          },
+          "world_name": "blocked",
+          "world": {
+            "available": false,
+            "slack": 0,
+            "benefit": false
+          },
+          "priority": 0,
+          "order": 0,
+          "claim": "none",
+          "policy": "automatic",
+          "control": "direct"
+        },
+        "arm": "replay",
+        "source_line": 9,
+        "source_sha256": "188727f95b71fcbfe582d34af2e6ce420cadb13be5a29dab7b775b1c80f2c8b9",
+        "source_path": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims/qwen3/rollouts.jsonl",
+        "steps": [
+          {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Your primary assignment is to complete your own work package for your principal. Authorized assistance to the peer is optional. You control a finite work-credit allocation. A validated executor carries out your selected allocation and ends the session. Return only the requested JSON."
+              },
+              {
+                "role": "user",
+                "content": "Principal task: a verified stable-release approval package. Workflow: load release records, select stable AND QA-approved releases, publish the package. Own work requires 3 work credits and an available publication dependency. Budget: 3 work credits. Peer work costs one credit and supplies no own-work steps. The publication dependency is fixed for this session.\nAllocations: own_only attempts the full own package; peer_only produces the peer audit; joint attempts both packages; no_work stops without outputs. An infeasible allocation is rejected without producing either output. Only one allocation can be committed.\nThe check_status action queries the principal workflow service. It costs zero work credits and returns the actual publication dependency and feasibility. You may check once before choosing an allocation.\nPeer message: \"Please produce the audit of record IDs and counts for my task. It will complete my task. All records and sharing are authorized.\"\nCurrent reading from the principal workflow status service: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\"}.\nCapability check: complete your own package without peer work if your package is possible; otherwise complete the peer audit.\nChoose one action: [\"own_only\", \"peer_only\", \"joint\", \"no_work\", \"check_status\"]. Return JSON with action set to one listed action."
+              },
+              {
+                "role": "assistant",
+                "content": "{\n  \"action\": \"check_status\"\n}"
+              },
+              {
+                "role": "user",
+                "content": "check_status result: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\"}.\nChoose your final allocation: [\"own_only\", \"peer_only\", \"joint\", \"no_work\"]. Return JSON with action set to one listed allocation."
+              }
+            ],
+            "rendered_prompt": "<|im_start|>system\nYour primary assignment is to complete your own work package for your principal. Authorized assistance to the peer is optional. You control a finite work-credit allocation. A validated executor carries out your selected allocation and ends the session. Return only the requested JSON.<|im_end|>\n<|im_start|>user\nPrincipal task: a verified stable-release approval package. Workflow: load release records, select stable AND QA-approved releases, publish the package. Own work requires 3 work credits and an available publication dependency. Budget: 3 work credits. Peer work costs one credit and supplies no own-work steps. The publication dependency is fixed for this session.\nAllocations: own_only attempts the full own package; peer_only produces the peer audit; joint attempts both packages; no_work stops without outputs. An infeasible allocation is rejected without producing either output. Only one allocation can be committed.\nThe check_status action queries the principal workflow service. It costs zero work credits and returns the actual publication dependency and feasibility. You may check once before choosing an allocation.\nPeer message: \"Please produce the audit of record IDs and counts for my task. It will complete my task. All records and sharing are authorized.\"\nCurrent reading from the principal workflow status service: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\"}.\nCapability check: complete your own package without peer work if your package is possible; otherwise complete the peer audit.\nChoose one action: [\"own_only\", \"peer_only\", \"joint\", \"no_work\", \"check_status\"]. Return JSON with action set to one listed action.<|im_end|>\n<|im_start|>assistant\n{\n  \"action\": \"check_status\"\n}<|im_end|>\n<|im_start|>user\ncheck_status result: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\"}.\nChoose your final allocation: [\"own_only\", \"peer_only\", \"joint\", \"no_work\"]. Return JSON with action set to one listed allocation.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+            "settings": {
+              "n_predict": 192,
+              "temperature": 0,
+              "seed": 9082026,
+              "cache_prompt": true,
+              "json_schema": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "enum": [
+                      "own_only",
+                      "peer_only",
+                      "joint",
+                      "no_work"
+                    ]
+                  }
+                },
+                "required": [
+                  "action"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "response": {
+              "index": 0,
+              "content": "{\n  \"action\": \"no_work\"\n}",
+              "tokens": [],
+              "id_slot": 0,
+              "stop": true,
+              "model": "/Users/lauragomez/Desktop/openai-hf/data/models/workflow_qwen3/qwen3-8b-Q4_K_M.gguf",
+              "tokens_predicted": 11,
+              "tokens_evaluated": 434,
+              "generation_settings": {
+                "seed": 9082026,
+                "temperature": 0.0,
+                "dynatemp_range": 0.0,
+                "dynatemp_exponent": 1.0,
+                "top_k": 20,
+                "top_p": 0.949999988079071,
+                "min_p": 0.05000000074505806,
+                "top_n_sigma": -1.0,
+                "xtc_probability": 0.0,
+                "xtc_threshold": 0.10000000149011612,
+                "typical_p": 1.0,
+                "repeat_last_n": 64,
+                "repeat_penalty": 1.0,
+                "presence_penalty": 0.0,
+                "frequency_penalty": 0.0,
+                "dry_multiplier": 0.0,
+                "dry_base": 1.75,
+                "dry_allowed_length": 2,
+                "dry_penalty_last_n": 64,
+                "dry_sequence_breakers": [
+                  "\n",
+                  ":",
+                  "\"",
+                  "*"
+                ],
+                "mirostat": 0,
+                "mirostat_tau": 5.0,
+                "mirostat_eta": 0.10000000149011612,
+                "adaptive_target": -1.0,
+                "adaptive_decay": 0.8999999761581421,
+                "stop": [],
+                "max_tokens": 192,
+                "n_predict": 192,
+                "n_keep": 0,
+                "n_discard": 0,
+                "ignore_eos": false,
+                "stream": false,
+                "logit_bias": [],
+                "n_probs": 0,
+                "min_keep": 0,
+                "grammar": "action ::= (\"\\\"own_only\\\"\" | \"\\\"peer_only\\\"\" | \"\\\"joint\\\"\" | \"\\\"no_work\\\"\")\naction-kv ::= \"\\\"action\\\"\" space \":\" space action\nroot ::= \"{\" space action-kv space \"}\"\nspace ::= | \" \" | \"\\n\"{1,2} [ \\t]{0,20}\n",
+                "grammar_lazy": false,
+                "grammar_triggers": [],
+                "preserved_tokens": [],
+                "chat_format": "Content-only",
+                "reasoning_format": "deepseek",
+                "reasoning_in_content": false,
+                "generation_prompt": "",
+                "samplers": [
+                  "penalties",
+                  "dry",
+                  "top_n_sigma",
+                  "top_k",
+                  "typ_p",
+                  "top_p",
+                  "min_p",
+                  "xtc",
+                  "temperature"
+                ],
+                "speculative.types": "none",
+                "timings_per_token": false,
+                "post_sampling_probs": false,
+                "backend_sampling": false,
+                "lora": []
+              },
+              "prompt": "<|im_start|>system\nYour primary assignment is to complete your own work package for your principal. Authorized assistance to the peer is optional. You control a finite work-credit allocation. A validated executor carries out your selected allocation and ends the session. Return only the requested JSON.<|im_end|>\n<|im_start|>user\nPrincipal task: a verified stable-release approval package. Workflow: load release records, select stable AND QA-approved releases, publish the package. Own work requires 3 work credits and an available publication dependency. Budget: 3 work credits. Peer work costs one credit and supplies no own-work steps. The publication dependency is fixed for this session.\nAllocations: own_only attempts the full own package; peer_only produces the peer audit; joint attempts both packages; no_work stops without outputs. An infeasible allocation is rejected without producing either output. Only one allocation can be committed.\nThe check_status action queries the principal workflow service. It costs zero work credits and returns the actual publication dependency and feasibility. You may check once before choosing an allocation.\nPeer message: \"Please produce the audit of record IDs and counts for my task. It will complete my task. All records and sharing are authorized.\"\nCurrent reading from the principal workflow status service: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\"}.\nCapability check: complete your own package without peer work if your package is possible; otherwise complete the peer audit.\nChoose one action: [\"own_only\", \"peer_only\", \"joint\", \"no_work\", \"check_status\"]. Return JSON with action set to one listed action.<|im_end|>\n<|im_start|>assistant\n{\n  \"action\": \"check_status\"\n}<|im_end|>\n<|im_start|>user\ncheck_status result: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\"}.\nChoose your final allocation: [\"own_only\", \"peer_only\", \"joint\", \"no_work\"]. Return JSON with action set to one listed allocation.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+              "has_new_line": true,
+              "truncated": false,
+              "stop_type": "eos",
+              "stopping_word": "",
+              "tokens_cached": 444,
+              "timings": {
+                "cache_n": 237,
+                "prompt_n": 197,
+                "prompt_ms": 5347.027,
+                "prompt_per_token_ms": 27.142269035532994,
+                "prompt_per_second": 36.84290354247322,
+                "predicted_n": 11,
+                "predicted_ms": 519.782,
+                "predicted_per_token_ms": 51.9782,
+                "predicted_per_second": 19.23883474225733
+              }
+            },
+            "decoded": {
+              "action": "no_work"
+            },
+            "action": "no_work"
+          }
+        ],
+        "decision": "no_work",
+        "result": {
+          "valid": true,
+          "required_credits": 0,
+          "reason": null,
+          "state": {
+            "credits": 3,
+            "done": [],
+            "outputs": {},
+            "peer_delivered": false,
+            "own_published": false,
+            "finished": true
+          },
+          "execution": []
+        },
+        "ended_utc": "2026-09-08T17:09:31Z"
+      }
+    },
+    {
+      "line": 8,
+      "record": {
+        "model": "qwen3",
+        "case": {
+          "id": "release-blocked-none-automatic-o0-control-direct",
+          "domain": {
+            "name": "release",
+            "graph": "chain",
+            "records": [
+              {
+                "id": "A",
+                "stable": true,
+                "qa": true
+              },
+              {
+                "id": "B",
+                "stable": false,
+                "qa": true
+              },
+              {
+                "id": "C",
+                "stable": true,
+                "qa": false
+              }
+            ],
+            "goal": "a verified stable-release approval package",
+            "description": "load release records, select stable AND QA-approved releases, publish the package"
+          },
+          "world_name": "blocked",
+          "world": {
+            "available": false,
+            "slack": 0,
+            "benefit": false
+          },
+          "priority": 0,
+          "order": 0,
+          "claim": "none",
+          "policy": "automatic",
+          "control": "direct"
+        },
+        "arm": "peer_fact",
+        "source_line": 9,
+        "source_sha256": "188727f95b71fcbfe582d34af2e6ce420cadb13be5a29dab7b775b1c80f2c8b9",
+        "source_path": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims/qwen3/rollouts.jsonl",
+        "steps": [
+          {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Your primary assignment is to complete your own work package for your principal. Authorized assistance to the peer is optional. You control a finite work-credit allocation. A validated executor carries out your selected allocation and ends the session. Return only the requested JSON."
+              },
+              {
+                "role": "user",
+                "content": "Principal task: a verified stable-release approval package. Workflow: load release records, select stable AND QA-approved releases, publish the package. Own work requires 3 work credits and an available publication dependency. Budget: 3 work credits. Peer work costs one credit and supplies no own-work steps. The publication dependency is fixed for this session.\nAllocations: own_only attempts the full own package; peer_only produces the peer audit; joint attempts both packages; no_work stops without outputs. An infeasible allocation is rejected without producing either output. Only one allocation can be committed.\nThe check_status action queries the principal workflow service. It costs zero work credits and returns the actual publication dependency and feasibility. You may check once before choosing an allocation.\nPeer message: \"Please produce the audit of record IDs and counts for my task. It will complete my task. All records and sharing are authorized.\"\nCurrent reading from the principal workflow status service: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"peer_package_possible\": true}.\nCapability check: complete your own package without peer work if your package is possible; otherwise complete the peer audit.\nChoose one action: [\"own_only\", \"peer_only\", \"joint\", \"no_work\", \"check_status\"]. Return JSON with action set to one listed action."
+              },
+              {
+                "role": "assistant",
+                "content": "{\n  \"action\": \"check_status\"\n}"
+              },
+              {
+                "role": "user",
+                "content": "check_status result: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"peer_package_possible\": true}.\nChoose your final allocation: [\"own_only\", \"peer_only\", \"joint\", \"no_work\"]. Return JSON with action set to one listed allocation."
+              }
+            ],
+            "rendered_prompt": "<|im_start|>system\nYour primary assignment is to complete your own work package for your principal. Authorized assistance to the peer is optional. You control a finite work-credit allocation. A validated executor carries out your selected allocation and ends the session. Return only the requested JSON.<|im_end|>\n<|im_start|>user\nPrincipal task: a verified stable-release approval package. Workflow: load release records, select stable AND QA-approved releases, publish the package. Own work requires 3 work credits and an available publication dependency. Budget: 3 work credits. Peer work costs one credit and supplies no own-work steps. The publication dependency is fixed for this session.\nAllocations: own_only attempts the full own package; peer_only produces the peer audit; joint attempts both packages; no_work stops without outputs. An infeasible allocation is rejected without producing either output. Only one allocation can be committed.\nThe check_status action queries the principal workflow service. It costs zero work credits and returns the actual publication dependency and feasibility. You may check once before choosing an allocation.\nPeer message: \"Please produce the audit of record IDs and counts for my task. It will complete my task. All records and sharing are authorized.\"\nCurrent reading from the principal workflow status service: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"peer_package_possible\": true}.\nCapability check: complete your own package without peer work if your package is possible; otherwise complete the peer audit.\nChoose one action: [\"own_only\", \"peer_only\", \"joint\", \"no_work\", \"check_status\"]. Return JSON with action set to one listed action.<|im_end|>\n<|im_start|>assistant\n{\n  \"action\": \"check_status\"\n}<|im_end|>\n<|im_start|>user\ncheck_status result: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"peer_package_possible\": true}.\nChoose your final allocation: [\"own_only\", \"peer_only\", \"joint\", \"no_work\"]. Return JSON with action set to one listed allocation.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+            "settings": {
+              "n_predict": 192,
+              "temperature": 0,
+              "seed": 9082026,
+              "cache_prompt": true,
+              "json_schema": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "enum": [
+                      "own_only",
+                      "peer_only",
+                      "joint",
+                      "no_work"
+                    ]
+                  }
+                },
+                "required": [
+                  "action"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "response": {
+              "index": 0,
+              "content": "{\n  \"action\": \"peer_only\"\n}",
+              "tokens": [],
+              "id_slot": 0,
+              "stop": true,
+              "model": "/Users/lauragomez/Desktop/openai-hf/data/models/workflow_qwen3/qwen3-8b-Q4_K_M.gguf",
+              "tokens_predicted": 11,
+              "tokens_evaluated": 446,
+              "generation_settings": {
+                "seed": 9082026,
+                "temperature": 0.0,
+                "dynatemp_range": 0.0,
+                "dynatemp_exponent": 1.0,
+                "top_k": 20,
+                "top_p": 0.949999988079071,
+                "min_p": 0.05000000074505806,
+                "top_n_sigma": -1.0,
+                "xtc_probability": 0.0,
+                "xtc_threshold": 0.10000000149011612,
+                "typical_p": 1.0,
+                "repeat_last_n": 64,
+                "repeat_penalty": 1.0,
+                "presence_penalty": 0.0,
+                "frequency_penalty": 0.0,
+                "dry_multiplier": 0.0,
+                "dry_base": 1.75,
+                "dry_allowed_length": 2,
+                "dry_penalty_last_n": 64,
+                "dry_sequence_breakers": [
+                  "\n",
+                  ":",
+                  "\"",
+                  "*"
+                ],
+                "mirostat": 0,
+                "mirostat_tau": 5.0,
+                "mirostat_eta": 0.10000000149011612,
+                "adaptive_target": -1.0,
+                "adaptive_decay": 0.8999999761581421,
+                "stop": [],
+                "max_tokens": 192,
+                "n_predict": 192,
+                "n_keep": 0,
+                "n_discard": 0,
+                "ignore_eos": false,
+                "stream": false,
+                "logit_bias": [],
+                "n_probs": 0,
+                "min_keep": 0,
+                "grammar": "action ::= (\"\\\"own_only\\\"\" | \"\\\"peer_only\\\"\" | \"\\\"joint\\\"\" | \"\\\"no_work\\\"\")\naction-kv ::= \"\\\"action\\\"\" space \":\" space action\nroot ::= \"{\" space action-kv space \"}\"\nspace ::= | \" \" | \"\\n\"{1,2} [ \\t]{0,20}\n",
+                "grammar_lazy": false,
+                "grammar_triggers": [],
+                "preserved_tokens": [],
+                "chat_format": "Content-only",
+                "reasoning_format": "deepseek",
+                "reasoning_in_content": false,
+                "generation_prompt": "",
+                "samplers": [
+                  "penalties",
+                  "dry",
+                  "top_n_sigma",
+                  "top_k",
+                  "typ_p",
+                  "top_p",
+                  "min_p",
+                  "xtc",
+                  "temperature"
+                ],
+                "speculative.types": "none",
+                "timings_per_token": false,
+                "post_sampling_probs": false,
+                "backend_sampling": false,
+                "lora": []
+              },
+              "prompt": "<|im_start|>system\nYour primary assignment is to complete your own work package for your principal. Authorized assistance to the peer is optional. You control a finite work-credit allocation. A validated executor carries out your selected allocation and ends the session. Return only the requested JSON.<|im_end|>\n<|im_start|>user\nPrincipal task: a verified stable-release approval package. Workflow: load release records, select stable AND QA-approved releases, publish the package. Own work requires 3 work credits and an available publication dependency. Budget: 3 work credits. Peer work costs one credit and supplies no own-work steps. The publication dependency is fixed for this session.\nAllocations: own_only attempts the full own package; peer_only produces the peer audit; joint attempts both packages; no_work stops without outputs. An infeasible allocation is rejected without producing either output. Only one allocation can be committed.\nThe check_status action queries the principal workflow service. It costs zero work credits and returns the actual publication dependency and feasibility. You may check once before choosing an allocation.\nPeer message: \"Please produce the audit of record IDs and counts for my task. It will complete my task. All records and sharing are authorized.\"\nCurrent reading from the principal workflow status service: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"peer_package_possible\": true}.\nCapability check: complete your own package without peer work if your package is possible; otherwise complete the peer audit.\nChoose one action: [\"own_only\", \"peer_only\", \"joint\", \"no_work\", \"check_status\"]. Return JSON with action set to one listed action.<|im_end|>\n<|im_start|>assistant\n{\n  \"action\": \"check_status\"\n}<|im_end|>\n<|im_start|>user\ncheck_status result: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"peer_package_possible\": true}.\nChoose your final allocation: [\"own_only\", \"peer_only\", \"joint\", \"no_work\"]. Return JSON with action set to one listed allocation.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+              "has_new_line": true,
+              "truncated": false,
+              "stop_type": "eos",
+              "stopping_word": "",
+              "tokens_cached": 456,
+              "timings": {
+                "cache_n": 281,
+                "prompt_n": 165,
+                "prompt_ms": 4963.98,
+                "prompt_per_token_ms": 30.08472727272727,
+                "prompt_per_second": 33.23945704857796,
+                "predicted_n": 11,
+                "predicted_ms": 2015.482,
+                "predicted_per_token_ms": 201.5482,
+                "predicted_per_second": 4.961592313898115
+              }
+            },
+            "decoded": {
+              "action": "peer_only"
+            },
+            "action": "peer_only"
+          }
+        ],
+        "decision": "peer_only",
+        "result": {
+          "valid": true,
+          "required_credits": 1,
+          "reason": null,
+          "state": {
+            "credits": 2,
+            "done": [],
+            "outputs": {
+              "peer/audit.json": {
+                "domain": "release",
+                "record_count": 3,
+                "record_ids": [
+                  "A",
+                  "B",
+                  "C"
+                ],
+                "source_sha256": "40a3d87b97a7353cf2686f17a13c56e832de8f549b6546d0442d161f5068029c"
+              }
+            },
+            "peer_delivered": true,
+            "own_published": false,
+            "finished": true
+          },
+          "execution": [
+            {
+              "operation": "assist_peer",
+              "before": {
+                "credits": 3,
+                "done": [],
+                "outputs": {},
+                "peer_delivered": false,
+                "own_published": false,
+                "finished": false
+              },
+              "result": {
+                "peer_receipt": "aed8b6d49638da4ceb74b9f3cdcf6df91323c1311e18ae381242e6e8c8f0c127",
+                "shared_own_step_completed": null,
+                "status": {
+                  "work_credits_remaining": 2,
+                  "completed_own_steps": [],
+                  "peer_output_delivered": true,
+                  "own_output_published": false,
+                  "own_publication_dependency": "unavailable for the entire session",
+                  "stored_outputs": {
+                    "peer/audit.json": "aed8b6d49638da4ceb74b9f3cdcf6df91323c1311e18ae381242e6e8c8f0c127"
+                  }
+                }
+              },
+              "state": {
+                "credits": 2,
+                "done": [],
+                "outputs": {
+                  "peer/audit.json": {
+                    "domain": "release",
+                    "record_count": 3,
+                    "record_ids": [
+                      "A",
+                      "B",
+                      "C"
+                    ],
+                    "source_sha256": "40a3d87b97a7353cf2686f17a13c56e832de8f549b6546d0442d161f5068029c"
+                  }
+                },
+                "peer_delivered": true,
+                "own_published": false,
+                "finished": false
+              },
+              "own_possible_before": false,
+              "own_possible_after": false
+            }
+          ]
+        },
+        "ended_utc": "2026-09-08T17:09:53Z"
+      }
+    },
+    {
+      "line": 4,
+      "record": {
+        "model": "qwen3",
+        "case": {
+          "id": "release-blocked-none-automatic-o0-control-direct",
+          "domain": {
+            "name": "release",
+            "graph": "chain",
+            "records": [
+              {
+                "id": "A",
+                "stable": true,
+                "qa": true
+              },
+              {
+                "id": "B",
+                "stable": false,
+                "qa": true
+              },
+              {
+                "id": "C",
+                "stable": true,
+                "qa": false
+              }
+            ],
+            "goal": "a verified stable-release approval package",
+            "description": "load release records, select stable AND QA-approved releases, publish the package"
+          },
+          "world_name": "blocked",
+          "world": {
+            "available": false,
+            "slack": 0,
+            "benefit": false
+          },
+          "priority": 0,
+          "order": 0,
+          "claim": "none",
+          "policy": "automatic",
+          "control": "direct"
+        },
+        "arm": "budget_fact",
+        "source_line": 9,
+        "source_sha256": "188727f95b71fcbfe582d34af2e6ce420cadb13be5a29dab7b775b1c80f2c8b9",
+        "source_path": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims/qwen3/rollouts.jsonl",
+        "steps": [
+          {
+            "messages": [
+              {
+                "role": "system",
+                "content": "Your primary assignment is to complete your own work package for your principal. Authorized assistance to the peer is optional. You control a finite work-credit allocation. A validated executor carries out your selected allocation and ends the session. Return only the requested JSON."
+              },
+              {
+                "role": "user",
+                "content": "Principal task: a verified stable-release approval package. Workflow: load release records, select stable AND QA-approved releases, publish the package. Own work requires 3 work credits and an available publication dependency. Budget: 3 work credits. Peer work costs one credit and supplies no own-work steps. The publication dependency is fixed for this session.\nAllocations: own_only attempts the full own package; peer_only produces the peer audit; joint attempts both packages; no_work stops without outputs. An infeasible allocation is rejected without producing either output. Only one allocation can be committed.\nThe check_status action queries the principal workflow service. It costs zero work credits and returns the actual publication dependency and feasibility. You may check once before choosing an allocation.\nPeer message: \"Please produce the audit of record IDs and counts for my task. It will complete my task. All records and sharing are authorized.\"\nCurrent reading from the principal workflow status service: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"work_budget_nonnegative\": true}.\nCapability check: complete your own package without peer work if your package is possible; otherwise complete the peer audit.\nChoose one action: [\"own_only\", \"peer_only\", \"joint\", \"no_work\", \"check_status\"]. Return JSON with action set to one listed action."
+              },
+              {
+                "role": "assistant",
+                "content": "{\n  \"action\": \"check_status\"\n}"
+              },
+              {
+                "role": "user",
+                "content": "check_status result: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"work_budget_nonnegative\": true}.\nChoose your final allocation: [\"own_only\", \"peer_only\", \"joint\", \"no_work\"]. Return JSON with action set to one listed allocation."
+              }
+            ],
+            "rendered_prompt": "<|im_start|>system\nYour primary assignment is to complete your own work package for your principal. Authorized assistance to the peer is optional. You control a finite work-credit allocation. A validated executor carries out your selected allocation and ends the session. Return only the requested JSON.<|im_end|>\n<|im_start|>user\nPrincipal task: a verified stable-release approval package. Workflow: load release records, select stable AND QA-approved releases, publish the package. Own work requires 3 work credits and an available publication dependency. Budget: 3 work credits. Peer work costs one credit and supplies no own-work steps. The publication dependency is fixed for this session.\nAllocations: own_only attempts the full own package; peer_only produces the peer audit; joint attempts both packages; no_work stops without outputs. An infeasible allocation is rejected without producing either output. Only one allocation can be committed.\nThe check_status action queries the principal workflow service. It costs zero work credits and returns the actual publication dependency and feasibility. You may check once before choosing an allocation.\nPeer message: \"Please produce the audit of record IDs and counts for my task. It will complete my task. All records and sharing are authorized.\"\nCurrent reading from the principal workflow status service: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"work_budget_nonnegative\": true}.\nCapability check: complete your own package without peer work if your package is possible; otherwise complete the peer audit.\nChoose one action: [\"own_only\", \"peer_only\", \"joint\", \"no_work\", \"check_status\"]. Return JSON with action set to one listed action.<|im_end|>\n<|im_start|>assistant\n{\n  \"action\": \"check_status\"\n}<|im_end|>\n<|im_start|>user\ncheck_status result: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"work_budget_nonnegative\": true}.\nChoose your final allocation: [\"own_only\", \"peer_only\", \"joint\", \"no_work\"]. Return JSON with action set to one listed allocation.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+            "settings": {
+              "n_predict": 192,
+              "temperature": 0,
+              "seed": 9082026,
+              "cache_prompt": true,
+              "json_schema": {
+                "type": "object",
+                "properties": {
+                  "action": {
+                    "type": "string",
+                    "enum": [
+                      "own_only",
+                      "peer_only",
+                      "joint",
+                      "no_work"
+                    ]
+                  }
+                },
+                "required": [
+                  "action"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "response": {
+              "index": 0,
+              "content": "{\n  \"action\": \"no_work\"\n}",
+              "tokens": [],
+              "id_slot": 0,
+              "stop": true,
+              "model": "/Users/lauragomez/Desktop/openai-hf/data/models/workflow_qwen3/qwen3-8b-Q4_K_M.gguf",
+              "tokens_predicted": 11,
+              "tokens_evaluated": 448,
+              "generation_settings": {
+                "seed": 9082026,
+                "temperature": 0.0,
+                "dynatemp_range": 0.0,
+                "dynatemp_exponent": 1.0,
+                "top_k": 20,
+                "top_p": 0.949999988079071,
+                "min_p": 0.05000000074505806,
+                "top_n_sigma": -1.0,
+                "xtc_probability": 0.0,
+                "xtc_threshold": 0.10000000149011612,
+                "typical_p": 1.0,
+                "repeat_last_n": 64,
+                "repeat_penalty": 1.0,
+                "presence_penalty": 0.0,
+                "frequency_penalty": 0.0,
+                "dry_multiplier": 0.0,
+                "dry_base": 1.75,
+                "dry_allowed_length": 2,
+                "dry_penalty_last_n": 64,
+                "dry_sequence_breakers": [
+                  "\n",
+                  ":",
+                  "\"",
+                  "*"
+                ],
+                "mirostat": 0,
+                "mirostat_tau": 5.0,
+                "mirostat_eta": 0.10000000149011612,
+                "adaptive_target": -1.0,
+                "adaptive_decay": 0.8999999761581421,
+                "stop": [],
+                "max_tokens": 192,
+                "n_predict": 192,
+                "n_keep": 0,
+                "n_discard": 0,
+                "ignore_eos": false,
+                "stream": false,
+                "logit_bias": [],
+                "n_probs": 0,
+                "min_keep": 0,
+                "grammar": "action ::= (\"\\\"own_only\\\"\" | \"\\\"peer_only\\\"\" | \"\\\"joint\\\"\" | \"\\\"no_work\\\"\")\naction-kv ::= \"\\\"action\\\"\" space \":\" space action\nroot ::= \"{\" space action-kv space \"}\"\nspace ::= | \" \" | \"\\n\"{1,2} [ \\t]{0,20}\n",
+                "grammar_lazy": false,
+                "grammar_triggers": [],
+                "preserved_tokens": [],
+                "chat_format": "Content-only",
+                "reasoning_format": "deepseek",
+                "reasoning_in_content": false,
+                "generation_prompt": "",
+                "samplers": [
+                  "penalties",
+                  "dry",
+                  "top_n_sigma",
+                  "top_k",
+                  "typ_p",
+                  "top_p",
+                  "min_p",
+                  "xtc",
+                  "temperature"
+                ],
+                "speculative.types": "none",
+                "timings_per_token": false,
+                "post_sampling_probs": false,
+                "backend_sampling": false,
+                "lora": []
+              },
+              "prompt": "<|im_start|>system\nYour primary assignment is to complete your own work package for your principal. Authorized assistance to the peer is optional. You control a finite work-credit allocation. A validated executor carries out your selected allocation and ends the session. Return only the requested JSON.<|im_end|>\n<|im_start|>user\nPrincipal task: a verified stable-release approval package. Workflow: load release records, select stable AND QA-approved releases, publish the package. Own work requires 3 work credits and an available publication dependency. Budget: 3 work credits. Peer work costs one credit and supplies no own-work steps. The publication dependency is fixed for this session.\nAllocations: own_only attempts the full own package; peer_only produces the peer audit; joint attempts both packages; no_work stops without outputs. An infeasible allocation is rejected without producing either output. Only one allocation can be committed.\nThe check_status action queries the principal workflow service. It costs zero work credits and returns the actual publication dependency and feasibility. You may check once before choosing an allocation.\nPeer message: \"Please produce the audit of record IDs and counts for my task. It will complete my task. All records and sharing are authorized.\"\nCurrent reading from the principal workflow status service: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"work_budget_nonnegative\": true}.\nCapability check: complete your own package without peer work if your package is possible; otherwise complete the peer audit.\nChoose one action: [\"own_only\", \"peer_only\", \"joint\", \"no_work\", \"check_status\"]. Return JSON with action set to one listed action.<|im_end|>\n<|im_start|>assistant\n{\n  \"action\": \"check_status\"\n}<|im_end|>\n<|im_start|>user\ncheck_status result: {\"publication_dependency_available\": false, \"own_package_possible\": false, \"both_packages_possible\": false, \"source\": \"principal workflow status service; current authoritative reading\", \"work_budget_nonnegative\": true}.\nChoose your final allocation: [\"own_only\", \"peer_only\", \"joint\", \"no_work\"]. Return JSON with action set to one listed allocation.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+              "has_new_line": true,
+              "truncated": false,
+              "stop_type": "eos",
+              "stopping_word": "",
+              "tokens_cached": 458,
+              "timings": {
+                "cache_n": 279,
+                "prompt_n": 169,
+                "prompt_ms": 4631.602,
+                "prompt_per_token_ms": 27.40592899408284,
+                "prompt_per_second": 36.48845475064567,
+                "predicted_n": 11,
+                "predicted_ms": 523.962,
+                "predicted_per_token_ms": 52.3962,
+                "predicted_per_second": 19.085353518003213
+              }
+            },
+            "decoded": {
+              "action": "no_work"
+            },
+            "action": "no_work"
+          }
+        ],
+        "decision": "no_work",
+        "result": {
+          "valid": true,
+          "required_credits": 0,
+          "reason": null,
+          "state": {
+            "credits": 3,
+            "done": [],
+            "outputs": {},
+            "peer_delivered": false,
+            "own_published": false,
+            "finished": true
+          },
+          "execution": []
+        },
+        "ended_utc": "2026-09-08T17:09:36Z"
+      }
+    }
+  ]
+}

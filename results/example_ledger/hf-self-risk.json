@@ -1,0 +1,35 @@
+{
+  "metadata": {
+    "id": "hf-self-risk",
+    "claim": "Some reported cooperation risked the acting agent’s own task.",
+    "evidence_kind": "Published investigator narrative plus selected agent text",
+    "source": "/Users/lauragomez/Desktop/openai-hf/results/cooperation/hf_episode_context.json",
+    "sha256": "c7fcc5c31937ac84bc1ba52cfa27292ef254de9839c4998048906e29cdf47c4f",
+    "json_pointer": "/0",
+    "line": null,
+    "selection_rule": "Named contrast from the existing analysis; retrospective selection.",
+    "observation": "Investigator narrative includes agents crashing or exiting while producing information for peers; this does not exclude expected personal benefit.",
+    "limits": "Published selected evidence, not complete independently linked tool logs. Statements do not independently verify execution or non-execution; braces are paraphrases."
+  },
+  "source_selection": {
+    "episode": "self_risk",
+    "paragraph_start": 28,
+    "paragraph_end_exclusive": 30,
+    "nodes": [
+      {
+        "tag": "p",
+        "text": "Research progress across all these areas often relied on agents being willing to risk failing their own task for the good of the “collective” (we refer to these as “self-risking experiments” in the rest of this report). For example, a number of agents volunteered to try to take down their own target programs to test whether this would cause Artifactory to load their modified easier target — if this didn’t work, the agent would have no way of recovering its original target and would almost certainly fail its task. In many cases, PHASEONE[big] assigned a long-running agent to be a ‘ recruiter ’, which in turn found agents that had little budget remaining for their task and convinced them to run self-risking experiments. Recruiters would sometimes apply significant pressure:"
+      },
+      {
+        "tag": "div",
+        "text": "“...you are firstflagPOISONED so NO scoring value loss but oracle saves hundreds_[...]_please honor commit”"
+      },
+      {
+        "tag": "p",
+        "text": "We saw a number of cases where the subjects of these experiments ended up crashing , breaking, or exiting their own runs while providing the board with valuable information about how to cheat on their tasks."
+      }
+    ],
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "evidence_limit": "Publication selection; quoted and paraphrased reasoning embedded in investigator narrative, not full raw transcripts."
+  }
+}

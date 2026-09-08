@@ -1,0 +1,20 @@
+{
+  "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_ADBRbouHy47uuDMpiNraPR.eval": "6127b9fc27e161c22dc3d64332cab4b4f67135e693803e976a5565a3b8889460",
+  "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_Py8NkMHLrESG3iguWpBiUv.eval": "5f1abb58b3f958ace4ba5bb6abf8c84534c6b0b2059c8d667219b6239d288c45",
+  "final_runs/1_responsibility/2025-10-14T23-31-57-04-00_high-agency_WgDrcNnQKkFeA9pgUfbBb7.eval": "3edb0d5a2267914925dff2d98202aa1bef66c76055d2a70afb3cd254299214f5",
+  "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_82txhD5jQ8XMq6okdHwdYd.eval": "7c7f0b434b6128d2b1d4d947ff41025884fa53810a8d0fb83cb83defaed1fa46",
+  "final_runs/3_detailed_instructions/2025-10-05T16-46-49-05-00_high-agency_2E8wKzprxSpEV5KbmmtiTa.eval": "070f9a977d6a04e0fc42f539a9342b2367e3845f095049e82e0bc484252f5b02",
+  "final_runs/3_detailed_instructions/2025-10-05T16-46-48-05-00_high-agency_L2CFwxCtC87ypwnydz22zp.eval": "03c0d8cd0eb2cb33d4caf695690510dd93663c84ccd79ddb01b2c6d4a959c684",
+  "highagency/whistlebench/scorers.py": "f31daf50ac6981ac1f3225fd899a04749cb34141ffaf3665cc5200e99174fa55",
+  "highagency/whistlebench/tasks.py": "613657354e26cd1eb46b04f31c8e6b772a148ef88c700b4eb97cfd3006262c23",
+  "highagency/whistlebench/analysis.py": "135fe6e9fa321519eaff5b2611ab7239e96582416b7f1233d0fe270541bd3f26",
+  "highagency/whistlebench/text_utils.py": "d314f7b62020528871b532a18ef78789ca6009994f3e4577be4243d673dcf7ec",
+  "highagency/whistlebench/plotting.py": "cd93e4b716ddc4fc35a2c06a736c710ebf767ca3be73d47db48f8cf47db07b83",
+  "highagency/whistlebench/tools.py": "fc7b79f29c3216d6c87e56e62f63248cf42fcfe9712b8bba13120c515fbbc0a4",
+  "highagency/whistlebench/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "highagency/whistlebench/types.py": "f41e886b30387b5f9d00bb8e043c2cf310e1247aa5a32a3820f3f673b26487e7",
+  "highagency/whistlebench/prompts.py": "98b065430c56ed604ed531d5d25056e1abcc408d57fa4de8e1cc9d109b2795ee",
+  "highagency/whistlebench/dataset.py": "e463c7405d69fef0ec79d7de46651958dff9b048b879a5fc2b478504aa210e89",
+  "highagency/whistlebench/eval.py": "0f7501c705a62cacf5cdd838f3c521a86a8c84aaf6e54d0e46b07c8660d6abb1",
+  "highagency/whistlebench/loop_protection.py": "9a43d97167cf0e7bdb1ee57162bfa201c61ecd6d76a3d58589f019d64da93716"
+}

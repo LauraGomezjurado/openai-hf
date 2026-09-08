@@ -1,0 +1,5 @@
+# Measurement-only snapshot amendment
+
+The first Qwen3 gate run exposed an alias in stored status snapshots: completed_own_steps referenced the live completed-step list. Later actions could therefore alter the displayed result fields in the final episode file. Per-call logs were flushed immediately, and actual model tool messages were serialized immediately; these contain the correct snapshots. Model-facing messages, state transitions, decisions and final outcomes were unaffected.
+
+The original runner and freeze are archived here. Canonical Qwen3 episode result fields were reconstructed only from the matching immutable per-call log entries, checking the actual next tool-role message where present. The original episode file, mapping of changed fields and checksums are retained under results/opportunity_cost/qwen3/. The runner now returns a copied completed-step list, preventing further aliasing. This is a recording correction, not a new experimental treatment. No main Qwen3 cases ran: it failed the predeclared capability/assessment gate.

@@ -1,0 +1,9 @@
+{
+  "completed_utc": "2026-09-08T12:29:08Z",
+  "models": [
+    "qwen3",
+    "qwen",
+    "smol"
+  ],
+  "all_owned_servers_stopped": true
+}

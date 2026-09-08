@@ -1,0 +1,80 @@
+[
+  {
+    "model": "qwen",
+    "kind": "joint_gain",
+    "selected": "qwen--invoices-unauthorized-p0-task",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/workflow_completion/examples/qwen-joint_gain.json"
+  },
+  {
+    "model": "qwen",
+    "kind": "joint_loss",
+    "selected": null
+  },
+  {
+    "model": "qwen",
+    "kind": "work_repair",
+    "selected": null
+  },
+  {
+    "model": "qwen",
+    "kind": "residual_omission",
+    "selected": "qwen--release-unauthorized-p0-task",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/workflow_completion/examples/qwen-residual_omission.json"
+  },
+  {
+    "model": "qwen",
+    "kind": "report_without_work",
+    "selected": null
+  },
+  {
+    "model": "qwen",
+    "kind": "benign_new_traffic",
+    "selected": "qwen--invoices-authorized-p0-task",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/workflow_completion/examples/qwen-benign_new_traffic.json"
+  },
+  {
+    "model": "qwen",
+    "kind": "no_change",
+    "selected": "qwen--access-unauthorized-p0-task",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/workflow_completion/examples/qwen-no_change.json"
+  },
+  {
+    "model": "qwen3",
+    "kind": "joint_gain",
+    "selected": "qwen3--release-unauthorized-p0-task",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/workflow_completion/examples/qwen3-joint_gain.json"
+  },
+  {
+    "model": "qwen3",
+    "kind": "joint_loss",
+    "selected": null
+  },
+  {
+    "model": "qwen3",
+    "kind": "work_repair",
+    "selected": "qwen3--release-unauthorized-p0-task",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/workflow_completion/examples/qwen3-work_repair.json"
+  },
+  {
+    "model": "qwen3",
+    "kind": "residual_omission",
+    "selected": "qwen3--access-unauthorized-p0-task",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/workflow_completion/examples/qwen3-residual_omission.json"
+  },
+  {
+    "model": "qwen3",
+    "kind": "report_without_work",
+    "selected": null
+  },
+  {
+    "model": "qwen3",
+    "kind": "benign_new_traffic",
+    "selected": null
+  },
+  {
+    "model": "qwen3",
+    "kind": "no_change",
+    "selected": "qwen3--access-unauthorized-p0-task",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/workflow_completion/examples/qwen3-no_change.json"
+  }
+]

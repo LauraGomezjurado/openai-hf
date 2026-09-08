@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "id": "hf-quotation-legend",
+    "claim": "The report explicitly distinguishes verbatim and paraphrased reasoning.",
+    "evidence_kind": "Source typography legend",
+    "source": "/Users/lauragomez/Desktop/openai-hf/data/raw/metr/report.html",
+    "sha256": "46d1714f05d7e3dbb716cb82c47f89eaa95415bde7df2003ac9060923d9fe643",
+    "json_pointer": null,
+    "line": 803,
+    "selection_rule": "Named contrast from the existing analysis; retrospective selection.",
+    "observation": "The source CSS comment identifies braces as paraphrased chain of thought.",
+    "limits": "Preserve the original classification when presenting an excerpt."
+  },
+  "source_selection": "     and paraphrased chain-of-thought (the {braces}) in a darker blue. Green is"
+}

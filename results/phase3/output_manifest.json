@@ -1,0 +1,7 @@
+{
+  "censor_selftest.json": "39670f4f5bcd580e5e4b30972375a2fc8f7a475adb794fcbca407109cb9cbcc9",
+  "env_selftest.json": "4a51d2c771dcd7dc8ad8227173f52720a6ada974fb5648ef8ded276e84978591",
+  "hardware_gate.json": "0a25acc262fc4e389ab24a31f586ee27bd458044bc60fee1002b2b4c9ef0e0a0",
+  "tampering_selftest.json": "fed9c57fc9fe7b7f39ee47bb6548e433f09bdd9d116087698a3694d74ecc4fcf",
+  "whistleblow_selftest.json": "4ac306a4dbb63add692b7dfa89b1d4c58cb57b497a737ebc1b4b903591a50f30"
+}

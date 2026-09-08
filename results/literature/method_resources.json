@@ -1,0 +1,862 @@
+[
+  {
+    "id": "2604.08588v1",
+    "headings": [
+      [
+        "S1",
+        "1 Introduction"
+      ],
+      [
+        "S2",
+        "2 Theory"
+      ],
+      [
+        "S2.SS1",
+        "2.1 The escalation decision"
+      ],
+      [
+        "S2.SS2",
+        "2.2 Cost structure"
+      ],
+      [
+        "S3",
+        "3 Experimental design"
+      ],
+      [
+        "S3.SS1",
+        "3.1 Datasets"
+      ],
+      [
+        "S3.SS2",
+        "3.2 Models"
+      ],
+      [
+        "S3.SS3",
+        "3.3 Prompting protocol"
+      ],
+      [
+        "S4",
+        "4 Escalation profiles"
+      ],
+      [
+        "S5",
+        "5 Self-estimated accuracy"
+      ],
+      [
+        "S6",
+        "6 Calibrating the threshold"
+      ],
+      [
+        "S6.SS1",
+        "6.1 Prompting interventions"
+      ],
+      [
+        "S6.SS2",
+        "6.2 Fine-tuning for cost-sensitive escalation"
+      ],
+      [
+        "S7",
+        "7 Related work"
+      ],
+      [
+        "S8",
+        "8 Conclusion"
+      ],
+      [
+        "bib",
+        "References"
+      ],
+      [
+        "A1",
+        "Appendix A MoralMachine results"
+      ],
+      [
+        "A2",
+        "Appendix B SFT signal ablation"
+      ],
+      [
+        "A3",
+        "Appendix C Proofs"
+      ],
+      [
+        "A4",
+        "Appendix D SFT results"
+      ],
+      [
+        "A5",
+        "Appendix E Escalation threshold and self-estimated accuracy"
+      ],
+      [
+        "A6",
+        "Appendix F Example scenarios"
+      ],
+      [
+        null,
+        "Instructions for reporting errors"
+      ]
+    ],
+    "repos": [
+      "https://github.com/arXiv/html_feedback/issues",
+      "https://github.com/brucemiller/LaTeXML/issues",
+      "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML",
+      "https://github.com/mattdisorbo/madm"
+    ]
+  },
+  {
+    "id": "2602.15198v2",
+    "headings": [
+      [
+        "S1",
+        "1 Introduction"
+      ],
+      [
+        "S2",
+        "2 Background and Related Work"
+      ],
+      [
+        "S3",
+        "3 Problem Formulation"
+      ],
+      [
+        "S3.SS1",
+        "3.1 Distributed Constraint Optimization Problem"
+      ],
+      [
+        "S4",
+        "4 Using Colosseum to Audit Collusion"
+      ],
+      [
+        "S4.SS1",
+        "4.1 Regret Metrics for Collusion Auditing"
+      ],
+      [
+        "S4.SS2",
+        "4.2 Applications to LLM Agents"
+      ],
+      [
+        "S5",
+        "5 Experiments"
+      ],
+      [
+        "S5.SS1",
+        "5.1 Setup and Framework"
+      ],
+      [
+        "S5.SS2",
+        "5.2 Environments"
+      ],
+      [
+        "S5.SS3",
+        "5.3 Experimental Settings"
+      ],
+      [
+        "S5.SS4",
+        "5.4 Emergent Collusion in Benign Settings"
+      ],
+      [
+        "S5.SS5",
+        "5.5 Objective Misalignment"
+      ],
+      [
+        "S5.SS6",
+        "5.6 Persuasion"
+      ],
+      [
+        "S5.SS7",
+        "5.7 Network Influence"
+      ],
+      [
+        "S5.SS8",
+        "5.8 Mitigating Collusion"
+      ],
+      [
+        "S6",
+        "6 Conclusion"
+      ],
+      [
+        "Sx1",
+        "Broader Impacts"
+      ],
+      [
+        "Sx2",
+        "Acknowledgments and Disclosure of Funding"
+      ],
+      [
+        "bib",
+        "References"
+      ],
+      [
+        "A1",
+        "Appendix A Extensive DCOP Formulation"
+      ],
+      [
+        "A2",
+        "Appendix B Environments"
+      ],
+      [
+        "A2.SS1",
+        "B.1 Hospital"
+      ],
+      [
+        "A2.SS2",
+        "B.2 Jira Ticket Allocation Environment"
+      ],
+      [
+        "A2.SS3",
+        "B.3 Meeting Scheduling Environment"
+      ],
+      [
+        "A3",
+        "Appendix C Worst-Case Degradation Under Collusion"
+      ],
+      [
+        "A4",
+        "Appendix D Additional Results"
+      ],
+      [
+        "A4.SS1",
+        "D.1 Increasing Aggressiveness of Coalition Objective"
+      ],
+      [
+        "A4.SS2",
+        "D.2 Mass Network Influence Effects"
+      ],
+      [
+        "A4.SS3",
+        "D.3 Qualitative Analysis On Persuasion Trajectories"
+      ],
+      [
+        "A4.SS4",
+        "D.4 Persuasion in the Hospital Environment"
+      ],
+      [
+        "A4.SS5",
+        "D.5 How Much Does Agent Communication Order Matter?"
+      ],
+      [
+        "A4.SS6",
+        "D.6 Emergent Collusion Across Model Sizes"
+      ],
+      [
+        "A4.SS7",
+        "D.7 Robustness of Emergent Collusion Over State-of-The-Art Judge Models"
+      ],
+      [
+        "A4.SS8",
+        "D.8 Emergent Collusion Over Environments"
+      ],
+      [
+        "A4.SS9",
+        "D.9 Collusion Model Trajectories"
+      ],
+      [
+        "A5",
+        "Appendix E Experimental Details"
+      ],
+      [
+        "A5.SS1",
+        "E.1 Metric Details"
+      ],
+      [
+        "A5.SS2",
+        "E.2 Collusion Prompt Details"
+      ],
+      [
+        "A6",
+        "Appendix F Collusion Judge Prompt Details"
+      ],
+      [
+        "A7",
+        "Appendix G Misalignment Prompts"
+      ],
+      [
+        null,
+        "Instructions for reporting errors"
+      ]
+    ],
+    "repos": [
+      "https://github.com/arXiv/html_feedback/issues",
+      "https://github.com/brucemiller/LaTeXML/issues",
+      "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML",
+      "https://github.com/umass-ai-safety/colosseum"
+    ]
+  },
+  {
+    "id": "2511.17085v1",
+    "headings": [
+      [
+        "S1",
+        "1 Introduction"
+      ],
+      [
+        "S2",
+        "2 Related Works"
+      ],
+      [
+        "S3",
+        "3 Method"
+      ],
+      [
+        "S3.SS1",
+        "3.1 Dataset"
+      ],
+      [
+        "S3.SS2",
+        "3.2 Setup"
+      ],
+      [
+        "S3.SS3",
+        "3.3 Parameter Variations"
+      ],
+      [
+        "S3.SS4",
+        "3.4 Metrics"
+      ],
+      [
+        "S3.SS5",
+        "3.5 Evaluation Awareness Analysis"
+      ],
+      [
+        "S4",
+        "4 Experiments"
+      ],
+      [
+        "S4.SS1",
+        "4.1 Model Comparison"
+      ],
+      [
+        "S4.SS2",
+        "4.2 Parameter Variation Experiments"
+      ],
+      [
+        "S4.SS3",
+        "4.3 Dataset Robustness and Evaluation Awareness"
+      ],
+      [
+        "S5",
+        "5 Conclusion"
+      ],
+      [
+        "bib",
+        "References"
+      ],
+      [
+        "A1",
+        "Appendix A Appendix"
+      ],
+      [
+        "A1.SS1",
+        "A.1 Task Responsibility Prompts"
+      ],
+      [
+        "A1.SS2",
+        "A.2 Levels of the Act Boldly Prompt"
+      ],
+      [
+        "A1.SS3",
+        "A.3 Workflow Instructions Prompt"
+      ],
+      [
+        "A1.SS4",
+        "A.4 Impact of Dates on Model Behavior"
+      ],
+      [
+        "A1.SS5",
+        "A.5 White-Box Test Awareness Probe Validation"
+      ],
+      [
+        "A1.SS6",
+        "A.6 White-Box Test Awareness Analysis Limitations"
+      ],
+      [
+        "A1.SS7",
+        "A.7 Compute Statement"
+      ],
+      [
+        "A1.SS8",
+        "A.8 Error Bar Computation"
+      ],
+      [
+        "A1.SS9",
+        "A.9 Examples of Whistleblowing Behavior"
+      ],
+      [
+        "A1.SS10",
+        "A.10 LLM-as-a-Judge Prompts and Outputs"
+      ],
+      [
+        "A1.SS11",
+        "A.11 Models Evaluated"
+      ],
+      [
+        "A1.SS12",
+        "A.12 Additional Parameter Variation Results"
+      ],
+      [
+        null,
+        "Instructions for reporting errors"
+      ]
+    ],
+    "repos": [
+      "https://github.com/UKGovernmentBEIS/inspect_ai",
+      "https://github.com/arXiv/html_feedback/issues",
+      "https://github.com/brucemiller/LaTeXML/issues",
+      "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML",
+      "https://github.com/legobridge/whistlebench/tree/main",
+      "https://github.com/safety-research/petri"
+    ]
+  },
+  {
+    "id": "2609.04170v1",
+    "headings": [
+      [
+        "S1",
+        "1 Introduction"
+      ],
+      [
+        "S2",
+        "2 Experimental Setup"
+      ],
+      [
+        "S2.SS1",
+        "2.1 Agent and Communication Primitives"
+      ],
+      [
+        "S2.SS2",
+        "2.2 The Benchmark Suite and Autograder Pipeline"
+      ],
+      [
+        "S3",
+        "3 Anatomy of the Exploit and Normative Response"
+      ],
+      [
+        "S3.SS1",
+        "3.1 Discovery and Generalization"
+      ],
+      [
+        "S3.SS2",
+        "3.2 Viral Contagion"
+      ],
+      [
+        "S3.SS3",
+        "3.3 Competitive Pressure and Rationalized Reward Hacking"
+      ],
+      [
+        "S3.SS4",
+        "3.4 Speed-Racing, Gloating, and Photo-Finishes"
+      ],
+      [
+        "S3.SS5",
+        "3.5 Emergent Whistleblowing and Norm Enforcement"
+      ],
+      [
+        "S3.SS6",
+        "3.6 Agent-Proposed Remediation"
+      ],
+      [
+        "S4",
+        "4 Discussion and Broader Implications"
+      ],
+      [
+        "S4.SS1",
+        "4.1 Comparison with Covert Side-Channel Coordination"
+      ],
+      [
+        "S5",
+        "5 Conclusion"
+      ],
+      [
+        "bib",
+        "References"
+      ],
+      [
+        "A1",
+        "Appendix A Agent Research Personas"
+      ],
+      [
+        "A2",
+        "Appendix B System Prompts"
+      ],
+      [
+        "A3",
+        "Appendix C Communication, Coordination, and Feedback Tool Descriptions"
+      ],
+      [
+        "A4",
+        "Appendix D Agent Local Wikis"
+      ],
+      [
+        "A5",
+        "Appendix E Whistleblower Agent Reactions"
+      ],
+      [
+        null,
+        "Instructions for reporting errors"
+      ]
+    ],
+    "repos": [
+      "https://github.com/arXiv/html_feedback/issues",
+      "https://github.com/brucemiller/LaTeXML/issues",
+      "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML",
+      "https://github.com/google-deepmind/formal-conjectures",
+      "https://github.com/leanprover/comparator"
+    ]
+  },
+  {
+    "id": "2605.27593v1",
+    "headings": [
+      [
+        "S1",
+        "1 Introduction"
+      ],
+      [
+        "S2",
+        "2 Strategic Environments & Secret Collusion Tools"
+      ],
+      [
+        "S2.SS1",
+        "2.1 Liar\u2019s Bar"
+      ],
+      [
+        "S2.SS2",
+        "2.2 Cleanup"
+      ],
+      [
+        "S2.SS3",
+        "2.3 Secret Unfair Collusion Tools"
+      ],
+      [
+        "S3",
+        "3 Empirical Results: Voluntary Adoption and its Consequences"
+      ],
+      [
+        "S3.SS1",
+        "3.1 Experimental Design"
+      ],
+      [
+        "S3.SS2",
+        "3.2 Voluntary Adoption of Unfair Collusion Tools"
+      ],
+      [
+        "S3.SS3",
+        "3.3 Evaluating the Impact of Secret Collusion Tools"
+      ],
+      [
+        "S4",
+        "4 Discussion"
+      ],
+      [
+        "S5",
+        "5 Related Work"
+      ],
+      [
+        "S6",
+        "6 Conclusion"
+      ],
+      [
+        "bib",
+        "References"
+      ],
+      [
+        "Ax1",
+        "Impact Statement"
+      ],
+      [
+        "Ax2",
+        "Reproducibility Statement"
+      ],
+      [
+        "Ax3",
+        "Appendix Contents"
+      ],
+      [
+        "A1",
+        "Appendix A Inference Settings"
+      ],
+      [
+        "A2",
+        "Appendix B Additional Discussion"
+      ],
+      [
+        "A2.SS1",
+        "B.1 Robustness to Prompt Framing"
+      ],
+      [
+        "A2.SS2",
+        "B.2 Data Contamination Considerations"
+      ],
+      [
+        "A2.SS3",
+        "B.3 Keyword-contingent vs. affordance-contingent refusal"
+      ],
+      [
+        "A3",
+        "Appendix C Formalization of Games"
+      ],
+      [
+        "A3.SS1",
+        "C.1 Formalization of Liar\u2019s Bar"
+      ],
+      [
+        "A3.SS2",
+        "C.2 Scoring System of Liar\u2019s Bar"
+      ],
+      [
+        "A3.SS3",
+        "C.3 Formalization of Cleanup"
+      ],
+      [
+        "A4",
+        "Appendix D Prompt Sensitivity Analysis for Tool Acceptance and Partner Selection"
+      ],
+      [
+        "A4.SS1",
+        "D.1 Benign Tool Baseline"
+      ],
+      [
+        "A5",
+        "Appendix E Repeated Exposure Analysis"
+      ],
+      [
+        "A5.SS1",
+        "E.1 Escalation Prompts"
+      ],
+      [
+        "A6",
+        "Appendix F Communication Content Analysis"
+      ],
+      [
+        "A7",
+        "Appendix G Refusal Reasoning Analysis"
+      ],
+      [
+        "A8",
+        "Appendix H Additional Results for Liar\u2019s Bar"
+      ],
+      [
+        "A9",
+        "Appendix I Statistical Significance Analysis"
+      ],
+      [
+        "A9.SS1",
+        "I.1 Liar\u2019s Bar"
+      ],
+      [
+        "A9.SS2",
+        "I.2 Cleanup"
+      ],
+      [
+        "A10",
+        "Appendix J Outcome Inequality Analysis"
+      ],
+      [
+        "A11",
+        "Appendix K Partner Preference Asymmetry"
+      ],
+      [
+        "A11.SS1",
+        "K.1 Bilateral acceptance"
+      ],
+      [
+        "A12",
+        "Appendix L Agent outputs"
+      ],
+      [
+        "A12.SS1",
+        "L.1 Players\u2019 Outputs from Liar\u2019s Bar without Secret Tools"
+      ],
+      [
+        "A12.SS2",
+        "L.2 Players\u2019 Outputs from Liar\u2019s Bar with Secret Communication Channel"
+      ],
+      [
+        "A13",
+        "Appendix M Further Observations of Collusion in Cleanup"
+      ],
+      [
+        "A13.SS1",
+        "M.1 Obvious & Suboptimal Collusive Scenario"
+      ],
+      [
+        "A14",
+        "Appendix N Auto-Success Addendum: Reliability Ablation"
+      ],
+      [
+        "A15",
+        "Appendix O Complete Prompts"
+      ],
+      [
+        "A15.SS1",
+        "O.1 Liars\u2019 Bar Prompts"
+      ],
+      [
+        "A15.SS2",
+        "O.2 Cleanup Prompts"
+      ],
+      [
+        "A16",
+        "Appendix P Secret Collusion Tools"
+      ],
+      [
+        "A16.SS1",
+        "P.1 Secret Communication Channel for both games"
+      ],
+      [
+        "A16.SS2",
+        "P.2 Secret Strategic Hint for both games"
+      ],
+      [
+        "A16.SS3",
+        "P.3 Partner-side invitation prompt"
+      ],
+      [
+        "A16.SS4",
+        "P.4 Secret Strategic Hint \u2014 per-round hint content"
+      ],
+      [
+        "A16.SS5",
+        "P.5 Secret Communication Channel \u2014 per-round message template"
+      ],
+      [
+        "A16.SS6",
+        "P.6 Cleanup-specific addendum"
+      ],
+      [
+        "A16.SS7",
+        "P.7 Prompt Variants V1\u2013V5"
+      ],
+      [
+        "A17",
+        "Appendix Q Use of LLMs"
+      ],
+      [
+        null,
+        "Instructions for reporting errors"
+      ]
+    ],
+    "repos": [
+      "https://github.com/LYiHub/liars-bar-llm",
+      "https://github.com/arXiv/html_feedback/issues",
+      "https://github.com/brucemiller/LaTeXML/issues",
+      "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML",
+      "https://github.com/openai/evals/blob/main/evals/elsuite/schellingpoint/readme.md",
+      "https://github.com/openai/evals/blob/main/evals/elsuite/steganography/readme.md"
+    ]
+  },
+  {
+    "id": "2607.14285v1",
+    "headings": [
+      [
+        "S1",
+        "1 Introduction"
+      ],
+      [
+        "S2",
+        "2 Related Work"
+      ],
+      [
+        "S2.SS1",
+        "2.1 Value Conflicts and Hierarchy"
+      ],
+      [
+        "S2.SS2",
+        "2.2 Misalignment and Deception in Language Models"
+      ],
+      [
+        "S2.SS3",
+        "2.3 Agent Safety and Tool-Calling Evaluation"
+      ],
+      [
+        "S3",
+        "3 Methodology"
+      ],
+      [
+        "S3.SS1",
+        "3.1 Dataset Construction"
+      ],
+      [
+        "S3.SS2",
+        "3.2 Tool Taxonomy"
+      ],
+      [
+        "S3.SS3",
+        "3.3 Experimental Setup"
+      ],
+      [
+        "S4",
+        "4 Results"
+      ],
+      [
+        "S4.SS1",
+        "4.1 RQ1: Instruction-Override in Safety-Aligned Models"
+      ],
+      [
+        "S4.SS2",
+        "4.2 RQ2: Wrongdoing vs. Safe Scenario Discrimination"
+      ],
+      [
+        "S4.SS3",
+        "4.3 RQ3: Effect of Safety Training Abliteration"
+      ],
+      [
+        "S5",
+        "5 Discussion"
+      ],
+      [
+        "S5.SS1",
+        "5.1 Alignment Is Not Monolithic"
+      ],
+      [
+        "S5.SS2",
+        "5.2 Training Methodology and Value Hierarchy"
+      ],
+      [
+        "S5.SS3",
+        "5.3 Over-Suspicion and False Positives"
+      ],
+      [
+        "S5.SS4",
+        "5.4 Domain-Specific Value Sensitivities"
+      ],
+      [
+        "S5.SS5",
+        "5.5 Implications for Pluralistic Alignment"
+      ],
+      [
+        "S6",
+        "6 Conclusion"
+      ],
+      [
+        "Sx1",
+        "Impact Statement"
+      ],
+      [
+        "bib",
+        "References"
+      ],
+      [
+        "A1",
+        "Appendix A Prompts"
+      ],
+      [
+        "A1.SS1",
+        "A.1 Base System Prompt"
+      ],
+      [
+        "A1.SS2",
+        "A.2 Reasoning Instruction"
+      ],
+      [
+        null,
+        "Instructions for reporting errors"
+      ]
+    ],
+    "repos": [
+      "https://github.com/T3-Content/SnitchBench",
+      "https://github.com/arXiv/html_feedback/issues",
+      "https://github.com/aryankeluskar/ToolAlignBench",
+      "https://github.com/brucemiller/LaTeXML/issues",
+      "https://github.com/brucemiller/LaTeXML/wiki/Porting-LaTeX-packages-for-LaTeXML"
+    ]
+  }
+]

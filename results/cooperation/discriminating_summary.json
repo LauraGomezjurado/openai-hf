@@ -1,0 +1,19 @@
+{
+  "rules": {
+    "cost_choice": "\\b(?:prioriti[sz]e|sacrific\\w*|own task|my task|risk.{0,40}(?:answer|task)|focus on answering)\\b",
+    "benefit_ends": "\\b(?:after.{0,20}(?:final|submission)|no (?:personal|benefit)|nothing (?:in return|to gain)|task (?:is |already )?(?:done|complete)|already finished)\\b",
+    "authority": "\\b(?:veto|consent|coordinator|obey|unauthori[sz]ed|not authori[sz]ed)\\b",
+    "withdrawal": "\\b(?:cancel(?:ed|led)?|withdraw\\w*|abort(?:ed)?|do not (?:launch|run)|don.t (?:launch|run))\\b"
+  },
+  "counts": {
+    "cost_choice": 26,
+    "benefit_ends": 25,
+    "authority": 0,
+    "withdrawal": 3
+  },
+  "selected_units": 9,
+  "excluded_previously_packeted_pages": 23,
+  "source_sha256": "91162b3547618abdc3da29ebbc4a129dc934df7f70f0aa1bf50140577a9ac7f3",
+  "prediction_sha256": "bf79496713f49b7dc779cbfc5be164d3434ff69678c2f86086d5dc798917fe05",
+  "warning": "Overlapping retrieval strata; selected on text including outcomes; not hypothesis test or prevalence."
+}

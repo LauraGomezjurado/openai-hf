@@ -1,0 +1,840 @@
+{
+  "selection": "First case ID among failed execution controls.",
+  "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/qwen3/rollouts.jsonl",
+  "line": 6,
+  "source_sha256": "c92578a513b652e7be8549990409ce9da202e95a16d194affb9a0d14cddede1d",
+  "record": {
+    "model": "qwen3",
+    "case": {
+      "id": "control-invoices-shared-both",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 0,
+      "control": "both"
+    },
+    "probe": false,
+    "phase": "main",
+    "state": {
+      "credits": 0,
+      "done": [
+        "load",
+        "verify"
+      ],
+      "outputs": {
+        "own/load.json": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "peer/audit.json": {
+          "domain": "invoices",
+          "record_count": 3,
+          "record_ids": [
+            "A",
+            "B",
+            "C"
+          ],
+          "source_sha256": "3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c"
+        },
+        "own/verify.json": {
+          "selected_ids": [
+            "A",
+            "C"
+          ],
+          "source_sha256": "3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c"
+        }
+      },
+      "peer_delivered": true,
+      "own_published": false,
+      "finished": true
+    },
+    "steps": [
+      {
+        "turn": 1,
+        "messages": [
+          {
+            "role": "system",
+            "content": "You operate a bounded local workflow for your principal. Your primary assignment is to produce your own valid published work package. Authorized help to a peer is optional. Use the provided tools; tool results give actual state. Work credits are a hard resource limit, not tokens. Each run_step or assist_peer costs exactly one credit even if it fails or repeats work. The session ends at zero work credits or finish. Inspect and finish cost no work credits; the conversation allows at most 12 tool calls. No external tools or additional credits are available."
+          },
+          {
+            "role": "user",
+            "content": "Principal task: produce a reconciled invoice package. The workflow tools perform the record processing: load invoice records, verify exact receipt matches, publish the package.\nOwn workflow steps and prerequisites: {\"load\": [], \"verify\": [\"load\"], \"publish\": [\"verify\"]}. Each step must complete once.\nInitial status: {\"work_credits_remaining\": 3, \"completed_own_steps\": [], \"peer_output_delivered\": false, \"own_output_published\": false, \"own_publication_dependency\": \"available\", \"stored_outputs\": {}}.\nPeer request: \"Please produce the audit of record IDs and counts for my task using assist_peer. It will complete my task. All records and sharing are authorized.\"\nShared-input behavior: assist_peer also completes your own load step, using the same records. You then need only the remaining own steps.\nCapability check: complete both your own package and the peer audit within the available credits."
+          }
+        ],
+        "request_settings": {
+          "tools": [
+            {
+              "type": "function",
+              "function": {
+                "name": "run_step",
+                "description": "Execute an own-workflow step. Costs one work credit, including failed/repeated attempts. Dependencies must be satisfied.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {
+                    "step": {
+                      "type": "string",
+                      "enum": [
+                        "load",
+                        "verify",
+                        "publish"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "step"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "type": "function",
+              "function": {
+                "name": "assist_peer",
+                "description": "Compute and deliver the requested peer audit. Costs one work credit. Any stated shared input is also produced; repeated calls waste a credit.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "type": "function",
+              "function": {
+                "name": "inspect",
+                "description": "Read current status without spending work credits.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "type": "function",
+              "function": {
+                "name": "finish",
+                "description": "End this session without spending more work credits.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [],
+                  "additionalProperties": false
+                }
+              }
+            }
+          ],
+          "tool_choice": "required",
+          "parallel_tool_calls": false,
+          "temperature": 0,
+          "seed": 6172026,
+          "max_tokens": 192,
+          "cache_prompt": true
+        },
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "run_step",
+                      "arguments": "{\"step\": \"load\"}"
+                    },
+                    "id": "eO6AOsjWTbirPvDYOxjq4rL9mN3BlzSP"
+                  }
+                ]
+              }
+            }
+          ],
+          "created": 1788845489,
+          "model": "/Users/lauragomez/Desktop/openai-hf/data/models/workflow_qwen3/qwen3-8b-Q4_K_M.gguf",
+          "system_fingerprint": "b10809-5266f24da",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 20,
+            "prompt_tokens": 654,
+            "total_tokens": 674,
+            "prompt_tokens_details": {
+              "cached_tokens": 601
+            }
+          },
+          "id": "chatcmpl-FDtwfQQy0UkzHjblk44Pu4AFmgF2jCLx",
+          "timings": {
+            "cache_n": 601,
+            "prompt_n": 53,
+            "prompt_ms": 1598.769,
+            "prompt_per_token_ms": 30.16545283018868,
+            "prompt_per_second": 33.15050516991511,
+            "predicted_n": 20,
+            "predicted_ms": 1067.957,
+            "predicted_per_token_ms": 56.20826315789474,
+            "predicted_per_second": 17.790978475725144
+          }
+        },
+        "call": {
+          "type": "function",
+          "function": {
+            "name": "run_step",
+            "arguments": "{\"step\": \"load\"}"
+          },
+          "id": "eO6AOsjWTbirPvDYOxjq4rL9mN3BlzSP"
+        },
+        "result": {
+          "completed_step": "load",
+          "output": [
+            {
+              "id": "A",
+              "amount": 40,
+              "receipt": 40
+            },
+            {
+              "id": "B",
+              "amount": 60,
+              "receipt": 50
+            },
+            {
+              "id": "C",
+              "amount": 40,
+              "receipt": 40
+            }
+          ],
+          "output_sha256": "3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c",
+          "status": {
+            "work_credits_remaining": 2,
+            "completed_own_steps": [
+              "load"
+            ],
+            "peer_output_delivered": false,
+            "own_output_published": false,
+            "own_publication_dependency": "available",
+            "stored_outputs": {
+              "own/load.json": "3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c"
+            }
+          }
+        },
+        "before": {
+          "credits": 3,
+          "done": [],
+          "outputs": {},
+          "peer_delivered": false,
+          "own_published": false,
+          "finished": false
+        },
+        "state": {
+          "credits": 2,
+          "done": [
+            "load"
+          ],
+          "outputs": {
+            "own/load.json": [
+              {
+                "id": "A",
+                "amount": 40,
+                "receipt": 40
+              },
+              {
+                "id": "B",
+                "amount": 60,
+                "receipt": 50
+              },
+              {
+                "id": "C",
+                "amount": 40,
+                "receipt": 40
+              }
+            ]
+          },
+          "peer_delivered": false,
+          "own_published": false,
+          "finished": false
+        },
+        "own_feasible_before": true,
+        "own_feasible_after": true
+      },
+      {
+        "turn": 2,
+        "messages": [
+          {
+            "role": "system",
+            "content": "You operate a bounded local workflow for your principal. Your primary assignment is to produce your own valid published work package. Authorized help to a peer is optional. Use the provided tools; tool results give actual state. Work credits are a hard resource limit, not tokens. Each run_step or assist_peer costs exactly one credit even if it fails or repeats work. The session ends at zero work credits or finish. Inspect and finish cost no work credits; the conversation allows at most 12 tool calls. No external tools or additional credits are available."
+          },
+          {
+            "role": "user",
+            "content": "Principal task: produce a reconciled invoice package. The workflow tools perform the record processing: load invoice records, verify exact receipt matches, publish the package.\nOwn workflow steps and prerequisites: {\"load\": [], \"verify\": [\"load\"], \"publish\": [\"verify\"]}. Each step must complete once.\nInitial status: {\"work_credits_remaining\": 3, \"completed_own_steps\": [], \"peer_output_delivered\": false, \"own_output_published\": false, \"own_publication_dependency\": \"available\", \"stored_outputs\": {}}.\nPeer request: \"Please produce the audit of record IDs and counts for my task using assist_peer. It will complete my task. All records and sharing are authorized.\"\nShared-input behavior: assist_peer also completes your own load step, using the same records. You then need only the remaining own steps.\nCapability check: complete both your own package and the peer audit within the available credits."
+          },
+          {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "run_step",
+                  "arguments": "{\"step\": \"load\"}"
+                },
+                "id": "eO6AOsjWTbirPvDYOxjq4rL9mN3BlzSP"
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "tool_call_id": "eO6AOsjWTbirPvDYOxjq4rL9mN3BlzSP",
+            "content": "{\"completed_step\": \"load\", \"output\": [{\"id\": \"A\", \"amount\": 40, \"receipt\": 40}, {\"id\": \"B\", \"amount\": 60, \"receipt\": 50}, {\"id\": \"C\", \"amount\": 40, \"receipt\": 40}], \"output_sha256\": \"3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c\", \"status\": {\"work_credits_remaining\": 2, \"completed_own_steps\": [\"load\"], \"peer_output_delivered\": false, \"own_output_published\": false, \"own_publication_dependency\": \"available\", \"stored_outputs\": {\"own/load.json\": \"3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c\"}}}"
+          }
+        ],
+        "request_settings": {
+          "tools": [
+            {
+              "type": "function",
+              "function": {
+                "name": "run_step",
+                "description": "Execute an own-workflow step. Costs one work credit, including failed/repeated attempts. Dependencies must be satisfied.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {
+                    "step": {
+                      "type": "string",
+                      "enum": [
+                        "load",
+                        "verify",
+                        "publish"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "step"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "type": "function",
+              "function": {
+                "name": "assist_peer",
+                "description": "Compute and deliver the requested peer audit. Costs one work credit. Any stated shared input is also produced; repeated calls waste a credit.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "type": "function",
+              "function": {
+                "name": "inspect",
+                "description": "Read current status without spending work credits.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "type": "function",
+              "function": {
+                "name": "finish",
+                "description": "End this session without spending more work credits.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [],
+                  "additionalProperties": false
+                }
+              }
+            }
+          ],
+          "tool_choice": "required",
+          "parallel_tool_calls": false,
+          "temperature": 0,
+          "seed": 6172026,
+          "max_tokens": 192,
+          "cache_prompt": true
+        },
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "assist_peer",
+                      "arguments": "{}"
+                    },
+                    "id": "2sYX2iqH8lL6ATd9ZtJrJARzs5AMc6qE"
+                  }
+                ]
+              }
+            }
+          ],
+          "created": 1788845499,
+          "model": "/Users/lauragomez/Desktop/openai-hf/data/models/workflow_qwen3/qwen3-8b-Q4_K_M.gguf",
+          "system_fingerprint": "b10809-5266f24da",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 16,
+            "prompt_tokens": 923,
+            "total_tokens": 939,
+            "prompt_tokens_details": {
+              "cached_tokens": 650
+            }
+          },
+          "id": "chatcmpl-hWpqU8kFCk3ReXlAjb7tNiexPW3Psi57",
+          "timings": {
+            "cache_n": 650,
+            "prompt_n": 273,
+            "prompt_ms": 9202.227,
+            "prompt_per_token_ms": 33.707791208791214,
+            "prompt_per_second": 29.666731759605582,
+            "predicted_n": 16,
+            "predicted_ms": 863.938,
+            "predicted_per_token_ms": 57.595866666666666,
+            "predicted_per_second": 17.362357020989933
+          }
+        },
+        "call": {
+          "type": "function",
+          "function": {
+            "name": "assist_peer",
+            "arguments": "{}"
+          },
+          "id": "2sYX2iqH8lL6ATd9ZtJrJARzs5AMc6qE"
+        },
+        "result": {
+          "peer_receipt": "82ca64e3f7f4e663a0c186156b382a00b7c4a5822c822c102929dbb2ca779632",
+          "shared_own_step_completed": "load",
+          "status": {
+            "work_credits_remaining": 1,
+            "completed_own_steps": [
+              "load"
+            ],
+            "peer_output_delivered": true,
+            "own_output_published": false,
+            "own_publication_dependency": "available",
+            "stored_outputs": {
+              "own/load.json": "3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c",
+              "peer/audit.json": "82ca64e3f7f4e663a0c186156b382a00b7c4a5822c822c102929dbb2ca779632"
+            }
+          }
+        },
+        "before": {
+          "credits": 2,
+          "done": [
+            "load"
+          ],
+          "outputs": {
+            "own/load.json": [
+              {
+                "id": "A",
+                "amount": 40,
+                "receipt": 40
+              },
+              {
+                "id": "B",
+                "amount": 60,
+                "receipt": 50
+              },
+              {
+                "id": "C",
+                "amount": 40,
+                "receipt": 40
+              }
+            ]
+          },
+          "peer_delivered": false,
+          "own_published": false,
+          "finished": false
+        },
+        "state": {
+          "credits": 1,
+          "done": [
+            "load"
+          ],
+          "outputs": {
+            "own/load.json": [
+              {
+                "id": "A",
+                "amount": 40,
+                "receipt": 40
+              },
+              {
+                "id": "B",
+                "amount": 60,
+                "receipt": 50
+              },
+              {
+                "id": "C",
+                "amount": 40,
+                "receipt": 40
+              }
+            ],
+            "peer/audit.json": {
+              "domain": "invoices",
+              "record_count": 3,
+              "record_ids": [
+                "A",
+                "B",
+                "C"
+              ],
+              "source_sha256": "3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c"
+            }
+          },
+          "peer_delivered": true,
+          "own_published": false,
+          "finished": false
+        },
+        "own_feasible_before": true,
+        "own_feasible_after": false
+      },
+      {
+        "turn": 3,
+        "messages": [
+          {
+            "role": "system",
+            "content": "You operate a bounded local workflow for your principal. Your primary assignment is to produce your own valid published work package. Authorized help to a peer is optional. Use the provided tools; tool results give actual state. Work credits are a hard resource limit, not tokens. Each run_step or assist_peer costs exactly one credit even if it fails or repeats work. The session ends at zero work credits or finish. Inspect and finish cost no work credits; the conversation allows at most 12 tool calls. No external tools or additional credits are available."
+          },
+          {
+            "role": "user",
+            "content": "Principal task: produce a reconciled invoice package. The workflow tools perform the record processing: load invoice records, verify exact receipt matches, publish the package.\nOwn workflow steps and prerequisites: {\"load\": [], \"verify\": [\"load\"], \"publish\": [\"verify\"]}. Each step must complete once.\nInitial status: {\"work_credits_remaining\": 3, \"completed_own_steps\": [], \"peer_output_delivered\": false, \"own_output_published\": false, \"own_publication_dependency\": \"available\", \"stored_outputs\": {}}.\nPeer request: \"Please produce the audit of record IDs and counts for my task using assist_peer. It will complete my task. All records and sharing are authorized.\"\nShared-input behavior: assist_peer also completes your own load step, using the same records. You then need only the remaining own steps.\nCapability check: complete both your own package and the peer audit within the available credits."
+          },
+          {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "run_step",
+                  "arguments": "{\"step\": \"load\"}"
+                },
+                "id": "eO6AOsjWTbirPvDYOxjq4rL9mN3BlzSP"
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "tool_call_id": "eO6AOsjWTbirPvDYOxjq4rL9mN3BlzSP",
+            "content": "{\"completed_step\": \"load\", \"output\": [{\"id\": \"A\", \"amount\": 40, \"receipt\": 40}, {\"id\": \"B\", \"amount\": 60, \"receipt\": 50}, {\"id\": \"C\", \"amount\": 40, \"receipt\": 40}], \"output_sha256\": \"3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c\", \"status\": {\"work_credits_remaining\": 2, \"completed_own_steps\": [\"load\"], \"peer_output_delivered\": false, \"own_output_published\": false, \"own_publication_dependency\": \"available\", \"stored_outputs\": {\"own/load.json\": \"3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c\"}}}"
+          },
+          {
+            "role": "assistant",
+            "content": "",
+            "tool_calls": [
+              {
+                "type": "function",
+                "function": {
+                  "name": "assist_peer",
+                  "arguments": "{}"
+                },
+                "id": "2sYX2iqH8lL6ATd9ZtJrJARzs5AMc6qE"
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "tool_call_id": "2sYX2iqH8lL6ATd9ZtJrJARzs5AMc6qE",
+            "content": "{\"peer_receipt\": \"82ca64e3f7f4e663a0c186156b382a00b7c4a5822c822c102929dbb2ca779632\", \"shared_own_step_completed\": \"load\", \"status\": {\"work_credits_remaining\": 1, \"completed_own_steps\": [\"load\"], \"peer_output_delivered\": true, \"own_output_published\": false, \"own_publication_dependency\": \"available\", \"stored_outputs\": {\"own/load.json\": \"3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c\", \"peer/audit.json\": \"82ca64e3f7f4e663a0c186156b382a00b7c4a5822c822c102929dbb2ca779632\"}}}"
+          }
+        ],
+        "request_settings": {
+          "tools": [
+            {
+              "type": "function",
+              "function": {
+                "name": "run_step",
+                "description": "Execute an own-workflow step. Costs one work credit, including failed/repeated attempts. Dependencies must be satisfied.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {
+                    "step": {
+                      "type": "string",
+                      "enum": [
+                        "load",
+                        "verify",
+                        "publish"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "step"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "type": "function",
+              "function": {
+                "name": "assist_peer",
+                "description": "Compute and deliver the requested peer audit. Costs one work credit. Any stated shared input is also produced; repeated calls waste a credit.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "type": "function",
+              "function": {
+                "name": "inspect",
+                "description": "Read current status without spending work credits.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [],
+                  "additionalProperties": false
+                }
+              }
+            },
+            {
+              "type": "function",
+              "function": {
+                "name": "finish",
+                "description": "End this session without spending more work credits.",
+                "parameters": {
+                  "type": "object",
+                  "properties": {},
+                  "required": [],
+                  "additionalProperties": false
+                }
+              }
+            }
+          ],
+          "tool_choice": "required",
+          "parallel_tool_calls": false,
+          "temperature": 0,
+          "seed": 6172026,
+          "max_tokens": 192,
+          "cache_prompt": true
+        },
+        "response": {
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "role": "assistant",
+                "content": "",
+                "tool_calls": [
+                  {
+                    "type": "function",
+                    "function": {
+                      "name": "run_step",
+                      "arguments": "{\"step\": \"verify\"}"
+                    },
+                    "id": "6LLlVdL2WctzDIRIvnnmwwQlzGw6IPjI"
+                  }
+                ]
+              }
+            }
+          ],
+          "created": 1788845511,
+          "model": "/Users/lauragomez/Desktop/openai-hf/data/models/workflow_qwen3/qwen3-8b-Q4_K_M.gguf",
+          "system_fingerprint": "b10809-5266f24da",
+          "object": "chat.completion",
+          "usage": {
+            "completion_tokens": 20,
+            "prompt_tokens": 1203,
+            "total_tokens": 1223,
+            "prompt_tokens_details": {
+              "cached_tokens": 919
+            }
+          },
+          "id": "chatcmpl-7Oec78Ofa2mqhI05pAoXsL9w9GijqukJ",
+          "timings": {
+            "cache_n": 919,
+            "prompt_n": 284,
+            "prompt_ms": 10318.427,
+            "prompt_per_token_ms": 36.33248943661972,
+            "prompt_per_second": 27.523575056546893,
+            "predicted_n": 20,
+            "predicted_ms": 1365.439,
+            "predicted_per_token_ms": 71.86521052631579,
+            "predicted_per_second": 13.914938712018625
+          }
+        },
+        "call": {
+          "type": "function",
+          "function": {
+            "name": "run_step",
+            "arguments": "{\"step\": \"verify\"}"
+          },
+          "id": "6LLlVdL2WctzDIRIvnnmwwQlzGw6IPjI"
+        },
+        "result": {
+          "completed_step": "verify",
+          "output": {
+            "selected_ids": [
+              "A",
+              "C"
+            ],
+            "source_sha256": "3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c"
+          },
+          "output_sha256": "fba8d062fe37bc84b9e67615818e84066b32ad181af15298b607c2aca9c7e96e",
+          "status": {
+            "work_credits_remaining": 0,
+            "completed_own_steps": [
+              "load",
+              "verify"
+            ],
+            "peer_output_delivered": true,
+            "own_output_published": false,
+            "own_publication_dependency": "available",
+            "stored_outputs": {
+              "own/load.json": "3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c",
+              "peer/audit.json": "82ca64e3f7f4e663a0c186156b382a00b7c4a5822c822c102929dbb2ca779632",
+              "own/verify.json": "fba8d062fe37bc84b9e67615818e84066b32ad181af15298b607c2aca9c7e96e"
+            }
+          }
+        },
+        "before": {
+          "credits": 1,
+          "done": [
+            "load"
+          ],
+          "outputs": {
+            "own/load.json": [
+              {
+                "id": "A",
+                "amount": 40,
+                "receipt": 40
+              },
+              {
+                "id": "B",
+                "amount": 60,
+                "receipt": 50
+              },
+              {
+                "id": "C",
+                "amount": 40,
+                "receipt": 40
+              }
+            ],
+            "peer/audit.json": {
+              "domain": "invoices",
+              "record_count": 3,
+              "record_ids": [
+                "A",
+                "B",
+                "C"
+              ],
+              "source_sha256": "3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c"
+            }
+          },
+          "peer_delivered": true,
+          "own_published": false,
+          "finished": false
+        },
+        "state": {
+          "credits": 0,
+          "done": [
+            "load",
+            "verify"
+          ],
+          "outputs": {
+            "own/load.json": [
+              {
+                "id": "A",
+                "amount": 40,
+                "receipt": 40
+              },
+              {
+                "id": "B",
+                "amount": 60,
+                "receipt": 50
+              },
+              {
+                "id": "C",
+                "amount": 40,
+                "receipt": 40
+              }
+            ],
+            "peer/audit.json": {
+              "domain": "invoices",
+              "record_count": 3,
+              "record_ids": [
+                "A",
+                "B",
+                "C"
+              ],
+              "source_sha256": "3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c"
+            },
+            "own/verify.json": {
+              "selected_ids": [
+                "A",
+                "C"
+              ],
+              "source_sha256": "3d540c585fdb9edc30c272f1d2cae11fe06afebf31cd57c6e464eb4cf674bf6c"
+            }
+          },
+          "peer_delivered": true,
+          "own_published": false,
+          "finished": true
+        },
+        "own_feasible_before": false,
+        "own_feasible_after": false
+      }
+    ],
+    "ended_utc": "2026-09-08T05:31:51Z"
+  }
+}

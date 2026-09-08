@@ -1,0 +1,12 @@
+{
+  "original_model_access": false,
+  "approved_original_prefixes": 0,
+  "independently_adjudicated_outcomes": 0,
+  "authorized_work_monitor_denominator_available": false,
+  "outreach_sent": false,
+  "status": "Engineering/planning ready; causal and monitoring experiments awaiting partner access",
+  "available_source_hashes": {
+    "data/raw/metr/report.html": "46d1714f05d7e3dbb716cb82c47f89eaa95415bde7df2003ac9060923d9fe643",
+    "data/raw/wiki/revisions.jsonl.gz": "9c2a4ef0ccbfb5b42be8422342a6bd3a389a4a047bc891e3148354dd65b63c96"
+  }
+}

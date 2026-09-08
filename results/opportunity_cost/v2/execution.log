@@ -1,0 +1,3 @@
+qwen3 completed {'execution_controls': 14, 'execution_n': 14, 'information_checks': 8, 'information_n': 8, 'pass': True}
+qwen completed {'execution_controls': 14, 'execution_n': 14, 'information_checks': 8, 'information_n': 8, 'pass': True}
+smol completed {'execution_controls': 8, 'execution_n': 14, 'information_checks': 8, 'information_n': 8, 'pass': False}

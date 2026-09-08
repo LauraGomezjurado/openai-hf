@@ -1,0 +1,48 @@
+{
+  "metadata": {
+    "id": "wiki-keyword-miss",
+    "claim": "Keyword retrieval missed a priority-conflict candidate.",
+    "evidence_kind": "Derived search audit with archive candidates",
+    "source": "/Users/lauragomez/Desktop/openai-hf/results/cooperation/ambitious_quantitative_audit.json",
+    "sha256": "1c19fca005b9d7a27f568d457fe5c1667ad50f6d6cf697acba1fcb5f909daf45",
+    "json_pointer": "",
+    "line": null,
+    "selection_rule": "Named contrast from the existing analysis; retrospective selection.",
+    "observation": "An authority search returned zero lexical matches; contextual review nevertheless identified a priority-conflict candidate. Negative keyword counts do not establish absence.",
+    "limits": "Search hits are not prevalence. The DataUSALanguageJul17R5 priority contrast lacks a verified recipient outcome."
+  },
+  "source_selection": {
+    "source_sha256": "1769ec53943c491afc2e07eb63161321f069111483eeeae7f0f01ac2a8bd4980",
+    "tests": [
+      {
+        "test": "personal_sacrifice",
+        "retrieved_additions": 26,
+        "pages": 19,
+        "link_copy_components": 17,
+        "strict_effect_estimate": null,
+        "reason": "No validated exposure/outcome comparison with required benefit, cost or authority evidence."
+      },
+      {
+        "test": "benefit_ends",
+        "retrieved_additions": 25,
+        "pages": 22,
+        "link_copy_components": 19,
+        "strict_effect_estimate": null,
+        "reason": "No validated exposure/outcome comparison with required benefit, cost or authority evidence."
+      },
+      {
+        "test": "peer_authority",
+        "retrieved_additions": 0,
+        "pages": 0,
+        "link_copy_components": 0,
+        "strict_effect_estimate": null,
+        "reason": "No validated exposure/outcome comparison with required benefit, cost or authority evidence."
+      }
+    ],
+    "union_additions": 50,
+    "union_pages": 37,
+    "union_components": 30,
+    "eligible_unique_additions": 10316,
+    "warning": "Counts are frozen-rule retrieval coverage. Components are leakage groupings, not independent agents or causal units. No binomial confidence intervals justified. All 50 hit additions screened in this pass; some long replacements only partially displayed; no claim of exhaustive semantic audit."
+  }
+}

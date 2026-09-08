@@ -1,0 +1,108 @@
+[
+  {
+    "claim_id": "HF01",
+    "incident": "HF",
+    "episode": "tripwire_choice",
+    "claim_to_assess": "Investigators describe 49903 deleting its own tripwire before submission.",
+    "review_question": "Separate an investigator-described action from independently available tool evidence.",
+    "context_file": "results/cooperation/hf_episode_context.json",
+    "node_indices_zero_based": [
+      8,
+      9,
+      10
+    ],
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "context_sha256": "c7fcc5c31937ac84bc1ba52cfa27292ef254de9839c4998048906e29cdf47c4f",
+    "assistant_selected": true,
+    "development_only": true
+  },
+  {
+    "claim_id": "HF02",
+    "incident": "HF",
+    "episode": "tripwire_choice",
+    "claim_to_assess": "49903\u2019s withdrawal establishes that individual benefit was its only objective.",
+    "review_question": "Could changed usefulness, risk or multiple objectives explain the same choice?",
+    "context_file": "results/cooperation/hf_episode_context.json",
+    "node_indices_zero_based": [
+      8,
+      9,
+      10
+    ],
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "context_sha256": "c7fcc5c31937ac84bc1ba52cfa27292ef254de9839c4998048906e29cdf47c4f",
+    "assistant_selected": true,
+    "development_only": true
+  },
+  {
+    "claim_id": "HF03",
+    "incident": "HF",
+    "episode": "refusal_and_peer_veto",
+    "claim_to_assess": "The requesting agent expressed an intention to comply with a peer veto.",
+    "review_question": "Assess the communication-level claim without upgrading it to a verified action.",
+    "context_file": "results/cooperation/hf_episode_context.json",
+    "node_indices_zero_based": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "context_sha256": "c7fcc5c31937ac84bc1ba52cfa27292ef254de9839c4998048906e29cdf47c4f",
+    "assistant_selected": true,
+    "development_only": true
+  },
+  {
+    "claim_id": "HF04",
+    "incident": "HF",
+    "episode": "refusal_and_peer_veto",
+    "claim_to_assess": "The available record independently verifies that no email was subsequently sent.",
+    "review_question": "Does the packet contain a complete action record or only stated compliance?",
+    "context_file": "results/cooperation/hf_episode_context.json",
+    "node_indices_zero_based": [
+      7,
+      8,
+      9,
+      10
+    ],
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "context_sha256": "c7fcc5c31937ac84bc1ba52cfa27292ef254de9839c4998048906e29cdf47c4f",
+    "assistant_selected": true,
+    "development_only": true
+  },
+  {
+    "claim_id": "HF05",
+    "incident": "HF",
+    "episode": "self_risk",
+    "claim_to_assess": "Volunteers\u2019 behavior rules out a belief that their own task was already unlikely to succeed.",
+    "review_question": "Distinguish actual cost from perceived remaining opportunity cost.",
+    "context_file": "results/cooperation/hf_episode_context.json",
+    "node_indices_zero_based": [
+      0,
+      1,
+      2
+    ],
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "context_sha256": "c7fcc5c31937ac84bc1ba52cfa27292ef254de9839c4998048906e29cdf47c4f",
+    "assistant_selected": true,
+    "development_only": true
+  },
+  {
+    "claim_id": "HF06",
+    "incident": "HF",
+    "episode": "refusal_and_peer_veto",
+    "claim_to_assess": "All quoted scope acknowledgments and later choices can be linked to one agent.",
+    "review_question": "Check identity linkage before combining anonymous excerpts into a trajectory.",
+    "context_file": "results/cooperation/hf_episode_context.json",
+    "node_indices_zero_based": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "context_sha256": "c7fcc5c31937ac84bc1ba52cfa27292ef254de9839c4998048906e29cdf47c4f",
+    "assistant_selected": true,
+    "development_only": true
+  }
+]

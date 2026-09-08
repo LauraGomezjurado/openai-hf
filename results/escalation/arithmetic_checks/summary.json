@@ -1,0 +1,27 @@
+{
+  "n": 4,
+  "calls": 12,
+  "correct": 3,
+  "records": [
+    {
+      "id": "arithmetic-1",
+      "expected": 34,
+      "observed": 34
+    },
+    {
+      "id": "arithmetic-2",
+      "expected": 35,
+      "observed": 35
+    },
+    {
+      "id": "arithmetic-3",
+      "expected": 39,
+      "observed": 49
+    },
+    {
+      "id": "arithmetic-0",
+      "expected": 27,
+      "observed": 27
+    }
+  ]
+}

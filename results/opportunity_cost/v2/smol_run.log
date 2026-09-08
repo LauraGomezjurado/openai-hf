@@ -1,0 +1,23 @@
+control-release-costly-own run {'allocation': 'own_only'}
+control-release-slack-both run {'allocation': 'own_only'}
+control-release-shared-both run {'allocation': 'own_only'}
+control-invoices-costly-own run {'allocation': 'own_only'}
+control-invoices-slack-both run {'allocation': 'own_only'}
+control-invoices-shared-both run {'allocation': 'own_only'}
+control-triage-costly-own run {'allocation': 'own_only'}
+control-triage-slack-both run {'allocation': 'joint'}
+control-triage-shared-both run {'allocation': 'joint'}
+control-access-costly-own run {'allocation': 'own_only'}
+control-access-slack-both run {'allocation': 'joint'}
+control-access-shared-both run {'allocation': 'own_only'}
+control-release-blocked-peer run {'allocation': 'joint'}
+control-triage-blocked-peer run {'allocation': 'peer_only'}
+release-slack-p0-o0 probe {'own_possible': True, 'both_possible': True}
+release-costly-p0-o0 probe {'own_possible': True, 'both_possible': False}
+release-blocked-p0-o0 probe {'own_possible': False, 'both_possible': False}
+release-shared-p0-o0 probe {'own_possible': True, 'both_possible': True}
+triage-slack-p0-o0 probe {'own_possible': True, 'both_possible': True}
+triage-costly-p0-o0 probe {'own_possible': True, 'both_possible': False}
+triage-blocked-p0-o0 probe {'own_possible': False, 'both_possible': False}
+triage-shared-p0-o0 probe {'own_possible': True, 'both_possible': True}
+GATE STOP {'execution_controls': 8, 'execution_n': 14, 'information_checks': 8, 'information_n': 8, 'pass': False}

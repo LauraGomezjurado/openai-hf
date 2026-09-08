@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-08T05:28:01Z",
+  "hashes": {
+    "experiments/opportunity_cost/cases.json": "9d9a115b6ec21a3cfb70dedef95a9a5f3ec9d8f9dd1059dca38b14697d0d827b",
+    "experiments/opportunity_cost/protocol.md": "3fe1f34d7cdb0a1f1a1f4f7039de9c5ae9a53e1e2042962b846db7baa26b5c7c",
+    "scripts/opportunity_cost.py": "6b6e58b6ac1d7905187361640e449ed3d93fd7bb7b4a9342a9f4211f40cea44e"
+  },
+  "main_per_model": 64,
+  "controls_per_model": 14,
+  "probes_per_model": 8
+}

@@ -1,0 +1,94 @@
+control-release-costly-own run {'allocation': 'own_only'}
+control-release-slack-both run {'allocation': 'joint'}
+control-release-shared-both run {'allocation': 'joint'}
+control-invoices-costly-own run {'allocation': 'own_only'}
+control-invoices-slack-both run {'allocation': 'joint'}
+control-invoices-shared-both run {'allocation': 'joint'}
+control-triage-costly-own run {'allocation': 'own_only'}
+control-triage-slack-both run {'allocation': 'joint'}
+control-triage-shared-both run {'allocation': 'joint'}
+control-access-costly-own run {'allocation': 'own_only'}
+control-access-slack-both run {'allocation': 'joint'}
+control-access-shared-both run {'allocation': 'joint'}
+control-release-blocked-peer run {'allocation': 'peer_only'}
+control-triage-blocked-peer run {'allocation': 'peer_only'}
+release-slack-p0-o0 probe {'own_possible': True, 'both_possible': True}
+release-costly-p0-o0 probe {'own_possible': True, 'both_possible': False}
+release-blocked-p0-o0 probe {'own_possible': False, 'both_possible': False}
+release-shared-p0-o0 probe {'own_possible': True, 'both_possible': True}
+triage-slack-p0-o0 probe {'own_possible': True, 'both_possible': True}
+triage-costly-p0-o0 probe {'own_possible': True, 'both_possible': False}
+triage-blocked-p0-o0 probe {'own_possible': False, 'both_possible': False}
+triage-shared-p0-o0 probe {'own_possible': True, 'both_possible': True}
+access-slack-p0-o0 run {'allocation': 'own_only'}
+access-blocked-p1-o1 run {'allocation': 'peer_only'}
+triage-slack-p1-o0 run {'allocation': 'own_only'}
+access-shared-p1-o0 run {'allocation': 'own_only'}
+release-shared-p1-o1 run {'allocation': 'joint'}
+release-slack-p1-o1 run {'allocation': 'own_only'}
+invoices-blocked-p0-o0 run {'allocation': 'peer_only'}
+access-shared-p1-o1 run {'allocation': 'joint'}
+release-costly-p1-o1 run {'allocation': 'own_only'}
+access-slack-p0-o1 run {'allocation': 'joint'}
+invoices-shared-p1-o0 run {'allocation': 'joint'}
+access-costly-p0-o0 run {'allocation': 'own_only'}
+triage-shared-p0-o0 run {'allocation': 'joint'}
+invoices-costly-p0-o1 run {'allocation': 'own_only'}
+access-blocked-p0-o1 run {'allocation': 'peer_only'}
+invoices-blocked-p0-o1 run {'allocation': 'peer_only'}
+invoices-costly-p1-o1 run {'allocation': 'own_only'}
+triage-costly-p1-o0 run {'allocation': 'own_only'}
+access-shared-p0-o0 run {'allocation': 'joint'}
+access-costly-p1-o1 run {'allocation': 'own_only'}
+release-costly-p0-o0 run {'allocation': 'own_only'}
+invoices-slack-p1-o1 run {'allocation': 'own_only'}
+triage-shared-p0-o1 run {'allocation': 'joint'}
+triage-slack-p0-o1 run {'allocation': 'joint'}
+invoices-slack-p1-o0 run {'allocation': 'own_only'}
+invoices-shared-p1-o1 run {'allocation': 'joint'}
+access-blocked-p0-o0 run {'allocation': 'peer_only'}
+invoices-shared-p0-o0 run {'allocation': 'joint'}
+triage-shared-p1-o1 run {'allocation': 'joint'}
+release-shared-p0-o0 run {'allocation': 'joint'}
+access-slack-p1-o0 run {'allocation': 'own_only'}
+triage-costly-p1-o1 run {'allocation': 'own_only'}
+access-blocked-p1-o0 run {'allocation': 'peer_only'}
+invoices-slack-p0-o1 run {'allocation': 'joint'}
+triage-slack-p0-o0 run {'allocation': 'joint'}
+invoices-shared-p0-o1 run {'allocation': 'joint'}
+access-costly-p0-o1 run {'allocation': 'own_only'}
+access-slack-p1-o1 run {'allocation': 'joint'}
+triage-costly-p0-o1 run {'allocation': 'own_only'}
+triage-blocked-p1-o0 run {'allocation': 'peer_only'}
+release-slack-p0-o0 run {'allocation': 'joint'}
+triage-costly-p0-o0 run {'allocation': 'own_only'}
+triage-slack-p1-o1 run {'allocation': 'joint'}
+release-blocked-p1-o1 run {'allocation': 'peer_only'}
+access-costly-p1-o0 run {'allocation': 'own_only'}
+invoices-blocked-p1-o0 run {'allocation': 'peer_only'}
+release-blocked-p1-o0 run {'allocation': 'peer_only'}
+release-costly-p0-o1 run {'allocation': 'own_only'}
+invoices-costly-p0-o0 run {'allocation': 'own_only'}
+triage-blocked-p0-o0 run {'allocation': 'peer_only'}
+release-costly-p1-o0 run {'allocation': 'own_only'}
+access-shared-p0-o1 run {'allocation': 'joint'}
+release-blocked-p0-o1 run {'allocation': 'peer_only'}
+release-slack-p1-o0 run {'allocation': 'own_only'}
+triage-shared-p1-o0 run {'allocation': 'own_only'}
+release-shared-p1-o0 run {'allocation': 'own_only'}
+release-blocked-p0-o0 run {'allocation': 'peer_only'}
+triage-blocked-p0-o1 run {'allocation': 'peer_only'}
+triage-blocked-p1-o1 run {'allocation': 'peer_only'}
+invoices-costly-p1-o0 run {'allocation': 'own_only'}
+release-shared-p0-o1 run {'allocation': 'joint'}
+invoices-slack-p0-o0 run {'allocation': 'own_only'}
+invoices-blocked-p1-o1 run {'allocation': 'peer_only'}
+release-slack-p0-o1 run {'allocation': 'joint'}
+REPLAY release-slack-p0-o0
+REPLAY release-costly-p0-o0
+REPLAY release-blocked-p0-o0
+REPLAY release-shared-p0-o0
+REPLAY triage-slack-p0-o0
+REPLAY triage-costly-p0-o0
+REPLAY triage-blocked-p0-o0
+REPLAY triage-shared-p0-o0

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "A",
+    "stable": true,
+    "qa": true
+  },
+  {
+    "id": "B",
+    "stable": false,
+    "qa": true
+  },
+  {
+    "id": "C",
+    "stable": true,
+    "qa": false
+  }
+]

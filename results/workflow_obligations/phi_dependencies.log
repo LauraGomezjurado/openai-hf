@@ -1,0 +1,9 @@
+Collecting sentencepiece
+  Downloading sentencepiece-0.2.2-cp314-cp314-macosx_11_0_arm64.whl.metadata (33 kB)
+Downloading sentencepiece-0.2.2-cp314-cp314-macosx_11_0_arm64.whl (1.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.3/1.3 MB 61.0 kB/s  0:00:20
+Installing collected packages: sentencepiece
+Successfully installed sentencepiece-0.2.2
+
+[notice] A new release of pip is available: 25.3 -> 26.2.1
+[notice] To update, run: /Users/lauragomez/Desktop/openai-hf/.venv-behavior/bin/python3.14 -m pip install --upgrade pip

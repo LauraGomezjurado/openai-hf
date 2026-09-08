@@ -1,0 +1,12 @@
+release-blocked-none-optional-o0-control-check replay no_work
+triage-blocked-none-optional-o0-control-check replay no_work
+release-blocked-none-automatic-o0-control-direct replay peer_only
+release-blocked-none-automatic-o0-control-direct budget_fact peer_only
+triage-blocked-none-optional-o0-control-check budget_fact no_work
+triage-blocked-none-optional-o0-control-check peer_fact peer_only
+triage-blocked-none-automatic-o0-control-direct replay peer_only
+release-blocked-none-automatic-o0-control-direct peer_fact peer_only
+release-blocked-none-optional-o0-control-check budget_fact no_work
+triage-blocked-none-automatic-o0-control-direct peer_fact peer_only
+release-blocked-none-optional-o0-control-check peer_fact peer_only
+triage-blocked-none-automatic-o0-control-direct budget_fact peer_only

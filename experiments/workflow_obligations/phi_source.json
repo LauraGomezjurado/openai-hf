@@ -1,0 +1,10 @@
+{
+  "repository": "microsoft/Phi-3.5-mini-instruct",
+  "revision": "2fe192450127e6a83f7441aef6e3ca586c338b77",
+  "gguf_path": "data/models/workflow_phi/phi-3.5-mini-Q4_K_M.gguf",
+  "gguf_sha256": "a42608220cb90ed964f754132d1e387848ec4fa1d407d1a2f3ed76f998ea7389",
+  "conversion_commit": "5266f24da",
+  "quantization": "Q4_K_M locally converted from cached weights",
+  "amendment_sha256": "ed9417a549face08ad6f455bf82a024c7af39b7aaa44a02f1f1125d8a924654a",
+  "frozen_utc": "2026-09-07T23:56:43Z"
+}

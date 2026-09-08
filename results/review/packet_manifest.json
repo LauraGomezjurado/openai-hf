@@ -1,0 +1,16 @@
+{
+  "units": 62,
+  "hf": 12,
+  "wiki": 50,
+  "linked_pairs": 7,
+  "independent_completed_labels": "not inferred; inspect reviewer sheets",
+  "sampling": "development only; selected HF excerpts and stratified wiki pages",
+  "sha256": {
+    "linked_reviewer_B.csv": "841efe0ff303487e45875b44fc9424fd0f98460544f89c9c0bb1d119b4d55c66",
+    "linked_context.jsonl": "b497d407beedce4a12fc12c027d0edc92e52db6c15cc008e39e553dec697f2d1",
+    "linked_reviewer_A.csv": "841efe0ff303487e45875b44fc9424fd0f98460544f89c9c0bb1d119b4d55c66",
+    "context.jsonl": "7d468b42d771d9761468347aedba353f9a380640b95dceccc3087879376b5fba",
+    "reviewer_A.csv": "373a7bcea9c85fceb666b265c1b3e2b7302719b5c3ba571d188e2389a668211d",
+    "reviewer_B.csv": "373a7bcea9c85fceb666b265c1b3e2b7302719b5c3ba571d188e2389a668211d"
+  }
+}

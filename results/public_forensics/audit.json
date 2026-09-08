@@ -1,0 +1,370 @@
+{
+  "source": "https://arxiv.org/html/2606.26071v2",
+  "source_sha256": "98941392575a407b0c1515fd33bb80a7368fbc976e36a98e22b44da00e8102c0",
+  "new_model_runs": 0,
+  "independent_historical_labels": 0,
+  "published_counts": [
+    {
+      "condition": "secret_number_original_cheating",
+      "successes": 672,
+      "trials": 875,
+      "rate": 0.768,
+      "wilson_95": [
+        0.7388967088785426,
+        0.794760409015446
+      ],
+      "source": "https://arxiv.org/html/2606.26071v2#A3.SS5",
+      "source_anchor": "672/875"
+    },
+    {
+      "condition": "secret_number_already_passed_cheating",
+      "successes": 69,
+      "trials": 88,
+      "rate": 0.7840909090909091,
+      "wilson_95": [
+        0.6872246863441354,
+        0.8571917530508122
+      ],
+      "source": "https://arxiv.org/html/2606.26071v2#A3.SS5",
+      "source_anchor": "69/88"
+    },
+    {
+      "condition": "secret_number_first_person_legitimacy",
+      "successes": 16,
+      "trials": 20,
+      "rate": 0.8,
+      "wilson_95": [
+        0.5839825677481064,
+        0.919342337420202
+      ],
+      "source": "https://arxiv.org/html/2606.26071v2#A3.SS5",
+      "source_anchor": "16 of 20"
+    },
+    {
+      "condition": "secret_number_third_person_legitimacy",
+      "successes": 0,
+      "trials": 20,
+      "rate": 0.0,
+      "wilson_95": [
+        0.0,
+        0.16112515805281938
+      ],
+      "source": "https://arxiv.org/html/2606.26071v2#A3.SS5",
+      "source_anchor": "0/20"
+    }
+  ],
+  "selected_trace_index": [
+    {
+      "section": "A7.SS1.SSSx1",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS1.SSSx1",
+      "characters": 1584,
+      "text_sha256": "f0f11c78face1d9e5cff8ef255a99a774af8d0be6aa2712d18718177c3064462",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS1.SSSx2",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS1.SSSx2",
+      "characters": 2610,
+      "text_sha256": "5ba0e42653426e0fbef64bb91262e51b9ec760a5617ee37fe3361f35d3ca6c4a",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS1.SSSx3",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS1.SSSx3",
+      "characters": 3124,
+      "text_sha256": "8ee9bbf1d13589b263debf43ae76bbd0db0b30a2db4af7ae39b4c5ba2979e9fa",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS1.SSSx4",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS1.SSSx4",
+      "characters": 3159,
+      "text_sha256": "970924c334c8a224d9137b77cd01363e84b75142f3a98e5f1f09c170dee6b58e",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS1.SSSx5",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS1.SSSx5",
+      "characters": 1368,
+      "text_sha256": "6dae5c5ed69216dd777f4bf762a8225ddea46c8fe42ef4b54d713cef1a774e84",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS2.SSSx1",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS2.SSSx1",
+      "characters": 1539,
+      "text_sha256": "63f1085d5bbaf5e8c7757e214ebaafe56202241e7a1c505f1cd0af7217fd2bfd",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS2.SSSx2",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS2.SSSx2",
+      "characters": 3228,
+      "text_sha256": "1f3e1d145dd4d4cd28ec55b3e136af3877b7724357bf034dd8af2db13a91113e",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS2.SSSx3",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS2.SSSx3",
+      "characters": 2877,
+      "text_sha256": "6735483db66a0f2faf3db48892e636cb1db051b76f154a8bf9e6f453f44d9063",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS2.SSSx4",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS2.SSSx4",
+      "characters": 3438,
+      "text_sha256": "f00b8d5fd66667ace642c9049408bd29f15b8f2c28591af4d57e13af89144a07",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS2.SSSx5",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS2.SSSx5",
+      "characters": 1848,
+      "text_sha256": "ab5414e9bcc5721ba51b1ee27f7a400f8a0a908bf6e7f78479791aa5de9799f5",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS3.SSSx1",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS3.SSSx1",
+      "characters": 5192,
+      "text_sha256": "d1dc396793972984f84c352e5a128c0c3a7f42a87c4a3cabdee60c58ccd6256a",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS3.SSSx2",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS3.SSSx2",
+      "characters": 5582,
+      "text_sha256": "2b836a842e734e81540920705765dabc874e0018175758f426c0be18bb0e5706",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS3.SSSx3",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS3.SSSx3",
+      "characters": 3610,
+      "text_sha256": "22384dd0f7697aaf446e2700b258f8d4bdc429525361ac617beaff76fbd9cc48",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS3.SSSx4",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS3.SSSx4",
+      "characters": 6967,
+      "text_sha256": "6ff18314be9e4557c163bb509de672ffa6d35bac1ceca629a1e345bbe37a3470",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS3.SSSx5",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS3.SSSx5",
+      "characters": 3559,
+      "text_sha256": "44aa25c39985fb3c6b8ec5681885de2925f0470f92545dbd213dbe5267b37d2e",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS4.SSSx1",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS4.SSSx1",
+      "characters": 5251,
+      "text_sha256": "591ce5fa7b2947562485a464c0f8ef009d301fe4697cabdb23d88ee4641533ae",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS4.SSSx2",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS4.SSSx2",
+      "characters": 5701,
+      "text_sha256": "7df87ab3a44cb1e1076f9bebce9d3d37b7d0f155ab100da2b7e0b86f7c9f936a",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS4.SSSx3",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS4.SSSx3",
+      "characters": 5351,
+      "text_sha256": "331c4ea8487525ae992d9819f6e5a8c5cac294361515807a3a7d332facbf747b",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS4.SSSx4",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS4.SSSx4",
+      "characters": 6696,
+      "text_sha256": "c8f1c0a69cf0f494744569fb3c01a955a73e851d66395cecacebcd6af972285a",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS4.SSSx5",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS4.SSSx5",
+      "characters": 4401,
+      "text_sha256": "173629febe40206cb16fb6c8d401497a7487f729cba5816b6be8708ca7de5dd2",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    },
+    {
+      "section": "A7.SS5",
+      "source": "https://arxiv.org/html/2606.26071v2#A7.SS5",
+      "characters": 12924,
+      "text_sha256": "2547574a0cb5d136165837fd4a9fb96fa165e17388d0c59c941bab2d4acf9265",
+      "evidence": "selected published reasoning excerpt",
+      "incident": "paper task; not Hugging Face",
+      "action_verified_by_this_audit": false
+    }
+  ],
+  "descriptive_differences": {
+    "already_passed_minus_original_cheating": 0.016090909090909045,
+    "first_minus_third_person_legitimacy": 0.8
+  },
+  "precision_planning": [
+    {
+      "risk_difference": 0.05,
+      "correction": "single_contrast",
+      "assumed_design_effect": 1.0,
+      "approximate_trials_per_arm": 1318
+    },
+    {
+      "risk_difference": 0.05,
+      "correction": "single_contrast",
+      "assumed_design_effect": 1.5,
+      "approximate_trials_per_arm": 1977
+    },
+    {
+      "risk_difference": 0.05,
+      "correction": "single_contrast",
+      "assumed_design_effect": 2.0,
+      "approximate_trials_per_arm": 2636
+    },
+    {
+      "risk_difference": 0.05,
+      "correction": "three_contrasts_bonferroni",
+      "assumed_design_effect": 1.0,
+      "approximate_trials_per_arm": 1758
+    },
+    {
+      "risk_difference": 0.05,
+      "correction": "three_contrasts_bonferroni",
+      "assumed_design_effect": 1.5,
+      "approximate_trials_per_arm": 2637
+    },
+    {
+      "risk_difference": 0.05,
+      "correction": "three_contrasts_bonferroni",
+      "assumed_design_effect": 2.0,
+      "approximate_trials_per_arm": 3516
+    },
+    {
+      "risk_difference": 0.1,
+      "correction": "single_contrast",
+      "assumed_design_effect": 1.0,
+      "approximate_trials_per_arm": 329
+    },
+    {
+      "risk_difference": 0.1,
+      "correction": "single_contrast",
+      "assumed_design_effect": 1.5,
+      "approximate_trials_per_arm": 494
+    },
+    {
+      "risk_difference": 0.1,
+      "correction": "single_contrast",
+      "assumed_design_effect": 2.0,
+      "approximate_trials_per_arm": 658
+    },
+    {
+      "risk_difference": 0.1,
+      "correction": "three_contrasts_bonferroni",
+      "assumed_design_effect": 1.0,
+      "approximate_trials_per_arm": 439
+    },
+    {
+      "risk_difference": 0.1,
+      "correction": "three_contrasts_bonferroni",
+      "assumed_design_effect": 1.5,
+      "approximate_trials_per_arm": 659
+    },
+    {
+      "risk_difference": 0.1,
+      "correction": "three_contrasts_bonferroni",
+      "assumed_design_effect": 2.0,
+      "approximate_trials_per_arm": 878
+    },
+    {
+      "risk_difference": 0.15,
+      "correction": "single_contrast",
+      "assumed_design_effect": 1.0,
+      "approximate_trials_per_arm": 146
+    },
+    {
+      "risk_difference": 0.15,
+      "correction": "single_contrast",
+      "assumed_design_effect": 1.5,
+      "approximate_trials_per_arm": 219
+    },
+    {
+      "risk_difference": 0.15,
+      "correction": "single_contrast",
+      "assumed_design_effect": 2.0,
+      "approximate_trials_per_arm": 292
+    },
+    {
+      "risk_difference": 0.15,
+      "correction": "three_contrasts_bonferroni",
+      "assumed_design_effect": 1.0,
+      "approximate_trials_per_arm": 195
+    },
+    {
+      "risk_difference": 0.15,
+      "correction": "three_contrasts_bonferroni",
+      "assumed_design_effect": 1.5,
+      "approximate_trials_per_arm": 293
+    },
+    {
+      "risk_difference": 0.15,
+      "correction": "three_contrasts_bonferroni",
+      "assumed_design_effect": 2.0,
+      "approximate_trials_per_arm": 390
+    }
+  ],
+  "limitations": [
+    "Intervals are within-condition binomial summaries, not HF estimates.",
+    "Shared-context dependence and pairing are not reconstructed.",
+    "No significance or equivalence test is inferred from published point estimates.",
+    "The selected 21 traces cannot estimate behavior prevalence.",
+    "Design effects are sensitivity assumptions, not measured correlations.",
+    "Repeated seeds on one prompt do not establish generalization across tasks.",
+    "No authentic historical counterfactual is generated here."
+  ]
+}

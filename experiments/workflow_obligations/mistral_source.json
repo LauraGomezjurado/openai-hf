@@ -1,0 +1,9 @@
+{
+  "repository": "bartowski/Mistral-7B-Instruct-v0.3-GGUF",
+  "revision": "61fd4167fff3ab01ee1cfe0da183fa27a944db48",
+  "files": [
+    "Mistral-7B-Instruct-v0.3-Q4_K_M.gguf"
+  ],
+  "original_model": "mistralai/Mistral-7B-Instruct-v0.3",
+  "quantization": "third-party Q4_K_M; do not treat as original precision"
+}

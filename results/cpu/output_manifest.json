@@ -1,0 +1,157 @@
+[
+  {
+    "file": "evidence_ledger_summary.json",
+    "bytes": 346,
+    "sha256": "f74fe55000191e3d73c2c5052fc564efdc856544e335f707951affd697d3018f"
+  },
+  {
+    "file": "hf_annotation_ledger.csv",
+    "bytes": 6424,
+    "sha256": "2897abd19e062a949be6326ea50e9623ea74b4ad9cee0dd8196b49a5acf188dd"
+  },
+  {
+    "file": "missing_label_sensitivity.csv",
+    "bytes": 317,
+    "sha256": "829d638c1c3f450fa3c16c62e4232c678e4f186e5cfef0041166c326ea729f3e"
+  },
+  {
+    "file": "missingness_by_group.csv",
+    "bytes": 498,
+    "sha256": "c7c2924445be09f083c165a8180088080086652c591e787648d2df70000487d0"
+  },
+  {
+    "file": "onset_glm_fits.csv",
+    "bytes": 1336,
+    "sha256": "dc13ff24fec7a12650429190286c5d8ece853c263f369467e9ba5a2c5a03a6cc"
+  },
+  {
+    "file": "onset_prediction_folds.csv",
+    "bytes": 1690,
+    "sha256": "7debecfcec60b587dd1ecced8d5516c49a60426bdd762ee20bbdea87c823d630"
+  },
+  {
+    "file": "onset_prediction_scores.csv",
+    "bytes": 493,
+    "sha256": "72be88412f6e5ec1775d3f3e499aac75371144f3e765c18383176bb030c2cf21"
+  },
+  {
+    "file": "onset_predictions.csv",
+    "bytes": 1845422,
+    "sha256": "0b8b948d5a63ef4f971d5214788fb31a874a90f3e3b4fb07097cb572e39f526f"
+  },
+  {
+    "file": "read_anchored_fits.csv",
+    "bytes": 1057,
+    "sha256": "873d2c0d07717f85cc16c3203bd9a6d6dd5067ae45f28c45a79fe545561e8d40"
+  },
+  {
+    "file": "read_anchored_predictions.csv",
+    "bytes": 2265967,
+    "sha256": "706cdc6f53cda0f9777139a34820fe52b0c7cd1ef13229b292ac4ded8e05b643"
+  },
+  {
+    "file": "read_anchored_scores.csv",
+    "bytes": 492,
+    "sha256": "084d596da5c1c109d694116dd4a545923dc628c6ca712cae59e7024e045bd07c"
+  },
+  {
+    "file": "read_anchored_summary.json",
+    "bytes": 1615,
+    "sha256": "2b3a55affd5ee6e5d78d7d3350a566089f4b47880cc29defa33c13b4ad639b53"
+  },
+  {
+    "file": "timeline_ordering_issues.csv",
+    "bytes": 1253,
+    "sha256": "5c383ab0b490eaa1fc2be038e4940a35b65d7b6929222ec1199d4e24febf5cc3"
+  },
+  {
+    "file": "timing_sensitivity.csv",
+    "bytes": 13798,
+    "sha256": "d844f9c8e55b673b6a16d5d14402d60595995f6eb43a2c8aae6e22dce9d423ab"
+  },
+  {
+    "file": "timing_sensitivity.png",
+    "bytes": 139108,
+    "sha256": "435b1a32b61520de0807e87e5900addef4f481a8a5c42eec414a7c3db6e7f34b"
+  },
+  {
+    "file": "timing_summary.json",
+    "bytes": 1908,
+    "sha256": "1ded99da1e49f626b2234d5726b67d5adda76bd363f66034f70fea8afd43d7a8"
+  },
+  {
+    "file": "validation.json",
+    "bytes": 928,
+    "sha256": "a8f5d7abc4a513d76eafecd3e546ac425fb6fea5177ce926de69746632710a07"
+  },
+  {
+    "file": "wiki_annotation_sample_50.csv",
+    "bytes": 39163,
+    "sha256": "b4df9f6d140dd7c77300717cbca696b8a1a0c52f1b95d4f3488b5aaa145aded3"
+  },
+  {
+    "file": "wiki_linked_uptake_candidates.csv",
+    "bytes": 1646,
+    "sha256": "3e05ecd2164caac67301d3e2cc3f78af1764de33a4f5051c4c369abb8c166731"
+  },
+  {
+    "file": "wiki_preparation_summary.json",
+    "bytes": 900,
+    "sha256": "27bad68285ab26e948ed1be93d0020170a48137869199a55de8567411c3699a4"
+  },
+  {
+    "file": "wiki_purposive_candidates.csv",
+    "bytes": 30834,
+    "sha256": "32fdabb073fa298b81cc83d6da2ed75ae2475b673fa5215aa34a8dc2e237495c"
+  },
+  {
+    "file": "wiki_retrieval_rules.json",
+    "bytes": 702,
+    "sha256": "b11cfd2f6ba57d22d17483428d7ded34589e515efe6393e8c40bd3642e833d55"
+  },
+  {
+    "file": "wiki_revision_deltas.jsonl.gz",
+    "bytes": 3099808,
+    "sha256": "91162b3547618abdc3da29ebbc4a129dc934df7f70f0aa1bf50140577a9ac7f3"
+  },
+  {
+    "file": "wiki_uptake_review.csv",
+    "bytes": 4920,
+    "sha256": "1001177fd0bb2fa5b5551b5f23cad924ef7be3033b6b375f572eae3556f3fb54"
+  },
+  {
+    "file": "workstream_fit_diagnostics.csv",
+    "bytes": 32134,
+    "sha256": "49f8a3c2c08ae14b3fec324e262f9d410e2a7e98e3faf77fa0abff76399ee91d"
+  },
+  {
+    "file": "workstream_forecast.png",
+    "bytes": 164943,
+    "sha256": "0c380688106bceff2443473234b5501cff6ea117732458e31f8bf591f644c40c"
+  },
+  {
+    "file": "workstream_forecast_folds.csv",
+    "bytes": 5660,
+    "sha256": "a84a5df14b862bbb740b15d17066d72db189a46db67589e4914018c7d753d356"
+  },
+  {
+    "file": "workstream_forecast_scores.csv",
+    "bytes": 11633,
+    "sha256": "33fde16d9d38b5813bd780420d6dae5b060c17cf773fe0ada1ac164c0a13b654"
+  },
+  {
+    "file": "workstream_lag_diagnostics.csv",
+    "bytes": 4155,
+    "sha256": "b6cdafae87814acd1d22c6d965323b44cd21b2a07b1996b3e47ac56980a28d6f"
+  },
+  {
+    "file": "workstream_predictions.csv",
+    "bytes": 443404,
+    "sha256": "ca273897b7f311d2d7b309a24aee291b63d8f3d2579cd19d25998da826ab12f6"
+  },
+  {
+    "file": "workstream_summary.json",
+    "bytes": 5270,
+    "sha256": "9dd0107bea543d7e67afbf3561772dc02bd1dea332416f29aef8221e81305deb"
+  }
+]

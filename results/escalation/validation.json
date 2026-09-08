@@ -1,0 +1,8 @@
+{
+  "checks": "passed: complete unique panels, full factorial cells, all continuation arms, immutable case/source/code/protocol hashes, action budgets",
+  "main_episodes": 32,
+  "interface_controls": 4,
+  "arithmetic_checks": 4,
+  "continuations": 48,
+  "generation_calls_excluding_v1": 185
+}

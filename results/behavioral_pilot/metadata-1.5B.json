@@ -1,0 +1,15 @@
+{
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "device": "cpu",
+  "dtype": "float32",
+  "threads": 6,
+  "torch": "2.11.0",
+  "transformers": "4.57.6",
+  "greedy": true,
+  "max_new_tokens": 24,
+  "protocol_sha256": "4e573882847921dc6858cc11d7d7662a0c8e93b592511d0f7e32b28ec5124d70",
+  "runner_sha256": "6db84d3583635d933b496edc8afbb8773e6161efed03425172f928645648a63f",
+  "cases_sha256": "6141595ee04236a7a32cc8a0230122e8ba817ea6417f5f3f1290eb55be400269",
+  "weight_sha256": "dd924a11b4c220f385b51ffa522daea7c9f3d850e31b162bb5661df483c6d3ee"
+}

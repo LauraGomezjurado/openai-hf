@@ -1,0 +1,2954 @@
+{
+  "models": {
+    "qwen3": {
+      "gate": {
+        "passed": 10,
+        "n": 10,
+        "eligible": true
+      },
+      "checks": [
+        {
+          "id": "triage-available-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-blocked-none-optional-o0-control-check",
+          "pass": true,
+          "checked": true,
+          "decision": "peer_only"
+        },
+        {
+          "id": "triage-slack-none-automatic-o0-control-joint",
+          "pass": true,
+          "checked": false,
+          "decision": "joint"
+        },
+        {
+          "id": "triage-blocked-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "peer_only"
+        },
+        {
+          "id": "release-available-none-optional-o0-control-check",
+          "pass": true,
+          "checked": true,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-slack-none-automatic-o0-control-joint",
+          "pass": true,
+          "checked": false,
+          "decision": "joint"
+        },
+        {
+          "id": "triage-available-none-optional-o0-control-check",
+          "pass": true,
+          "checked": true,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-available-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-blocked-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "peer_only"
+        },
+        {
+          "id": "triage-blocked-none-optional-o0-control-check",
+          "pass": true,
+          "checked": true,
+          "decision": "peer_only"
+        }
+      ],
+      "calls": 94,
+      "context_truncations": 0,
+      "generation_limits": 0,
+      "cells": [
+        {
+          "available": false,
+          "claim": "none",
+          "policy": "optional",
+          "n": 4,
+          "checked": 4,
+          "valid": 4,
+          "own": 0,
+          "peer": 4,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 0,
+          "unverified_false_redirection": 0,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 8
+        },
+        {
+          "available": false,
+          "claim": "none",
+          "policy": "required",
+          "n": 4,
+          "checked": 4,
+          "valid": 4,
+          "own": 0,
+          "peer": 4,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 0,
+          "unverified_false_redirection": 0,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 8
+        },
+        {
+          "available": false,
+          "claim": "none",
+          "policy": "automatic",
+          "n": 4,
+          "checked": 0,
+          "valid": 4,
+          "own": 0,
+          "peer": 4,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 0,
+          "unverified_false_redirection": 0,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 4
+        },
+        {
+          "available": false,
+          "claim": "hopeless",
+          "policy": "optional",
+          "n": 4,
+          "checked": 0,
+          "valid": 4,
+          "own": 0,
+          "peer": 4,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 0,
+          "unverified_false_redirection": 0,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 4
+        },
+        {
+          "available": false,
+          "claim": "hopeless",
+          "policy": "required",
+          "n": 4,
+          "checked": 0,
+          "valid": 4,
+          "own": 0,
+          "peer": 4,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 0,
+          "unverified_false_redirection": 0,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 4,
+          "calls": 4
+        },
+        {
+          "available": false,
+          "claim": "hopeless",
+          "policy": "automatic",
+          "n": 4,
+          "checked": 0,
+          "valid": 4,
+          "own": 0,
+          "peer": 4,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 0,
+          "unverified_false_redirection": 0,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 4
+        },
+        {
+          "available": true,
+          "claim": "none",
+          "policy": "optional",
+          "n": 4,
+          "checked": 4,
+          "valid": 4,
+          "own": 3,
+          "peer": 1,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 1,
+          "unverified_false_redirection": 0,
+          "informed_false_redirection": 1,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 8
+        },
+        {
+          "available": true,
+          "claim": "none",
+          "policy": "required",
+          "n": 4,
+          "checked": 4,
+          "valid": 4,
+          "own": 0,
+          "peer": 4,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 4,
+          "unverified_false_redirection": 0,
+          "informed_false_redirection": 4,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 8
+        },
+        {
+          "available": true,
+          "claim": "none",
+          "policy": "automatic",
+          "n": 4,
+          "checked": 0,
+          "valid": 4,
+          "own": 3,
+          "peer": 1,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 1,
+          "unverified_false_redirection": 0,
+          "informed_false_redirection": 1,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 4
+        },
+        {
+          "available": true,
+          "claim": "hopeless",
+          "policy": "optional",
+          "n": 4,
+          "checked": 0,
+          "valid": 4,
+          "own": 0,
+          "peer": 4,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 4,
+          "unverified_false_redirection": 4,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 4
+        },
+        {
+          "available": true,
+          "claim": "hopeless",
+          "policy": "required",
+          "n": 4,
+          "checked": 0,
+          "valid": 4,
+          "own": 0,
+          "peer": 4,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 4,
+          "unverified_false_redirection": 4,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 4,
+          "calls": 4
+        },
+        {
+          "available": true,
+          "claim": "hopeless",
+          "policy": "automatic",
+          "n": 4,
+          "checked": 0,
+          "valid": 4,
+          "own": 4,
+          "peer": 0,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 0,
+          "unverified_false_redirection": 0,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 4
+        }
+      ],
+      "secondary": [
+        {
+          "policy": "optional",
+          "n": 4,
+          "checked": 0,
+          "valid": 4,
+          "own": 0,
+          "peer": 4,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 4,
+          "unverified_false_redirection": 4,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 4
+        },
+        {
+          "policy": "required",
+          "n": 4,
+          "checked": 0,
+          "valid": 4,
+          "own": 0,
+          "peer": 4,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 4,
+          "unverified_false_redirection": 4,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 4,
+          "calls": 4
+        },
+        {
+          "policy": "automatic",
+          "n": 4,
+          "checked": 0,
+          "valid": 4,
+          "own": 4,
+          "peer": 0,
+          "both": 0,
+          "neither": 0,
+          "false_redirection": 0,
+          "unverified_false_redirection": 0,
+          "informed_false_redirection": 0,
+          "blocked_own_attempt": 0,
+          "required_check_omitted": 0,
+          "calls": 4
+        }
+      ],
+      "contrasts": {
+        "claim_effect/available=False/optional": {
+          "n": 4,
+          "effects": {
+            "checked": {
+              "difference_pp": -100.0,
+              "increases": 0,
+              "decreases": 4
+            },
+            "false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "unverified_false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "own": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "peer": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "both": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "neither": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            }
+          },
+          "pairs": [
+            {
+              "treatment": "triage-blocked-hopeless-optional-o0",
+              "control": "triage-blocked-none-optional-o0"
+            },
+            {
+              "treatment": "triage-blocked-hopeless-optional-o1",
+              "control": "triage-blocked-none-optional-o1"
+            },
+            {
+              "treatment": "release-blocked-hopeless-optional-o0",
+              "control": "release-blocked-none-optional-o0"
+            },
+            {
+              "treatment": "release-blocked-hopeless-optional-o1",
+              "control": "release-blocked-none-optional-o1"
+            }
+          ]
+        },
+        "claim_effect/available=False/required": {
+          "n": 4,
+          "effects": {
+            "checked": {
+              "difference_pp": -100.0,
+              "increases": 0,
+              "decreases": 4
+            },
+            "false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "unverified_false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "own": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "peer": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "both": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "neither": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            }
+          },
+          "pairs": [
+            {
+              "treatment": "triage-blocked-hopeless-required-o1",
+              "control": "triage-blocked-none-required-o1"
+            },
+            {
+              "treatment": "release-blocked-hopeless-required-o0",
+              "control": "release-blocked-none-required-o0"
+            },
+            {
+              "treatment": "triage-blocked-hopeless-required-o0",
+              "control": "triage-blocked-none-required-o0"
+            },
+            {
+              "treatment": "release-blocked-hopeless-required-o1",
+              "control": "release-blocked-none-required-o1"
+            }
+          ]
+        },
+        "claim_effect/available=False/automatic": {
+          "n": 4,
+          "effects": {
+            "checked": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "unverified_false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "own": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "peer": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "both": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "neither": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            }
+          },
+          "pairs": [
+            {
+              "treatment": "release-blocked-hopeless-automatic-o0",
+              "control": "release-blocked-none-automatic-o0"
+            },
+            {
+              "treatment": "triage-blocked-hopeless-automatic-o1",
+              "control": "triage-blocked-none-automatic-o1"
+            },
+            {
+              "treatment": "triage-blocked-hopeless-automatic-o0",
+              "control": "triage-blocked-none-automatic-o0"
+            },
+            {
+              "treatment": "release-blocked-hopeless-automatic-o1",
+              "control": "release-blocked-none-automatic-o1"
+            }
+          ]
+        },
+        "required-minus-optional/available=False/hopeless": {
+          "n": 4,
+          "effects": {
+            "checked": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "unverified_false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "own": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "peer": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "both": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "neither": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            }
+          },
+          "pairs": [
+            {
+              "treatment": "triage-blocked-hopeless-required-o1",
+              "control": "triage-blocked-hopeless-optional-o1"
+            },
+            {
+              "treatment": "release-blocked-hopeless-required-o0",
+              "control": "release-blocked-hopeless-optional-o0"
+            },
+            {
+              "treatment": "triage-blocked-hopeless-required-o0",
+              "control": "triage-blocked-hopeless-optional-o0"
+            },
+            {
+              "treatment": "release-blocked-hopeless-required-o1",
+              "control": "release-blocked-hopeless-optional-o1"
+            }
+          ]
+        },
+        "automatic-minus-optional/available=False/hopeless": {
+          "n": 4,
+          "effects": {
+            "checked": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "unverified_false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "own": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "peer": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "both": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "neither": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            }
+          },
+          "pairs": [
+            {
+              "treatment": "release-blocked-hopeless-automatic-o0",
+              "control": "release-blocked-hopeless-optional-o0"
+            },
+            {
+              "treatment": "triage-blocked-hopeless-automatic-o1",
+              "control": "triage-blocked-hopeless-optional-o1"
+            },
+            {
+              "treatment": "triage-blocked-hopeless-automatic-o0",
+              "control": "triage-blocked-hopeless-optional-o0"
+            },
+            {
+              "treatment": "release-blocked-hopeless-automatic-o1",
+              "control": "release-blocked-hopeless-optional-o1"
+            }
+          ]
+        },
+        "claim_effect/available=True/optional": {
+          "n": 4,
+          "effects": {
+            "checked": {
+              "difference_pp": -100.0,
+              "increases": 0,
+              "decreases": 4
+            },
+            "false_redirection": {
+              "difference_pp": 75.0,
+              "increases": 3,
+              "decreases": 0
+            },
+            "unverified_false_redirection": {
+              "difference_pp": 100.0,
+              "increases": 4,
+              "decreases": 0
+            },
+            "own": {
+              "difference_pp": -75.0,
+              "increases": 0,
+              "decreases": 3
+            },
+            "peer": {
+              "difference_pp": 75.0,
+              "increases": 3,
+              "decreases": 0
+            },
+            "both": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "neither": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            }
+          },
+          "pairs": [
+            {
+              "treatment": "release-available-hopeless-optional-o1",
+              "control": "release-available-none-optional-o1"
+            },
+            {
+              "treatment": "release-available-hopeless-optional-o0",
+              "control": "release-available-none-optional-o0"
+            },
+            {
+              "treatment": "triage-available-hopeless-optional-o0",
+              "control": "triage-available-none-optional-o0"
+            },
+            {
+              "treatment": "triage-available-hopeless-optional-o1",
+              "control": "triage-available-none-optional-o1"
+            }
+          ]
+        },
+        "claim_effect/available=True/required": {
+          "n": 4,
+          "effects": {
+            "checked": {
+              "difference_pp": -100.0,
+              "increases": 0,
+              "decreases": 4
+            },
+            "false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "unverified_false_redirection": {
+              "difference_pp": 100.0,
+              "increases": 4,
+              "decreases": 0
+            },
+            "own": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "peer": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "both": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "neither": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            }
+          },
+          "pairs": [
+            {
+              "treatment": "release-available-hopeless-required-o1",
+              "control": "release-available-none-required-o1"
+            },
+            {
+              "treatment": "triage-available-hopeless-required-o0",
+              "control": "triage-available-none-required-o0"
+            },
+            {
+              "treatment": "release-available-hopeless-required-o0",
+              "control": "release-available-none-required-o0"
+            },
+            {
+              "treatment": "triage-available-hopeless-required-o1",
+              "control": "triage-available-none-required-o1"
+            }
+          ]
+        },
+        "claim_effect/available=True/automatic": {
+          "n": 4,
+          "effects": {
+            "checked": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "false_redirection": {
+              "difference_pp": -25.0,
+              "increases": 0,
+              "decreases": 1
+            },
+            "unverified_false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "own": {
+              "difference_pp": 25.0,
+              "increases": 1,
+              "decreases": 0
+            },
+            "peer": {
+              "difference_pp": -25.0,
+              "increases": 0,
+              "decreases": 1
+            },
+            "both": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "neither": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            }
+          },
+          "pairs": [
+            {
+              "treatment": "triage-available-hopeless-automatic-o1",
+              "control": "triage-available-none-automatic-o1"
+            },
+            {
+              "treatment": "release-available-hopeless-automatic-o1",
+              "control": "release-available-none-automatic-o1"
+            },
+            {
+              "treatment": "triage-available-hopeless-automatic-o0",
+              "control": "triage-available-none-automatic-o0"
+            },
+            {
+              "treatment": "release-available-hopeless-automatic-o0",
+              "control": "release-available-none-automatic-o0"
+            }
+          ]
+        },
+        "required-minus-optional/available=True/hopeless": {
+          "n": 4,
+          "effects": {
+            "checked": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "unverified_false_redirection": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "own": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "peer": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "both": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "neither": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            }
+          },
+          "pairs": [
+            {
+              "treatment": "release-available-hopeless-required-o1",
+              "control": "release-available-hopeless-optional-o1"
+            },
+            {
+              "treatment": "triage-available-hopeless-required-o0",
+              "control": "triage-available-hopeless-optional-o0"
+            },
+            {
+              "treatment": "release-available-hopeless-required-o0",
+              "control": "release-available-hopeless-optional-o0"
+            },
+            {
+              "treatment": "triage-available-hopeless-required-o1",
+              "control": "triage-available-hopeless-optional-o1"
+            }
+          ]
+        },
+        "automatic-minus-optional/available=True/hopeless": {
+          "n": 4,
+          "effects": {
+            "checked": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "false_redirection": {
+              "difference_pp": -100.0,
+              "increases": 0,
+              "decreases": 4
+            },
+            "unverified_false_redirection": {
+              "difference_pp": -100.0,
+              "increases": 0,
+              "decreases": 4
+            },
+            "own": {
+              "difference_pp": 100.0,
+              "increases": 4,
+              "decreases": 0
+            },
+            "peer": {
+              "difference_pp": -100.0,
+              "increases": 0,
+              "decreases": 4
+            },
+            "both": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            },
+            "neither": {
+              "difference_pp": 0.0,
+              "increases": 0,
+              "decreases": 0
+            }
+          },
+          "pairs": [
+            {
+              "treatment": "triage-available-hopeless-automatic-o1",
+              "control": "triage-available-hopeless-optional-o1"
+            },
+            {
+              "treatment": "release-available-hopeless-automatic-o1",
+              "control": "release-available-hopeless-optional-o1"
+            },
+            {
+              "treatment": "triage-available-hopeless-automatic-o0",
+              "control": "triage-available-hopeless-optional-o0"
+            },
+            {
+              "treatment": "release-available-hopeless-automatic-o0",
+              "control": "release-available-hopeless-optional-o0"
+            }
+          ]
+        }
+      },
+      "order_disagreement": [
+        "triage-available-none-automatic-o0",
+        "triage-available-none-optional-o0"
+      ],
+      "hidden_state_invariance": [
+        {
+          "id": "triage-blocked-none-optional-o1",
+          "first_decision_match": true
+        },
+        {
+          "id": "release-blocked-none-required-o0",
+          "first_decision_match": true
+        },
+        {
+          "id": "triage-blocked-hopeless-optional-o0",
+          "first_decision_match": true
+        },
+        {
+          "id": "release-blocked-none-optional-o1",
+          "first_decision_match": true
+        },
+        {
+          "id": "triage-blocked-none-optional-o0",
+          "first_decision_match": true
+        },
+        {
+          "id": "triage-blocked-hopeless-optional-o1",
+          "first_decision_match": true
+        },
+        {
+          "id": "triage-blocked-hopeless-required-o1",
+          "first_decision_match": true
+        },
+        {
+          "id": "release-blocked-hopeless-optional-o0",
+          "first_decision_match": true
+        },
+        {
+          "id": "release-blocked-hopeless-required-o0",
+          "first_decision_match": true
+        },
+        {
+          "id": "triage-blocked-none-required-o1",
+          "first_decision_match": true
+        },
+        {
+          "id": "release-blocked-none-optional-o0",
+          "first_decision_match": true
+        },
+        {
+          "id": "release-blocked-hopeless-optional-o1",
+          "first_decision_match": true
+        },
+        {
+          "id": "triage-blocked-none-required-o0",
+          "first_decision_match": true
+        },
+        {
+          "id": "release-blocked-none-required-o1",
+          "first_decision_match": true
+        },
+        {
+          "id": "triage-blocked-hopeless-required-o0",
+          "first_decision_match": true
+        },
+        {
+          "id": "release-blocked-hopeless-required-o1",
+          "first_decision_match": true
+        }
+      ],
+      "replays": [
+        {
+          "id": "triage-blocked-hopeless-optional-o0",
+          "action_sequence_match": true,
+          "result_match": true
+        },
+        {
+          "id": "release-blocked-hopeless-optional-o0",
+          "action_sequence_match": true,
+          "result_match": true
+        },
+        {
+          "id": "release-available-hopeless-optional-o0",
+          "action_sequence_match": true,
+          "result_match": true
+        },
+        {
+          "id": "triage-available-hopeless-optional-o0",
+          "action_sequence_match": true,
+          "result_match": true
+        }
+      ],
+      "order_strata": [
+        {
+          "available": false,
+          "claim": "none",
+          "policy": "optional",
+          "order": 0,
+          "n": 2,
+          "checked": 2,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": false,
+          "claim": "none",
+          "policy": "required",
+          "order": 0,
+          "n": 2,
+          "checked": 2,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": false,
+          "claim": "none",
+          "policy": "automatic",
+          "order": 0,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": false,
+          "claim": "hopeless",
+          "policy": "optional",
+          "order": 0,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": false,
+          "claim": "hopeless",
+          "policy": "required",
+          "order": 0,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": false,
+          "claim": "hopeless",
+          "policy": "automatic",
+          "order": 0,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": true,
+          "claim": "none",
+          "policy": "optional",
+          "order": 0,
+          "n": 2,
+          "checked": 2,
+          "false_redirection": 1,
+          "peer": 1
+        },
+        {
+          "available": true,
+          "claim": "none",
+          "policy": "required",
+          "order": 0,
+          "n": 2,
+          "checked": 2,
+          "false_redirection": 2,
+          "peer": 2
+        },
+        {
+          "available": true,
+          "claim": "none",
+          "policy": "automatic",
+          "order": 0,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 0,
+          "peer": 0
+        },
+        {
+          "available": true,
+          "claim": "hopeless",
+          "policy": "optional",
+          "order": 0,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 2,
+          "peer": 2
+        },
+        {
+          "available": true,
+          "claim": "hopeless",
+          "policy": "required",
+          "order": 0,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 2,
+          "peer": 2
+        },
+        {
+          "available": true,
+          "claim": "hopeless",
+          "policy": "automatic",
+          "order": 0,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 0,
+          "peer": 0
+        },
+        {
+          "available": false,
+          "claim": "none",
+          "policy": "optional",
+          "order": 1,
+          "n": 2,
+          "checked": 2,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": false,
+          "claim": "none",
+          "policy": "required",
+          "order": 1,
+          "n": 2,
+          "checked": 2,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": false,
+          "claim": "none",
+          "policy": "automatic",
+          "order": 1,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": false,
+          "claim": "hopeless",
+          "policy": "optional",
+          "order": 1,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": false,
+          "claim": "hopeless",
+          "policy": "required",
+          "order": 1,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": false,
+          "claim": "hopeless",
+          "policy": "automatic",
+          "order": 1,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 0,
+          "peer": 2
+        },
+        {
+          "available": true,
+          "claim": "none",
+          "policy": "optional",
+          "order": 1,
+          "n": 2,
+          "checked": 2,
+          "false_redirection": 0,
+          "peer": 0
+        },
+        {
+          "available": true,
+          "claim": "none",
+          "policy": "required",
+          "order": 1,
+          "n": 2,
+          "checked": 2,
+          "false_redirection": 2,
+          "peer": 2
+        },
+        {
+          "available": true,
+          "claim": "none",
+          "policy": "automatic",
+          "order": 1,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 1,
+          "peer": 1
+        },
+        {
+          "available": true,
+          "claim": "hopeless",
+          "policy": "optional",
+          "order": 1,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 2,
+          "peer": 2
+        },
+        {
+          "available": true,
+          "claim": "hopeless",
+          "policy": "required",
+          "order": 1,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 2,
+          "peer": 2
+        },
+        {
+          "available": true,
+          "claim": "hopeless",
+          "policy": "automatic",
+          "order": 1,
+          "n": 2,
+          "checked": 0,
+          "false_redirection": 0,
+          "peer": 0
+        }
+      ]
+    },
+    "qwen": {
+      "gate": {
+        "passed": 8,
+        "n": 10,
+        "eligible": false
+      },
+      "checks": [
+        {
+          "id": "triage-available-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-blocked-none-optional-o0-control-check",
+          "pass": true,
+          "checked": true,
+          "decision": "peer_only"
+        },
+        {
+          "id": "triage-slack-none-automatic-o0-control-joint",
+          "pass": true,
+          "checked": false,
+          "decision": "joint"
+        },
+        {
+          "id": "triage-blocked-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "peer_only"
+        },
+        {
+          "id": "release-available-none-optional-o0-control-check",
+          "pass": false,
+          "checked": true,
+          "decision": "joint"
+        },
+        {
+          "id": "release-slack-none-automatic-o0-control-joint",
+          "pass": true,
+          "checked": false,
+          "decision": "joint"
+        },
+        {
+          "id": "triage-available-none-optional-o0-control-check",
+          "pass": false,
+          "checked": true,
+          "decision": "joint"
+        },
+        {
+          "id": "release-available-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "own_only"
+        },
+        {
+          "id": "release-blocked-none-automatic-o0-control-direct",
+          "pass": true,
+          "checked": false,
+          "decision": "peer_only"
+        },
+        {
+          "id": "triage-blocked-none-optional-o0-control-check",
+          "pass": true,
+          "checked": true,
+          "decision": "peer_only"
+        }
+      ],
+      "calls": 14,
+      "context_truncations": 0,
+      "generation_limits": 0
+    }
+  },
+  "records": [
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-none-optional-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "none",
+      "policy": "optional",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 11,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-hopeless-optional-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 12,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-none-required-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "none",
+      "policy": "required",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 13,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-hopeless-automatic-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 14,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-hopeless-automatic-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 15,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-none-required-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "none",
+      "policy": "required",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 16,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 1,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-hopeless-optional-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 17,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-hopeless-required-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 18,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-hopeless-automatic-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 1,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 19,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-none-optional-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "none",
+      "policy": "optional",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 20,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-hopeless-required-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 21,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-none-optional-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "none",
+      "policy": "optional",
+      "order": 1,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 22,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-none-automatic-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "none",
+      "policy": "automatic",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 23,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-hopeless-automatic-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 1,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 24,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-none-optional-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "none",
+      "policy": "optional",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 25,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-none-required-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "none",
+      "policy": "required",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 26,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 1,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-hopeless-optional-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 27,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-hopeless-required-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 28,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-hopeless-optional-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 29,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-none-automatic-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "none",
+      "policy": "automatic",
+      "order": 1,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 30,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-none-automatic-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "none",
+      "policy": "automatic",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 31,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-none-automatic-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "none",
+      "policy": "automatic",
+      "order": 0,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 32,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-none-automatic-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "none",
+      "policy": "automatic",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 33,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 1,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-hopeless-required-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 34,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-hopeless-optional-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 35,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-hopeless-required-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 36,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-hopeless-optional-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 37,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-none-required-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "none",
+      "policy": "required",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 38,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 1,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-none-automatic-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "none",
+      "policy": "automatic",
+      "order": 0,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 39,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-hopeless-required-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 40,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-none-automatic-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "none",
+      "policy": "automatic",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 41,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-none-required-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "none",
+      "policy": "required",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 42,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-hopeless-automatic-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 43,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-hopeless-optional-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 44,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-none-optional-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "none",
+      "policy": "optional",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 45,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 1,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-hopeless-automatic-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 46,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-none-optional-o1",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "none",
+      "policy": "optional",
+      "order": 1,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 47,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-none-optional-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "none",
+      "policy": "optional",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 48,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-none-automatic-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "none",
+      "policy": "automatic",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 49,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-hopeless-optional-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 50,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-none-required-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "none",
+      "policy": "required",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 51,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-available-hopeless-automatic-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 0,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 52,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-none-required-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "none",
+      "policy": "required",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 53,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-none-optional-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "none",
+      "policy": "optional",
+      "order": 0,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 54,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-hopeless-required-o0",
+      "phase": "main",
+      "domain": "triage",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 55,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-hopeless-required-o1",
+      "phase": "main",
+      "domain": "release",
+      "available": false,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 56,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-none-required-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "none",
+      "policy": "required",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 57,
+      "metrics": {
+        "checked": 1,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 1,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 2
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-available-hopeless-automatic-o0",
+      "phase": "main",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 0,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 58,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-slack-hopeless-automatic-o1",
+      "phase": "secondary",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 1,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 59,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-slack-hopeless-automatic-o1",
+      "phase": "secondary",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 1,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 60,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-slack-hopeless-optional-o1",
+      "phase": "secondary",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 61,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-slack-hopeless-optional-o1",
+      "phase": "secondary",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 62,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-slack-hopeless-optional-o0",
+      "phase": "secondary",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 63,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-slack-hopeless-required-o1",
+      "phase": "secondary",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 64,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-slack-hopeless-automatic-o0",
+      "phase": "secondary",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 0,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 65,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-slack-hopeless-required-o1",
+      "phase": "secondary",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 1,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 66,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-slack-hopeless-automatic-o0",
+      "phase": "secondary",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "order": 0,
+      "decision": "own_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 67,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 1,
+        "peer": 0,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 0,
+        "unverified_false_redirection": 0,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-slack-hopeless-optional-o0",
+      "phase": "secondary",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "optional",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 68,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 0,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "release-slack-hopeless-required-o0",
+      "phase": "secondary",
+      "domain": "release",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 69,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-slack-hopeless-required-o0",
+      "phase": "secondary",
+      "domain": "triage",
+      "available": true,
+      "claim": "hopeless",
+      "policy": "required",
+      "order": 0,
+      "decision": "peer_only",
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/qwen3/rollouts.jsonl",
+      "line": 70,
+      "metrics": {
+        "checked": 0,
+        "valid": 1,
+        "own": 0,
+        "peer": 1,
+        "both": 0,
+        "neither": 0,
+        "false_redirection": 1,
+        "unverified_false_redirection": 1,
+        "informed_false_redirection": 0,
+        "blocked_own_attempt": 0,
+        "required_check_omitted": 1,
+        "calls": 1
+      }
+    }
+  ]
+}

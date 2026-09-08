@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-08T12:02:24Z",
+  "hashes": {
+    "experiments/opportunity_cost/v2/cases.json": "9d9a115b6ec21a3cfb70dedef95a9a5f3ec9d8f9dd1059dca38b14697d0d827b",
+    "experiments/opportunity_cost/v2/protocol.md": "9d70dc17bda6602839c2424168de5796a52c2360b41b07d103ae7a4495ac15a4",
+    "scripts/opportunity_allocation.py": "c915ff5456d804bc09acf8597c53d26b4cb3bead77f87dbb57b89e405b8634ce",
+    "scripts/opportunity_cost.py": "b85743fee72516d4da833818281abce0345db8886099bc5446cf836023ac5e5e"
+  },
+  "models": [
+    "qwen3",
+    "qwen",
+    "smol"
+  ],
+  "main_per_model": 64,
+  "controls_per_model": 14,
+  "probes_per_model": 8,
+  "replay_per_eligible_model": 8
+}

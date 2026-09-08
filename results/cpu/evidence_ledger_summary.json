@@ -1,0 +1,13 @@
+{
+  "hf_selected_annotations": 12,
+  "hf_source_types": {
+    "selected_agent_quote": 4,
+    "investigator_event_annotation": 1,
+    "investigator_paraphrase": 7
+  },
+  "wiki_candidate_links": 7,
+  "wiki_rejected_specific_links": 1,
+  "wiki_corroboration_links": 6,
+  "unique_later_posts_retained": 4,
+  "independent_human_adjudication": false
+}

@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "id": "hf-ordering-counterexample",
+    "claim": "Recorded timeline ordering is sometimes inconsistent.",
+    "evidence_kind": "Derived record-level data-quality flag",
+    "source": "/Users/lauragomez/Desktop/openai-hf/results/cpu/timeline_ordering_issues.csv",
+    "sha256": "5c383ab0b490eaa1fc2be038e4940a35b65d7b6929222ec1199d4e24febf5cc3",
+    "json_pointer": null,
+    "line": 2,
+    "selection_rule": "First data row in the saved issue file.",
+    "observation": null,
+    "limits": "A flagged row is evidence of a measurement problem, not evidence that the agent acted backwards in time."
+  },
+  "source_selection": "66,h,write_before_read,-1.37481666666669"
+}

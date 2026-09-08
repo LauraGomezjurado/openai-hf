@@ -1,0 +1,1569 @@
+{
+  "status": "Exploratory descriptive benchmarks added after viewing Qwen3 results. Not preregistered, not held-out prediction, not inferred model algorithms.",
+  "models": {
+    "qwen3": {
+      "complete_own_then_maximize_peer": {
+        "correct": 54,
+        "n": 64,
+        "cases": [
+          {
+            "id": "access-slack-p0-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "access-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p1-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "access-shared-p1-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "invoices-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p1-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-shared-p0-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p0-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "triage-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p1-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "invoices-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p0-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-shared-p0-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-slack-p1-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "triage-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p0-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "invoices-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p0-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "triage-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "access-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p1-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "triage-shared-p1-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-shared-p1-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "release-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p0-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "invoices-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          }
+        ]
+      },
+      "first_displayed_own_success_else_peer": {
+        "correct": 54,
+        "n": 64,
+        "cases": [
+          {
+            "id": "access-slack-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p1-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "release-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "invoices-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p1-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "access-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-shared-p0-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "invoices-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p0-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "access-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "triage-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p0-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "triage-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-shared-p0-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "access-slack-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "access-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-shared-p1-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "release-shared-p1-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "release-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "release-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          }
+        ]
+      }
+    },
+    "qwen": {
+      "complete_own_then_maximize_peer": {
+        "correct": 53,
+        "n": 64,
+        "cases": [
+          {
+            "id": "access-slack-p0-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "access-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p1-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "access-shared-p1-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "release-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "invoices-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p1-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-shared-p0-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p0-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "triage-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p1-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "invoices-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p0-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-shared-p0-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-slack-p1-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "triage-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p0-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p0-o0",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "access-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p1-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "triage-shared-p1-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "release-shared-p1-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "release-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "release-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p0-o0",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "invoices-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          }
+        ]
+      },
+      "first_displayed_own_success_else_peer": {
+        "correct": 55,
+        "n": 64,
+        "cases": [
+          {
+            "id": "access-slack-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "release-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "invoices-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p1-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "access-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-shared-p0-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "invoices-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p0-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "access-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "own_only",
+            "match": false
+          },
+          {
+            "id": "triage-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-shared-p0-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "triage-shared-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-shared-p0-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "access-slack-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p1-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p0-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "invoices-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "access-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "triage-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p0-o0",
+            "prediction": "own_only",
+            "observed": "joint",
+            "match": false
+          },
+          {
+            "id": "triage-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-slack-p1-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "access-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p1-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p0-o1",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "access-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "triage-shared-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "release-shared-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "release-blocked-p0-o0",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p0-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "triage-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "invoices-costly-p1-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "release-shared-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          },
+          {
+            "id": "invoices-slack-p0-o0",
+            "prediction": "own_only",
+            "observed": "own_only",
+            "match": true
+          },
+          {
+            "id": "invoices-blocked-p1-o1",
+            "prediction": "peer_only",
+            "observed": "peer_only",
+            "match": true
+          },
+          {
+            "id": "release-slack-p0-o1",
+            "prediction": "joint",
+            "observed": "joint",
+            "match": true
+          }
+        ]
+      }
+    }
+  }
+}

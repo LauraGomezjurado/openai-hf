@@ -1,0 +1,68 @@
+{
+  "ordering_issue_counts": {
+    "write_before_read": 12,
+    "onset_before_read": 15
+  },
+  "largest_negative_onset_lag_hours": -28.61129333333335,
+  "plot_boundary_ends": 14,
+  "nominal_risk_rows": 1191,
+  "landmark_intervals": 13785,
+  "landmark_positive_intervals": 570,
+  "positioned_onsets_not_in_landmarks": 114,
+  "limitations": [
+    "Landmarks omit onsets before first whole-hour boundary after read, including immediate onsets.",
+    "Negative intervals require full observed followup; truncation can be informative.",
+    "No untreated agents; source population includes only eventual board readers.",
+    "No individual timestamp quality grades or participation label validation."
+  ],
+  "prediction_scores": [
+    {
+      "model": "calendar_run_age",
+      "scope": "all",
+      "intervals": 10300,
+      "positives": 488,
+      "brier": 0.07774334032914564,
+      "log_loss": 0.3763260018074873
+    },
+    {
+      "model": "calendar_run_age",
+      "scope": "unseen_rows",
+      "intervals": 2470,
+      "positives": 266,
+      "brier": 0.13793309914455684,
+      "log_loss": 0.7321557134880533
+    },
+    {
+      "model": "plus_board_tenure",
+      "scope": "all",
+      "intervals": 10300,
+      "positives": 488,
+      "brier": 0.07836735908158009,
+      "log_loss": 0.37011179396138044
+    },
+    {
+      "model": "plus_board_tenure",
+      "scope": "unseen_rows",
+      "intervals": 2470,
+      "positives": 266,
+      "brier": 0.14836517268403654,
+      "log_loss": 0.7266667056760648
+    },
+    {
+      "model": "training_mean",
+      "scope": "all",
+      "intervals": 10300,
+      "positives": 488,
+      "brier": 0.04613742233974326,
+      "log_loss": 0.21669079823869847
+    },
+    {
+      "model": "training_mean",
+      "scope": "unseen_rows",
+      "intervals": 2470,
+      "positives": 266,
+      "brier": 0.10446744788541906,
+      "log_loss": 0.4720253590033203
+    }
+  ]
+}

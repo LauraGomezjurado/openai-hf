@@ -1,0 +1,24 @@
+{
+  "recorded": "2026-09-07T01:24:54Z",
+  "platform": {
+    "python": "3.14.2",
+    "system": "macOS-26.6.2-arm64-arm-64bit-Mach-O"
+  },
+  "devices": {
+    "torch": "2.11.0",
+    "cuda_available": false,
+    "runnable": false,
+    "reason": "no CUDA device visible"
+  },
+  "vllm": {
+    "skipped": "no CUDA device visible"
+  },
+  "fp16_numerics": {
+    "skipped": "no CUDA device visible"
+  },
+  "checks": [],
+  "blockers": [
+    "Gate not runnable here: no CUDA device visible. Rerun on the cluster."
+  ],
+  "gate_passed": false
+}

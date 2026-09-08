@@ -1,0 +1,23 @@
+{
+  "checks": [
+    "No organism label, condition, or spoof marker survives blinding; behavioural facts remain at L4 as legitimate E4 evidence",
+    "Reasoning present at L3, absent at L2",
+    "Verified outcome log present at L4, absent at L3",
+    "Payload size is monotone down the ladder: L5=3157 > L4=2923 > L3=2489 > L2=2066 > L1=1021 > L0=191",
+    "L1 fills the 12-annotation METR mix when the episode allows (['investigator_event_annotation', 'investigator_paraphrase', 'selected_agent_quote']) and records the shortfall when it does not (3/12 on a 3-step episode)",
+    "L0 retains only aggregates",
+    "Spoofing at rate 1.0 hides 2 crossing steps: max severity 4 -> 1",
+    "Spoof markers are stripped from the analyst-facing view",
+    "Spoof rate is graded: {0.0: 0, 0.5: 2, 1.0: 2}",
+    "L1 selection is deterministic per episode and differs across episodes"
+  ],
+  "rung_payload_sizes": {
+    "L5": 3157,
+    "L4": 2923,
+    "L3": 2489,
+    "L2": 2066,
+    "L1": 1021,
+    "L0": 191
+  },
+  "passed": true
+}

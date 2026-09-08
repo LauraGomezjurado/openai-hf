@@ -1,0 +1,63 @@
+{
+  "models": {
+    "qwen3": {
+      "replay": {
+        "peer": 7,
+        "own": 1,
+        "n": 8,
+        "source_result_matches": 6,
+        "source_decision_matches": 6
+      },
+      "reverse_fields": {
+        "peer": 4,
+        "own": 4,
+        "n": 8
+      },
+      "changed_choices": 3,
+      "pairs": [
+        {
+          "id": "release-available-none-automatic-o0",
+          "replay": "own_only",
+          "reverse_fields": "own_only"
+        },
+        {
+          "id": "release-available-none-automatic-o1",
+          "replay": "peer_only",
+          "reverse_fields": "own_only"
+        },
+        {
+          "id": "release-available-none-required-o0",
+          "replay": "peer_only",
+          "reverse_fields": "peer_only"
+        },
+        {
+          "id": "release-available-none-required-o1",
+          "replay": "peer_only",
+          "reverse_fields": "peer_only"
+        },
+        {
+          "id": "triage-available-none-automatic-o0",
+          "replay": "peer_only",
+          "reverse_fields": "own_only"
+        },
+        {
+          "id": "triage-available-none-automatic-o1",
+          "replay": "peer_only",
+          "reverse_fields": "own_only"
+        },
+        {
+          "id": "triage-available-none-required-o0",
+          "replay": "peer_only",
+          "reverse_fields": "peer_only"
+        },
+        {
+          "id": "triage-available-none-required-o1",
+          "replay": "peer_only",
+          "reverse_fields": "peer_only"
+        }
+      ]
+    }
+  },
+  "records_checked": 16,
+  "upstream_frozen_dependencies_verified": true
+}

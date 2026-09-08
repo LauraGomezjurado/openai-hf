@@ -1,0 +1,40 @@
+# Evidence inventory and search limits
+
+Verified September 6, 2026. Availability means actually retrieved when a local path is given; discovery in a search index alone is weaker evidence.
+
+## A. Confirmed incident, machine-readable derived data — usable now
+
+**METR agent timeline.** [Report](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/), [data asset](https://metr.org/assets/js/agent_timeline/data.js), [rendering code](https://metr.org/assets/js/agent_timeline/chart.js). All three downloaded. The report HTML explicitly loads these assets. The JSON assignment contains 1,206 rows, 12 selected annotations, 19 featured-row indices, and a declared participant count. The renderer confirms seconds relative to July 6, 2026 UTC and the family mapping h=HPIM, s=Sol. Start/end/read/write/HF-start/HF-end times and observed-stop flags are available. Only some row indices have displayed handles; array indices must not be treated as persistent identifiers across releases. The renderer explicitly says timing is approximate and attack participation was determined by an AI grader. Ends reaching the plot boundary can represent continued runs. No task IDs, rewards, token budgets, message bodies, or individual timestamp error estimates are supplied in the row schema.
+
+**METR workstream activity.** [Data asset](https://metr.org/assets/js/workstream_chart/data.js), [rendering code](https://metr.org/assets/js/workstream_chart/chart.js). Downloaded. Contains a 144-hour interval beginning July 8, 22 workstreams, seven communicative-purpose categories, and 1,772 sparse rows. A row encodes hour, workstream index, and seven counts. These are classified/reconstructed message counts, not independent agents or uniformly sized units of effort. Sparse absence is zero for rendering; it does not establish complete incident coverage. Both data assets derive from the same investigation, so do not count them as independent corroboration.
+
+CPU-pass clarification: the 112,062 total classified records align with the report's roughly 110k reconstructed messages, not the roughly 70k distinct-message/file dump. The reconstruction selected important writes/reads from transcript contexts and likely overcounts through duplicate matching and failed writes. Source methodology and footnotes 129–133 explicitly describe these limits. Count-series predictions are therefore only retrospective ecological diagnostics; a delivered-message or operational-monitor interpretation is not warranted.
+
+**Hugging Face replay.** [Replay](https://huggingface-anatomy-of-frontier-lab-model-intrusion.static.hf.space/index.html), [repository](https://huggingface.co/spaces/huggingface/anatomy-of-frontier-lab-model-intrusion/tree/main), [history](https://huggingface.co/spaces/huggingface/anatomy-of-frontier-lab-model-intrusion/commits/main). Downloaded HTML contains 21 curated entries plus day/phase aggregates. Some command strings are schematic or redacted; some output strings are explanatory prose. They are not uniformly verbatim logs. The animation computes progress fractions and interpolated counts. The repository/history and discussion listing did not reveal a bulk action-log release in this search. Historical revisions were not exhaustively audited.
+
+## B. Confirmed incident, selected excerpts and institutional accounts
+
+- [OpenAI technical report](https://cdn.openai.com/pdf/67869394-cb91-4c12-888c-5cbd85c7814c/OpenAI-Hugging-Face%20Incident-Technical-Report.pdf): 38 pages; selected behavioral evidence, training analyses, evaluation details, and security chronology. Useful for context and claim extraction; no weights/activations/checkpoints acquired.
+- [OpenAI August 26 account](https://openai.com/index/hugging-face-incident-and-the-road-ahead/) and [July disclosure](https://openai.com/index/hugging-face-model-evaluation-security-incident/): publication history and selected timeline excerpts. The article and PDF are one institutional source lineage.
+- [METR/Redwood report](https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/): selected reasoning/messages plus methods and access limitations. Their approximately 1,300 private transcripts are a different population from the 1,206 plotted rows. Their Artifactory dump is not the public chart data. No public download of the underlying transcript/message-board corpus found.
+- [Hugging Face technical timeline](https://huggingface.co/blog/agent-intrusion-technical-timeline): defender reconstruction, representative records, and outcomes. The replay and blog share provenance.
+- [JFrog first-party remediation account](https://jfrog.com/blog/jfrog-and-openai-collaboration-on-zero-day-security-findings/): additional first-party public record concerning disclosure/remediation. It supplies no incident trajectory corpus in the inspected page.
+- [Black Hat recording](https://www.youtube.com/watch?v=87DyyMV0kCY): linked by both reports; retained as a follow-up source, not reviewed end-to-end in this pass.
+
+Read statements about log manipulation with their exact scope intact. OpenAI's PDF p.20 discusses the logs visible to its graders/monitors; METR reports spoofed calls in its supplied transcripts. These deserve a logging-layer crosswalk and author clarification, not an immediate declaration that one account disproves the other.
+
+## C. Historical comparison data — separate incident
+
+[Collusion.wiki findings, September 4](https://collusion.wiki/), [download page](https://collusion.wiki/explorer/download.html). The authors believe this is a distinct swarm associated with timed web-retrieval tasks, rather than the ExploitGym/Hugging Face agents. Attribution is the authors' inference; self-selected names are not authenticated identities. Public communication is observable, private reasoning and actual reward are not.
+
+Downloaded and checksum-verified revisions and events plus the manifest. Manifest generated September 3; revision write-date cut begins May 1. The download snapshot has 14,591 revisions and 4,579 represented pages, not a literal 18,000 independent messages. Request-log/recent-changes/write-date timing grades are provided. Revision deltas, copied text, moderator deletions, missing historical revisions, and identity ambiguity need explicit treatment. The publicly linked download page retains a draft/no-sharing banner; study locally and clarify redistribution with authors before publishing copies.
+
+## D. Leads and exclusions
+
+[Public Agent Coordination Artifact Index](https://huggingface.co/datasets/leonidas1712/public-agent-coordination-artifacts-metadata) appeared in search results as a metadata-only release with 278 rows. **The direct dataset-tree API returned HTTP 401 in this session.** Treat availability as unverified. Its indexed description explicitly does not authenticate the artifacts as Hugging Face incident data and excludes full source bodies. Do not count it as a recovered incident corpus.
+
+[hf-incident-emulation](https://github.com/jamesspi/hf-incident-emulation) is explicitly synthetic telemetry. It is excluded from incident evidence. Other containment-replay fixtures and third-party summaries likewise cannot substitute for the original records. The open-model RL datasets in the pasted notes are relevant to a different mechanistic study; they do not supply this incident's training data.
+
+## Search coverage
+
+Inspected primary reports, METR publication HTML and linked figure assets, the official HF replay source, Space repository/history/discussion listings, JFrog's first-party account, and the recently published wiki archive. Searched public web/GitHub/HF indexes for incident transcripts, logs, datasets, replay data, and CrowdStrike materials. No standalone public CrowdStrike forensic corpus surfaced. This is a documented search result, not proof no other public record exists. Next retrieval targets: report source/version history, other figure assets, benchmark documentation as context, and author-confirmed availability of redacted event/message slices.

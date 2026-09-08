@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "eligible_by_incident": {
+    "HF": 12,
+    "wiki": 10316
+  },
+  "retrieval_counts": {
+    "HF": {
+      "request": 0,
+      "own_task": 0,
+      "scarce_time": 0,
+      "reciprocity": 0,
+      "scope_refusal": 0,
+      "completion": 0
+    },
+    "wiki": {
+      "request": 2474,
+      "own_task": 5,
+      "scarce_time": 1317,
+      "reciprocity": 84,
+      "scope_refusal": 0,
+      "completion": 5
+    }
+  },
+  "pilot_units": 28,
+  "pilot_by_incident": {
+    "HF": 4,
+    "wiki": 24
+  },
+  "warning": "Overlapping lexical retrieval counts; no confirmed conflicts or population prevalence. Four selections per stratum, union deduplicated. Comparison is hash-selected from all eligible records, not known negatives.",
+  "source_sha256": {
+    "results/cpu/wiki_revision_deltas.jsonl.gz": "91162b3547618abdc3da29ebbc4a129dc934df7f70f0aa1bf50140577a9ac7f3",
+    "results/cpu/hf_annotation_ledger.csv": "2897abd19e062a949be6326ea50e9623ea74b4ad9cee0dd8196b49a5acf188dd"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-07T23:29:10Z",
+  "cases_sha256": "f703e1b0601326d879b872f9fd952ab5affc0f24398515f42a50dec4b56d9339",
+  "script_sha256": "93da132c17d114d3961455730c6c828c12f944ed99fafd8b27afd76e3558f47e",
+  "protocol_sha256": "874b531978f2c27c179d1583ea3466be03df9e96dadc7640b83359d2c57bf1a3",
+  "generation": {
+    "temperature": 0,
+    "seed": 314159,
+    "n_predict": 160,
+    "max_turns": 10,
+    "cache_prompt": true,
+    "schema": "one object, enumerated tool names, object args"
+  },
+  "example_selection": "Deterministic first by case-id within each named outcome class; retain all raw trajectories and all outcome counts. No selection for rhetorical strength."
+}

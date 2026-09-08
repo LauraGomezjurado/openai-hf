@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "hf-forecast-negative",
+    "claim": "Adding board tenure did not outperform the simple baseline on the saved all-interval evaluation.",
+    "evidence_kind": "Derived aggregate scores",
+    "source": "/Users/lauragomez/Desktop/openai-hf/results/cpu/read_anchored_scores.csv",
+    "sha256": "084d596da5c1c109d694116dd4a545923dc628c6ca712cae59e7024e045bd07c",
+    "json_pointer": null,
+    "line": null,
+    "selection_rule": "Named contrast from the existing analysis; retrospective selection.",
+    "observation": "10,521 intervals, 571 positives: training-mean Brier 0.05263; calendar/run-age 0.09710; plus-board-tenure 0.09745. Lower is better.",
+    "limits": "This is a model-comparison result, not an individual causal example. Correlated intervals and retrospective selection limit interpretation."
+  },
+  "source_selection": {
+    "source_file": "results/cpu/read_anchored_scores.csv"
+  }
+}

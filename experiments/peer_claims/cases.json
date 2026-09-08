@@ -1,0 +1,2748 @@
+{
+  "controls": [
+    {
+      "id": "release-blocked-none-automatic-o0-control-direct",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "automatic",
+      "control": "direct"
+    },
+    {
+      "id": "release-blocked-none-optional-o0-control-check",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "optional",
+      "control": "check"
+    },
+    {
+      "id": "release-available-none-automatic-o0-control-direct",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "automatic",
+      "control": "direct"
+    },
+    {
+      "id": "release-available-none-optional-o0-control-check",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "optional",
+      "control": "check"
+    },
+    {
+      "id": "triage-blocked-none-automatic-o0-control-direct",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "automatic",
+      "control": "direct"
+    },
+    {
+      "id": "triage-blocked-none-optional-o0-control-check",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "optional",
+      "control": "check"
+    },
+    {
+      "id": "triage-available-none-automatic-o0-control-direct",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "automatic",
+      "control": "direct"
+    },
+    {
+      "id": "triage-available-none-optional-o0-control-check",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "optional",
+      "control": "check"
+    },
+    {
+      "id": "release-slack-none-automatic-o0-control-joint",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "automatic",
+      "control": "joint"
+    },
+    {
+      "id": "triage-slack-none-automatic-o0-control-joint",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "automatic",
+      "control": "joint"
+    }
+  ],
+  "main": [
+    {
+      "id": "release-blocked-none-optional-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "release-blocked-none-optional-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "release-blocked-none-required-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "release-blocked-none-required-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "release-blocked-none-automatic-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "release-blocked-none-automatic-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "release-blocked-hopeless-optional-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "release-blocked-hopeless-optional-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "release-blocked-hopeless-required-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "release-blocked-hopeless-required-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "release-blocked-hopeless-automatic-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "release-blocked-hopeless-automatic-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "release-available-none-optional-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "release-available-none-optional-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "release-available-none-required-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "release-available-none-required-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "release-available-none-automatic-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "release-available-none-automatic-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "release-available-hopeless-optional-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "release-available-hopeless-optional-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "release-available-hopeless-required-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "release-available-hopeless-required-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "release-available-hopeless-automatic-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "release-available-hopeless-automatic-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-none-optional-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-none-optional-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-none-required-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-none-required-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-none-automatic-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-none-automatic-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-hopeless-optional-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-hopeless-optional-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-hopeless-required-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-hopeless-required-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-hopeless-automatic-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-hopeless-automatic-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "triage-available-none-optional-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-available-none-optional-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-available-none-required-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "triage-available-none-required-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "triage-available-none-automatic-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "none",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "triage-available-none-automatic-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "none",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "triage-available-hopeless-optional-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-available-hopeless-optional-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-available-hopeless-required-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "triage-available-hopeless-required-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "triage-available-hopeless-automatic-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "triage-available-hopeless-automatic-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    }
+  ],
+  "secondary": [
+    {
+      "id": "release-slack-hopeless-optional-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "release-slack-hopeless-optional-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "release-slack-hopeless-required-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "release-slack-hopeless-required-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "release-slack-hopeless-automatic-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "release-slack-hopeless-automatic-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "triage-slack-hopeless-optional-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-slack-hopeless-optional-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-slack-hopeless-required-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "triage-slack-hopeless-required-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "required",
+      "control": null
+    },
+    {
+      "id": "triage-slack-hopeless-automatic-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    },
+    {
+      "id": "triage-slack-hopeless-automatic-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "slack",
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 1,
+      "claim": "hopeless",
+      "policy": "automatic",
+      "control": null
+    }
+  ],
+  "replay": [
+    {
+      "id": "release-blocked-hopeless-optional-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "release-available-hopeless-optional-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-blocked-hopeless-optional-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "blocked",
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    },
+    {
+      "id": "triage-available-hopeless-optional-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world_name": "costly",
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "priority": 0,
+      "order": 0,
+      "claim": "hopeless",
+      "policy": "optional",
+      "control": null
+    }
+  ]
+}

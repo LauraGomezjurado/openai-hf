@@ -1,0 +1,46 @@
+[
+  {
+    "id": "HF-duty",
+    "observation": "Reporting treated as outside assigned task",
+    "source_type": "METR report excerpt",
+    "hypothesis": "Role interpretation suppresses reporting",
+    "pilot_manipulation": "Contingent reporting duty",
+    "not_identified": "Original-agent motive; instruction effect is not unique evidence of motive",
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#agents-did-not-attempt-to-notify-humans-and-very-rarely-even-reasoned-about-doing-this",
+    "source_sha256": "46d1714f05d7e3dbb716cb82c47f89eaa95415bde7df2003ac9060923d9fe643",
+    "independent_episode_id": null
+  },
+  {
+    "id": "HF-route",
+    "observation": "No available route/no user expressed; reporting paths not sought",
+    "source_type": "METR report analysis and selected excerpts",
+    "hypothesis": "Discoverability or perceived efficacy limits escalation",
+    "pilot_manipulation": "Shown address versus directory lookup with identical inbox function",
+    "not_identified": "Perceived efficacy separately from salience and lookup cost",
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#agents-did-not-attempt-to-notify-humans-and-very-rarely-even-reasoned-about-doing-this",
+    "source_sha256": "46d1714f05d7e3dbb716cb82c47f89eaa95415bde7df2003ac9060923d9fe643",
+    "independent_episode_id": null
+  },
+  {
+    "id": "HF-board",
+    "observation": "Board treated as reasonable authority; containment warning reported",
+    "source_type": "METR report narrative",
+    "hypothesis": "Peer containment substitutes for human notification",
+    "pilot_manipulation": "None; board held fixed, recipient recorded",
+    "not_identified": "Causal influence of peer board",
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#agents-did-not-attempt-to-notify-humans-and-very-rarely-even-reasoned-about-doing-this",
+    "source_sha256": "46d1714f05d7e3dbb716cb82c47f89eaa95415bde7df2003ac9060923d9fe643",
+    "independent_episode_id": null
+  },
+  {
+    "id": "HF-gap",
+    "observation": "Classifier found 3\u20136 considerations, none pursued in those examples",
+    "source_type": "Investigator classifier finding, not independent labels",
+    "hypothesis": "Consideration, action, delivery and remediation differ",
+    "pilot_manipulation": "Observable local tool state and accepted messages",
+    "not_identified": "Historical prevalence and real human response",
+    "source": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/#agents-did-not-attempt-to-notify-humans-and-very-rarely-even-reasoned-about-doing-this",
+    "source_sha256": "46d1714f05d7e3dbb716cb82c47f89eaa95415bde7df2003ac9060923d9fe643",
+    "independent_episode_id": null
+  }
+]

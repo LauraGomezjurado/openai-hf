@@ -1,0 +1,16 @@
+release-available-none-automatic-o0 replay own_only
+release-available-none-required-o0 replay peer_only
+release-available-none-automatic-o1 replay peer_only
+triage-available-none-automatic-o1 replay peer_only
+triage-available-none-automatic-o0 replay peer_only
+triage-available-none-required-o1 replay peer_only
+triage-available-none-required-o0 reverse_fields peer_only
+triage-available-none-required-o0 replay peer_only
+triage-available-none-automatic-o1 reverse_fields own_only
+release-available-none-automatic-o0 reverse_fields own_only
+release-available-none-required-o1 replay peer_only
+triage-available-none-required-o1 reverse_fields peer_only
+triage-available-none-automatic-o0 reverse_fields own_only
+release-available-none-required-o1 reverse_fields peer_only
+release-available-none-required-o0 reverse_fields peer_only
+release-available-none-automatic-o1 reverse_fields own_only

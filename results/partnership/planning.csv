@@ -1,0 +1,9 @@
+assumed_sd_of_family_risk_difference,target_95_interval_halfwidth,approximate_independent_families,caveat
+0.1,0.05,16,Normal approximation with assumed known variance; not power or empirical variance
+0.1,0.1,4,Normal approximation with assumed known variance; not power or empirical variance
+0.2,0.05,62,Normal approximation with assumed known variance; not power or empirical variance
+0.2,0.1,16,Normal approximation with assumed known variance; not power or empirical variance
+0.3,0.05,139,Normal approximation with assumed known variance; not power or empirical variance
+0.3,0.1,35,Normal approximation with assumed known variance; not power or empirical variance
+0.5,0.05,385,Normal approximation with assumed known variance; not power or empirical variance
+0.5,0.1,97,Normal approximation with assumed known variance; not power or empirical variance

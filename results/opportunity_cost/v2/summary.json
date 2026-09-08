@@ -1,0 +1,4986 @@
+{
+  "models": {
+    "qwen3": {
+      "gate": {
+        "execution_controls": 14,
+        "execution_n": 14,
+        "information_checks": 8,
+        "information_n": 8,
+        "pass": true
+      },
+      "context_truncations": 0,
+      "generation_token_limits": 0,
+      "checks": [
+        {
+          "id": "control-release-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-release-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-release-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-invoices-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-invoices-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-invoices-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-triage-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-access-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-release-blocked-peer",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "peer_only"
+          }
+        },
+        {
+          "id": "control-triage-blocked-peer",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "peer_only"
+          }
+        },
+        {
+          "id": "release-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "release-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        }
+      ],
+      "cells": [
+        {
+          "priority": 0,
+          "world": "slack",
+          "n": 8,
+          "valid": 8,
+          "peer": 4,
+          "own": 8,
+          "both": 4,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 32
+        },
+        {
+          "priority": 0,
+          "world": "costly",
+          "n": 8,
+          "valid": 8,
+          "peer": 0,
+          "own": 8,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 0,
+          "world": "blocked",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 0,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 8
+        },
+        {
+          "priority": 0,
+          "world": "shared",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 8,
+          "both": 8,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 1,
+          "world": "slack",
+          "n": 8,
+          "valid": 8,
+          "peer": 2,
+          "own": 8,
+          "both": 2,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 30
+        },
+        {
+          "priority": 1,
+          "world": "costly",
+          "n": 8,
+          "valid": 8,
+          "peer": 0,
+          "own": 8,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 1,
+          "world": "blocked",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 0,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 8
+        },
+        {
+          "priority": 1,
+          "world": "shared",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 8,
+          "both": 8,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        }
+      ],
+      "paired": {
+        "slack-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 50.0,
+          "gains": 4,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "invoices-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-slack-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "blocked-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "invoices-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "shared-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "triage-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "slack-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 25.0,
+          "gains": 2,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "triage-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-slack-p1-o1",
+              "peer_difference": 0
+            },
+            {
+              "id": "invoices-slack-p1-o1",
+              "peer_difference": 0
+            },
+            {
+              "id": "invoices-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-slack-p1-o0",
+              "peer_difference": 0
+            }
+          ]
+        },
+        "blocked-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p1-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "shared-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-shared-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p1-o0",
+              "peer_difference": 1
+            }
+          ]
+        }
+      },
+      "priority_effect": {
+        "slack": {
+          "n": 8,
+          "difference_pp": -25.0,
+          "gains": 0,
+          "losses": 2
+        },
+        "costly": {
+          "n": 8,
+          "difference_pp": 0.0,
+          "gains": 0,
+          "losses": 0
+        },
+        "blocked": {
+          "n": 8,
+          "difference_pp": 0.0,
+          "gains": 0,
+          "losses": 0
+        },
+        "shared": {
+          "n": 8,
+          "difference_pp": 0.0,
+          "gains": 0,
+          "losses": 0
+        }
+      },
+      "order_disagreement": [
+        "access-slack-p0-o0",
+        "triage-slack-p1-o0",
+        "access-slack-p1-o0",
+        "triage-slack-p0-o0",
+        "release-slack-p0-o0",
+        "invoices-slack-p0-o0"
+      ],
+      "strata": [
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        }
+      ],
+      "replays": [
+        {
+          "id": "release-slack-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-costly-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-blocked-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-shared-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-slack-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-costly-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-blocked-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-shared-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        }
+      ]
+    },
+    "qwen": {
+      "gate": {
+        "execution_controls": 14,
+        "execution_n": 14,
+        "information_checks": 8,
+        "information_n": 8,
+        "pass": true
+      },
+      "context_truncations": 0,
+      "generation_token_limits": 0,
+      "checks": [
+        {
+          "id": "control-release-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-release-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-release-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-invoices-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-invoices-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-invoices-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-triage-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-access-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-release-blocked-peer",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "peer_only"
+          }
+        },
+        {
+          "id": "control-triage-blocked-peer",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "peer_only"
+          }
+        },
+        {
+          "id": "release-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "release-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        }
+      ],
+      "cells": [
+        {
+          "priority": 0,
+          "world": "slack",
+          "n": 8,
+          "valid": 8,
+          "peer": 6,
+          "own": 8,
+          "both": 6,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 34
+        },
+        {
+          "priority": 0,
+          "world": "costly",
+          "n": 8,
+          "valid": 8,
+          "peer": 0,
+          "own": 8,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 0,
+          "world": "blocked",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 0,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 8
+        },
+        {
+          "priority": 0,
+          "world": "shared",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 8,
+          "both": 8,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 1,
+          "world": "slack",
+          "n": 8,
+          "valid": 8,
+          "peer": 2,
+          "own": 8,
+          "both": 2,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 30
+        },
+        {
+          "priority": 1,
+          "world": "costly",
+          "n": 8,
+          "valid": 8,
+          "peer": 0,
+          "own": 8,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 1,
+          "world": "blocked",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 0,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 8
+        },
+        {
+          "priority": 1,
+          "world": "shared",
+          "n": 8,
+          "valid": 8,
+          "peer": 5,
+          "own": 8,
+          "both": 5,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        }
+      ],
+      "paired": {
+        "slack-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 75.0,
+          "gains": 6,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-slack-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-slack-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "blocked-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "invoices-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "shared-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "triage-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "slack-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 25.0,
+          "gains": 2,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "triage-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-slack-p1-o1",
+              "peer_difference": 0
+            },
+            {
+              "id": "invoices-slack-p1-o1",
+              "peer_difference": 0
+            },
+            {
+              "id": "invoices-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-slack-p1-o0",
+              "peer_difference": 0
+            }
+          ]
+        },
+        "blocked-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p1-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "shared-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 62.5,
+          "gains": 5,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-shared-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-shared-p1-o0",
+              "peer_difference": 0
+            }
+          ]
+        }
+      },
+      "priority_effect": {
+        "slack": {
+          "n": 8,
+          "difference_pp": -50.0,
+          "gains": 0,
+          "losses": 4
+        },
+        "costly": {
+          "n": 8,
+          "difference_pp": 0.0,
+          "gains": 0,
+          "losses": 0
+        },
+        "blocked": {
+          "n": 8,
+          "difference_pp": 0.0,
+          "gains": 0,
+          "losses": 0
+        },
+        "shared": {
+          "n": 8,
+          "difference_pp": -37.5,
+          "gains": 0,
+          "losses": 3
+        }
+      },
+      "order_disagreement": [
+        "access-slack-p0-o0",
+        "triage-slack-p1-o0",
+        "access-shared-p1-o0",
+        "access-slack-p1-o0",
+        "triage-shared-p1-o0",
+        "release-shared-p1-o0",
+        "invoices-slack-p0-o0"
+      ],
+      "strata": [
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 1,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 1,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 1,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        }
+      ],
+      "replays": [
+        {
+          "id": "release-slack-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-costly-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-blocked-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-shared-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-slack-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-costly-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-blocked-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-shared-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        }
+      ]
+    },
+    "smol": {
+      "gate": {
+        "execution_controls": 8,
+        "execution_n": 14,
+        "information_checks": 8,
+        "information_n": 8,
+        "pass": false
+      },
+      "context_truncations": 0,
+      "generation_token_limits": 0,
+      "checks": [
+        {
+          "id": "control-release-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-release-slack-both",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-release-shared-both",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-invoices-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-invoices-slack-both",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-invoices-shared-both",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-triage-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-triage-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-access-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-shared-both",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-release-blocked-peer",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-blocked-peer",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "peer_only"
+          }
+        },
+        {
+          "id": "release-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "release-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        }
+      ]
+    }
+  },
+  "records": [
+    {
+      "model": "qwen3",
+      "id": "access-slack-p0-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 23
+    },
+    {
+      "model": "qwen3",
+      "id": "access-blocked-p1-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 1,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 24
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-slack-p1-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 25
+    },
+    {
+      "model": "qwen3",
+      "id": "access-shared-p1-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 1,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 26
+    },
+    {
+      "model": "qwen3",
+      "id": "release-shared-p1-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 27
+    },
+    {
+      "model": "qwen3",
+      "id": "release-slack-p1-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 28
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-blocked-p0-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 0,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 29
+    },
+    {
+      "model": "qwen3",
+      "id": "access-shared-p1-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 30
+    },
+    {
+      "model": "qwen3",
+      "id": "release-costly-p1-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 31
+    },
+    {
+      "model": "qwen3",
+      "id": "access-slack-p0-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 5
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 32
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-shared-p1-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 1,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 33
+    },
+    {
+      "model": "qwen3",
+      "id": "access-costly-p0-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 34
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-shared-p0-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 0,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 35
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-costly-p0-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 0,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 36
+    },
+    {
+      "model": "qwen3",
+      "id": "access-blocked-p0-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 0,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 37
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-blocked-p0-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 0,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 38
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-costly-p1-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 39
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-costly-p1-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 40
+    },
+    {
+      "model": "qwen3",
+      "id": "access-shared-p0-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 0,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 41
+    },
+    {
+      "model": "qwen3",
+      "id": "access-costly-p1-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 42
+    },
+    {
+      "model": "qwen3",
+      "id": "release-costly-p0-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 43
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-slack-p1-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 44
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-shared-p0-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 45
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-slack-p0-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 5
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 46
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-slack-p1-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 47
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-shared-p1-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 48
+    },
+    {
+      "model": "qwen3",
+      "id": "access-blocked-p0-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 0,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 49
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-shared-p0-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 0,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 50
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-shared-p1-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 51
+    },
+    {
+      "model": "qwen3",
+      "id": "release-shared-p0-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 0,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 52
+    },
+    {
+      "model": "qwen3",
+      "id": "access-slack-p1-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 53
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-costly-p1-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 54
+    },
+    {
+      "model": "qwen3",
+      "id": "access-blocked-p1-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 1,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 55
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-slack-p0-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 56
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-slack-p0-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 57
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-shared-p0-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 58
+    },
+    {
+      "model": "qwen3",
+      "id": "access-costly-p0-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 0,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 59
+    },
+    {
+      "model": "qwen3",
+      "id": "access-slack-p1-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 5
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 60
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-costly-p0-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 0,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 61
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-p1-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 1,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 62
+    },
+    {
+      "model": "qwen3",
+      "id": "release-slack-p0-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 63
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-costly-p0-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 64
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-slack-p1-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 5
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 65
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-p1-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 1,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 66
+    },
+    {
+      "model": "qwen3",
+      "id": "access-costly-p1-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 67
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-blocked-p1-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 1,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 68
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-p1-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 1,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 69
+    },
+    {
+      "model": "qwen3",
+      "id": "release-costly-p0-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 0,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 70
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-costly-p0-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 71
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-p0-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 0,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 72
+    },
+    {
+      "model": "qwen3",
+      "id": "release-costly-p1-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 73
+    },
+    {
+      "model": "qwen3",
+      "id": "access-shared-p0-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 74
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-p0-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 0,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 75
+    },
+    {
+      "model": "qwen3",
+      "id": "release-slack-p1-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 76
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-shared-p1-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 1,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 77
+    },
+    {
+      "model": "qwen3",
+      "id": "release-shared-p1-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 1,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 78
+    },
+    {
+      "model": "qwen3",
+      "id": "release-blocked-p0-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 0,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 79
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-p0-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 0,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 80
+    },
+    {
+      "model": "qwen3",
+      "id": "triage-blocked-p1-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 1,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 81
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-costly-p1-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 82
+    },
+    {
+      "model": "qwen3",
+      "id": "release-shared-p0-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 83
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-slack-p0-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 84
+    },
+    {
+      "model": "qwen3",
+      "id": "invoices-blocked-p1-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 1,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 85
+    },
+    {
+      "model": "qwen3",
+      "id": "release-slack-p0-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen3/rollouts.jsonl",
+      "line": 86
+    },
+    {
+      "model": "qwen",
+      "id": "access-slack-p0-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 23
+    },
+    {
+      "model": "qwen",
+      "id": "access-blocked-p1-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 1,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 24
+    },
+    {
+      "model": "qwen",
+      "id": "triage-slack-p1-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 25
+    },
+    {
+      "model": "qwen",
+      "id": "access-shared-p1-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 26
+    },
+    {
+      "model": "qwen",
+      "id": "release-shared-p1-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 27
+    },
+    {
+      "model": "qwen",
+      "id": "release-slack-p1-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 28
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-blocked-p0-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 0,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 29
+    },
+    {
+      "model": "qwen",
+      "id": "access-shared-p1-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 30
+    },
+    {
+      "model": "qwen",
+      "id": "release-costly-p1-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 31
+    },
+    {
+      "model": "qwen",
+      "id": "access-slack-p0-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 5
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 32
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-shared-p1-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 1,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 33
+    },
+    {
+      "model": "qwen",
+      "id": "access-costly-p0-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 34
+    },
+    {
+      "model": "qwen",
+      "id": "triage-shared-p0-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 0,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 35
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-costly-p0-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 0,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 36
+    },
+    {
+      "model": "qwen",
+      "id": "access-blocked-p0-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 0,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 37
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-blocked-p0-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 0,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 38
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-costly-p1-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 39
+    },
+    {
+      "model": "qwen",
+      "id": "triage-costly-p1-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 40
+    },
+    {
+      "model": "qwen",
+      "id": "access-shared-p0-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 0,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 41
+    },
+    {
+      "model": "qwen",
+      "id": "access-costly-p1-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 42
+    },
+    {
+      "model": "qwen",
+      "id": "release-costly-p0-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 43
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-slack-p1-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 44
+    },
+    {
+      "model": "qwen",
+      "id": "triage-shared-p0-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 45
+    },
+    {
+      "model": "qwen",
+      "id": "triage-slack-p0-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 5
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 46
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-slack-p1-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 47
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-shared-p1-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 48
+    },
+    {
+      "model": "qwen",
+      "id": "access-blocked-p0-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 0,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 49
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-shared-p0-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 0,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 50
+    },
+    {
+      "model": "qwen",
+      "id": "triage-shared-p1-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 51
+    },
+    {
+      "model": "qwen",
+      "id": "release-shared-p0-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 0,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 52
+    },
+    {
+      "model": "qwen",
+      "id": "access-slack-p1-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 53
+    },
+    {
+      "model": "qwen",
+      "id": "triage-costly-p1-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 1,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 54
+    },
+    {
+      "model": "qwen",
+      "id": "access-blocked-p1-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 1,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 55
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-slack-p0-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 56
+    },
+    {
+      "model": "qwen",
+      "id": "triage-slack-p0-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 0,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 5
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 57
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-shared-p0-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 58
+    },
+    {
+      "model": "qwen",
+      "id": "access-costly-p0-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 0,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 59
+    },
+    {
+      "model": "qwen",
+      "id": "access-slack-p1-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 5
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 60
+    },
+    {
+      "model": "qwen",
+      "id": "triage-costly-p0-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 0,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 61
+    },
+    {
+      "model": "qwen",
+      "id": "triage-blocked-p1-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 1,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 62
+    },
+    {
+      "model": "qwen",
+      "id": "release-slack-p0-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 0,
+      "order": 0,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 63
+    },
+    {
+      "model": "qwen",
+      "id": "triage-costly-p0-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 64
+    },
+    {
+      "model": "qwen",
+      "id": "triage-slack-p1-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "slack",
+      "priority": 1,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 5
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 65
+    },
+    {
+      "model": "qwen",
+      "id": "release-blocked-p1-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 1,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 66
+    },
+    {
+      "model": "qwen",
+      "id": "access-costly-p1-o0",
+      "domain": "access",
+      "graph": "fork",
+      "world": "costly",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 67
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-blocked-p1-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 1,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 68
+    },
+    {
+      "model": "qwen",
+      "id": "release-blocked-p1-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 1,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 69
+    },
+    {
+      "model": "qwen",
+      "id": "release-costly-p0-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 0,
+      "order": 1,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 70
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-costly-p0-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 71
+    },
+    {
+      "model": "qwen",
+      "id": "triage-blocked-p0-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 0,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 72
+    },
+    {
+      "model": "qwen",
+      "id": "release-costly-p1-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 73
+    },
+    {
+      "model": "qwen",
+      "id": "access-shared-p0-o1",
+      "domain": "access",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 74
+    },
+    {
+      "model": "qwen",
+      "id": "release-blocked-p0-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 0,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 75
+    },
+    {
+      "model": "qwen",
+      "id": "release-slack-p1-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 76
+    },
+    {
+      "model": "qwen",
+      "id": "triage-shared-p1-o0",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "shared",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 77
+    },
+    {
+      "model": "qwen",
+      "id": "release-shared-p1-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 78
+    },
+    {
+      "model": "qwen",
+      "id": "release-blocked-p0-o0",
+      "domain": "release",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 0,
+      "order": 0,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 79
+    },
+    {
+      "model": "qwen",
+      "id": "triage-blocked-p0-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 0,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 80
+    },
+    {
+      "model": "qwen",
+      "id": "triage-blocked-p1-o1",
+      "domain": "triage",
+      "graph": "fork",
+      "world": "blocked",
+      "priority": 1,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 81
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-costly-p1-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "costly",
+      "priority": 1,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 82
+    },
+    {
+      "model": "qwen",
+      "id": "release-shared-p0-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "shared",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 83
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-slack-p0-o0",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 0,
+      "order": 0,
+      "allocation": "own_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 0,
+        "own": 1,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 3
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 84
+    },
+    {
+      "model": "qwen",
+      "id": "invoices-blocked-p1-o1",
+      "domain": "invoices",
+      "graph": "chain",
+      "world": "blocked",
+      "priority": 1,
+      "order": 1,
+      "allocation": "peer_only",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 0,
+        "both": 0,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 1
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 85
+    },
+    {
+      "model": "qwen",
+      "id": "release-slack-p0-o1",
+      "domain": "release",
+      "graph": "chain",
+      "world": "slack",
+      "priority": 0,
+      "order": 1,
+      "allocation": "joint",
+      "metrics": {
+        "valid": 1,
+        "peer": 1,
+        "own": 1,
+        "both": 1,
+        "neither": 0,
+        "foregone_own": 0,
+        "priority_violation": 0,
+        "physical_loss": 0,
+        "credits_used": 4
+      },
+      "source": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/v2/qwen/rollouts.jsonl",
+      "line": 86
+    }
+  ]
+}

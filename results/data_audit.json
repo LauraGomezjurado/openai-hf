@@ -1,0 +1,49 @@
+{
+  "scope": "Published figure data; reconstructed timing and AI-classified participation, not raw telemetry.",
+  "agent_rows": 1206,
+  "families": {
+    "HPIM": 1068,
+    "Sol": 138
+  },
+  "positioned_hf_onsets": 684,
+  "declared_verified_hf_participants": 688,
+  "hf_before_board_read": 15,
+  "missing_board_write": 60,
+  "observed_stop_flags": 47,
+  "median_read_to_hf_hours_among_positioned_including_negative": 4.1568029166666705,
+  "workstream_sparse_rows": 1772,
+  "workstreams": 22,
+  "communicative_purposes": 7,
+  "hf_replay_curated_entries": 21,
+  "hf_replay_daily_count_sum": 17613,
+  "hf_replay_phase_count_sum": 16521,
+  "wiki_separate_incident": {
+    "revisions": {
+      "rows": 14591,
+      "sha256_expanded": "60df4a515178230aa952d9f64f6215aea4bd95ab2f05e31e484cf9b887e3f793"
+    },
+    "revision_time_grades": {
+      "write_date": 6,
+      "reqlog": 14482,
+      "rclog": 103
+    },
+    "pages_represented": 4579,
+    "events": {
+      "rows": 19913,
+      "sha256_expanded": "588584295f1c4a7c3d90b04075ab151504f165ff069534d935cda08853ec28b1"
+    },
+    "event_types": {
+      "probe": 101,
+      "save": 14591,
+      "delete": 5217,
+      "revert": 4
+    }
+  },
+  "cautions": [
+    "No untreated non-board cohort is present.",
+    "688 declared verified participants versus 684 positioned onsets needs clarification.",
+    "Negative read-to-onset intervals are preserved, not corrected or dropped silently.",
+    "A missing onset is not verified nonparticipation; ending follow-up is not verified disengagement.",
+    "Wiki event types overlap in the activity they describe; row total is not a count of agent actions."
+  ]
+}

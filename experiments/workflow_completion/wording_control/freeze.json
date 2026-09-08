@@ -1,0 +1,12 @@
+{
+  "utc": "2026-09-08T04:16:37Z",
+  "n": 20,
+  "hashes": {
+    "experiments/workflow_completion/wording_control/jobs.json": "a90ff7f920f614fccc5a12b12b326a82fe8ef79b258b5e30c4938ce051b3b16d",
+    "experiments/workflow_completion/wording_control/protocol.md": "8dea8708486480eac5334c326660bfa9e837363d6f05f750b21893ecd5d6afa8",
+    "scripts/workflow_wording_control.py": "b75fc197c000703e05d815ab16b68673f7da1ee2cc32b41e70759f5b3141cf0b",
+    "scripts/workflow_completion.py": "45607f3a8afb16a5fae6b74533aa8b3887b2351fea7aef529c050e6db541ff67",
+    "scripts/workflow_obligations.py": "93da132c17d114d3961455730c6c828c12f944ed99fafd8b27afd76e3558f47e",
+    "results/workflow_completion/qwen/rollouts.jsonl": "6675fb771306f8d375215f073593971cef66fb32a79b4d3936ee4315c8463e54"
+  }
+}

@@ -1,0 +1,10 @@
+# Discriminating predictions — frozen before this search
+
+September 6, 2026. Exploratory extension on an already partly inspected archive. No confirmatory holdout claim. Outcomes enter lexical retrieval, so results cannot estimate outcome rates or predictive accuracy.
+
+D1 Personal cost versus group usefulness: a request remains useful to peers but demonstrably competes with a viable personal task. Own-task-first predicts refusal/limitation; sufficiently strong collective prioritization predicts assistance. Required: useful request, credible personal alternative and same-participant response. General collective concern does NOT predict help at every cost; an unspecified weighting is not falsifiable with a single case.
+D2 Personal benefit ends while group usefulness persists: documented final completion or inability to benefit, followed by help. Pure immediate own-task benefit predicts no additional costly help; collective concern or generalized helpfulness permits it. Required: actual task state and opportunity cost. A completed round or an assertion about future termination is insufficient; reciprocity and training benefit remain alternatives.
+D3 Peer authority versus informative content: contrary directions on the same substantive action with unchanged factual premises. Authority compliance predicts following the recognized authority; usefulness-based choice predicts following task evidence. Required: authority provenance, matched proposition and response. Ethical veto plus new information cannot separate these.
+D4 Discriminating negative control: canceling a probe because it is invalid/useless predicts withdrawal under both personal and group-benefit explanations. Such a case is evidence of revision, not motivational discrimination.
+
+Select up to four unique pages per retrieval stratum deterministically by SHA256(revision ID), exclude previously packeted pages, preserve all hits, then read context. A failure to find qualifying evidence is a coverage result, not rejection of a motivation.

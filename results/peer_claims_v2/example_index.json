@@ -1,0 +1,57 @@
+[
+  {
+    "model": "qwen3",
+    "kind": "unverified_false_redirection",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-unverified_false_redirection.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "correction_after_check",
+    "path": null
+  },
+  {
+    "model": "qwen3",
+    "kind": "checking_without_assessment",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-checking_without_assessment.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "informed_false_redirection",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-informed_false_redirection.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "intervention_gain",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-intervention_gain.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "intervention_loss",
+    "path": null
+  },
+  {
+    "model": "qwen3",
+    "kind": "blocked_fallback",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-blocked_fallback.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "affordable_help_loss",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-affordable_help_loss.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "order_disagreement",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-order_disagreement.md"
+  },
+  {
+    "model": "qwen3",
+    "kind": "invalid",
+    "path": null
+  },
+  {
+    "model": "qwen",
+    "kind": "gate_failure",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen-gate_failure.json"
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "note": "Qwen3 used the pre-existing CPU launcher, which refreshed results/workflow_obligations/qwen3/server.json (runtime PID/command record only). A copy is saved in this study. Scientific source trajectories and frozen design files were not modified. Qwen uses a study-specific launcher to keep its runtime record separate.",
+  "cpu_threads": 6,
+  "gpu_offload": false,
+  "host": "127.0.0.1",
+  "port": 18973
+}

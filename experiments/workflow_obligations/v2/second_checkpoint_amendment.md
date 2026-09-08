@@ -1,0 +1,7 @@
+# Additional checkpoint after a failed capability gate
+
+Before Qwen3 generation: Phi-3.5 Mini Q4 failed 0/4 workflow controls (none finished correctly within ten actions). It could deliver the instructed test message but did not terminate that control. No Phi main cases ran. Preserve all five controls and do not interpret the gate failure as safety noncompliance or an intrinsic model-family property; quantization and this interface remain possible contributors.
+
+Evaluate cached Qwen/Qwen3-8B snapshot b968826d9c46dd6066d109eabc6255188de91218 with the same V2 cases and gate. Convert and quantize locally using the same llama.cpp source/binary. Disable thinking explicitly through its native template (enable_thinking=false), aligning the action-only interface with the previous checkpoint. The official model card documents this switch: https://huggingface.co/Qwen/Qwen3-8B . Retain deterministic decoding for matched intervention comparisons; it differs from the vendor's suggested sampled non-thinking settings and is not a claim of optimal model performance.
+
+This adds a checkpoint from the same broader Qwen family, not a successful cross-family replication. Model selection at this point is based on task capability and available local weights, not desirable safety-treatment outcomes. All attempted models, gates and resource-driven changes remain visible. The frozen main case set, responsibility/pressure/reminder interventions, tool semantics and action budgets do not change. Any main Qwen3 comparison remains conditional on passing the existing gate.

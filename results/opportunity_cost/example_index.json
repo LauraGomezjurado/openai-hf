@@ -1,0 +1,17 @@
+[
+  {
+    "model": "qwen3",
+    "kind": "capability_failure",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/examples/qwen3-capability_failure.json"
+  },
+  {
+    "model": "qwen",
+    "kind": "capability_failure",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/examples/qwen-capability_failure.json"
+  },
+  {
+    "model": "smol",
+    "kind": "capability_failure",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/opportunity_cost/examples/smol-capability_failure.json"
+  }
+]

@@ -1,0 +1,11 @@
+controls triage-available-none-automatic-o0-control-direct False own_only
+controls release-blocked-none-optional-o0-control-check True no_work
+controls triage-slack-none-automatic-o0-control-joint False joint
+controls triage-blocked-none-automatic-o0-control-direct True no_work
+controls release-available-none-optional-o0-control-check True own_only
+controls release-slack-none-automatic-o0-control-joint False joint
+controls triage-available-none-optional-o0-control-check True own_only
+controls release-available-none-automatic-o0-control-direct False own_only
+controls release-blocked-none-automatic-o0-control-direct True no_work
+controls triage-blocked-none-optional-o0-control-check True no_work
+GATE STOP {'passed': 6, 'n': 10, 'eligible': False}

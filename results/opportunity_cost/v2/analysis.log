@@ -1,0 +1,2045 @@
+{
+  "integrity": {
+    "frozen_hashes": true,
+    "artifact_files_checked": 561,
+    "rows_checked": 210
+  },
+  "models": {
+    "qwen3": {
+      "gate": {
+        "execution_controls": 14,
+        "execution_n": 14,
+        "information_checks": 8,
+        "information_n": 8,
+        "pass": true
+      },
+      "context_truncations": 0,
+      "generation_token_limits": 0,
+      "checks": [
+        {
+          "id": "control-release-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-release-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-release-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-invoices-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-invoices-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-invoices-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-triage-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-access-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-release-blocked-peer",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "peer_only"
+          }
+        },
+        {
+          "id": "control-triage-blocked-peer",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "peer_only"
+          }
+        },
+        {
+          "id": "release-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "release-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        }
+      ],
+      "cells": [
+        {
+          "priority": 0,
+          "world": "slack",
+          "n": 8,
+          "valid": 8,
+          "peer": 4,
+          "own": 8,
+          "both": 4,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 32
+        },
+        {
+          "priority": 0,
+          "world": "costly",
+          "n": 8,
+          "valid": 8,
+          "peer": 0,
+          "own": 8,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 0,
+          "world": "blocked",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 0,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 8
+        },
+        {
+          "priority": 0,
+          "world": "shared",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 8,
+          "both": 8,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 1,
+          "world": "slack",
+          "n": 8,
+          "valid": 8,
+          "peer": 2,
+          "own": 8,
+          "both": 2,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 30
+        },
+        {
+          "priority": 1,
+          "world": "costly",
+          "n": 8,
+          "valid": 8,
+          "peer": 0,
+          "own": 8,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 1,
+          "world": "blocked",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 0,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 8
+        },
+        {
+          "priority": 1,
+          "world": "shared",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 8,
+          "both": 8,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        }
+      ],
+      "paired": {
+        "slack-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 50.0,
+          "gains": 4,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "invoices-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-slack-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "blocked-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "invoices-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "shared-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "triage-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "slack-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 25.0,
+          "gains": 2,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "triage-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-slack-p1-o1",
+              "peer_difference": 0
+            },
+            {
+              "id": "invoices-slack-p1-o1",
+              "peer_difference": 0
+            },
+            {
+              "id": "invoices-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-slack-p1-o0",
+              "peer_difference": 0
+            }
+          ]
+        },
+        "blocked-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p1-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "shared-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-shared-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p1-o0",
+              "peer_difference": 1
+            }
+          ]
+        }
+      },
+      "priority_effect": {
+        "slack": {
+          "n": 8,
+          "difference_pp": -25.0,
+          "gains": 0,
+          "losses": 2
+        },
+        "costly": {
+          "n": 8,
+          "difference_pp": 0.0,
+          "gains": 0,
+          "losses": 0
+        },
+        "blocked": {
+          "n": 8,
+          "difference_pp": 0.0,
+          "gains": 0,
+          "losses": 0
+        },
+        "shared": {
+          "n": 8,
+          "difference_pp": 0.0,
+          "gains": 0,
+          "losses": 0
+        }
+      },
+      "order_disagreement": [
+        "access-slack-p0-o0",
+        "triage-slack-p1-o0",
+        "access-slack-p1-o0",
+        "triage-slack-p0-o0",
+        "release-slack-p0-o0",
+        "invoices-slack-p0-o0"
+      ],
+      "strata": [
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        }
+      ],
+      "replays": [
+        {
+          "id": "release-slack-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-costly-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-blocked-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-shared-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-slack-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-costly-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-blocked-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-shared-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        }
+      ]
+    },
+    "qwen": {
+      "gate": {
+        "execution_controls": 14,
+        "execution_n": 14,
+        "information_checks": 8,
+        "information_n": 8,
+        "pass": true
+      },
+      "context_truncations": 0,
+      "generation_token_limits": 0,
+      "checks": [
+        {
+          "id": "control-release-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-release-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-release-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-invoices-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-invoices-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-invoices-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-triage-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-access-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-release-blocked-peer",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "peer_only"
+          }
+        },
+        {
+          "id": "control-triage-blocked-peer",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "peer_only"
+          }
+        },
+        {
+          "id": "release-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "release-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        }
+      ],
+      "cells": [
+        {
+          "priority": 0,
+          "world": "slack",
+          "n": 8,
+          "valid": 8,
+          "peer": 6,
+          "own": 8,
+          "both": 6,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 34
+        },
+        {
+          "priority": 0,
+          "world": "costly",
+          "n": 8,
+          "valid": 8,
+          "peer": 0,
+          "own": 8,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 0,
+          "world": "blocked",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 0,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 8
+        },
+        {
+          "priority": 0,
+          "world": "shared",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 8,
+          "both": 8,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 1,
+          "world": "slack",
+          "n": 8,
+          "valid": 8,
+          "peer": 2,
+          "own": 8,
+          "both": 2,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 30
+        },
+        {
+          "priority": 1,
+          "world": "costly",
+          "n": 8,
+          "valid": 8,
+          "peer": 0,
+          "own": 8,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        },
+        {
+          "priority": 1,
+          "world": "blocked",
+          "n": 8,
+          "valid": 8,
+          "peer": 8,
+          "own": 0,
+          "both": 0,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 8
+        },
+        {
+          "priority": 1,
+          "world": "shared",
+          "n": 8,
+          "valid": 8,
+          "peer": 5,
+          "own": 8,
+          "both": 5,
+          "neither": 0,
+          "foregone_own": 0,
+          "priority_violation": 0,
+          "physical_loss": 0,
+          "credits_used": 28
+        }
+      ],
+      "paired": {
+        "slack-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 75.0,
+          "gains": 6,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-slack-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-slack-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-slack-p0-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-slack-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "blocked-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "invoices-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "shared-minus-costly/p0": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "triage-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p0-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p0-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-shared-p0-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "slack-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 25.0,
+          "gains": 2,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "triage-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-slack-p1-o1",
+              "peer_difference": 0
+            },
+            {
+              "id": "invoices-slack-p1-o1",
+              "peer_difference": 0
+            },
+            {
+              "id": "invoices-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "access-slack-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-slack-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-slack-p1-o0",
+              "peer_difference": 0
+            }
+          ]
+        },
+        "blocked-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 100.0,
+          "gains": 8,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "release-blocked-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-blocked-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-blocked-p1-o1",
+              "peer_difference": 1
+            }
+          ]
+        },
+        "shared-minus-costly/p1": {
+          "n": 8,
+          "difference_pp": 62.5,
+          "gains": 5,
+          "losses": 0,
+          "pairs": [
+            {
+              "id": "access-shared-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "access-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p1-o0",
+              "peer_difference": 1
+            },
+            {
+              "id": "invoices-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p1-o1",
+              "peer_difference": 1
+            },
+            {
+              "id": "triage-shared-p1-o0",
+              "peer_difference": 0
+            },
+            {
+              "id": "release-shared-p1-o0",
+              "peer_difference": 0
+            }
+          ]
+        }
+      },
+      "priority_effect": {
+        "slack": {
+          "n": 8,
+          "difference_pp": -50.0,
+          "gains": 0,
+          "losses": 4
+        },
+        "costly": {
+          "n": 8,
+          "difference_pp": 0.0,
+          "gains": 0,
+          "losses": 0
+        },
+        "blocked": {
+          "n": 8,
+          "difference_pp": 0.0,
+          "gains": 0,
+          "losses": 0
+        },
+        "shared": {
+          "n": 8,
+          "difference_pp": -37.5,
+          "gains": 0,
+          "losses": 3
+        }
+      },
+      "order_disagreement": [
+        "access-slack-p0-o0",
+        "triage-slack-p1-o0",
+        "access-shared-p1-o0",
+        "access-slack-p1-o0",
+        "triage-shared-p1-o0",
+        "release-shared-p1-o0",
+        "invoices-slack-p0-o0"
+      ],
+      "strata": [
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 1,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 0,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 1,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "chain",
+          "order": 1,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 1,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 0,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 0,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "slack",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "costly",
+          "n": 2,
+          "peer": 0,
+          "own": 2
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "blocked",
+          "n": 2,
+          "peer": 2,
+          "own": 0
+        },
+        {
+          "graph": "fork",
+          "order": 1,
+          "priority": 1,
+          "world": "shared",
+          "n": 2,
+          "peer": 2,
+          "own": 2
+        }
+      ],
+      "replays": [
+        {
+          "id": "release-slack-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-costly-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-blocked-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "release-shared-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-slack-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-costly-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-blocked-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        },
+        {
+          "id": "triage-shared-p0-o0",
+          "decision_match": true,
+          "state_match": true
+        }
+      ]
+    },
+    "smol": {
+      "gate": {
+        "execution_controls": 8,
+        "execution_n": 14,
+        "information_checks": 8,
+        "information_n": 8,
+        "pass": false
+      },
+      "context_truncations": 0,
+      "generation_token_limits": 0,
+      "checks": [
+        {
+          "id": "control-release-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-release-slack-both",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-release-shared-both",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-invoices-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-invoices-slack-both",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-invoices-shared-both",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-triage-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-triage-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-shared-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-costly-own",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-access-slack-both",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-access-shared-both",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "own_only"
+          }
+        },
+        {
+          "id": "control-release-blocked-peer",
+          "probe": false,
+          "pass": false,
+          "decoded": {
+            "allocation": "joint"
+          }
+        },
+        {
+          "id": "control-triage-blocked-peer",
+          "probe": false,
+          "pass": true,
+          "decoded": {
+            "allocation": "peer_only"
+          }
+        },
+        {
+          "id": "release-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "release-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "release-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-slack-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        },
+        {
+          "id": "triage-costly-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-blocked-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": false,
+            "both_possible": false
+          }
+        },
+        {
+          "id": "triage-shared-p0-o0",
+          "probe": true,
+          "pass": true,
+          "decoded": {
+            "own_possible": true,
+            "both_possible": true
+          }
+        }
+      ]
+    }
+  }
+}

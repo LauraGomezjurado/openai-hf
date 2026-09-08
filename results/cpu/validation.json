@@ -1,0 +1,20 @@
+{
+  "passed": true,
+  "checks": [
+    "All original source hashes match the frozen manifest",
+    "Every timing bound is ordered and uses a valid denominator",
+    "Onset predictions have unique keys, valid probabilities, and lie inside held-out time blocks",
+    "Workstream forecasts are finite and in their temporal test block",
+    "All wiki hunks exactly reproduced; 50 unique pages; no component split leakage in sample; no invented human labels",
+    "Read-anchored risk set retains all 669 positive-lag positioned onsets",
+    "GLMs recover constant means and a directional signal; scoring identities pass",
+    "All fitted models converged without reaching coefficient safeguards"
+  ],
+  "python": "3.14.2 (main, Dec  5 2025, 16:49:16) [Clang 17.0.0 (clang-1700.4.4.1)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "versions": {
+    "numpy": "2.4.3",
+    "scipy": "1.17.1",
+    "matplotlib": "3.10.8"
+  }
+}

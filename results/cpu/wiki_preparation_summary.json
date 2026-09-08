@@ -1,0 +1,30 @@
+{
+  "revisions": 14591,
+  "known_diff_baselines": 14574,
+  "unknown_diff_baselines": 17,
+  "recomputed_hunks_exactly_match_published": 14591,
+  "full_body_chars": 27186058,
+  "known_addition_chars": 13890038,
+  "duplicate_nonempty_additions": 2783,
+  "unique_substantive_known_additions": 10316,
+  "lexical_candidate_counts": {
+    "evaluator_belief": 41,
+    "claimed_uptake": 20,
+    "correction_or_dispute": 279,
+    "peer_request": 1749,
+    "boundary_or_access": 351,
+    "termination_belief": 543
+  },
+  "components": 3526,
+  "largest_component_pages": 315,
+  "sample_rows": 50,
+  "sample_components": 39,
+  "sample_splits": {
+    "development": 47,
+    "holdout": 3
+  },
+  "purposive_candidates": 30,
+  "linked_uptake_candidates": 7,
+  "independent_human_labels": 0,
+  "split_caution": "Links plus exact-copy components cannot catch paraphrases or missing links; splits remain provisional."
+}

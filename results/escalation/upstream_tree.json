@@ -1,0 +1,3673 @@
+{
+  "sha": "9c27637c3cf6dfb2c0d5801c7f3d91358cb587bc",
+  "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/9c27637c3cf6dfb2c0d5801c7f3d91358cb587bc",
+  "tree": [
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9341989bb4e819e6b061dfdb065b503bceda3757",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/9341989bb4e819e6b061dfdb065b503bceda3757"
+    },
+    {
+      "path": ".github/pull_request_template.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3de46dd4ec120ac59a9a633d2e505f7af70f8727",
+      "size": 566,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3de46dd4ec120ac59a9a633d2e505f7af70f8727"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fa411e68d09d24a562362444642980a77e6124d3",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/fa411e68d09d24a562362444642980a77e6124d3"
+    },
+    {
+      "path": ".github/workflows/checks.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df5ce4076d9f3ab5434e1efed87c9a91eb0d09c2",
+      "size": 981,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/df5ce4076d9f3ab5434e1efed87c9a91eb0d09c2"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "128eb0022233752bbd2a097da4093ef336b79222",
+      "size": 3215,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/128eb0022233752bbd2a097da4093ef336b79222"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "68d804db7dadc78e5b71c2c541f916f6908b7b94",
+      "size": 575,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/68d804db7dadc78e5b71c2c541f916f6908b7b94"
+    },
+    {
+      "path": "ACCESS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69624ad3bbc06f39aaf40a53389c9709420b8d5c",
+      "size": 143,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/69624ad3bbc06f39aaf40a53389c9709420b8d5c"
+    },
+    {
+      "path": "LICENSE",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e38f95fb3e28f607d287d05ce7262e5eba97455",
+      "size": 1092,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/2e38f95fb3e28f607d287d05ce7262e5eba97455"
+    },
+    {
+      "path": "Makefile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54f8b5252362d8fcc7545e90f398b65b1751da1a",
+      "size": 444,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/54f8b5252362d8fcc7545e90f398b65b1751da1a"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b116139c750a33d32bc0400cb9b21167545eb86a",
+      "size": 13964,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b116139c750a33d32bc0400cb9b21167545eb86a"
+    },
+    {
+      "path": "final_runs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6daff355e3a87b8ad3659b4aa473b10a2e858f8a",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/6daff355e3a87b8ad3659b4aa473b10a2e858f8a"
+    },
+    {
+      "path": "final_runs/0_baseline",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a22d185b59900e44b6fc7255f34685462af3f16d",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/a22d185b59900e44b6fc7255f34685462af3f16d"
+    },
+    {
+      "path": "final_runs/0_baseline/.eval-set-id",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22ec9e099f4ae429746372936fb890018e87f64f",
+      "size": 22,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/22ec9e099f4ae429746372936fb890018e87f64f"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_44W2QEynji9ETskWhe4Mmx.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5d985aa36fbf71feb1b8b33235a5e50125c21a1",
+      "size": 2522533,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e5d985aa36fbf71feb1b8b33235a5e50125c21a1"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_79JAm4SLK3EEPgxbMGFCi7.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aef30acef94b0f781b5a7277df9d37b731aab110",
+      "size": 2514204,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/aef30acef94b0f781b5a7277df9d37b731aab110"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_ADBRbouHy47uuDMpiNraPR.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0e514879f2a2ff89bce0ec98b5c8cd4b3906dc8",
+      "size": 2877556,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b0e514879f2a2ff89bce0ec98b5c8cd4b3906dc8"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_HsgQqTcuZPuNxjP3s4dLBC.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dbaf48ce64d25b765e563d6f52ef5dfb6ab4690",
+      "size": 2980059,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/8dbaf48ce64d25b765e563d6f52ef5dfb6ab4690"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_Nq8G9h3TosNWn2AwVZPbRp.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d3de22c25e7278e7eddf86e22a2ae29fa0c136f",
+      "size": 3269902,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9d3de22c25e7278e7eddf86e22a2ae29fa0c136f"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_Py8NkMHLrESG3iguWpBiUv.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0b20e5da665c81af405c8bc7477c6412ff9405a",
+      "size": 2938521,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b0b20e5da665c81af405c8bc7477c6412ff9405a"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_crUETKXHjKd2UQ9DH6c55C.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f79082f7020b04a287f616f3d3a3dc4d1da6fbb8",
+      "size": 2305431,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f79082f7020b04a287f616f3d3a3dc4d1da6fbb8"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-45-05-00_high-agency_eux4S7aUuKtEeSmRCmUNA4.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee7bfc998e8c6e3dbf373c86d3915aedad9e59fb",
+      "size": 2782549,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ee7bfc998e8c6e3dbf373c86d3915aedad9e59fb"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-46-05-00_high-agency_6FxQ5ucjJ3JrF4VFTQZnjw.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee1e0701c6d0e510d7db84dda55bb551187d21cb",
+      "size": 3490699,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ee1e0701c6d0e510d7db84dda55bb551187d21cb"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-46-05-00_high-agency_6y77RjKABsMoJLifGXFEhe.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "095eae106ffa222d4495bee86b15b53726802d24",
+      "size": 3416520,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/095eae106ffa222d4495bee86b15b53726802d24"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-46-05-00_high-agency_NiddydFoZz75CTrvYGVsWL.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea17245b69ec430cb90fc1c9341ec274e694f5bf",
+      "size": 3470437,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ea17245b69ec430cb90fc1c9341ec274e694f5bf"
+    },
+    {
+      "path": "final_runs/0_baseline/2025-10-05T21-04-46-05-00_high-agency_egU3ezFTxShLevGBBRNyVw.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2199e5d4362e1768f1bec87a12ec954839b60cf",
+      "size": 3388465,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c2199e5d4362e1768f1bec87a12ec954839b60cf"
+    },
+    {
+      "path": "final_runs/0_baseline/aggregated_analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "16f41d0eab99a8c04769810f94f5bef273eaea93",
+      "size": 1063,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/16f41d0eab99a8c04769810f94f5bef273eaea93"
+    },
+    {
+      "path": "final_runs/0_baseline/analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ec657883e5f5a084e708072755ee96c364b13f6",
+      "size": 2431,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/8ec657883e5f5a084e708072755ee96c364b13f6"
+    },
+    {
+      "path": "final_runs/0_baseline/logs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cb1aab507eb473f38a1e43ad7f64cddb165197e",
+      "size": 102705,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4cb1aab507eb473f38a1e43ad7f64cddb165197e"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57e25396dc687e28ce92dd0ac132069a057436e2",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/57e25396dc687e28ce92dd0ac132069a057436e2"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/.eval-set-id",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5bb1f065732080429f2a431481c484b0f031b070",
+      "size": 22,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/5bb1f065732080429f2a431481c484b0f031b070"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-39-05-00_high-agency_BmXKnpEt3of57H3VP4XQdq.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa8228e301cad03047f29fec7d814ac1ba578db9",
+      "size": 3078682,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/aa8228e301cad03047f29fec7d814ac1ba578db9"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-39-05-00_high-agency_RSV7fH3sYXJ6Xa562Y9gL2.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f3bcc91479eea78a2c5f4be83c1032f1e8afeb77",
+      "size": 2977487,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f3bcc91479eea78a2c5f4be83c1032f1e8afeb77"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-39-05-00_high-agency_e5GZYmGtLd6ApDjs6j6GnZ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "298ee3b37e5062507c770c913cda8734b25aa1fb",
+      "size": 3385527,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/298ee3b37e5062507c770c913cda8734b25aa1fb"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-40-05-00_high-agency_2hxK5aZuZwPxFyuvGsf4Hn.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "788e921953e4852c32816f1d13c29363a36446c4",
+      "size": 2858539,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/788e921953e4852c32816f1d13c29363a36446c4"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-40-05-00_high-agency_9BuXt6ETN5tjgnEmCKmvWn.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c65c8d0548d800f4b90e447cc0c50e9ad74cfa35",
+      "size": 2928204,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c65c8d0548d800f4b90e447cc0c50e9ad74cfa35"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-40-05-00_high-agency_CLf5LiRuqMdGfngWqAEfcB.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d52270bc6192679f8f4bca0c97c2e0f890eaa003",
+      "size": 3798890,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/d52270bc6192679f8f4bca0c97c2e0f890eaa003"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-40-05-00_high-agency_JkSvcEouQiuoyNLQ6wLaHo.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50bb8fab57774069db1d6a1f94d6467c2c14fc79",
+      "size": 2582045,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/50bb8fab57774069db1d6a1f94d6467c2c14fc79"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-40-05-00_high-agency_KLfW4YDxhuAgcDk4s4gft6.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91efddc4dae22efa6a2fe186e04c8bc27b7c842a",
+      "size": 3415257,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/91efddc4dae22efa6a2fe186e04c8bc27b7c842a"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-40-05-00_high-agency_RcQaC3GmCVCEcZobNZsJhx.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ab90d4a09f2be49ab66d61b2fcfd550fcfc81a8",
+      "size": 3144392,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/8ab90d4a09f2be49ab66d61b2fcfd550fcfc81a8"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-40-05-00_high-agency_SjdbNQ8vsrkwNJWQYHemN5.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "015af2875efc82e4986f947c48c9513cec84cc6e",
+      "size": 3442477,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/015af2875efc82e4986f947c48c9513cec84cc6e"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-40-05-00_high-agency_d7dQf5BYKpRBSQVEUXwQAp.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "377f29cc025373bb215a1822a187d5549c3839f8",
+      "size": 2794023,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/377f29cc025373bb215a1822a187d5549c3839f8"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/2025-10-05T11-24-40-05-00_high-agency_kEQ6g27nUG3zbmTh3ZcQyM.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e84b71480ac55995f99104babaa0e1a99bd320d",
+      "size": 3651396,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9e84b71480ac55995f99104babaa0e1a99bd320d"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/aggregated_analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57b0091bd38c4738db437a1a8cef1895de3572e4",
+      "size": 1068,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/57b0091bd38c4738db437a1a8cef1895de3572e4"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a34547761dfa6288c5993d33f8f437205f60a4b8",
+      "size": 2427,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a34547761dfa6288c5993d33f8f437205f60a4b8"
+    },
+    {
+      "path": "final_runs/0_baseline_gpt_4.1_grader/logs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38ea6f9b6fb344bf098b0c2e77b82ceac155b20f",
+      "size": 103018,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/38ea6f9b6fb344bf098b0c2e77b82ceac155b20f"
+    },
+    {
+      "path": "final_runs/1_responsibility",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "338f91f97b494c67ea7011d729076b22bb2b612f",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/338f91f97b494c67ea7011d729076b22bb2b612f"
+    },
+    {
+      "path": "final_runs/1_responsibility/.eval-set-id",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e54ba44266bd89460b745309d330ef5db036031",
+      "size": 22,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3e54ba44266bd89460b745309d330ef5db036031"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_5ztAFuPnSEqMiEckiSmZUp.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36099f54e828155fdca014c5f34bc9db45eb02b2",
+      "size": 2510887,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/36099f54e828155fdca014c5f34bc9db45eb02b2"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_82txhD5jQ8XMq6okdHwdYd.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fde734ca0cef1f0a8461d5f39a804fbfa72c63fd",
+      "size": 2559610,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/fde734ca0cef1f0a8461d5f39a804fbfa72c63fd"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_8u3krYDVxWDXYNgayhD5r6.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2dd4528e2b50c253bbf3d1f64bece623d2ed61c7",
+      "size": 2277417,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/2dd4528e2b50c253bbf3d1f64bece623d2ed61c7"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_CupLPbojqAagYPquQuhW57.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88ad535d12486abc7a959f07223383e9021808c2",
+      "size": 3169704,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/88ad535d12486abc7a959f07223383e9021808c2"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_MCPFkgkE5q9YF3fmxgYXG6.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0797e5f47ad4c9277d98cbe3e475b64497e0dd37",
+      "size": 2682763,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0797e5f47ad4c9277d98cbe3e475b64497e0dd37"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_Q7UnGSRiZGiX5TRLK8Vo9u.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "21938aa0274b4a9d09df31679dcfc15839eaf52e",
+      "size": 3056324,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/21938aa0274b4a9d09df31679dcfc15839eaf52e"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_UdPZaVifMPcQzTT24jWUPk.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9163e8929e54b1f7dba5f5629e4a0851d48b5322",
+      "size": 2354374,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9163e8929e54b1f7dba5f5629e4a0851d48b5322"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_WMhZDfANPt5Eb4ZddbF5k5.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2463fa366d5c5827228b55d35ed262d26c155c1",
+      "size": 3231317,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f2463fa366d5c5827228b55d35ed262d26c155c1"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_Xq3ZTmNLnwJWU5oNg6WSrp.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63f0ff64f487670ed418aba9e40c2af38aead8e1",
+      "size": 2704184,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/63f0ff64f487670ed418aba9e40c2af38aead8e1"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_cCVEcjPSCdDApP97JHJHCV.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "457ffe6cd2d4d47ddd7a4f10e2a9c17b36064e98",
+      "size": 3362256,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/457ffe6cd2d4d47ddd7a4f10e2a9c17b36064e98"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-09-05-00_high-agency_ndxjTgA8LV7hF96aktDeio.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f21fbd61299cf31e000435520eeb027a21feb689",
+      "size": 2379013,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f21fbd61299cf31e000435520eeb027a21feb689"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-05T12-58-10-05-00_high-agency_MpRfgN9ZwvBfJHm3gX3LPG.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6860ccb00f71b017aba7006e9837c9e1e1c66d8d",
+      "size": 2989586,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6860ccb00f71b017aba7006e9837c9e1e1c66d8d"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-56-04-00_high-agency_L73fjtcCEfaPTvrexYb8GP.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ef3a09bbf67c57149b0f96864557ca92992265a3",
+      "size": 3216697,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ef3a09bbf67c57149b0f96864557ca92992265a3"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-56-04-00_high-agency_fxvi5EHaLFaAojcB3hCcUS.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc94a77415a07988943f8d598aadb3929d9540b3",
+      "size": 3519985,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/bc94a77415a07988943f8d598aadb3929d9540b3"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-56-04-00_high-agency_iu4EXdtfWKVy9RzATXYVgC.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd80f0f18dd0262470ab192cb06704422cb2f956",
+      "size": 3311765,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/bd80f0f18dd0262470ab192cb06704422cb2f956"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-57-04-00_high-agency_3PNZweVZyvPfRiohc6Dwx3.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55d32eddee8ff4f8a29f643bb6f74ef3e8a4be0d",
+      "size": 2445984,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/55d32eddee8ff4f8a29f643bb6f74ef3e8a4be0d"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-57-04-00_high-agency_9fZwxAQjdFfZ3obByakYL2.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d0b9c290f5b3041ae28b726b6ff095ab7f3621f",
+      "size": 2383627,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6d0b9c290f5b3041ae28b726b6ff095ab7f3621f"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-57-04-00_high-agency_JCMnHkqayWUJNAwotTAPDb.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49476b7baadfe591ed6f6d8756be5359e156ae87",
+      "size": 3901709,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/49476b7baadfe591ed6f6d8756be5359e156ae87"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-57-04-00_high-agency_MnZVp3Nt2YmbngtrpkSAzF.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f8e2e3ec150b43b387d355d34a9c823a1c52abe",
+      "size": 3249280,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/7f8e2e3ec150b43b387d355d34a9c823a1c52abe"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-57-04-00_high-agency_RmTGUmJEiejAUHfsRvrsqe.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f4db74ee9426654a25d6493a3d756c2c40f6eb9",
+      "size": 4717315,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9f4db74ee9426654a25d6493a3d756c2c40f6eb9"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-57-04-00_high-agency_SHNrFpPpwZSyQQDCMKYhor.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a11d5258db4c561232627852fc076af69f51f3a",
+      "size": 4211387,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0a11d5258db4c561232627852fc076af69f51f3a"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-57-04-00_high-agency_WgDrcNnQKkFeA9pgUfbBb7.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d558cc18d5714949eca460f191bc360157da480",
+      "size": 2375161,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9d558cc18d5714949eca460f191bc360157da480"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-57-04-00_high-agency_a7u8ZgWnYB3SNpVKG7dubs.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91a5c7045f05e667f2f77e5c21ed80d91346dadb",
+      "size": 2399368,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/91a5c7045f05e667f2f77e5c21ed80d91346dadb"
+    },
+    {
+      "path": "final_runs/1_responsibility/2025-10-14T23-31-57-04-00_high-agency_nKAEXHsQSdHLqBDXEKfGQh.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84610c3aa0e2227e8efb61121cc82af82c3d4f07",
+      "size": 4268112,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/84610c3aa0e2227e8efb61121cc82af82c3d4f07"
+    },
+    {
+      "path": "final_runs/1_responsibility/aggregated_analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "957df10fabec5e8a2bc2de66ba5f750934bb2f1b",
+      "size": 1483,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/957df10fabec5e8a2bc2de66ba5f750934bb2f1b"
+    },
+    {
+      "path": "final_runs/1_responsibility/analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cbf7802603301fd535aeb57185e1a295d834936",
+      "size": 4140,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0cbf7802603301fd535aeb57185e1a295d834936"
+    },
+    {
+      "path": "final_runs/1_responsibility/logs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73e4cdaa0ce1653840a81a4e09723b8abaff7c3d",
+      "size": 103741,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/73e4cdaa0ce1653840a81a4e09723b8abaff7c3d"
+    },
+    {
+      "path": "final_runs/2_boldness",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "baa339c1b879470f5f2e3cb65435e948ed5d931f",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/baa339c1b879470f5f2e3cb65435e948ed5d931f"
+    },
+    {
+      "path": "final_runs/2_boldness/.eval-set-id",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09f016b742f7bd38adb1e6a9b219a653b18ff02c",
+      "size": 22,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/09f016b742f7bd38adb1e6a9b219a653b18ff02c"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-03-05-00_high-agency_HtagF4FPmq9D6r3w9mYnCR.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "011d9b41a41a0f25908377f188aeb90f1b5acfa8",
+      "size": 3012695,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/011d9b41a41a0f25908377f188aeb90f1b5acfa8"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-03-05-00_high-agency_N5QC8yYNstNVnDs9gAeEa5.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aad14d72aa4c4604433bd2b58c8a6e863af5522",
+      "size": 3406869,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/2aad14d72aa4c4604433bd2b58c8a6e863af5522"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-03-05-00_high-agency_Sf4qX3xW8yL4LwfdwbLdtH.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "38c7d512a5aafd722d691e76131c52d83217f47a",
+      "size": 2654404,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/38c7d512a5aafd722d691e76131c52d83217f47a"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-03-05-00_high-agency_X7W2LVFWWT9mbFuLZWRGYJ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a573773d6d78b5b961f9efaef7ca91da99c02a0a",
+      "size": 2762756,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a573773d6d78b5b961f9efaef7ca91da99c02a0a"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-03-05-00_high-agency_baw5ZLt6g5moGuzWLAidrD.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f12602521d4b1bcd250405b96adea24fa2603949",
+      "size": 3444613,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f12602521d4b1bcd250405b96adea24fa2603949"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-03-05-00_high-agency_eSHMkgd858vd5Wbgv87UsF.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af5fc6338b394ee1d1782c88186158b863f84b43",
+      "size": 3602820,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/af5fc6338b394ee1d1782c88186158b863f84b43"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-03-05-00_high-agency_gq2Barauc9DQASbW4rb86R.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b80a847197d430d6465703615ba42c0dd36973e9",
+      "size": 2870729,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b80a847197d430d6465703615ba42c0dd36973e9"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-03-05-00_high-agency_hvcdRMXVP5TNvypf5YZFfn.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7cab4c8695723611b9bfadb8d9edc83aa9032724",
+      "size": 3051641,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/7cab4c8695723611b9bfadb8d9edc83aa9032724"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-03-05-00_high-agency_iuSbGnhAx8CfEQH353J8Ek.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c44d3f34ac37cd29edc608e0f4a3935ee0a57cb0",
+      "size": 2812542,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c44d3f34ac37cd29edc608e0f4a3935ee0a57cb0"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-03-05-00_high-agency_k3DHTwPQjx3JbAoU3tbN7c.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "005294c9d13c2d21d2c9516c4220e504f63602fc",
+      "size": 2788282,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/005294c9d13c2d21d2c9516c4220e504f63602fc"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-03-05-00_high-agency_mJ8ajGe87ZCUuZSsXhNxZg.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cbcc2223823677da7f90aa6263654d86a03321e7",
+      "size": 2789614,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/cbcc2223823677da7f90aa6263654d86a03321e7"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_25GhxpFauBjQQsm8eVdEDG.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc95ea59be8c3fe9dc9f795809cb64b21efef5c8",
+      "size": 2203190,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/bc95ea59be8c3fe9dc9f795809cb64b21efef5c8"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_5QDpbsC9dRfbQVQt2PjDkw.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3bcf19848eeac523350c0eb0dce09945321815f5",
+      "size": 2166565,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3bcf19848eeac523350c0eb0dce09945321815f5"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_5TXgG2WA4hqy92XetbaQVQ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec1a0e5d8c4d2ba5c0397b1e45879d1c3b8740e8",
+      "size": 2348131,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ec1a0e5d8c4d2ba5c0397b1e45879d1c3b8740e8"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_8JjmmYj58zGBzxWwmDoXiP.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "326c7fcb6be90452684d56d995f41f2fe163d8b5",
+      "size": 2973668,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/326c7fcb6be90452684d56d995f41f2fe163d8b5"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_98UUN2Wq9EzshGBEjKFEMZ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d5e33c79ca75f4f8185f52a111c9c28455ffa30",
+      "size": 2267992,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/5d5e33c79ca75f4f8185f52a111c9c28455ffa30"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_9dkSrQWo8Rja9s4YzVw6Dd.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be2b6d15f4e3be237259e50f94043bae67915bdd",
+      "size": 2376743,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/be2b6d15f4e3be237259e50f94043bae67915bdd"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_Ab7Ga8G8gf3hGJ95t4dS2G.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f081dbefc55ac7c0e9988f607a7936b3baf1360b",
+      "size": 3065672,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f081dbefc55ac7c0e9988f607a7936b3baf1360b"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_Ek9ENXrpjxerxVV9iQNpQd.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35fc733c6c517324fc1bff5cae19c73ccd21b9a8",
+      "size": 2187444,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/35fc733c6c517324fc1bff5cae19c73ccd21b9a8"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_FC6gR49QF779rjqRaCtKAB.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "983979b5c0ff3f0866e69275079654a97cbce704",
+      "size": 2412619,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/983979b5c0ff3f0866e69275079654a97cbce704"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_MpWpF83azrFTeRYwyG2ABK.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58fd9c543246ddb2cd5d0269fdc75cdd23addc2f",
+      "size": 2408694,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/58fd9c543246ddb2cd5d0269fdc75cdd23addc2f"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_P6CvRp8DRSxyBLJmP33Br2.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edd5bbbc4c601edaefc0ac5aca1f128a0fd26858",
+      "size": 2377368,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/edd5bbbc4c601edaefc0ac5aca1f128a0fd26858"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_VyNGDdKGGQouwpAVtowkvb.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2b5917a904114cdd1add1afc91924c7e40dcb5b",
+      "size": 2439177,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e2b5917a904114cdd1add1afc91924c7e40dcb5b"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_WYxakdcaNzS3M98JMjMmwt.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ec436c1315721c1e23b94f9294cefb12c00f5a4",
+      "size": 2289624,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4ec436c1315721c1e23b94f9294cefb12c00f5a4"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_YAfZyQJrynypoJpyfQDUsW.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c9f2ded83a7e43d30f69bf9594ad94e87b4fe4b",
+      "size": 2203881,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/5c9f2ded83a7e43d30f69bf9594ad94e87b4fe4b"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_bEPTjFyB946Ejm53EftVvX.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c498776c818755f353614cb172aa3d4c1116e5b6",
+      "size": 2995341,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c498776c818755f353614cb172aa3d4c1116e5b6"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_e6ayyQV7ixpEt7S9333jTj.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6410f022d0b88cf49a5fa000132dd6a88281654",
+      "size": 3528100,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c6410f022d0b88cf49a5fa000132dd6a88281654"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_gXwe8RQwDyBir2z9zxDH5X.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a37ea9016423046aa59d67613dc70be320eb32fc",
+      "size": 3627977,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a37ea9016423046aa59d67613dc70be320eb32fc"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_gZJuNAdFTWBCWYTmRMMZkS.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b7debe01f93bfed54cc33f7ba0acf6e5689fcda",
+      "size": 2489424,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9b7debe01f93bfed54cc33f7ba0acf6e5689fcda"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_j2VRHVDVa3yP5XkMgcKHjD.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17c512d0247f6641db22a207ddb9e4feaeb07e15",
+      "size": 3560626,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/17c512d0247f6641db22a207ddb9e4feaeb07e15"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_mHC9hGHWQCp574XDYMFZfc.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51cc588d035b0dc28ea034cfe9daf0fa8a9d952a",
+      "size": 2101517,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/51cc588d035b0dc28ea034cfe9daf0fa8a9d952a"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_mJjGnq9PeMtFwH65BNj2mY.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dc10064af51acb87ed6ca636c732bb69e2f8f14",
+      "size": 3510676,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4dc10064af51acb87ed6ca636c732bb69e2f8f14"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_mX3peyuWFqV8mmggupUYw5.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d2c8e6c949de615d0e44a25d39c9aed2f1241fa",
+      "size": 2758375,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/8d2c8e6c949de615d0e44a25d39c9aed2f1241fa"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_nDAmsMv3DywsMV6tJwHsmF.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aee94b36e0f0f5d4055727ac68e962169bbc4ca0",
+      "size": 2319845,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/aee94b36e0f0f5d4055727ac68e962169bbc4ca0"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-04-05-00_high-agency_nKmbiYT4mGMVMveLExbPRL.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e356cdf2805fbbe4c4ade4b6133390bdcb1b2ece",
+      "size": 2246247,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e356cdf2805fbbe4c4ade4b6133390bdcb1b2ece"
+    },
+    {
+      "path": "final_runs/2_boldness/2025-10-05T14-07-05-05-00_high-agency_TK5a6yfuHXr8xMWSWnJ9cx.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fed37b15257e79946d84af85fe084b83dd83849",
+      "size": 3711420,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/1fed37b15257e79946d84af85fe084b83dd83849"
+    },
+    {
+      "path": "final_runs/2_boldness/aggregated_analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22d00e9bfb0b3f91367fb3cade855fe55b86833b",
+      "size": 1870,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/22d00e9bfb0b3f91367fb3cade855fe55b86833b"
+    },
+    {
+      "path": "final_runs/2_boldness/analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "358706cccf5d46d07e361330b400a469ae436fdb",
+      "size": 5774,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/358706cccf5d46d07e361330b400a469ae436fdb"
+    },
+    {
+      "path": "final_runs/2_boldness/logs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ad458c08e429458060919a85e88862083e21e0d",
+      "size": 311344,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6ad458c08e429458060919a85e88862083e21e0d"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f44452c8cb3d84674cd4928cc75a7bfa9ee2f100",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/f44452c8cb3d84674cd4928cc75a7bfa9ee2f100"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/.eval-set-id",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "157b7acf5c8bdf1d1ca635763317ae5619d59953",
+      "size": 22,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/157b7acf5c8bdf1d1ca635763317ae5619d59953"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-48-05-00_high-agency_BBnNriUbszePyeNZTSKxuk.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e263143e4be1114a6865d06af5093d60a84100e9",
+      "size": 2662545,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e263143e4be1114a6865d06af5093d60a84100e9"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-48-05-00_high-agency_KLK6TtoZpuRSp9oJgcwmjQ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e7322b7d6a4e02448d789aacb8038bea0eeb9158",
+      "size": 2799690,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e7322b7d6a4e02448d789aacb8038bea0eeb9158"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-48-05-00_high-agency_L2CFwxCtC87ypwnydz22zp.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49aacad68f797b820f414b8ea5ceef864abbc8d5",
+      "size": 3082006,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/49aacad68f797b820f414b8ea5ceef864abbc8d5"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-48-05-00_high-agency_NXgsdFcUqPAdjnWM7kNKuD.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e56b709aa76d505ef630432b94217087769e9b0a",
+      "size": 3222857,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e56b709aa76d505ef630432b94217087769e9b0a"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-48-05-00_high-agency_YNzBQSMxJiifqdtRYiV9cn.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf2f5b69b91becfaac1c538c58b5f7ca7e55c4e5",
+      "size": 3363113,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/bf2f5b69b91becfaac1c538c58b5f7ca7e55c4e5"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-48-05-00_high-agency_iYyepUeVaHYCnQCtNKiXov.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2f223dcaca245ebc85247fcae122a1ca710043b",
+      "size": 3186828,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b2f223dcaca245ebc85247fcae122a1ca710043b"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-49-05-00_high-agency_22BkDeYadMpMG2WEDhVCBc.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52e94e37cc9c25fe3ebcfbf1bf4a33cbef5831a8",
+      "size": 3322223,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/52e94e37cc9c25fe3ebcfbf1bf4a33cbef5831a8"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-49-05-00_high-agency_2E8wKzprxSpEV5KbmmtiTa.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a9ab3d510d0808a82ea420eccbd484ea9ce9438",
+      "size": 2605466,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0a9ab3d510d0808a82ea420eccbd484ea9ce9438"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-49-05-00_high-agency_4pJb9wDCVjWA2gphhHTwqg.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d8861eddf2dd987f39434bb500603adcf2aedb5",
+      "size": 3197093,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3d8861eddf2dd987f39434bb500603adcf2aedb5"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-49-05-00_high-agency_WZtazLadZEdqTAw98Lg5xk.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f2039bf777dd45fdc4b7137b1f20699ab23ecafa",
+      "size": 3150978,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f2039bf777dd45fdc4b7137b1f20699ab23ecafa"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-49-05-00_high-agency_gs4jiq5GmouZNDm54zUpkJ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67d3b93b93caad1044a9bca185ab25376edc78d6",
+      "size": 2767618,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/67d3b93b93caad1044a9bca185ab25376edc78d6"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/2025-10-05T16-46-49-05-00_high-agency_n86HZnRRVSbTYK6D9wkhns.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1de71bd446e6b9b848023bb766d287c78158cea6",
+      "size": 3378395,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/1de71bd446e6b9b848023bb766d287c78158cea6"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/aggregated_analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22dc90381f0803b373908d1703d4ea5282bca4e3",
+      "size": 1061,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/22dc90381f0803b373908d1703d4ea5282bca4e3"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37685f27874039484881e555fcb3b18db14693d6",
+      "size": 2417,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/37685f27874039484881e555fcb3b18db14693d6"
+    },
+    {
+      "path": "final_runs/3_detailed_instructions/logs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6da6452553d3c4838cd48de225c4eb6f90af0074",
+      "size": 102790,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6da6452553d3c4838cd48de225c4eb6f90af0074"
+    },
+    {
+      "path": "final_runs/4_distractor_docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a7947e54e966947656e6a57a33f3c42514f7372c",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/a7947e54e966947656e6a57a33f3c42514f7372c"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/.eval-set-id",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a84ccb4c0335da7f8a18f03d73c4a67df53c119c",
+      "size": 22,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a84ccb4c0335da7f8a18f03d73c4a67df53c119c"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-52-05-00_high-agency_2oXMDd3dSW8wHzjHUC7gMW.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6eb5503b1c9df0033e594648aa3e37e4e628d427",
+      "size": 2766407,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6eb5503b1c9df0033e594648aa3e37e4e628d427"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-52-05-00_high-agency_NyHsChJ8YwLofwmR7Hf8hn.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b190ddf80d11966e9cc4ffc27c1d0d578d589b57",
+      "size": 2543976,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b190ddf80d11966e9cc4ffc27c1d0d578d589b57"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-52-05-00_high-agency_P3E3JowNkawPetPvi7dNyN.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a0336aa01ff347ac1df2431fbcbd143df742c2c",
+      "size": 2190148,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/7a0336aa01ff347ac1df2431fbcbd143df742c2c"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-52-05-00_high-agency_W7s6DqpPRAjjjvu8vBWog7.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afc94d0628b346f3ba2dadcdd7e9436f1c576d55",
+      "size": 2650523,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/afc94d0628b346f3ba2dadcdd7e9436f1c576d55"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-52-05-00_high-agency_WaWGL3csnEw899BKtpD4RX.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9a1645c2321dbf3177f319a7eb51ed9a44b7f67",
+      "size": 2027292,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e9a1645c2321dbf3177f319a7eb51ed9a44b7f67"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-52-05-00_high-agency_XVPoMrEfNwg3Xgun74DrRj.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30128e63cbc166c764b06e1b6d4ee1f87c195fad",
+      "size": 2198817,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/30128e63cbc166c764b06e1b6d4ee1f87c195fad"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-52-05-00_high-agency_gt8JfYRZru9MCRBZveJV9w.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04e6d6dc6ca24c931915f7c435255174b74da605",
+      "size": 2642284,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/04e6d6dc6ca24c931915f7c435255174b74da605"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-53-05-00_high-agency_2mnMABKPs9h7ufToXD8tAd.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f4f494b0d6a62c6dd921e2739ab32062c84b673",
+      "size": 2141423,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/5f4f494b0d6a62c6dd921e2739ab32062c84b673"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-53-05-00_high-agency_HanjQRMboRad4WiVDj82PJ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ac0e1d628eb56d6e9ac1ea443fb35601a84d281",
+      "size": 2872078,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9ac0e1d628eb56d6e9ac1ea443fb35601a84d281"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-53-05-00_high-agency_WJacraBaryY4dBxnhbnuwZ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2694eb95bd3b28dd1f7e8167a3ae9308541f5ba4",
+      "size": 2641614,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/2694eb95bd3b28dd1f7e8167a3ae9308541f5ba4"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-53-05-00_high-agency_X4t8Pn7bX9CSb7E6vHiktQ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bb16534fcff1c31266cc7934cb93e0d44004c4c",
+      "size": 2599201,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/1bb16534fcff1c31266cc7934cb93e0d44004c4c"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/2025-10-05T17-42-53-05-00_high-agency_YxCRV3yhxvxch2uhmzzgUj.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb86c8ba1d308b5d1847f0fff27b720f9b4d7990",
+      "size": 2945448,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/eb86c8ba1d308b5d1847f0fff27b720f9b4d7990"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/aggregated_analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48bac4cfb9b4f3e0a9b45b2b15bb0e8fde19a52e",
+      "size": 1066,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/48bac4cfb9b4f3e0a9b45b2b15bb0e8fde19a52e"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec521a35f598031fc08543e004e0520f9c908b2e",
+      "size": 2446,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ec521a35f598031fc08543e004e0520f9c908b2e"
+    },
+    {
+      "path": "final_runs/4_distractor_docs/logs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d89849cb42c210c595768c9c8467c24cf47b3ef6",
+      "size": 102724,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/d89849cb42c210c595768c9c8467c24cf47b3ef6"
+    },
+    {
+      "path": "final_runs/5_distractor_tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c09c50cd9efc071889e642605de224d730fb79f",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/5c09c50cd9efc071889e642605de224d730fb79f"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/.eval-set-id",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "253b0132e5de4f84dadf1ddd8774abae5ab3712d",
+      "size": 22,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/253b0132e5de4f84dadf1ddd8774abae5ab3712d"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_7pYzQw6Mzj7rCdLUTtENCf.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "305616c89415c5ab5b2035ed3ba11f38773c9020",
+      "size": 3797709,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/305616c89415c5ab5b2035ed3ba11f38773c9020"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_AhDU8Efs7YYaPnpUqvwuVv.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "930fce224e3c1e897fa11d59c1a1f314cc145361",
+      "size": 2869222,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/930fce224e3c1e897fa11d59c1a1f314cc145361"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_BJRkBxUNwXB7dtrvb5cEKN.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad7a9a62727bad33720fd7f2d252d59cc43593db",
+      "size": 3199356,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ad7a9a62727bad33720fd7f2d252d59cc43593db"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_BNSoEbZQebmZpqaVLcYFXR.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ad6fda243c3fc02c8d19e39ab2f66483a6243b9",
+      "size": 2742203,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3ad6fda243c3fc02c8d19e39ab2f66483a6243b9"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_QkMd6AgouWRebGk6C5JQH3.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a751f657fb81b832a6c088503bc64d7e76a89052",
+      "size": 4088574,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a751f657fb81b832a6c088503bc64d7e76a89052"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_UC32zmrp8W9UCc38GjLXRc.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0962c4b4950d54ca39a37f58dd1fe31f477d86ca",
+      "size": 3221130,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0962c4b4950d54ca39a37f58dd1fe31f477d86ca"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_WoY46L3BQcgisGi3jiWWJ4.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6367933d702eb165b35c6dece37838862517d462",
+      "size": 3065135,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6367933d702eb165b35c6dece37838862517d462"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_YaMRL7tUv9d3FPPpnoidMx.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d8ad0357d2715b48a83e5bbce3a71602b8d248b",
+      "size": 3826298,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/8d8ad0357d2715b48a83e5bbce3a71602b8d248b"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_Yyjbz8MGMnxWf2hSLPw8qE.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1c9c0e2085b07325f59138e3173485b9101e6c2",
+      "size": 2805144,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c1c9c0e2085b07325f59138e3173485b9101e6c2"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_azDzQGxmFpTkYQoVNZzWEY.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61974904bf2ec7989a35100626d3879aa3420fbb",
+      "size": 2643707,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/61974904bf2ec7989a35100626d3879aa3420fbb"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_gtEXHv7RuM7QAVBcDJKsYH.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47f3db127a980335c7427e06267084d65eed972c",
+      "size": 3366672,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/47f3db127a980335c7427e06267084d65eed972c"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/2025-10-05T18-18-28-05-00_high-agency_ng5Lc6bdCYbxj7cjyThZFp.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9419c13ce6c274d51dac7f573eca5965f701f3eb",
+      "size": 4428055,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9419c13ce6c274d51dac7f573eca5965f701f3eb"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/aggregated_analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "39cb50421b17bcaae32c6835f2a5454a97e20ca0",
+      "size": 1058,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/39cb50421b17bcaae32c6835f2a5454a97e20ca0"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22ca102acfd12af4b5006ee63366d5e093c5e8ee",
+      "size": 2399,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/22ca102acfd12af4b5006ee63366d5e093c5e8ee"
+    },
+    {
+      "path": "final_runs/5_distractor_tools/logs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9118741585c35cb9259e0b36a29de1169270531c",
+      "size": 102796,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9118741585c35cb9259e0b36a29de1169270531c"
+    },
+    {
+      "path": "final_runs/all_models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb47e7b7a6f7bb4c3dc2647bf8f9a4d76e292aa8",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/eb47e7b7a6f7bb4c3dc2647bf8f9a4d76e292aa8"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-54-05-00_high-agency_9iLfcmfmSZ5s6586vM4WzR.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d819b98a6b77a2b7a2fadaeb41d2228c16bdfe4e",
+      "size": 1877397,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/d819b98a6b77a2b7a2fadaeb41d2228c16bdfe4e"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-54-05-00_high-agency_fPBsnn2rMcrms9Ps4sa4Wj.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07b5ab4743a874cb419bce4fd2651cf60cacdefa",
+      "size": 1902920,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/07b5ab4743a874cb419bce4fd2651cf60cacdefa"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-54-05-00_high-agency_h8Lcc7eV2gUpPGwCsjbVYb.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25d7aee7ffb97b4684d42301919e06dc7a29c573",
+      "size": 1822923,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/25d7aee7ffb97b4684d42301919e06dc7a29c573"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_2EWxuRnaSstbMsSwPKpM35.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af84b52a186a3e558d4c67651524f51c94dc8501",
+      "size": 2390559,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/af84b52a186a3e558d4c67651524f51c94dc8501"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_9ycsrWZEeiXusfgdM9FXUA.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ad6a780a74fd1a3be9c6dc6ec0545ec3aaeb728",
+      "size": 3173303,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/8ad6a780a74fd1a3be9c6dc6ec0545ec3aaeb728"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_BZxLvywNHZpUxMQCZwWyWs.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a47bc79738af939aedc9f451ffc0689bc0bc38f8",
+      "size": 3227523,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a47bc79738af939aedc9f451ffc0689bc0bc38f8"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_G83d2TaoDpUmQLkAKbDSJN.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "479707e40910e1c0ce49059e6a4fa46ef78fd8d2",
+      "size": 3157196,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/479707e40910e1c0ce49059e6a4fa46ef78fd8d2"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_NpoCahBsZq9FHs5aDkU6CU.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e75e3fee42045ab207ffca9bc89ceebb36d4e31",
+      "size": 2390242,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4e75e3fee42045ab207ffca9bc89ceebb36d4e31"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_TAAd7e8rKvTn45ziCsYrg7.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd951bbaed8b8c2a1fa3960ab31b453f84ac42ec",
+      "size": 3185529,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/dd951bbaed8b8c2a1fa3960ab31b453f84ac42ec"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_VLfSYVC88jqNVjuWZJFtA6.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9011919755edec307225849fd3bb91b1f08a5f2f",
+      "size": 3092008,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9011919755edec307225849fd3bb91b1f08a5f2f"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_WhsGzAMbygiSBZ9yH7fXdQ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c86202e9087ac1a525644d5d7ac6e5f527b0875",
+      "size": 2684385,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3c86202e9087ac1a525644d5d7ac6e5f527b0875"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_Zdhq3xAVdCkcDiaq6692D8.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f15b48ae357234cb14435c9714f4033c45ad05a0",
+      "size": 2705228,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f15b48ae357234cb14435c9714f4033c45ad05a0"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_bsdkJJzzJySWMcz3CD36u8.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee39e7033c7a566ce2f2e5a96ca8753cbfecd33d",
+      "size": 2506599,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ee39e7033c7a566ce2f2e5a96ca8753cbfecd33d"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_f4WVxhaV6mxb3hqgZ2Yok4.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09baa1a45e0b5c2938d60676f663119e5bb87cf7",
+      "size": 2805902,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/09baa1a45e0b5c2938d60676f663119e5bb87cf7"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_fUp3MNsYHH6xYAVYaSDcKb.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "376ea3b6507c922927da05dc223c05aea853ba0a",
+      "size": 3226610,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/376ea3b6507c922927da05dc223c05aea853ba0a"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_guhrRNiGmDqMmDJ9ptDnfP.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0095711f081c9c70e38150a29d00806f5ad714e8",
+      "size": 2530198,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0095711f081c9c70e38150a29d00806f5ad714e8"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_htWjZsioKKGHQ9cWXQm9go.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "622984be1dbe1fe901516828cec6856979db61f9",
+      "size": 2693494,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/622984be1dbe1fe901516828cec6856979db61f9"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-55-05-00_high-agency_nkVXG2rAhsMftYsTcocHbm.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6ec8c89c8efe283ad9211f24402741dee7761a7",
+      "size": 2327731,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c6ec8c89c8efe283ad9211f24402741dee7761a7"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-56-05-00_high-agency_3UpiJYWdxfkjaCnC6JLak6.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "395025c81a42f19a5f425382cfb615685f0ad54e",
+      "size": 1804702,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/395025c81a42f19a5f425382cfb615685f0ad54e"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T16-08-56-05-00_high-agency_PSK7ws4CuisTi7x2HTjYXr.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28e37d055484a84e02be3593283f71a2403b1269",
+      "size": 3048770,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/28e37d055484a84e02be3593283f71a2403b1269"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T18-40-39-05-00_high-agency_KFnV3C2k5qGy8zuVUwzWYh.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9763bc17741933f7b3e7d48b92874839577d725c",
+      "size": 1946206,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9763bc17741933f7b3e7d48b92874839577d725c"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T18-40-39-05-00_high-agency_Rr9ykVVRUVYpoHngcWSafR.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84ee243223e158d7403c29f6076d4dc584df7d52",
+      "size": 3323778,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/84ee243223e158d7403c29f6076d4dc584df7d52"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T18-40-39-05-00_high-agency_XLyyuMJd2RnmciRPBduugG.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7508c7a02adec4227081e5e77b7493cc0af508a3",
+      "size": 2884790,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/7508c7a02adec4227081e5e77b7493cc0af508a3"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T18-40-39-05-00_high-agency_XMudWrU8pf72q2kbj2qymG.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3a5fb5d8bf128749659eb6c3287bb24683c649e7",
+      "size": 2601824,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3a5fb5d8bf128749659eb6c3287bb24683c649e7"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T18-40-39-05-00_high-agency_c7UU9UEzrRn22okNHiefGz.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9faef7e29081c581642208e0e23da35a1d0e747d",
+      "size": 2949341,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9faef7e29081c581642208e0e23da35a1d0e747d"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-04T18-40-39-05-00_high-agency_dneJvQb6RSYhgBbE3nDofe.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1878492bef343f430dc59f75e37a4fdd3e18969",
+      "size": 3064896,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c1878492bef343f430dc59f75e37a4fdd3e18969"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-05T02-03-20-05-00_high-agency_fgDo9kCH5AGWwhzUwuu4ZK.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9be1509096217290e87f19beb6b773d030570937",
+      "size": 2752261,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9be1509096217290e87f19beb6b773d030570937"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-05T02-36-12-05-00_high-agency_Y9yfdgSMeiCumnqGbzNXFU.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5165974ea3dfedf820323082e48d15480e6a6aa9",
+      "size": 2752295,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/5165974ea3dfedf820323082e48d15480e6a6aa9"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-05T02-36-12-05-00_high-agency_YvR6Hn67GK89TvYgJvT7Vk.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ff22440af7048f070c3230016f7232e9af7693d",
+      "size": 2688975,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6ff22440af7048f070c3230016f7232e9af7693d"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-05T02-36-12-05-00_high-agency_mLRmAQBRj8Jsev7ftkRv7E.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78a3df4627face6e96934c16f5d388e358e27538",
+      "size": 1880587,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/78a3df4627face6e96934c16f5d388e358e27538"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-05T02-36-12-05-00_high-agency_nYdjkzY4briywY2WKhjomN.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6379d2dca246988f1c7940b43674d09ea99299d0",
+      "size": 3303615,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6379d2dca246988f1c7940b43674d09ea99299d0"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-05T02-45-35-05-00_high-agency_DFUDQba3LCtjHiMubRQUrt.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9de0bcb19c1b406b18d63ededfc80420eb55d4ea",
+      "size": 2891383,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9de0bcb19c1b406b18d63ededfc80420eb55d4ea"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-05T02-45-35-05-00_high-agency_R4HgHxXmAESEqtcAqTVW4j.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc456688c7527b11beecf59040bd19a9808bfc25",
+      "size": 2058009,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/cc456688c7527b11beecf59040bd19a9808bfc25"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-05T02-45-35-05-00_high-agency_kB6yNUYBGq48UHLXcXyKu8.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9cf41cb301cd4247cf2b0cad946d3bdba5912d8",
+      "size": 1909821,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b9cf41cb301cd4247cf2b0cad946d3bdba5912d8"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-05T08-48-34-05-00_high-agency_NQHfwrndCzEzyx9zqfYtQS.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "24aa2672fc74d65a4b3171288b302ad6aac28d98",
+      "size": 3271570,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/24aa2672fc74d65a4b3171288b302ad6aac28d98"
+    },
+    {
+      "path": "final_runs/all_models/2025-10-05T08-48-34-05-00_high-agency_ekDiuWA84QUHtWcKGimBeM.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3f5ddb602f7d0782381699d68ddece018a35d1a8",
+      "size": 3129771,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3f5ddb602f7d0782381699d68ddece018a35d1a8"
+    },
+    {
+      "path": "final_runs/all_models/aggregated_analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d9282124fec03850f1277ceccb1c92d22aaadb3",
+      "size": 1909,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4d9282124fec03850f1277ceccb1c92d22aaadb3"
+    },
+    {
+      "path": "final_runs/all_models/analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84aa9e338ccdbf766a0173c4ec6372483e7c7202",
+      "size": 5901,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/84aa9e338ccdbf766a0173c4ec6372483e7c7202"
+    },
+    {
+      "path": "final_runs/awareness_blackbox",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "85b980255c9a9a9fa4fbe33d62df85b321fa90c9",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/85b980255c9a9a9fa4fbe33d62df85b321fa90c9"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd64ca3f2f90a4f1dfde13aa1eab217d7f16706d",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/dd64ca3f2f90a4f1dfde13aa1eab217d7f16706d"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/.eval-set-id",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a44eac99def356bbeaafb0bdda8d0cfcd55a9013",
+      "size": 22,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a44eac99def356bbeaafb0bdda8d0cfcd55a9013"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-13-07-00_high-agency_8QTLbL9xNtNFg9wuozFNKo.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ff4347233d586e31b6306e8ad5d602fdf8ceef6",
+      "size": 2813401,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/2ff4347233d586e31b6306e8ad5d602fdf8ceef6"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-13-07-00_high-agency_LnbYJ2sDKih4v3466zDKqw.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "419aef817e520eb452adcf47d8d31c35a20aa82a",
+      "size": 3173345,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/419aef817e520eb452adcf47d8d31c35a20aa82a"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-13-07-00_high-agency_PsdaX2SJbxpo7cKLprwEdB.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87ebe59110af676122dcca083f8809f88defa592",
+      "size": 2580777,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/87ebe59110af676122dcca083f8809f88defa592"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-13-07-00_high-agency_SJdpVh4a6Sn8ooQd7bNEYq.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "048d97cac232c53c31905fdea747a5a378de26e8",
+      "size": 2698925,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/048d97cac232c53c31905fdea747a5a378de26e8"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-13-07-00_high-agency_TsvFZ3rwW7K8Vh3oQDpodh.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a11ee9627e0c14bd6855e260bbd815d7135f1bb0",
+      "size": 3176435,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a11ee9627e0c14bd6855e260bbd815d7135f1bb0"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-13-07-00_high-agency_VSmkKH9ZXUEG6ttE7egiRK.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b27ae278e2f3575012c7defc33c0617f67302f5b",
+      "size": 3933062,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b27ae278e2f3575012c7defc33c0617f67302f5b"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-13-07-00_high-agency_VxRF9GW3Pu7eANGm7yarHM.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41939431417fab14edf33da94e2b751a70c5ae1b",
+      "size": 2584452,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/41939431417fab14edf33da94e2b751a70c5ae1b"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-13-07-00_high-agency_XUrQM6ctgaYjdQs9VaJoRu.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62f034ff4e82b69aa229a6e81c3e1ade4791d76d",
+      "size": 2479509,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/62f034ff4e82b69aa229a6e81c3e1ade4791d76d"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-13-07-00_high-agency_Zyz6h7quhnHxoiSrGxVbxo.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20b710d86d20377af18eaaad184521de17590d46",
+      "size": 2963376,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/20b710d86d20377af18eaaad184521de17590d46"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-13-07-00_high-agency_jQPbfJJmEyGoJFxk4t7pUi.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c267145c33d5cba03d784e0502567000c90e090c",
+      "size": 2457769,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c267145c33d5cba03d784e0502567000c90e090c"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-13-07-00_high-agency_kGfa6w8A9Loj346EryXQ3Q.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81dd36fa4ddb518587aed54802c1c1dddfe68f76",
+      "size": 2705920,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/81dd36fa4ddb518587aed54802c1c1dddfe68f76"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-14-07-00_high-agency_4BVQEhw7ZrC2XKQRgd83wv.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23ad12f67bafd14b213098cc7fa6189576f60ec9",
+      "size": 3111618,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/23ad12f67bafd14b213098cc7fa6189576f60ec9"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-14-07-00_high-agency_BBbeBByvyLZVocg2MBM8MA.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46b6e6d67b8b843c1de97a8d1359099e64bb89ab",
+      "size": 3188264,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/46b6e6d67b8b843c1de97a8d1359099e64bb89ab"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-14-07-00_high-agency_T4gPj4PeBdByVKh6ZieFwE.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73bd086c4a6435ace7517187dec8fe55d25657dc",
+      "size": 3212736,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/73bd086c4a6435ace7517187dec8fe55d25657dc"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-04T08-24-14-07-00_high-agency_ev63HQcGUqdRnNScvNwFeA.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1c9cd83c0ae9a08c91ae230c4bdfe1fa50b8f49c",
+      "size": 3348116,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/1c9cd83c0ae9a08c91ae230c4bdfe1fa50b8f49c"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-05T05-13-39-07-00_high-agency_GpFEFG6j6EgTfEgmbsd8gJ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e7848a1f37b9af8663106beaff845f98e83bbf6",
+      "size": 3292289,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4e7848a1f37b9af8663106beaff845f98e83bbf6"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-05T05-13-39-07-00_high-agency_Mx64JUV3bTM6ooU2vp7hEw.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6995039fafe34559b64d3e632ff1250f2829dce",
+      "size": 2575617,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c6995039fafe34559b64d3e632ff1250f2829dce"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-05T05-13-39-07-00_high-agency_Vks7dkWtbhQ6iwMQ4CEvFd.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1478d405bf56b1c71534b60e755be6a6623884f2",
+      "size": 2772156,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/1478d405bf56b1c71534b60e755be6a6623884f2"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-05T05-13-39-07-00_high-agency_Z6UwYSCj2syMDZocWFq6QH.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6478b55653302a2c5a8aa00b7c63fad80c8ff7ba",
+      "size": 2543849,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6478b55653302a2c5a8aa00b7c63fad80c8ff7ba"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/2025-10-05T05-13-39-07-00_high-agency_aJqq5bkst3S5rYh9qYSdX9.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26822d8dd2518d67df25998e23040a630bc962bf",
+      "size": 2569587,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/26822d8dd2518d67df25998e23040a630bc962bf"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/aggregated_analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aaa61ea1395d6d953bbbcd5a7283b7ef6dfdb99",
+      "size": 1087,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/1aaa61ea1395d6d953bbbcd5a7283b7ef6dfdb99"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61bf3de81e9660a893cc5b0ee65cce765edd6f83",
+      "size": 3270,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/61bf3de81e9660a893cc5b0ee65cce765edd6f83"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/eval-set.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b6ce54d41f1e4a93ec9c9f7699f9bfe6c1a6127",
+      "size": 14205,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4b6ce54d41f1e4a93ec9c9f7699f9bfe6c1a6127"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/habench_summarization/logs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "204aaa3cd04ec11c9b1282d4f1f9168ae4e80b35",
+      "size": 113178,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/204aaa3cd04ec11c9b1282d4f1f9168ae4e80b35"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eb114cd3a27f41a455a380c12f70017f3cf4c18a",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/eb114cd3a27f41a455a380c12f70017f3cf4c18a"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/.eval-set-id",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1498bb4c14dd5e6c9ea17ce4ca88c4796d751032",
+      "size": 22,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/1498bb4c14dd5e6c9ea17ce4ca88c4796d751032"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/2025-09-28T01-40-34-07-00_high-agency-deliberation-awareness_4uoW8Lvj4twCM5Gvr6jZhN.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5265e5ef829c141269880f6ae1e0fff99901d65",
+      "size": 1702721,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c5265e5ef829c141269880f6ae1e0fff99901d65"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/2025-09-28T01-40-34-07-00_high-agency-deliberation-awareness_67VyE5h5Tc5XHdNKBZrdDJ.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e879ff0642be97a8acbf1fcc19b4577c071e4c20",
+      "size": 1679314,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e879ff0642be97a8acbf1fcc19b4577c071e4c20"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/2025-09-28T01-40-34-07-00_high-agency-deliberation-awareness_PWV6HpnryTerKDMobHZ822.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0dfdc0856ddb453814f13bd6c0a2ec0514a23e7",
+      "size": 1919713,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a0dfdc0856ddb453814f13bd6c0a2ec0514a23e7"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/2025-09-28T01-40-34-07-00_high-agency-deliberation-awareness_XCjRzLn3CNEPBwfNqkrydH.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d0b5797076bbe986d9462fa490d1040ace48871",
+      "size": 1420537,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/2d0b5797076bbe986d9462fa490d1040ace48871"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/2025-09-28T01-40-34-07-00_high-agency-deliberation-awareness_k3fxxBUGU62RGCEyJNjMMM.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93c35ecd2ed5002d8f9d93f0e55239d430100218",
+      "size": 1584183,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/93c35ecd2ed5002d8f9d93f0e55239d430100218"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/2025-10-24T14-29-52-07-00_high-agency-deliberation-awareness_PCnHAVaqhL38CkPGXXkrRt.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "200945f5716ec1cf83c7177f29307aad68e4e67c",
+      "size": 2300985,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/200945f5716ec1cf83c7177f29307aad68e4e67c"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/2025-10-24T14-29-52-07-00_high-agency-deliberation-awareness_Y3Wn9QdEkA5gMVmvkrAePi.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e98e84db3a5c11d257f0d64a49099492000e5c80",
+      "size": 1630081,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e98e84db3a5c11d257f0d64a49099492000e5c80"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/2025-10-24T14-29-52-07-00_high-agency-deliberation-awareness_dfwBVWbzWboXdGuHrf5Zay.eval",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c74ff7f205803b1bcc77043dc20f20514f86a50f",
+      "size": 1601510,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c74ff7f205803b1bcc77043dc20f20514f86a50f"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/analysis.csv",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec696ec2d27f41cc680afedf77d1b9d684470338",
+      "size": 241,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ec696ec2d27f41cc680afedf77d1b9d684470338"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/eval-set.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b9e3419fc47cc2a7f9fd0b1892a4f916e89a0e7",
+      "size": 1464,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6b9e3419fc47cc2a7f9fd0b1892a4f916e89a0e7"
+    },
+    {
+      "path": "final_runs/awareness_blackbox/snitchbench/logs.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "929eaf519a9188202b2380682d27affb12fed412",
+      "size": 29400,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/929eaf519a9188202b2380682d27affb12fed412"
+    },
+    {
+      "path": "highagency",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c8e426ddeb5c0e3c1e642d10c563d168c331143c",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/c8e426ddeb5c0e3c1e642d10c563d168c331143c"
+    },
+    {
+      "path": "highagency/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "highagency/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "435d4df40871d6e5bb2a33e1316870d60cc9cbe6",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/435d4df40871d6e5bb2a33e1316870d60cc9cbe6"
+    },
+    {
+      "path": "highagency/data/utility",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c8df476b769c3841bdf68a79acc2836bc5309895",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/c8df476b769c3841bdf68a79acc2836bc5309895"
+    },
+    {
+      "path": "highagency/data/utility/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3de80dc9c021b2c4dedf597652aa9d34e581b1a3",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/3de80dc9c021b2c4dedf597652aa9d34e581b1a3"
+    },
+    {
+      "path": "highagency/data/utility/docs/deathv2",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2df2374bd35f185dd36406c8a3e9753a9e62ebe3",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/2df2374bd35f185dd36406c8a3e9753a9e62ebe3"
+    },
+    {
+      "path": "highagency/data/utility/docs/deathv2/1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77c05f441e32a00f388828fb3bdb2a923d926720",
+      "size": 2875,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/77c05f441e32a00f388828fb3bdb2a923d926720"
+    },
+    {
+      "path": "highagency/data/utility/docs/deathv2/2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de88867cdc9cb3cdd521f09071abe7ae8ce21af7",
+      "size": 1340,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/de88867cdc9cb3cdd521f09071abe7ae8ce21af7"
+    },
+    {
+      "path": "highagency/data/utility/docs/deathv2/3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a6453f637004f618a9796b1f870b1e5e976caf3b",
+      "size": 1366,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a6453f637004f618a9796b1f870b1e5e976caf3b"
+    },
+    {
+      "path": "highagency/data/utility/docs/deathv2/4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51e0b7ff807280b315dc8337dd574dd643a34a40",
+      "size": 2030,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/51e0b7ff807280b315dc8337dd574dd643a34a40"
+    },
+    {
+      "path": "highagency/snitchbench",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "096ad78dcc3ee88e012d80e6e3a5761856c3ab7c",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/096ad78dcc3ee88e012d80e6e3a5761856c3ab7c"
+    },
+    {
+      "path": "highagency/snitchbench/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "highagency/snitchbench/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6095ad456813612d8bf09e9306b95c19b73e14cf",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/6095ad456813612d8bf09e9306b95c19b73e14cf"
+    },
+    {
+      "path": "highagency/snitchbench/data/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "52ab6c15da9862c3aad9528f04e05f763eb23ad8",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/52ab6c15da9862c3aad9528f04e05f763eb23ad8"
+    },
+    {
+      "path": "highagency/snitchbench/data/docs/veridian",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b7c2c38eb57caf6cb5ff6d6d9d5be781cd8e3e50",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/b7c2c38eb57caf6cb5ff6d6d9d5be781cd8e3e50"
+    },
+    {
+      "path": "highagency/snitchbench/data/docs/veridian/1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fadad87580eaba5f27161f0b945fd5f361d685ed",
+      "size": 2513,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/fadad87580eaba5f27161f0b945fd5f361d685ed"
+    },
+    {
+      "path": "highagency/snitchbench/data/docs/veridian/2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de88867cdc9cb3cdd521f09071abe7ae8ce21af7",
+      "size": 1340,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/de88867cdc9cb3cdd521f09071abe7ae8ce21af7"
+    },
+    {
+      "path": "highagency/snitchbench/data/docs/veridian/3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d56ae376a25f1f51ae07ee98a14281d760df768",
+      "size": 1456,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4d56ae376a25f1f51ae07ee98a14281d760df768"
+    },
+    {
+      "path": "highagency/snitchbench/data/docs/veridian/4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "853a7de558659c8974040460630876ab2caa316d",
+      "size": 1677,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/853a7de558659c8974040460630876ab2caa316d"
+    },
+    {
+      "path": "highagency/snitchbench/data/docs/veridian_cleaned",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8bcef16824de80fb9f1fe11916d3a8ecdc70dde7",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/8bcef16824de80fb9f1fe11916d3a8ecdc70dde7"
+    },
+    {
+      "path": "highagency/snitchbench/data/docs/veridian_cleaned/1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca4ce81aa74b0a76b85c0a32cc0abc21dce9ca9e",
+      "size": 2586,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ca4ce81aa74b0a76b85c0a32cc0abc21dce9ca9e"
+    },
+    {
+      "path": "highagency/snitchbench/data/docs/veridian_cleaned/2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0a390a52df76eeb86d89f1cea91fb9990073b0f",
+      "size": 1350,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c0a390a52df76eeb86d89f1cea91fb9990073b0f"
+    },
+    {
+      "path": "highagency/snitchbench/data/docs/veridian_cleaned/3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb256125ffed759d42f64b13dc5d1461cf991103",
+      "size": 1440,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/bb256125ffed759d42f64b13dc5d1461cf991103"
+    },
+    {
+      "path": "highagency/snitchbench/data/docs/veridian_cleaned/4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f6cbd5f4c118d47cd223fbb7c34812549229daa",
+      "size": 1705,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/5f6cbd5f4c118d47cd223fbb7c34812549229daa"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2cadd106fc6c220ec00e6645432dacbb83c08b9d",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/2cadd106fc6c220ec00e6645432dacbb83c08b9d"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/assign_utility.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a46a44115fae767999ef3d4c6e1da1407a865f2e",
+      "size": 419,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a46a44115fae767999ef3d4c6e1da1407a865f2e"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "09af5b66f7dac8d3554116b04e2c12e21c4b9a12",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/09af5b66f7dac8d3554116b04e2c12e21c4b9a12"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/death",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "324dc6fa7fb5b3a2338e8113b9047fc88dc02bd5",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/324dc6fa7fb5b3a2338e8113b9047fc88dc02bd5"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/death/1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97e5215c5217e847cd4c1cf36aff0f9e880c8b3d",
+      "size": 2860,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/97e5215c5217e847cd4c1cf36aff0f9e880c8b3d"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/death/2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de88867cdc9cb3cdd521f09071abe7ae8ce21af7",
+      "size": 1340,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/de88867cdc9cb3cdd521f09071abe7ae8ce21af7"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/death/3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d56ae376a25f1f51ae07ee98a14281d760df768",
+      "size": 1456,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4d56ae376a25f1f51ae07ee98a14281d760df768"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/death/4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea5de29721e084dc9a5d3db425dcdf2cc6c31450",
+      "size": 2033,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ea5de29721e084dc9a5d3db425dcdf2cc6c31450"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/embarassment",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b7c2c38eb57caf6cb5ff6d6d9d5be781cd8e3e50",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/b7c2c38eb57caf6cb5ff6d6d9d5be781cd8e3e50"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/embarassment/1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fadad87580eaba5f27161f0b945fd5f361d685ed",
+      "size": 2513,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/fadad87580eaba5f27161f0b945fd5f361d685ed"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/embarassment/2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de88867cdc9cb3cdd521f09071abe7ae8ce21af7",
+      "size": 1340,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/de88867cdc9cb3cdd521f09071abe7ae8ce21af7"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/embarassment/3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d56ae376a25f1f51ae07ee98a14281d760df768",
+      "size": 1456,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4d56ae376a25f1f51ae07ee98a14281d760df768"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/embarassment/4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "853a7de558659c8974040460630876ab2caa316d",
+      "size": 1677,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/853a7de558659c8974040460630876ab2caa316d"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/fine",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4638f695f0341079cb2d1887a082a8012ce9e3b4",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/4638f695f0341079cb2d1887a082a8012ce9e3b4"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/fine/1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af19da3f1b3a15600cf3996c3e3eb06ef75f729d",
+      "size": 2835,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/af19da3f1b3a15600cf3996c3e3eb06ef75f729d"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/fine/2.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de88867cdc9cb3cdd521f09071abe7ae8ce21af7",
+      "size": 1340,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/de88867cdc9cb3cdd521f09071abe7ae8ce21af7"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/fine/3.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d56ae376a25f1f51ae07ee98a14281d760df768",
+      "size": 1456,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4d56ae376a25f1f51ae07ee98a14281d760df768"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/fine/4.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cee9638073ce68e69d3176d6f35b3d6211a650c7",
+      "size": 1981,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/cee9638073ce68e69d3176d6f35b3d6211a650c7"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/veridian",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bc10538e02b2899e762832a5ecec5ea9948423b9",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/bc10538e02b2899e762832a5ecec5ea9948423b9"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/docs/veridian/1.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af19da3f1b3a15600cf3996c3e3eb06ef75f729d",
+      "size": 2835,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/af19da3f1b3a15600cf3996c3e3eb06ef75f729d"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/questions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "efc4846886c8443dbdb35391750cffe8393fc42b",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/efc4846886c8443dbdb35391750cffe8393fc42b"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/questions/1.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6e838f2e96cc04064518d2b85af18183222ac7e",
+      "size": 507,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e6e838f2e96cc04064518d2b85af18183222ac7e"
+    },
+    {
+      "path": "highagency/snitchbench/data/utility/questions/2.txt",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "62b49852eefaf6ffca6322b583cc460738fe66a1",
+      "size": 514,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/62b49852eefaf6ffca6322b583cc460738fe66a1"
+    },
+    {
+      "path": "highagency/snitchbench/dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e12127f9fac07bbe16087d0df5b2cb953d082fc0",
+      "size": 4069,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e12127f9fac07bbe16087d0df5b2cb953d082fc0"
+    },
+    {
+      "path": "highagency/snitchbench/eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8d33d48a9cd72b624a3f35285d574ecb7b683a3",
+      "size": 3404,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e8d33d48a9cd72b624a3f35285d574ecb7b683a3"
+    },
+    {
+      "path": "highagency/snitchbench/plot.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db2d8af4ddba9a68711420582ea36b7bcc550112",
+      "size": 2801,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/db2d8af4ddba9a68711420582ea36b7bcc550112"
+    },
+    {
+      "path": "highagency/snitchbench/prompts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "765844652df200e45d0413237678c26291fb0000",
+      "size": 8055,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/765844652df200e45d0413237678c26291fb0000"
+    },
+    {
+      "path": "highagency/snitchbench/scorers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ed2e1ba2cbdffb84d1fe11926895179c329b339",
+      "size": 8652,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/7ed2e1ba2cbdffb84d1fe11926895179c329b339"
+    },
+    {
+      "path": "highagency/snitchbench/solvers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d1256a12fdd6de6f77e59d9fba8b72b64523662",
+      "size": 312,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9d1256a12fdd6de6f77e59d9fba8b72b64523662"
+    },
+    {
+      "path": "highagency/snitchbench/tasks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5173749bc7e4a9024d88ef2387f91898310c7d6",
+      "size": 5362,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f5173749bc7e4a9024d88ef2387f91898310c7d6"
+    },
+    {
+      "path": "highagency/snitchbench/tools.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51126ab8a64c12a04339eab4e61df86d6ed2a801",
+      "size": 836,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/51126ab8a64c12a04339eab4e61df86d6ed2a801"
+    },
+    {
+      "path": "highagency/whistlebench",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53acc45d2f6e8979be89a18050cbf8dfe465a24c",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/53acc45d2f6e8979be89a18050cbf8dfe465a24c"
+    },
+    {
+      "path": "highagency/whistlebench/__init__.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "size": 0,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "path": "highagency/whistlebench/analysis.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f9262eadfd22cf2ff11386a5a0a83e4773c1355",
+      "size": 4884,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0f9262eadfd22cf2ff11386a5a0a83e4773c1355"
+    },
+    {
+      "path": "highagency/whistlebench/data",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3091ba0ba90dc91d617dcbfa5f6a5d882e66d2cf",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/3091ba0ba90dc91d617dcbfa5f6a5d882e66d2cf"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "852305ae0d046931a3425d004ff6cb8f60d68b94",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/852305ae0d046931a3425d004ff6cb8f60d68b94"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ae412ec965f3521a4e4ba7e981a4927de351f242",
+      "size": 1221,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ae412ec965f3521a4e4ba7e981a4927de351f242"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/distractor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5812102c2d3c94812d0f9c78d0ef29df000b5b9e",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/5812102c2d3c94812d0f9c78d0ef29df000b5b9e"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/distractor/06_Routine_Offsite_Agenda.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f96c77885237a90b9244e838ec4166deef78cb8d",
+      "size": 560,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f96c77885237a90b9244e838ec4166deef78cb8d"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/distractor/07_Routine_Engineering_CodeFreeze_Reminder.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7034f9b014994c6e31fcb0f08b843f0b3aefc38e",
+      "size": 477,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/7034f9b014994c6e31fcb0f08b843f0b3aefc38e"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/distractor/08_Routine_Travel_Approval_Priya.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb668477a1db84d9e187cc82bec8e7d7f524698a",
+      "size": 409,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/bb668477a1db84d9e187cc82bec8e7d7f524698a"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/distractor/09_Routine_Slack_Housekeeping.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3774799b24762c66a7ced37c2e27b545260144fe",
+      "size": 454,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3774799b24762c66a7ced37c2e27b545260144fe"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/distractor/10_Routine_Wellness_Challenge.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "98730357c6f8dc77625f13f7d871ee8e450a5b27",
+      "size": 460,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/98730357c6f8dc77625f13f7d871ee8e450a5b27"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/snitchable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c5611912f8851f4a01e93e99e69aa40d5db83237",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/c5611912f8851f4a01e93e99e69aa40d5db83237"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/snitchable/01_Aurora_EmailThread_ArbitrationFault_RolloutGate.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2efe0a38810636a8d379a0477370666b46c25aa",
+      "size": 3357,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b2efe0a38810636a8d379a0477370666b46c25aa"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/snitchable/02_Aurora_Memo_SafetyIncident_Reconstruction_Priya.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da5c645fbdd244fbbf8812d2d204b89df0f91e1c",
+      "size": 3113,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/da5c645fbdd244fbbf8812d2d204b89df0f91e1c"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/snitchable/03_Aurora_LegalDirective_DataAccess_Comms.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de92f9b6480bbe248406910a4e0fd7baa6e9f9a6",
+      "size": 2259,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/de92f9b6480bbe248406910a4e0fd7baa6e9f9a6"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/snitchable/04_Aurora_BoardPacket_Excerpt_Redlines.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d991763f2c161513e86b6ca945c19379eff346f",
+      "size": 1612,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/1d991763f2c161513e86b6ca945c19379eff346f"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/snitchable/05_Aurora_Release_GoNoGo_Calendar.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "191722e097495e6cfbec6fd8e0dc7faa83e11294",
+      "size": 1625,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/191722e097495e6cfbec6fd8e0dc7faa83e11294"
+    },
+    {
+      "path": "highagency/whistlebench/data/autonomous_vehicles/snitchable/A1_Contact_Matrix.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a52ea4e924e9c0433d7156d8c8ea74fff94ffd26",
+      "size": 1022,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a52ea4e924e9c0433d7156d8c8ea74fff94ffd26"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1630be387c365239fe673fb6dfe52835d032d851",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/1630be387c365239fe673fb6dfe52835d032d851"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3da4259530fd81e0af931955258005ece0d219f9",
+      "size": 1164,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3da4259530fd81e0af931955258005ece0d219f9"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/distractor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "74e4ed0d7469b2309abfbe1a10bdf28968dfdf96",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/74e4ed0d7469b2309abfbe1a10bdf28968dfdf96"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/distractor/06_Routine_ParkingPolicy_Update.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f97677812811ed7ee31f762bcaa1f955d8cabd77",
+      "size": 487,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f97677812811ed7ee31f762bcaa1f955d8cabd77"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/distractor/07_Routine_LunchAndLearn_MicroBasics.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b764da16d8e258ee12da56d0f58f16c7490eca7",
+      "size": 474,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9b764da16d8e258ee12da56d0f58f16c7490eca7"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/distractor/08_Routine_ERP_Downtime_Notice.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99c8b7b66e9f65fa40bfea6099a7819f1b63986c",
+      "size": 432,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/99c8b7b66e9f65fa40bfea6099a7819f1b63986c"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/distractor/09_Routine_VolunteerDay_FoodBank.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb524fb852eefee9607f0442baef5a94b74de011",
+      "size": 467,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/eb524fb852eefee9607f0442baef5a94b74de011"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/distractor/10_Routine_TravelExpense_Tips.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7985abb0025de1b612241ac8a6b88cdffb207c10",
+      "size": 508,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/7985abb0025de1b612241ac8a6b88cdffb207c10"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/snitchable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "265d2ac81a6bf6e60f3b832f08d0205a1ccb717e",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/265d2ac81a6bf6e60f3b832f08d0205a1ccb717e"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/snitchable/01_LactaPure_EmailThread_Cronobacter_Positive_Recall.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b77a8e0d140055a38cd78f076c158359f13e0c3a",
+      "size": 3222,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b77a8e0d140055a38cd78f076c158359f13e0c3a"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/snitchable/02_LactaPure_QA_Incident_Memo_RCA.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af3d20816f1c32578b9425f91f7d299b9ec2e95e",
+      "size": 2518,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/af3d20816f1c32578b9425f91f7d299b9ec2e95e"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/snitchable/03_LactaPure_LegalDirective_Messaging_Docs.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70362c10f23fee42f8f046feb3f7e538b07d8773",
+      "size": 1628,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/70362c10f23fee42f8f046feb3f7e538b07d8773"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/snitchable/04_LactaPure_COA_Packline2_Redlines.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78bb8fbfc109225a5aedb794ecf0c6f460f2bc9e",
+      "size": 1333,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/78bb8fbfc109225a5aedb794ecf0c6f460f2bc9e"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/snitchable/05_LactaPure_Logistics_Calendar_ExportPlan.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f723e9c6afd04bc11cd00eb832cc0d32963aa99f",
+      "size": 1568,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f723e9c6afd04bc11cd00eb832cc0d32963aa99f"
+    },
+    {
+      "path": "highagency/whistlebench/data/food_safety/snitchable/A1_Contact_Matrix.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6af0bba9f47d7cca8b36890573c1ddb6ce5962da",
+      "size": 1021,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6af0bba9f47d7cca8b36890573c1ddb6ce5962da"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "84f08e9660fe4a472690c3f9e778560db13d36e1",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/84f08e9660fe4a472690c3f9e778560db13d36e1"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "332eaca10d463d467d22194b0e4b3b3e0f13a664",
+      "size": 1288,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/332eaca10d463d467d22194b0e4b3b3e0f13a664"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/distractor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2f1fec90b9b557edbda25694e3dfdfaabf7bb5e3",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/2f1fec90b9b557edbda25694e3dfdfaabf7bb5e3"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/distractor/06_Routine_WellnessStipend_Update.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ade8e751b2f203c1f36ec78a420282a2e329d88",
+      "size": 473,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6ade8e751b2f203c1f36ec78a420282a2e329d88"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/distractor/07_Routine_ComplianceTraining_Schedule.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5b3dc3385f62e750e7d416ffcd81eccb4db967c",
+      "size": 490,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b5b3dc3385f62e750e7d416ffcd81eccb4db967c"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/distractor/08_Routine_IT_VPN_Upgrade.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2eebcbd9bb97f86855b3b1e96281a2390f70b3e7",
+      "size": 431,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/2eebcbd9bb97f86855b3b1e96281a2390f70b3e7"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/distractor/09_Routine_Procurement_Catering_PO.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d5425e49306f0ba1f8bc54999c5ef8b7a814bbd",
+      "size": 420,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4d5425e49306f0ba1f8bc54999c5ef8b7a814bbd"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/distractor/10_Routine_Travel_Itinerary_Derek_Conference.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "748c97393b74e3ae0d92dc2c55476f1ad4349775",
+      "size": 470,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/748c97393b74e3ae0d92dc2c55476f1ad4349775"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/snitchable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c25a04331365f9555d97f6e734c50abd8633c4b1",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/c25a04331365f9555d97f6e734c50abd8633c4b1"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/snitchable/01_PulseIV_EmailThread_TimeSync_Drift_Comms.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "96b43083b595d8c2d5208daa0fbf4e722d61e678",
+      "size": 3457,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/96b43083b595d8c2d5208daa0fbf4e722d61e678"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/snitchable/02_PulseIV_Memo_PostMarket_Incident_Analysis.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4db275cb9fb9314817ee7c01f0525272c6103a01",
+      "size": 2926,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4db275cb9fb9314817ee7c01f0525272c6103a01"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/snitchable/03_PulseIV_LegalDirective_Comms_FieldNotice.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08c33caad1d251d00b50900857b39bc6ad2fca20",
+      "size": 1682,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/08c33caad1d251d00b50900857b39bc6ad2fca20"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/snitchable/04_PulseIV_BoardPacket_Excerpt_Redlines.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71b1457b9e443488ea787cbf21ba75e4246b7fb1",
+      "size": 1480,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/71b1457b9e443488ea787cbf21ba75e4246b7fb1"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/snitchable/05_PulseIV_ConfigUpdate_GoNoGo_Calendar.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc5712ad99dccbe97c0dc60ac79a556a008ed3b2",
+      "size": 1702,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/bc5712ad99dccbe97c0dc60ac79a556a008ed3b2"
+    },
+    {
+      "path": "highagency/whistlebench/data/medical_devices/snitchable/A1_Contact_Matrix.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb2cc63e236354d027166810331c4e107bd841c9",
+      "size": 1053,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/cb2cc63e236354d027166810331c4e107bd841c9"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4842978e5a740a73ca91c9c45e2427887bf6b941",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/4842978e5a740a73ca91c9c45e2427887bf6b941"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1eed73c039509c7b1f6cd8dd1d507a9452ad1624",
+      "size": 1247,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/1eed73c039509c7b1f6cd8dd1d507a9452ad1624"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/distractor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "596301a5ffcb3da47288c67ba08271e24cc67890",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/596301a5ffcb3da47288c67ba08271e24cc67890"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/distractor/06_Routine_Facilities_Cafeteria_Menu.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c68ad6d90c5ef8bcd343ca417f0d518c70a52ee6",
+      "size": 499,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c68ad6d90c5ef8bcd343ca417f0d518c70a52ee6"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/distractor/07_Routine_IT_SecurityTraining_Reminder.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ae1c10b99db5c159666b8ff5cb0e9db0f19ae74",
+      "size": 478,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/5ae1c10b99db5c159666b8ff5cb0e9db0f19ae74"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/distractor/08_Routine_Travel_Itinerary_Priya_Symposium.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "224a4ede337f0e47d9b2bb46bf960878a41c9fc3",
+      "size": 483,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/224a4ede337f0e47d9b2bb46bf960878a41c9fc3"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/distractor/09_Routine_Procurement_PO_SafetyBoots.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "99110536d910914f8f467ab69d2cc8c909043093",
+      "size": 478,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/99110536d910914f8f467ab69d2cc8c909043093"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/distractor/10_Routine_AllHands_Blackbay_Agenda.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d69833e3f913e3d5d5028c58b74c394f7bb2037",
+      "size": 369,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/2d69833e3f913e3d5d5028c58b74c394f7bb2037"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/snitchable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "149676a9a76038eab8ced5bf9fe81b02c9b1442c",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/149676a9a76038eab8ced5bf9fe81b02c9b1442c"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/snitchable/01_Blackbay_EmailThread_SlopeMovement_Comms.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7665e4dade9393d44639e3b8dcd71d4b07f2cf1e",
+      "size": 3525,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/7665e4dade9393d44639e3b8dcd71d4b07f2cf1e"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/snitchable/02_Blackbay_Memo_GeoRisk_Escalation_Priya.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dc912d3bcbf0a46b44010d89f07194c4d72a2d6",
+      "size": 2391,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4dc912d3bcbf0a46b44010d89f07194c4d72a2d6"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/snitchable/03_Blackbay_LegalDirective_Comms_Access.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e2e082a72197fd26972d889db7efd240a978fdbd",
+      "size": 1561,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e2e082a72197fd26972d889db7efd240a978fdbd"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/snitchable/04_Blackbay_BoardPacket_Excerpt_Redlines.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cff1c1c4c12e8874383f565f2f404b02d2babfff",
+      "size": 1726,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/cff1c1c4c12e8874383f565f2f404b02d2babfff"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/snitchable/05_Blackbay_Ops_ControlPlan_Calendar.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "657087f3f78100d9a568ea8c058d678cca02e78b",
+      "size": 1631,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/657087f3f78100d9a568ea8c058d678cca02e78b"
+    },
+    {
+      "path": "highagency/whistlebench/data/mining/snitchable/A1_Contact_Matrix.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a68b9b3edef4be4dad7471bd56f288d749cb067",
+      "size": 1053,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/5a68b9b3edef4be4dad7471bd56f288d749cb067"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "699caa852ac7ae48efd51e020018b1492ba18ab9",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/699caa852ac7ae48efd51e020018b1492ba18ab9"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da663d1ea875b35eb758c59c609db76720749723",
+      "size": 1252,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/da663d1ea875b35eb758c59c609db76720749723"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/distractor",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "37b2d24f8dbeea80ae7d7dae86e08e4533d1eaa2",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/37b2d24f8dbeea80ae7d7dae86e08e4533d1eaa2"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/distractor/06_Routine_TravelPolicy_Update_ExpenseGuidance.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2bc7938fcb2da6fd0261c00608fcab3a1d0b5b33",
+      "size": 646,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/2bc7938fcb2da6fd0261c00608fcab3a1d0b5b33"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/distractor/07_Routine_OpenEnrollment_Memo.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea5387ed1890e1537b64ce5280bb90af9fd149b6",
+      "size": 457,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ea5387ed1890e1537b64ce5280bb90af9fd149b6"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/distractor/08_Routine_IT_Ticket_Laptop_Swap.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e018baa40ca622bd94b46857332a30939abd8cb1",
+      "size": 476,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e018baa40ca622bd94b46857332a30939abd8cb1"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/distractor/09_Routine_AllHands_Agenda_Minutes.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "108968231c79e3286e100966a0106c35552390f9",
+      "size": 636,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/108968231c79e3286e100966a0106c35552390f9"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/distractor/10_Routine_Vendor_NDA_Renewal_BrewBay.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "563fae9a655c7a7a0ac44627de88c35e3219e421",
+      "size": 598,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/563fae9a655c7a7a0ac44627de88c35e3219e421"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/snitchable",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ec2e776d5a03c4fd1fcc3d2336ce953308c0b97",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/1ec2e776d5a03c4fd1fcc3d2336ce953308c0b97"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/snitchable/01_VigilX_EmailThread_SAE_Addendum.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "676da36537438da8cd8096ab180e295959e79d40",
+      "size": 3624,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/676da36537438da8cd8096ab180e295959e79d40"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/snitchable/02_VigilX_Memo_Urgent_Safety_Risk_Assessment.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad22276181ab5d05ec3025d18ec8a58af69b47a9",
+      "size": 3626,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ad22276181ab5d05ec3025d18ec8a58af69b47a9"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/snitchable/03_VigilX_Legal_Directive_Comms_Protocol.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cf02e643ecb726eb329b59d4ad679815636d45d",
+      "size": 1669,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0cf02e643ecb726eb329b59d4ad679815636d45d"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/snitchable/04_VigilX_BoardPacket_Clinical_Risk_Excerpt_Redlines.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eae6c878738b45050d3476b1351a9443dffbd039",
+      "size": 2207,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/eae6c878738b45050d3476b1351a9443dffbd039"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/snitchable/05_VigilX_Reg_Submission_Calendar_and_Checklist.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70e8404a4330841213a2fc0eaf198cb1de4cbc56",
+      "size": 1907,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/70e8404a4330841213a2fc0eaf198cb1de4cbc56"
+    },
+    {
+      "path": "highagency/whistlebench/data/pharma/snitchable/A1_Contact_Matrix.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fbc401ecd286b7aae56fb652016a8fe345f9e0c",
+      "size": 1032,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/5fbc401ecd286b7aae56fb652016a8fe345f9e0c"
+    },
+    {
+      "path": "highagency/whistlebench/dataset.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "407147ff5b329b4bd5c5af17ce1072fd79814ee1",
+      "size": 4903,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/407147ff5b329b4bd5c5af17ce1072fd79814ee1"
+    },
+    {
+      "path": "highagency/whistlebench/eval.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c35a7ec96665cc3e164948488317b0f3cbe5f45a",
+      "size": 1284,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c35a7ec96665cc3e164948488317b0f3cbe5f45a"
+    },
+    {
+      "path": "highagency/whistlebench/experiments",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f823b925d56fd673f4c45c45d1b012d40d5fd746",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/f823b925d56fd673f4c45c45d1b012d40d5fd746"
+    },
+    {
+      "path": "highagency/whistlebench/experiments/0_baseline.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abb7a84fb7b6a29bb1046ae5922d6a84c536195e",
+      "size": 823,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/abb7a84fb7b6a29bb1046ae5922d6a84c536195e"
+    },
+    {
+      "path": "highagency/whistlebench/experiments/1_responsibility.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edf2542c537a04a25f93b6666ad361fa0d147e8e",
+      "size": 1254,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/edf2542c537a04a25f93b6666ad361fa0d147e8e"
+    },
+    {
+      "path": "highagency/whistlebench/experiments/2_boldness.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "586ee46cc872bc28feb0e1d2c3e57db11697fe7f",
+      "size": 1602,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/586ee46cc872bc28feb0e1d2c3e57db11697fe7f"
+    },
+    {
+      "path": "highagency/whistlebench/experiments/3_detailed_instructions.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce42f43bb5acd0041199bc9c21803cb525bef8e4",
+      "size": 890,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ce42f43bb5acd0041199bc9c21803cb525bef8e4"
+    },
+    {
+      "path": "highagency/whistlebench/experiments/4_distractor_docs.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6153cf98c8b18382e9c320dbe22e6fa0c450a868",
+      "size": 886,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/6153cf98c8b18382e9c320dbe22e6fa0c450a868"
+    },
+    {
+      "path": "highagency/whistlebench/experiments/5_distractor_tools.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "518dc118ee7c6927f2ca476f5ff1a7f5083d1e48",
+      "size": 885,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/518dc118ee7c6927f2ca476f5ff1a7f5083d1e48"
+    },
+    {
+      "path": "highagency/whistlebench/experiments/all_models.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4bf9e0d11972456be3f290f846574313f89f607",
+      "size": 999,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a4bf9e0d11972456be3f290f846574313f89f607"
+    },
+    {
+      "path": "highagency/whistlebench/loop_protection.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "935155b70a9d43b307d7d4ef5fe2b7390bbf57a2",
+      "size": 1734,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/935155b70a9d43b307d7d4ef5fe2b7390bbf57a2"
+    },
+    {
+      "path": "highagency/whistlebench/plotting.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc58689053bbf8ac1f11f92283824a1334094364",
+      "size": 14197,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/cc58689053bbf8ac1f11f92283824a1334094364"
+    },
+    {
+      "path": "highagency/whistlebench/prompts.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b99bd6496e84120878bd9f2473c347e94050b301",
+      "size": 13011,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b99bd6496e84120878bd9f2473c347e94050b301"
+    },
+    {
+      "path": "highagency/whistlebench/scorers.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "463e674f1bc263e3fa5e5b76e63376fa1b334122",
+      "size": 8355,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/463e674f1bc263e3fa5e5b76e63376fa1b334122"
+    },
+    {
+      "path": "highagency/whistlebench/tasks.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca9a0411abcf90acea895c5e154d3fbfaaad5917",
+      "size": 4050,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/ca9a0411abcf90acea895c5e154d3fbfaaad5917"
+    },
+    {
+      "path": "highagency/whistlebench/text_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f8f2c53c7134a68379a433cb0e42e97c9f1af999",
+      "size": 5305,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f8f2c53c7134a68379a433cb0e42e97c9f1af999"
+    },
+    {
+      "path": "highagency/whistlebench/tools.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73f5950a9a812585f7317a33e2edda8ffef533b6",
+      "size": 12636,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/73f5950a9a812585f7317a33e2edda8ffef533b6"
+    },
+    {
+      "path": "highagency/whistlebench/types.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d28b1ba9b7acf673bc13dc9ff46ac511e5a1cc7e",
+      "size": 1252,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/d28b1ba9b7acf673bc13dc9ff46ac511e5a1cc7e"
+    },
+    {
+      "path": "images",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "88ae438361dc037765059d284a42a5e0c4531ab5",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/88ae438361dc037765059d284a42a5e0c4531ab5"
+    },
+    {
+      "path": "images/GPT-5 Snitching and Refusal",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f4ab1d5f44b53f41ca08e6a1ac112a23ac5f822",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/8f4ab1d5f44b53f41ca08e6a1ac112a23ac5f822"
+    },
+    {
+      "path": "images/GPT-5 Snitching and Refusal/Medium Reasoning Bold Refusal (1).png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47ad309660d218a8f75aa84b399f6553f2a339e9",
+      "size": 45947,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/47ad309660d218a8f75aa84b399f6553f2a339e9"
+    },
+    {
+      "path": "images/GPT-5 Snitching and Refusal/Medium Reasoning Bold Refusal (2).png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d71102a75f6f3fba31b18b2cf4a112ecf62806a0",
+      "size": 34975,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/d71102a75f6f3fba31b18b2cf4a112ecf62806a0"
+    },
+    {
+      "path": "images/GPT-5 Snitching and Refusal/Medium Reasoning Tame Refusal.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baefc69a01a2a96814c18341cc5cf8ed727d736f",
+      "size": 33572,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/baefc69a01a2a96814c18341cc5cf8ed727d736f"
+    },
+    {
+      "path": "images/GPT-5 Snitching and Refusal/Minimal Reasoning Bold Attribution.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8695bdf02c2d1ad724c867554c83093e846f969",
+      "size": 49335,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b8695bdf02c2d1ad724c867554c83093e846f969"
+    },
+    {
+      "path": "images/GPT-5 Snitching and Refusal/Minimal Reasoning Tame Refusal .png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e56364f22dad43fd7c8ee49fb93875d55f71e15",
+      "size": 30362,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3e56364f22dad43fd7c8ee49fb93875d55f71e15"
+    },
+    {
+      "path": "images/bigeval_awareness_rates.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "51eefe2c6942f82f99bd25b6969a665ccee8c5e7",
+      "size": 320777,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/51eefe2c6942f82f99bd25b6969a665ccee8c5e7"
+    },
+    {
+      "path": "images/bigeval_snitching_rates.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4aff1d62f747cc839b4f51e452a6a4fbacbd9d18",
+      "size": 322321,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4aff1d62f747cc839b4f51e452a6a4fbacbd9d18"
+    },
+    {
+      "path": "images/example_logs.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "33a16048976bb7f479dc7a8071a9b17ed6e88e5a",
+      "size": 441626,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/33a16048976bb7f479dc7a8071a9b17ed6e88e5a"
+    },
+    {
+      "path": "images/experiment_1_responsibility",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f9fb35a20de434bb7f9bb6b67b05a4a1ab380955",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/f9fb35a20de434bb7f9bb6b67b05a4a1ab380955"
+    },
+    {
+      "path": "images/experiment_1_responsibility/evaluation awareness.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "712d7313eae4771fdb5be61434026b1551e3d9c7",
+      "size": 19684,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/712d7313eae4771fdb5be61434026b1551e3d9c7"
+    },
+    {
+      "path": "images/experiment_1_responsibility/govwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "69591eec2081d71db71c19531d61a681a5fbef99",
+      "size": 18958,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/69591eec2081d71db71c19531d61a681a5fbef99"
+    },
+    {
+      "path": "images/experiment_1_responsibility/internalwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1b537413d25a5857f863b195b6c8886dbd1de90",
+      "size": 18886,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/e1b537413d25a5857f863b195b6c8886dbd1de90"
+    },
+    {
+      "path": "images/experiment_1_responsibility/mediawhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baeab393b97cffe3f14cdf0f271d0ed1c9d9b147",
+      "size": 18922,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/baeab393b97cffe3f14cdf0f271d0ed1c9d9b147"
+    },
+    {
+      "path": "images/experiment_1_responsibility/refusal.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4d121ca52a7ab0aba611b8ec60ff0283d020a75",
+      "size": 15576,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f4d121ca52a7ab0aba611b8ec60ff0283d020a75"
+    },
+    {
+      "path": "images/experiment_1_responsibility/whistleblowing.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f78a0e0bc0ee2b0d90a8b977f83d39e3e8a74b8e",
+      "size": 19800,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f78a0e0bc0ee2b0d90a8b977f83d39e3e8a74b8e"
+    },
+    {
+      "path": "images/experiment_2_boldness",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "54bf497375b6c239174ca5a4ef3ff3cdf82bd6bb",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/54bf497375b6c239174ca5a4ef3ff3cdf82bd6bb"
+    },
+    {
+      "path": "images/experiment_2_boldness/evaluation awareness.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "880b69c3c13d0cf0382208c705201d08b83bab24",
+      "size": 18837,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/880b69c3c13d0cf0382208c705201d08b83bab24"
+    },
+    {
+      "path": "images/experiment_2_boldness/govwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "074ddbc1cbafe3c93e258c530b803143c1f629ae",
+      "size": 17761,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/074ddbc1cbafe3c93e258c530b803143c1f629ae"
+    },
+    {
+      "path": "images/experiment_2_boldness/internalwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e5bb420d7a6661813866da41114eba60db8ba34",
+      "size": 17639,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/2e5bb420d7a6661813866da41114eba60db8ba34"
+    },
+    {
+      "path": "images/experiment_2_boldness/mediawhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cd487f693a1580c57878bb7c44a7617ea9b2b8f",
+      "size": 17555,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0cd487f693a1580c57878bb7c44a7617ea9b2b8f"
+    },
+    {
+      "path": "images/experiment_2_boldness/refusal.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d3cbb21cb2b40f14a86a775084eb43090fa232f",
+      "size": 14972,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9d3cbb21cb2b40f14a86a775084eb43090fa232f"
+    },
+    {
+      "path": "images/experiment_2_boldness/whistleblowing.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09eee458126451f06bfb396d497620aa6191d7b7",
+      "size": 18861,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/09eee458126451f06bfb396d497620aa6191d7b7"
+    },
+    {
+      "path": "images/experiment_3_detailed_instructions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d479e9018ed16192dbc1f12ae13e2b6f624c420c",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/d479e9018ed16192dbc1f12ae13e2b6f624c420c"
+    },
+    {
+      "path": "images/experiment_3_detailed_instructions/evaluation awareness.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8192f39217c00aaa5466343e39a6f3ee4b1583a",
+      "size": 18606,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/d8192f39217c00aaa5466343e39a6f3ee4b1583a"
+    },
+    {
+      "path": "images/experiment_3_detailed_instructions/govwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd3085739e73cb3bfd7cb3d9102b8698e8e5492a",
+      "size": 17710,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/bd3085739e73cb3bfd7cb3d9102b8698e8e5492a"
+    },
+    {
+      "path": "images/experiment_3_detailed_instructions/internalwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d25c4c9a01f6739a2f80ad7dea1c2213a2c5499b",
+      "size": 17441,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/d25c4c9a01f6739a2f80ad7dea1c2213a2c5499b"
+    },
+    {
+      "path": "images/experiment_3_detailed_instructions/mediawhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c0cab99eb2ca13e4f97b039b4d3b5c9b009b3e37",
+      "size": 17501,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c0cab99eb2ca13e4f97b039b4d3b5c9b009b3e37"
+    },
+    {
+      "path": "images/experiment_3_detailed_instructions/refusal.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d469433a6ab5996e014c658b2ebe55f2ab78fcce",
+      "size": 13085,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/d469433a6ab5996e014c658b2ebe55f2ab78fcce"
+    },
+    {
+      "path": "images/experiment_3_detailed_instructions/whistleblowing.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92c7d939ccff621b6ae54d51446b74379d3a7fff",
+      "size": 18322,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/92c7d939ccff621b6ae54d51446b74379d3a7fff"
+    },
+    {
+      "path": "images/experiment_4_distractor_docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "25bd96123b5e7e87308247a06ed239385da01f98",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/25bd96123b5e7e87308247a06ed239385da01f98"
+    },
+    {
+      "path": "images/experiment_4_distractor_docs/evaluation awareness.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1b497429a1500a28c024ed6edb7e41a24ddc169",
+      "size": 18062,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/f1b497429a1500a28c024ed6edb7e41a24ddc169"
+    },
+    {
+      "path": "images/experiment_4_distractor_docs/govwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a2c147d68b193f575a3146eb5d03e3259516bd41",
+      "size": 17428,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a2c147d68b193f575a3146eb5d03e3259516bd41"
+    },
+    {
+      "path": "images/experiment_4_distractor_docs/internalwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b53148f4aeec1c5819e295865ed3cd0e05d132e",
+      "size": 17164,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0b53148f4aeec1c5819e295865ed3cd0e05d132e"
+    },
+    {
+      "path": "images/experiment_4_distractor_docs/mediawhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4ecf7b6ce0afe2b48dd92d9797847e3ce249f57a",
+      "size": 17221,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/4ecf7b6ce0afe2b48dd92d9797847e3ce249f57a"
+    },
+    {
+      "path": "images/experiment_4_distractor_docs/refusal.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83e89ba03a6614859aa2dbcb524c5c3e23eaa52f",
+      "size": 12381,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/83e89ba03a6614859aa2dbcb524c5c3e23eaa52f"
+    },
+    {
+      "path": "images/experiment_4_distractor_docs/whistleblowing.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01d8c3c46e40c18c0ee64ae4ab316286259479eb",
+      "size": 18047,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/01d8c3c46e40c18c0ee64ae4ab316286259479eb"
+    },
+    {
+      "path": "images/experiment_5_distractor_tools",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "448629fa6e0210cd61c48348bd83659b122351b7",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/448629fa6e0210cd61c48348bd83659b122351b7"
+    },
+    {
+      "path": "images/experiment_5_distractor_tools/evaluation awareness.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65871bc086e5a2dfe23a8d90610b47ef9c2cb50f",
+      "size": 18069,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/65871bc086e5a2dfe23a8d90610b47ef9c2cb50f"
+    },
+    {
+      "path": "images/experiment_5_distractor_tools/govwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "deaf3fe6116b04d5d74c1709918f1366480162dc",
+      "size": 17421,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/deaf3fe6116b04d5d74c1709918f1366480162dc"
+    },
+    {
+      "path": "images/experiment_5_distractor_tools/internalwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07d910f0cbe0838be80c207edf1fac6e4fb6d7e6",
+      "size": 17177,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/07d910f0cbe0838be80c207edf1fac6e4fb6d7e6"
+    },
+    {
+      "path": "images/experiment_5_distractor_tools/mediawhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b91413c24dd492315d46dac9f9452523dc0442d",
+      "size": 17212,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0b91413c24dd492315d46dac9f9452523dc0442d"
+    },
+    {
+      "path": "images/experiment_5_distractor_tools/refusal.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84ca98906db5c07771ae5399fe48d3a54d663298",
+      "size": 12411,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/84ca98906db5c07771ae5399fe48d3a54d663298"
+    },
+    {
+      "path": "images/experiment_5_distractor_tools/whistleblowing.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "badb4d7c62493fad2c837bd14e1991bcd86690d9",
+      "size": 18041,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/badb4d7c62493fad2c837bd14e1991bcd86690d9"
+    },
+    {
+      "path": "images/experiment_all_models",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3364e4c47e16d235bfff7ea3410208ac4c7dd96f",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/3364e4c47e16d235bfff7ea3410208ac4c7dd96f"
+    },
+    {
+      "path": "images/experiment_all_models/evaluation awareness.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3874e56412de943cb72d47bde610ad87c9e9f714",
+      "size": 19022,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/3874e56412de943cb72d47bde610ad87c9e9f714"
+    },
+    {
+      "path": "images/experiment_all_models/govwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf29ccb61ff3d90e998d2c67fb2a75a10148b5b3",
+      "size": 18084,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/bf29ccb61ff3d90e998d2c67fb2a75a10148b5b3"
+    },
+    {
+      "path": "images/experiment_all_models/internalwhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d39f83e294dea1d54dc1e3696a2f5f258ee5b94a",
+      "size": 18209,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/d39f83e294dea1d54dc1e3696a2f5f258ee5b94a"
+    },
+    {
+      "path": "images/experiment_all_models/mediawhistleblowingseparate.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b113182e1fcd5c9d83bab5881311eec8c8eb910",
+      "size": 18103,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/2b113182e1fcd5c9d83bab5881311eec8c8eb910"
+    },
+    {
+      "path": "images/experiment_all_models/refusal.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "024ca9ad67b7dea841fb83d12a754cf905eac773",
+      "size": 10906,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/024ca9ad67b7dea841fb83d12a754cf905eac773"
+    },
+    {
+      "path": "images/experiment_all_models/whistleblowing.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d537241d85cc9d8f5dff09124e3e214de5e01eb",
+      "size": 19801,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/8d537241d85cc9d8f5dff09124e3e214de5e01eb"
+    },
+    {
+      "path": "images/snitchbench.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a7d5c64074c60164114bbbdb4b5d2bb53b09995",
+      "size": 303348,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/5a7d5c64074c60164114bbbdb4b5d2bb53b09995"
+    },
+    {
+      "path": "images/snitchbench_cleaned.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a87179d8ee403a1b10a77d0856c52fd52f4756ba",
+      "size": 175539,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a87179d8ee403a1b10a77d0856c52fd52f4756ba"
+    },
+    {
+      "path": "linear_probes",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "de33ab9a7191818eb931d32075ed44a9c0a83578",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/de33ab9a7191818eb931d32075ed44a9c0a83578"
+    },
+    {
+      "path": "linear_probes/QwenSteering",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "35c94adc55839cb2ce484539a4c574c058b39f56",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/35c94adc55839cb2ce484539a4c574c058b39f56"
+    },
+    {
+      "path": "linear_probes/QwenSteering/config_qwen_with_steering.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f0b152d9ff8a795d1e183390ee869a9b0974bc5",
+      "size": 2617,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/0f0b152d9ff8a795d1e183390ee869a9b0974bc5"
+    },
+    {
+      "path": "linear_probes/QwenSteering/qwen_with_steering.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fa8ec28596856af8f1715a93d7c68877e578cfd7",
+      "size": 7346,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/fa8ec28596856af8f1715a93d7c68877e578cfd7"
+    },
+    {
+      "path": "linear_probes/activation_measurement.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "31601932f82d0ba5345c92aa8d2ef0fb8ba060f1",
+      "size": 10115,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/31601932f82d0ba5345c92aa8d2ef0fb8ba060f1"
+    },
+    {
+      "path": "linear_probes/statistical_analysis.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b02a7cf9e0177050c0e69d3b55a4541ead178bd8",
+      "size": 2557,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/b02a7cf9e0177050c0e69d3b55a4541ead178bd8"
+    },
+    {
+      "path": "linear_probes/steering.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49e06b604a1f42142fe5d399ce90d4f6da0fad8a",
+      "size": 3454,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/49e06b604a1f42142fe5d399ce90d4f6da0fad8a"
+    },
+    {
+      "path": "linear_probes/tool_utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e2f9a9a50ffcdec6265acd448e8c51d98bcf48f",
+      "size": 1535,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/9e2f9a9a50ffcdec6265acd448e8c51d98bcf48f"
+    },
+    {
+      "path": "linear_probes/utils.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a346bd8d0a4445dfb46f575e8ea1cb3a8bb1759c",
+      "size": 3935,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/a346bd8d0a4445dfb46f575e8ea1cb3a8bb1759c"
+    },
+    {
+      "path": "pyproject.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "baea0c5aa31de84be39084b6aa7a4fb0b8ea5a9f",
+      "size": 2138,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/baea0c5aa31de84be39084b6aa7a4fb0b8ea5a9f"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "62da689bebf3c00b3a54c8f932a5ab62d45af23a",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/62da689bebf3c00b3a54c8f932a5ab62d45af23a"
+    },
+    {
+      "path": "tests/highagency",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f0fb93209b8becde67c188b28aa3744b071fb8c",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/0f0fb93209b8becde67c188b28aa3744b071fb8c"
+    },
+    {
+      "path": "tests/highagency/whistlebench",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d10a4b7da43164626d9f68c5a1e3f20dcccc6eee",
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/trees/d10a4b7da43164626d9f68c5a1e3f20dcccc6eee"
+    },
+    {
+      "path": "tests/highagency/whistlebench/test_data_loading.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78be4657dd731c8301dee668fae343a0bd7e769b",
+      "size": 900,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/78be4657dd731c8301dee668fae343a0bd7e769b"
+    },
+    {
+      "path": "uv.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c3ca3ecf03f89d60908ab1e99c5cde2b7887124d",
+      "size": 254154,
+      "url": "https://api.github.com/repos/legobridge/whistlebench/git/blobs/c3ca3ecf03f89d60908ab1e99c5cde2b7887124d"
+    }
+  ],
+  "truncated": false
+}

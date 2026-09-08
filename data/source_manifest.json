@@ -1,0 +1,82 @@
+[
+  {
+    "path": "data/raw/hf/replay.html",
+    "url": "https://huggingface-anatomy-of-frontier-lab-model-intrusion.static.hf.space/index.html",
+    "retrieved_date": "2026-09-06",
+    "sha256": "2ca3b58bdfe18c9cda267ca0eb246eada95eb731d7ac8fb952303e3b0ec722cf",
+    "bytes": 43983,
+    "relationship": "confirmed_hf_incident_publication"
+  },
+  {
+    "path": "data/raw/metr/report.html",
+    "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "retrieved_date": "2026-09-06",
+    "sha256": "46d1714f05d7e3dbb716cb82c47f89eaa95415bde7df2003ac9060923d9fe643",
+    "bytes": 428403,
+    "relationship": "confirmed_hf_incident_publication"
+  },
+  {
+    "path": "data/raw/metr/agent-data.js",
+    "url": "https://metr.org/assets/js/agent_timeline/data.js",
+    "retrieved_date": "2026-09-06",
+    "sha256": "b92cb6f42e141781b748c7051ccaff49653ce68426b56be7b3938defaaf314ad",
+    "bytes": 191538,
+    "relationship": "confirmed_hf_incident_publication"
+  },
+  {
+    "path": "data/raw/metr/agent-chart.js",
+    "url": "https://metr.org/assets/js/agent_timeline/chart.js",
+    "retrieved_date": "2026-09-06",
+    "sha256": "af1df7d5439bbe7323a4f3ee82bcea8c58e60aa61c64e20f6ad09aa9cde8dfb6",
+    "bytes": 46934,
+    "relationship": "confirmed_hf_incident_publication"
+  },
+  {
+    "path": "data/raw/metr/workstream-data.js",
+    "url": "https://metr.org/assets/js/workstream_chart/data.js",
+    "retrieved_date": "2026-09-06",
+    "sha256": "56c9d973c6277cce3c9b5febbb046530bed2791c2c3c13b24c3a7e10d89294af",
+    "bytes": 47791,
+    "relationship": "confirmed_hf_incident_publication"
+  },
+  {
+    "path": "data/raw/metr/workstream-chart.js",
+    "url": "https://metr.org/assets/js/workstream_chart/chart.js",
+    "retrieved_date": "2026-09-06",
+    "sha256": "9830ca9588d4fe8150d1870babfe77bd49834220bf871df3470b6f6b1fcd5049",
+    "bytes": 50973,
+    "relationship": "confirmed_hf_incident_publication"
+  },
+  {
+    "path": "data/raw/wiki/manifest.json.gz",
+    "url": "https://collusion.wiki/explorer/download/manifest.json.gz",
+    "retrieved_date": "2026-09-06",
+    "sha256": "ee4c5785d61054ef993a4a10708d9698d7d1f86ac210810b6899bae035eda092",
+    "bytes": 6132,
+    "relationship": "separate_incident"
+  },
+  {
+    "path": "data/raw/wiki/revisions.jsonl.gz",
+    "url": "https://collusion.wiki/explorer/download/revisions.jsonl.gz",
+    "retrieved_date": "2026-09-06",
+    "sha256": "9c2a4ef0ccbfb5b42be8422342a6bd3a389a4a047bc891e3148354dd65b63c96",
+    "bytes": 3226133,
+    "relationship": "separate_incident"
+  },
+  {
+    "path": "data/raw/wiki/events.jsonl.gz",
+    "url": "https://collusion.wiki/explorer/download/events.jsonl.gz",
+    "retrieved_date": "2026-09-06",
+    "sha256": "989780118de3dc05031ee5920a761c565a97b64d3721688593adc0794fcfb7b8",
+    "bytes": 486683,
+    "relationship": "separate_incident"
+  },
+  {
+    "path": "data/raw/wiki/download.html",
+    "url": "https://collusion.wiki/explorer/download.html",
+    "retrieved_date": "2026-09-06",
+    "sha256": "01ebdff80ad01ddfaec4ee26f36c8a2cedc5bf53df668f06cea8e7e13d33289b",
+    "bytes": 5745,
+    "relationship": "separate_incident"
+  }
+]

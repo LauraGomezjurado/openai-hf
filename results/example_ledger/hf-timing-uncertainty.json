@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "id": "hf-timing-uncertainty",
+    "claim": "Timing conclusions depend on timestamp error assumptions.",
+    "evidence_kind": "Derived statistical sensitivity analysis",
+    "source": "/Users/lauragomez/Desktop/openai-hf/results/cpu/timing_sensitivity.csv",
+    "sha256": "d844f9c8e55b673b6a16d5d14402d60595995f6eb43a2c8aae6e22dce9d423ab",
+    "json_pointer": null,
+    "line": null,
+    "selection_rule": "Named contrast from the existing analysis; retrospective selection.",
+    "observation": "The earlier analysis separates July 9/11 one-hour bounds at ±5 minutes but finds overlap at ±30 minutes. Open the complete grid rather than selecting only the favorable threshold.",
+    "limits": "Bounds are measurement-sensitivity bounds, not confidence intervals; selected timeline rows are not an unbiased agent population."
+  },
+  "source_selection": {
+    "source_file": "results/cpu/timing_sensitivity.csv"
+  }
+}

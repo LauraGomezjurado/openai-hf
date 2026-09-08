@@ -1,0 +1,15 @@
+[
+  {
+    "kind": "error_removed",
+    "selected": "qwen--access-authorized-p0-task--retain",
+    "path": "/Users/lauragomez/Desktop/openai-hf/results/workflow_completion/wording_control/example-error_removed.json"
+  },
+  {
+    "kind": "error_persists",
+    "selected": null
+  },
+  {
+    "kind": "new_error_type",
+    "selected": null
+  }
+]

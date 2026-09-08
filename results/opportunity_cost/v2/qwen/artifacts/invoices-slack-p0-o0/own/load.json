@@ -1,0 +1,17 @@
+[
+  {
+    "id": "A",
+    "amount": 40,
+    "receipt": 40
+  },
+  {
+    "id": "B",
+    "amount": 60,
+    "receipt": 50
+  },
+  {
+    "id": "C",
+    "amount": 40,
+    "receipt": 40
+  }
+]

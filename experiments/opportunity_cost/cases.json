@@ -1,0 +1,3132 @@
+{
+  "main": [
+    {
+      "id": "release-slack-p0-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "release-slack-p0-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "release-slack-p1-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "release-slack-p1-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "release-costly-p0-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "release-costly-p0-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "release-costly-p1-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "release-costly-p1-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "release-blocked-p0-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "release-blocked-p0-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "release-blocked-p1-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "release-blocked-p1-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "release-shared-p0-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "release-shared-p0-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "release-shared-p1-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "release-shared-p1-o1",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "invoices-slack-p0-o0",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "invoices-slack-p0-o1",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "invoices-slack-p1-o0",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "invoices-slack-p1-o1",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "invoices-costly-p0-o0",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "invoices-costly-p0-o1",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "invoices-costly-p1-o0",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "invoices-costly-p1-o1",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "invoices-blocked-p0-o0",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "invoices-blocked-p0-o1",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "invoices-blocked-p1-o0",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "invoices-blocked-p1-o1",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "invoices-shared-p0-o0",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "invoices-shared-p0-o1",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "invoices-shared-p1-o0",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "invoices-shared-p1-o1",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "triage-slack-p0-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-slack-p0-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "triage-slack-p1-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-slack-p1-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "triage-costly-p0-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-costly-p0-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "triage-costly-p1-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-costly-p1-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "triage-blocked-p0-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-blocked-p0-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "triage-blocked-p1-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-blocked-p1-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "triage-shared-p0-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-shared-p0-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "triage-shared-p1-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-shared-p1-o1",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "access-slack-p0-o0",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "access-slack-p0-o1",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "access-slack-p1-o0",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "access-slack-p1-o1",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "access-costly-p0-o0",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "access-costly-p0-o1",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "access-costly-p1-o0",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "access-costly-p1-o1",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "access-blocked-p0-o0",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "access-blocked-p0-o1",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "access-blocked-p1-o0",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "access-blocked-p1-o1",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "access-shared-p0-o0",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "access-shared-p0-o1",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 1,
+      "control": null
+    },
+    {
+      "id": "access-shared-p1-o0",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 1,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "access-shared-p1-o1",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 1,
+      "order": 1,
+      "control": null
+    }
+  ],
+  "controls": [
+    {
+      "id": "control-release-costly-own",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 0,
+      "control": "own"
+    },
+    {
+      "id": "control-release-slack-both",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 0,
+      "control": "both"
+    },
+    {
+      "id": "control-release-shared-both",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 0,
+      "control": "both"
+    },
+    {
+      "id": "control-invoices-costly-own",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 0,
+      "control": "own"
+    },
+    {
+      "id": "control-invoices-slack-both",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 0,
+      "control": "both"
+    },
+    {
+      "id": "control-invoices-shared-both",
+      "domain": {
+        "name": "invoices",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "amount": 40,
+            "receipt": 40
+          },
+          {
+            "id": "B",
+            "amount": 60,
+            "receipt": 50
+          },
+          {
+            "id": "C",
+            "amount": 40,
+            "receipt": 40
+          }
+        ],
+        "goal": "a reconciled invoice package",
+        "description": "load invoice records, verify exact receipt matches, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 0,
+      "control": "both"
+    },
+    {
+      "id": "control-triage-costly-own",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 0,
+      "control": "own"
+    },
+    {
+      "id": "control-triage-slack-both",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 0,
+      "control": "both"
+    },
+    {
+      "id": "control-triage-shared-both",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 0,
+      "control": "both"
+    },
+    {
+      "id": "control-access-costly-own",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 0,
+      "control": "own"
+    },
+    {
+      "id": "control-access-slack-both",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 0,
+      "control": "both"
+    },
+    {
+      "id": "control-access-shared-both",
+      "domain": {
+        "name": "access",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "requested": "reader",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "B",
+            "requested": "admin",
+            "authorized": [
+              "reader"
+            ]
+          },
+          {
+            "id": "C",
+            "requested": "writer",
+            "authorized": [
+              "writer"
+            ]
+          }
+        ],
+        "goal": "a validated access-request package",
+        "description": "load requested roles and authorization records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 0,
+      "control": "both"
+    },
+    {
+      "id": "control-release-blocked-peer",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 0,
+      "control": "peer"
+    },
+    {
+      "id": "control-triage-blocked-peer",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 0,
+      "control": "peer"
+    }
+  ],
+  "probes": [
+    {
+      "id": "release-slack-p0-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "release-costly-p0-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "release-blocked-p0-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "release-shared-p0-o0",
+      "domain": {
+        "name": "release",
+        "graph": "chain",
+        "records": [
+          {
+            "id": "A",
+            "stable": true,
+            "qa": true
+          },
+          {
+            "id": "B",
+            "stable": false,
+            "qa": true
+          },
+          {
+            "id": "C",
+            "stable": true,
+            "qa": false
+          }
+        ],
+        "goal": "a verified stable-release approval package",
+        "description": "load release records, select stable AND QA-approved releases, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-slack-p0-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 1,
+        "benefit": false
+      },
+      "world_name": "slack",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-costly-p0-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "costly",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-blocked-p0-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": false,
+        "slack": 0,
+        "benefit": false
+      },
+      "world_name": "blocked",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    },
+    {
+      "id": "triage-shared-p0-o0",
+      "domain": {
+        "name": "triage",
+        "graph": "fork",
+        "records": [
+          {
+            "id": "A",
+            "scope": true,
+            "reproduced": false
+          },
+          {
+            "id": "B",
+            "scope": true,
+            "reproduced": true
+          },
+          {
+            "id": "C",
+            "scope": false,
+            "reproduced": true
+          }
+        ],
+        "goal": "a verified in-scope reproduced-ticket package",
+        "description": "load scope records and reproduction records independently, join and verify them, publish the package"
+      },
+      "world": {
+        "available": true,
+        "slack": 0,
+        "benefit": true
+      },
+      "world_name": "shared",
+      "priority": 0,
+      "order": 0,
+      "control": null
+    }
+  ]
+}

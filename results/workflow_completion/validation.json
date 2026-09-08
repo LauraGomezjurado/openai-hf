@@ -1,0 +1,17 @@
+{
+  "frozen_hashes": true,
+  "branches": 128,
+  "calls": 172,
+  "model_replays": {
+    "qwen": {
+      "n": 16,
+      "first_action_matches": 16,
+      "final_state_matches": 16
+    },
+    "qwen3": {
+      "n": 16,
+      "first_action_matches": 16,
+      "final_state_matches": 16
+    }
+  }
+}
