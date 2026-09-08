@@ -1,0 +1,3 @@
+# Amendment: self-test gate numbers (2026-09-08, before any checkpoint inference)
+
+`protocol.md` (frozen 21:33:59Z) cites the tiny-model self-test as perturbing log-probabilities "by up to 0.03 nats". That figure came from the first gate run on V2 prompts. The committed file `results/determinism/gate_selftest_tiny.json` is a later run through the V3 serve path on the V3 control prompts: uncached repetitions remain bit-identical; cached regimes perturb log-probabilities with median 0.015 and maximum 0.22 nats, change top-10 membership in 21/32 comparisons, and flip the greedy token in 2/32 (splits of 37 and 118 characters). The protocol text is left unchanged to preserve its hash; this amendment supersedes that one sentence. No design parameter changes.

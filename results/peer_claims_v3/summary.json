@@ -8,7 +8,9 @@
    },
    "P1": "not replicated",
    "stages": [
-    "A"
+    "A",
+    "B",
+    "D"
    ]
   }
  },
