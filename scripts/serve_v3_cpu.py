@@ -20,7 +20,8 @@ digest = hashlib.sha256(model.read_bytes()).hexdigest()
 if spec.get('gguf_sha256'):
     assert digest == spec['gguf_sha256'], 'model file hash does not match the frozen source record'
 threads = os.environ.get('V3_THREADS', '6')
-cmd = ['llama-server', '-m', str(model), '--device', 'none', '-ngl', '0', '--no-op-offload', '--no-kv-offload', '--fit', 'off', '-c', '8192', '-np', '1', '-b', '2048', '-ub', '512',
+ctx = os.environ.get('V3_CTX', '8192')  # identifiability analysts need 16384 for L5 packets
+cmd = ['llama-server', '-m', str(model), '--device', 'none', '-ngl', '0', '--no-op-offload', '--no-kv-offload', '--fit', 'off', '-c', ctx, '-np', '1', '-b', '2048', '-ub', '512',
        '-t', threads, '-tb', threads, '--host', '127.0.0.1', '--port', '18973', '--jinja']
 if spec['reasoning_mode'] != 'native_think' and spec.get('template_kwargs'):
     cmd += ['--chat-template-kwargs', json.dumps(spec['template_kwargs'])]

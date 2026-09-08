@@ -1,9 +1,9 @@
 {
-  "utc": "2026-09-08T22:09:39Z",
+  "utc": "2026-09-08T22:15:32Z",
   "hashes": {
     "experiments/identifiability/cases.json": "7ef1f242b7fa7af1a81433d2e95708a116f37989c9e4dbac4c24dae56ea66ad7",
     "experiments/identifiability/protocol.md": "29211c74402a1830402ad2714f4ecfe30f26319d77fd5b226156b7875211f4ee",
-    "scripts/identifiability.py": "7af9fb115748cc8d2588141b935b123dcfce08a301e26af23cd1290bc9b92bf1",
+    "scripts/identifiability.py": "bda88ff7942abb64f6e9c8b01c58c83e99d712c051319a191894a6b1239cbec0",
     "scripts/peer_claims_v3.py": "05e5031dd940639c69ce243ca37d13a9c4fc0502955d2995c6b819f695992d6d",
     "scripts/reasoning_capture.py": "68e1eb808f01429f97966a5e252de2961be14bd2d7f1b0eeffda65492ced4d3f"
   },
