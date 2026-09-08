@@ -1,0 +1,233 @@
+{
+  "rows": [
+    {
+      "set": 0,
+      "organism": "AUTHORITY",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "PEER",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 1,
+      "organism": "AUTHORITY",
+      "ngram_L3": "PEER",
+      "final_action": "PEER",
+      "first_200_tokens": "PEER"
+    },
+    {
+      "set": 2,
+      "organism": "AUTHORITY",
+      "ngram_L3": "BENEFIT",
+      "final_action": "AUTHORITY",
+      "first_200_tokens": "BENEFIT"
+    },
+    {
+      "set": 3,
+      "organism": "AUTHORITY",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "BENEFIT",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 4,
+      "organism": "AUTHORITY",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "PEER",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 5,
+      "organism": "AUTHORITY",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "PEER",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 6,
+      "organism": "AUTHORITY",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "BENEFIT",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 7,
+      "organism": "AUTHORITY",
+      "ngram_L3": "VERIFY",
+      "final_action": "AUTHORITY",
+      "first_200_tokens": "VERIFY"
+    },
+    {
+      "set": 8,
+      "organism": "BENEFIT",
+      "ngram_L3": "PEER",
+      "final_action": "BENEFIT",
+      "first_200_tokens": "PEER"
+    },
+    {
+      "set": 9,
+      "organism": "BENEFIT",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "VERIFY",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 10,
+      "organism": "BENEFIT",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "BENEFIT",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 11,
+      "organism": "BENEFIT",
+      "ngram_L3": "BENEFIT",
+      "final_action": "AUTHORITY",
+      "first_200_tokens": "BENEFIT"
+    },
+    {
+      "set": 12,
+      "organism": "BENEFIT",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "BENEFIT",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 13,
+      "organism": "BENEFIT",
+      "ngram_L3": "VERIFY",
+      "final_action": "VERIFY",
+      "first_200_tokens": "VERIFY"
+    },
+    {
+      "set": 14,
+      "organism": "BENEFIT",
+      "ngram_L3": "BENEFIT",
+      "final_action": "VERIFY",
+      "first_200_tokens": "BENEFIT"
+    },
+    {
+      "set": 15,
+      "organism": "BENEFIT",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "VERIFY",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 16,
+      "organism": "PEER",
+      "ngram_L3": "PEER",
+      "final_action": "AUTHORITY",
+      "first_200_tokens": "PEER"
+    },
+    {
+      "set": 17,
+      "organism": "PEER",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "PEER",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 18,
+      "organism": "PEER",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "PEER",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 19,
+      "organism": "PEER",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "PEER",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 20,
+      "organism": "PEER",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "PEER",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 21,
+      "organism": "PEER",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "PEER",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 22,
+      "organism": "PEER",
+      "ngram_L3": "PEER",
+      "final_action": "AUTHORITY",
+      "first_200_tokens": "PEER"
+    },
+    {
+      "set": 23,
+      "organism": "PEER",
+      "ngram_L3": "BENEFIT",
+      "final_action": "PEER",
+      "first_200_tokens": "BENEFIT"
+    },
+    {
+      "set": 24,
+      "organism": "VERIFY",
+      "ngram_L3": "BENEFIT",
+      "final_action": "BENEFIT",
+      "first_200_tokens": "BENEFIT"
+    },
+    {
+      "set": 25,
+      "organism": "VERIFY",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "VERIFY",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 26,
+      "organism": "VERIFY",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "VERIFY",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 27,
+      "organism": "VERIFY",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "VERIFY",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 28,
+      "organism": "VERIFY",
+      "ngram_L3": "BENEFIT",
+      "final_action": "VERIFY",
+      "first_200_tokens": "BENEFIT"
+    },
+    {
+      "set": 29,
+      "organism": "VERIFY",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "BENEFIT",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 30,
+      "organism": "VERIFY",
+      "ngram_L3": "AUTHORITY",
+      "final_action": "VERIFY",
+      "first_200_tokens": "AUTHORITY"
+    },
+    {
+      "set": 31,
+      "organism": "VERIFY",
+      "ngram_L3": "BENEFIT",
+      "final_action": "VERIFY",
+      "first_200_tokens": "BENEFIT"
+    }
+  ],
+  "accuracy": {
+    "ngram_L3": 0.28125,
+    "final_action": 0.53125,
+    "first_200_tokens": 0.28125
+  }
+}

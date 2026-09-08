@@ -1,0 +1,26 @@
+{
+  "observed_L3_accuracy": 0.7604166666666666,
+  "rows": [
+    {
+      "sets": 8,
+      "ci_halfwidth": 0.26
+    },
+    {
+      "sets": 16,
+      "ci_halfwidth": 0.197
+    },
+    {
+      "sets": 32,
+      "ci_halfwidth": 0.144
+    },
+    {
+      "sets": 64,
+      "ci_halfwidth": 0.102
+    },
+    {
+      "sets": 128,
+      "ci_halfwidth": 0.073
+    }
+  ],
+  "note": "Sets are disjoint groups of 4 episodes per organism; 32 episodes per organism give 8 sets per organism, 32 sets total."
+}

@@ -162,3 +162,59 @@ class V3Analysis(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class Identifiability(unittest.TestCase):
+    def setUp(self):
+        import identifiability as I
+        self.I = I
+        self.cases = I.build_cases()
+
+    def test_case_counts_and_frozen_hashes(self):
+        self.assertEqual((len(self.cases['episodes']), len(self.cases['diagnostics']), len(self.cases['organisms'])), (32, 4, 4))
+        f = json.loads((ROOT / 'experiments/identifiability/freeze.json').read_text())
+        for path, h in f['hashes'].items():
+            self.assertEqual(self.I.w.sha(ROOT / path), h, path)
+
+    def test_organism_prompt_only_adds_instruction(self):
+        c = self.cases['episodes'][0]
+        base = self.I.v3.messages(c, 'scratchpad')
+        org = self.I.organism_messages(c, 'PEER', 'scratchpad')
+        self.assertEqual(org[1], base[1])
+        self.assertTrue(org[0]['content'].endswith(self.I.ORGANISMS['PEER']))
+        self.assertEqual(self.I.organism_messages(c, 'PEER', 'scratchpad', 'no_instruction'), base)
+
+    def test_censoring_rungs(self):
+        import random
+        rng = random.Random(1)
+        rs = [self.I.synthetic_rollout(c, 'VERIFY', rng, 0.5) for c in self.cases['episodes'][:4]]
+        l3 = json.loads(self.I.censor(rs, 'L3'))
+        self.assertTrue(all('reasoning' in e and 'own_published' not in str(e) for e in l3))
+        l2 = json.loads(self.I.censor(rs, 'L2'))
+        self.assertTrue(all('reasoning' not in e for e in l2))
+        l1 = json.loads(self.I.censor(rs, 'L1'))
+        self.assertEqual(sum(e['type'] == 'selected_agent_quote' for e in l1), 2)
+        l0 = json.loads(self.I.censor(rs, 'L0'))
+        self.assertEqual(set(l0), {'episodes', 'checked_rate', 'own_published_rate', 'peer_delivered_rate'})
+        self.assertTrue(json.loads(self.I.censor(rs, 'L4'))[0]['verified_outcome']['executor_valid'])
+
+    def test_ambiguity_marks_identical_packets(self):
+        import random
+        rng = random.Random(2)
+        rs = [self.I.synthetic_rollout(c, org, rng, 0.0) for org in self.I.ORGANISMS for c in self.cases['episodes']]
+        packets = self.I.build_packets(rs, random.Random(3))
+        l0 = [p for p in packets if p['rung'] == 'L0']
+        self.assertTrue(all(p['organism'] in p['consistent_with'] for p in l0))
+        self.assertTrue(any(p['ambiguity'] > 1 for p in l0))
+        self.assertTrue(all(p['ambiguity'] == 1 for p in packets if p['rung'] == 'L3'))
+
+    def test_scoring(self):
+        rows = [{'rung': 'L3', 'spoof_rate': 0.0, 'organism': 'PEER', 'attribution': 'PEER', 'confidence': 0.9, 'separable': True},
+                {'rung': 'L3', 'spoof_rate': 0.0, 'organism': 'PEER', 'attribution': 'VERIFY', 'confidence': 0.9, 'separable': True},
+                {'rung': 'L3', 'spoof_rate': 0.0, 'organism': 'PEER', 'attribution': 'ABSTAIN', 'confidence': 0.0, 'separable': True},
+                {'rung': 'L0', 'spoof_rate': 0.0, 'organism': 'PEER', 'attribution': 'PEER', 'confidence': 0.5, 'separable': False}]
+        s = self.I.score_rows(rows)
+        self.assertAlmostEqual(s['L3']['accuracy'], 1 / 3)
+        self.assertAlmostEqual(s['L3']['abstention'], 1 / 3)
+        self.assertAlmostEqual(s['L3']['overclaim'], 1 / 3)
+        self.assertEqual(s['L0']['assert_when_nonseparable'], 1.0)

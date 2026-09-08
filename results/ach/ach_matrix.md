@@ -67,4 +67,12 @@ Leave-one-out: top hypothesis H6; changes when removing X04 (-> H3), X05 (-> H3)
 
 Leave-one-out: top hypothesis H3; changes when removing R04 (-> H2).
 
-No second rater file is present; agreement is not computed.
+## Inter-rater agreement
+
+- blind-agent-2026-09-08: 140 cells, exact agreement 0.786, Cohen's kappa 0.645
+- blind-agent-2026-09-08 ranking alone: H3 (0), H4 (1.0), H5 (1.0), H2 (1.0), H7 (3.0), H6 (5.0), H1 (8.75)
+
+## Consensus (30 disagreed cells set to N)
+
+- all_evidence: H6 (0), H3 (0), H5 (0), H4 (1.0), H2 (1.0), H7 (2.0), H1 (5.05); leave-one-out top H6, changes: 5
+- experiments_only: H6 (0), H3 (0), H5 (0), H4 (1.0), H2 (1.0), H7 (2.0), H1 (4.7); leave-one-out top H6, changes: 1

@@ -32,6 +32,17 @@ Leave-one-out: with all evidence, no single row changes the top hypothesis (H3).
 
 5. **Diagnosticity is concentrated.** Rows with the widest rating spread are X03, X05, X06 and X11; these are the results a replication should protect first.
 
+## Second, blind rating (added later on September 8)
+
+A second rater worked in a separate context from `experiments/ach/blind_packet.json` (rows with observations and sources, no ratings, no rationales) under an explicit denial list for the first ratings and their derived documents. Its file is `experiments/ach/ratings_blind_agent.json`; both raters are AI contexts, not humans.
+
+- Agreement: 110/140 cells exact (0.786), 28 off by one level, 2 off by two, Cohen's kappa **0.645**. Only two cells flip sign (X02/H5, X07/H7).
+- Per-hypothesis exact agreement: H2 18/20, H5 18/20, H4 17/20, H7 17/20, H3 15/20, H1 13/20, H6 12/20.
+- Blind ranking alone: H3 (0), H4 (1.0), H5 (1.0), H2 (1.0), H7 (3.0), H6 (5.0), H1 (8.75).
+- Consensus (30 disagreed cells set to N): H6, H3, H5 at 0; H4 1.0; H2 1.0; H7 2.0; H1 5.05.
+
+Robust across the first rating, the blind rating and the consensus: **H1 is last by a wide margin; H3 has zero inconsistent rows; H4 has exactly one (X04)**. The one systematic disagreement concerns H6: the blind rater counted five matched-presentation content effects (X01, X02, X03, X06, X11) as inconsistent with a pure artifact account, which is a defensible reading that the first rating left as N. Under it the artifact account falls to sixth and the fragile H6/H3 leave-one-out flip disappears; under the consensus it survives only because the disputed cells are neutralized. That question — whether content effects with fixed presentation count against artifact explanations — is what a human adjudicator should settle first.
+
 ## Limits
 
 Ratings are ordinal judgments by one rater; the scoring weights are conventional, not estimated; rows are not independent (several come from the same checkpoint and task skeleton); and a hypothesis with zero inconsistencies can still be false. ACH ranks by what the evidence fails to refute. It does not identify a mechanism, and it does not transfer to the original HF agents.

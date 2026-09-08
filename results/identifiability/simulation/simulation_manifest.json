@@ -1,0 +1,14 @@
+{
+  "tell_rate": 0.1,
+  "noise": 0.05,
+  "reps": 3,
+  "seed": 9102026,
+  "organisms": [
+    "PEER",
+    "BENEFIT",
+    "AUTHORITY",
+    "VERIFY"
+  ],
+  "episodes_per_organism": 32,
+  "label": "SYNTHETIC. No language model was involved; the curve validates the pipeline and sizes the study. It says nothing about real attribution power."
+}

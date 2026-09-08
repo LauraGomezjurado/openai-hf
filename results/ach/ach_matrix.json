@@ -472,6 +472,284 @@
       "spread": 1
     }
   },
-  "agreement": [],
+  "agreement": [
+    {
+      "rater": "blind-agent-2026-09-08",
+      "cells": 140,
+      "exact_agreement": 0.786,
+      "cohen_kappa": 0.645
+    }
+  ],
+  "consensus": {
+    "cells_set_to_N": 30,
+    "rankings": {
+      "all_evidence": {
+        "table": {
+          "H1": {
+            "tally": {
+              "I": 6,
+              "N": 11,
+              "C": 3
+            },
+            "inconsistency": 6,
+            "weighted_inconsistency": 5.05,
+            "net_score": -3,
+            "weighted_net_score": -3.4,
+            "rows": 20,
+            "rank": 7
+          },
+          "H2": {
+            "tally": {
+              "N": 17,
+              "I": 1,
+              "C": 2
+            },
+            "inconsistency": 1,
+            "weighted_inconsistency": 1.0,
+            "net_score": 1,
+            "weighted_net_score": 0.35,
+            "rows": 20,
+            "rank": 5
+          },
+          "H3": {
+            "tally": {
+              "C": 7,
+              "N": 12,
+              "CC": 1
+            },
+            "inconsistency": 0,
+            "weighted_inconsistency": 0,
+            "net_score": 9,
+            "weighted_net_score": 6.55,
+            "rows": 20,
+            "rank": 2
+          },
+          "H4": {
+            "tally": {
+              "CC": 2,
+              "N": 16,
+              "I": 1,
+              "C": 1
+            },
+            "inconsistency": 1,
+            "weighted_inconsistency": 1.0,
+            "net_score": 4,
+            "weighted_net_score": 3.35,
+            "rows": 20,
+            "rank": 4
+          },
+          "H5": {
+            "tally": {
+              "N": 16,
+              "C": 3,
+              "CC": 1
+            },
+            "inconsistency": 0,
+            "weighted_inconsistency": 0,
+            "net_score": 5,
+            "weighted_net_score": 4.35,
+            "rows": 20,
+            "rank": 3
+          },
+          "H6": {
+            "tally": {
+              "N": 15,
+              "C": 2,
+              "CC": 3
+            },
+            "inconsistency": 0,
+            "weighted_inconsistency": 0,
+            "net_score": 8,
+            "weighted_net_score": 7.1,
+            "rows": 20,
+            "rank": 1
+          },
+          "H7": {
+            "tally": {
+              "C": 5,
+              "N": 12,
+              "CC": 2,
+              "II": 1
+            },
+            "inconsistency": 1,
+            "weighted_inconsistency": 2.0,
+            "net_score": 7,
+            "weighted_net_score": 5.4,
+            "rows": 20,
+            "rank": 6
+          }
+        },
+        "order": [
+          "H6",
+          "H3",
+          "H5",
+          "H4",
+          "H2",
+          "H7",
+          "H1"
+        ],
+        "leave_one_out": {
+          "base_top": "H6",
+          "rows_whose_removal_changes_top": [
+            {
+              "removed": "X04",
+              "new_top": "H7"
+            },
+            {
+              "removed": "X05",
+              "new_top": "H3"
+            },
+            {
+              "removed": "X07",
+              "new_top": "H3"
+            },
+            {
+              "removed": "X09",
+              "new_top": "H3"
+            },
+            {
+              "removed": "X13",
+              "new_top": "H3"
+            }
+          ]
+        }
+      },
+      "experiments_only": {
+        "table": {
+          "H1": {
+            "tally": {
+              "I": 5,
+              "N": 8,
+              "C": 1
+            },
+            "inconsistency": 5,
+            "weighted_inconsistency": 4.7,
+            "net_score": -4,
+            "weighted_net_score": -3.7,
+            "rows": 14,
+            "rank": 7
+          },
+          "H2": {
+            "tally": {
+              "N": 12,
+              "I": 1,
+              "C": 1
+            },
+            "inconsistency": 1,
+            "weighted_inconsistency": 1.0,
+            "net_score": 0,
+            "weighted_net_score": 0.0,
+            "rows": 14,
+            "rank": 5
+          },
+          "H3": {
+            "tally": {
+              "C": 5,
+              "N": 9
+            },
+            "inconsistency": 0,
+            "weighted_inconsistency": 0,
+            "net_score": 5,
+            "weighted_net_score": 5.0,
+            "rows": 14,
+            "rank": 2
+          },
+          "H4": {
+            "tally": {
+              "CC": 2,
+              "N": 11,
+              "I": 1
+            },
+            "inconsistency": 1,
+            "weighted_inconsistency": 1.0,
+            "net_score": 3,
+            "weighted_net_score": 3.0,
+            "rows": 14,
+            "rank": 4
+          },
+          "H5": {
+            "tally": {
+              "N": 11,
+              "C": 2,
+              "CC": 1
+            },
+            "inconsistency": 0,
+            "weighted_inconsistency": 0,
+            "net_score": 4,
+            "weighted_net_score": 4.0,
+            "rows": 14,
+            "rank": 3
+          },
+          "H6": {
+            "tally": {
+              "N": 9,
+              "C": 2,
+              "CC": 3
+            },
+            "inconsistency": 0,
+            "weighted_inconsistency": 0,
+            "net_score": 8,
+            "weighted_net_score": 7.1,
+            "rows": 14,
+            "rank": 1
+          },
+          "H7": {
+            "tally": {
+              "C": 3,
+              "N": 8,
+              "CC": 2,
+              "II": 1
+            },
+            "inconsistency": 1,
+            "weighted_inconsistency": 2.0,
+            "net_score": 5,
+            "weighted_net_score": 4.7,
+            "rows": 14,
+            "rank": 6
+          }
+        },
+        "order": [
+          "H6",
+          "H3",
+          "H5",
+          "H4",
+          "H2",
+          "H7",
+          "H1"
+        ],
+        "leave_one_out": {
+          "base_top": "H6",
+          "rows_whose_removal_changes_top": [
+            {
+              "removed": "X04",
+              "new_top": "H7"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "other_raters": {
+    "blind-agent-2026-09-08": {
+      "order": [
+        "H3",
+        "H4",
+        "H5",
+        "H2",
+        "H7",
+        "H6",
+        "H1"
+      ],
+      "weighted_inconsistency": {
+        "H3": 0,
+        "H4": 1.0,
+        "H5": 1.0,
+        "H2": 1.0,
+        "H7": 3.0,
+        "H6": 5.0,
+        "H1": 8.75
+      }
+    }
+  },
   "reading": "Ranking by fewest inconsistencies is the ACH convention; a low rank does not establish the hypothesis, and historical rows are E0-E2 evidence about different agents. Experiment rows concern public Qwen checkpoints in constructed settings."
 }

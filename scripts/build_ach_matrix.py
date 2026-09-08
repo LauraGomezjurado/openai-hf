@@ -92,6 +92,22 @@ def agreement(primary, others):
     return out
 
 
+def consensus(primary, others):
+    """Copy of the primary ratings with every cell on which any rater disagrees set to N (non-diagnostic pending adjudication)."""
+    if not others:
+        return None
+    d = json.loads(json.dumps(primary))
+    idx = [{r['id']: r for r in o['evidence']} for o in others]
+    changed = 0
+    for row in d['evidence']:
+        for h in d['hypotheses']:
+            if any(row['id'] in i and i[row['id']]['ratings'][h] != row['ratings'][h] for i in idx):
+                row['ratings'][h] = 'N'
+                changed += 1
+    d['rater'] = 'consensus(' + ', '.join([primary['rater']] + [o['rater'] for o in others]) + ')'
+    return d, changed
+
+
 def markdown(d, result):
     hs = list(d['hypotheses'])
     lines = ['# ACH matrix', '', f"Rater: {d['rater']}. Ratings are analyst judgments recorded in `experiments/ach/ratings_v1.json`; see the rationale fields there. Scale: CC/C/N/I/II.", '']
@@ -111,6 +127,13 @@ def markdown(d, result):
         lines += ['', '## Inter-rater agreement', '']
         for a in result['agreement']:
             lines.append(f"- {a['rater']}: {a['cells']} cells, exact agreement {a['exact_agreement']}, Cohen's kappa {a['cohen_kappa']}")
+        for name, o in result.get('other_raters', {}).items():
+            lines.append(f"- {name} ranking alone: " + ', '.join(f"{h} ({o['weighted_inconsistency'][h]})" for h in o['order']))
+        c = result.get('consensus')
+        if c:
+            lines += ['', f"## Consensus ({c['cells_set_to_N']} disagreed cells set to N)", '']
+            for scope, block in c['rankings'].items():
+                lines.append(f"- {scope}: " + ', '.join(f"{h} ({block['table'][h]['weighted_inconsistency']})" for h in block['order']) + f"; leave-one-out top {block['leave_one_out']['base_top']}, changes: {len(block['leave_one_out']['rows_whose_removal_changes_top'])}")
     else:
         lines += ['', 'No second rater file is present; agreement is not computed.']
     return '\n'.join(lines) + '\n'
@@ -126,6 +149,16 @@ def main():
         table, order = rank(primary, subset)
         result['rankings'][scope] = {'table': table, 'order': order, 'leave_one_out': leave_one_out(primary, subset)}
     result['agreement'] = agreement(primary, others)
+    cons = consensus(primary, others)
+    if cons:
+        cd, changed = cons
+        result['consensus'] = {'cells_set_to_N': changed, 'rankings': {}}
+        for scope, subset in [('all_evidence', cd['evidence']), ('experiments_only', [r for r in cd['evidence'] if r['scope'] == 'experiment'])]:
+            table, order = rank(cd, subset)
+            result['consensus']['rankings'][scope] = {'table': table, 'order': order, 'leave_one_out': leave_one_out(cd, subset)}
+        for o in others:
+            table, order = rank(o, o['evidence'])
+            result.setdefault('other_raters', {})[o['rater']] = {'order': order, 'weighted_inconsistency': {h: table[h]['weighted_inconsistency'] for h in order}}
     result['reading'] = ('Ranking by fewest inconsistencies is the ACH convention; a low rank does not establish the hypothesis, and historical rows are '
                          'E0-E2 evidence about different agents. Experiment rows concern public Qwen checkpoints in constructed settings.')
     OUT.mkdir(parents=True, exist_ok=True)

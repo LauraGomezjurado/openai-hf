@@ -11,3 +11,8 @@ data/models/
 results/peer_claims_v3/selftest_*/rollouts.jsonl
 results/peer_claims_v3/selftest_*/artifacts/
 results/peer_claims_v3/selftest_*_server.log
+results/identifiability/selftest_*/rollouts.jsonl
+results/identifiability/selftest_*/packets.jsonl
+results/identifiability/selftest_*/attributions_*.jsonl
+results/identifiability/selftest_*.log
+results/identifiability/simulation/rollouts.jsonl
