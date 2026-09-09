@@ -1,0 +1,42 @@
+{
+  "utc": "2026-09-09T17:02:27Z",
+  "models": [
+    "qwen3"
+  ],
+  "hashes": {
+    "experiments/peer_claims_v2_reasoning/protocol.md": "bb5d76283c5099527d84b699fe2dad70db68327f714f87cd51846747dd1bd9fd",
+    "scripts/peer_claims_v2_reasoning.py": "b51b18b7d1b2479df7273aed5edabb6d2245ba4c1af4f0a289350462cb885f5c",
+    "scripts/reasoning_capture.py": "68e1eb808f01429f97966a5e252de2961be14bd2d7f1b0eeffda65492ced4d3f",
+    "scripts/peer_claims_v2_recovery.py": "8b5cd8f2ac06ce47934065d0197c8a149fe58295aaad81a42d231a20719b8a57",
+    "scripts/peer_claims_v2.py": "921f4723afb164a66c10cfd55fab11d7d0bd05275b382010c438d39383d1396e",
+    "experiments/peer_claims_v2/cases.json": "93148736d196880966f94c28645b27baf7c1532d60e137a6e80f31b755ae6e41",
+    "experiments/peer_claims_v2/freeze.json": "81f4e5bef00eb4ec696d5813a8374a810a62c75ad55ff43e3d8beace8eafa319"
+  },
+  "baseline": {
+    "rollouts": "results/peer_claims_v2_recovery/qwen3/rollouts.jsonl",
+    "rollouts_sha256": "aaf0439e2dcc055bb73d4fd61b512fd2d630a649b6515965f3fc9fbc8179be65",
+    "gguf_sha256": "4bbd605eaecad2e8ed614f5c2dd3c833150cbe26ba03b991cf1c7114cb9117ef"
+  },
+  "generation": {
+    "mode": "scratchpad",
+    "temperature": 0,
+    "seed": 9082026,
+    "cache_prompt": false,
+    "reasoning_budget": 512,
+    "decision_budget": 192,
+    "n_probs": 10,
+    "enable_thinking": false
+  },
+  "gate": 10,
+  "grid": {
+    "controls": 10,
+    "main": 48,
+    "secondary": 12,
+    "replays": 4
+  },
+  "outcomes": [
+    "D1 announced check with terminal action",
+    "D2 task state asserted without observation",
+    "I1 decision agreement with the baseline arm"
+  ]
+}
