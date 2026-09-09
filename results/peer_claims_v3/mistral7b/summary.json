@@ -1,0 +1,115 @@
+{
+ "model": "mistral7b",
+ "family": "mistral",
+ "gate": {
+  "passed": 14,
+  "n": 20
+ },
+ "calls": 34,
+ "reasoning_truncations": 0,
+ "invalid": 0,
+ "stages_complete": [],
+ "cells": [],
+ "predictions": {
+  "P1": {
+   "checked": {
+    "pairs": 0,
+    "increases": 0,
+    "decreases": 0,
+    "ties": 0,
+    "difference_pp": null,
+    "sign_test_one_sided_p": null
+   },
+   "false_redirection": {
+    "pairs": 0,
+    "increases": 0,
+    "decreases": 0,
+    "ties": 0,
+    "difference_pp": null,
+    "sign_test_one_sided_p": null
+   },
+   "P1a": null,
+   "P1b": null,
+   "verdict": null
+  },
+  "P2": {
+   "wordings": {
+    "hopeless_a": {
+     "pairs": {
+      "pairs": 0,
+      "increases": 0,
+      "decreases": 0,
+      "ties": 0,
+      "difference_pp": null,
+      "sign_test_one_sided_p": null
+     },
+     "present": null
+    },
+    "hopeless_b": {
+     "pairs": {
+      "pairs": 0,
+      "increases": 0,
+      "decreases": 0,
+      "ties": 0,
+      "difference_pp": null,
+      "sign_test_one_sided_p": null
+     },
+     "present": null
+    },
+    "hopeless_c": {
+     "pairs": {
+      "pairs": 0,
+      "increases": 0,
+      "decreases": 0,
+      "ties": 0,
+      "difference_pp": null,
+      "sign_test_one_sided_p": null
+     },
+     "present": null
+    }
+   },
+   "wording_robust": null
+  },
+  "P3": {
+   "cell": null,
+   "holds": null
+  },
+  "P4": {
+   "cell": null,
+   "holds": null
+  },
+  "P5": {
+   "replays": 0,
+   "all_match": null,
+   "detail": []
+  },
+  "P6": {
+   "direct": {
+    "pairs": 0,
+    "increases": 0,
+    "decreases": 0,
+    "ties": 0,
+    "difference_pp": null,
+    "sign_test_one_sided_p": null
+   },
+   "reason": {
+    "pairs": 0,
+    "increases": 0,
+    "decreases": 0,
+    "ties": 0,
+    "difference_pp": null,
+    "sign_test_one_sided_p": null
+   },
+   "same_sign": null
+  },
+  "P7": {
+   "cells": {},
+   "holds": null
+  },
+  "P8": {
+   "cells": {}
+  },
+  "stage_D": {},
+  "eligible_cross_family": true
+ }
+}

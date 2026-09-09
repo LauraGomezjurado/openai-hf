@@ -1,17 +1,13 @@
 {
  "models": {
-  "selftest_tiny": {
-   "family": "selftest",
+  "mistral7b": {
+   "family": "mistral",
    "gate": {
-    "passed": 4,
+    "passed": 14,
     "n": 20
    },
-   "P1": "not replicated",
-   "stages": [
-    "A",
-    "B",
-    "D"
-   ]
+   "P1": null,
+   "stages": []
   }
  },
  "cross_family_eligible": [],

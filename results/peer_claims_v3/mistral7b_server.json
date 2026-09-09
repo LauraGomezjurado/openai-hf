@@ -1,0 +1,53 @@
+{
+  "pid": 50972,
+  "command": [
+    "llama-server",
+    "-m",
+    "/Users/lgomezjuradogonzalez/Downloads/openai-hf/data/models/peer_claims_v3/Mistral-7B-Instruct-v0.3-Q4_K_M.gguf",
+    "--device",
+    "none",
+    "-ngl",
+    "0",
+    "--no-op-offload",
+    "--no-kv-offload",
+    "--fit",
+    "off",
+    "-c",
+    "8192",
+    "-np",
+    "1",
+    "-b",
+    "2048",
+    "-ub",
+    "512",
+    "-t",
+    "6",
+    "-tb",
+    "6",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18973",
+    "--jinja"
+  ],
+  "source": {
+    "key": "mistral7b",
+    "priority": 1,
+    "family": "mistral",
+    "repository": "bartowski/Mistral-7B-Instruct-v0.3-GGUF",
+    "revision": "61fd4167fff3ab01ee1cfe0da183fa27a944db48",
+    "files": [
+      "Mistral-7B-Instruct-v0.3-Q4_K_M.gguf"
+    ],
+    "original_model": "mistralai/Mistral-7B-Instruct-v0.3",
+    "quantization": "third-party Q4_K_M; do not treat as original precision",
+    "gguf_path": "data/models/peer_claims_v3/Mistral-7B-Instruct-v0.3-Q4_K_M.gguf",
+    "gguf_sha256": null,
+    "reasoning_mode": "scratchpad",
+    "template_kwargs": null,
+    "system_role": true,
+    "acquisition": "Download on the study machine, record the SHA-256 here as an amendment before freezing stage A. The workflow-obligations attempt in September failed on HTTP timeouts and an unsuccessful Xet transfer (experiments/workflow_obligations/v2/model_availability_amendment.md).",
+    "status": "not on the study machine as of 2026-09-08"
+  },
+  "resolved_gguf_sha256": "1270d22c0fbb3d092fb725d4d96c457b7b687a5f5a715abe1e818da303e562b6"
+}
