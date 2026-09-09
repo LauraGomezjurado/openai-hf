@@ -57,3 +57,82 @@ With feasible own work and optional checking, the hopelessness assessment change
 The entire loop is complete and local model servers are stopped. [Interpretation and historical relevance](/Users/lauragomez/Desktop/openai-hf/docs/peer_claims_interpretation.md) · [Full results](/Users/lauragomez/Desktop/openai-hf/docs/peer_claims_results.md) · [Status diagnostic](/Users/lauragomez/Desktop/openai-hf/docs/peer_claim_status_results.md).
 
 Next priority: independently qualified checkpoint replication and a bounded paraphrase/repeatability test of checking suppression. Resolve instability before interpreting informed sacrifice as a motive. No new inference or additional field-order/wording search is running. User review remains optional, not a permission gate.
+
+## Position after the recovery, the reasoning arm, and the 2026-09-09 label corrections
+
+Updated September 9, 2026. Three separate observations now exist, and they do **not** yet combine into
+one mechanism. Keeping them apart is the main reporting discipline for this phase.
+
+| Observation | What it supports |
+|---|---|
+| Bit-identical checkpoint reproduces 73/74 decisions uncached, both gates pass | The lead survives the corrected configuration. Headline contrast 75 pp → 50 pp |
+| Hopelessness claims suppress checking; automatically supplied truth often restores own completion | Communication and information delivery influence behavior here |
+| Adding a scratchpad interface moves the control gate from 10/10 to 8/10 | The instrumentation changes the behavior under investigation |
+
+**Defensible contribution statement, as of today:**
+
+> In a controlled allocation environment, a collaborator's pessimistic assessment suppresses
+> verification, while verified information alone does not reliably preserve the principal's objective.
+> We investigate whether these failures reflect information use, task interpretation, or interface
+> dependence.
+
+The first sentence is a local observation and is supported. The second is the research programme and is
+not yet a result. The missing step against
+[Model Forensics](https://arxiv.org/abs/2606.26071) is **explanatory discrimination**: reasoning
+supplies hypotheses, interventions have to make competing explanations predict different outcomes. A
+larger collection of concerning traces would not supply that. Broad peer influence is already covered by
+work such as [KAIROS](https://arxiv.org/html/2508.18321v3); the distinction available here is an
+executable setting that separates *acquiring* facts from *acting* on them, and that tests whether a
+mitigation preserves useful cooperation.
+
+### Corrections landed today, before any new inference
+
+- **The V2 forfeiture effect is domain-split.** Checking suppression is 2/2 → 0/2 in both domains; the
+  *additional* forfeiture is entirely `release`, because `triage` already forfeits 0/2 with no claim
+  present. Report the two outcomes separately. New consequence for design: screen domains for non-zero
+  baseline own completion, or suppression is unmeasurable against a floor.
+- **The reasoning arm shows an instruction restated but not followed, not a plan/action mismatch.** The
+  frozen `COMMIT` regex fires on a quotation of the rule; the trace's own final recommendation agrees
+  with the action it took. By hand, every step that stated an intention to check did check, and neither
+  failing step ever stated one. D2's "attributed to the peer" label fired on the bare word "peer" and
+  the truth scoring is luck-dependent across the two hidden worlds. The two failures are **one decision
+  context under two hidden worlds**, not two instances and not a 20% rate.
+- **The Llama retraction over-corrected and is re-corrected.** The `invoices` controls do contain an
+  unconditional fabricated `Status:` block asserting availability with no check performed — wrong in the
+  blocked world, and asserting `available` invariantly across both. But it did **not** cause the
+  allocation: the trace states own work is feasible and chooses `peer_only` anyway. That combination is
+  the cleanest support in the corpus for treating "the peer's request became the operative task" as a
+  hypothesis worth testing.
+- **The length-matched placebo is one-sided.** A failing placebo shows length suffices; a passing
+  placebo rules out only that padding, leaving the reasoning instruction, ordering instruction, phase
+  structure and generated text unseparated. Say "the reason-mode interface," not "reasoning," either way.
+
+### Prioritized next work, none of it started
+
+1. **Direct-mode control gates for the two excluded checkpoints** (`mistral7b`, `llama31_8b`). Both were
+   excluded on the reason-mode interface that costs the qualifying checkpoint 2 of 10 controls. Cheapest
+   route to a second qualified checkpoint. Highest value per token on the list.
+2. **Message decomposition**: assertion × normative priority argument, with the argument clause
+   redefined so it carries no feasibility proposition. The previous clause ("redirecting will not cost a
+   successful submission") asserted one, so the old 2×2 was not orthogonal.
+3. **The matched-information anomaly**: equalize the six prompt differences between supplied and queried
+   truth — framing, position, turn count, final-instruction wording, action menu, prior model output —
+   with a neutral extra-turn control. Then compare an explicit principal/peer clarification against a
+   salience-matched neutral recap. This is an intervention test, not a mediation estimate.
+4. **Transfer** to a new task structure with native tool execution, once 2 or 3 yields a prediction to
+   carry. Repeated greedy runs of the same templates do not substitute for this.
+5. **Bounded stability work**: the named eight-case fresh-server/reversed-order repeat. A small check,
+   not an open audit.
+
+Source-identity manipulations are deferred until the effective message component is known, and must
+separate identity, authority, and beneficiary stake — the current `nonpeer` arm varies four things at
+once. Mode is a factor, not a fixed setting, but no new arm needs to run in an unqualified interface:
+direct mode is where the effect was measured and is sufficient to proceed.
+
+Designs: [decomposition, matched information and transfer](../experiments/peer_claims_v3/design_2026-09-09_decomposition_and_matched_information.md) ·
+[recovery record](peer_claims_v2_recovery_results.md) ·
+[reasoning-arm qualification failure](peer_claims_v2_reasoning_gate_failure.md) ·
+[hand label audit](../results/peer_claims_v2_reasoning/qwen3/reasoning_label_audit.md)
+
+Nothing above is frozen and no inference has been run against it. All local model servers remain
+stopped; every arm needs its own freeze and predictions first.

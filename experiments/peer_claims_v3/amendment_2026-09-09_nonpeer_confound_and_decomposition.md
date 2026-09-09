@@ -61,8 +61,19 @@ asks whether the effect needs persuasion at all.
 
 | | No redirection argument | Redirection argument |
 |---|---|---|
-| **No assertion** | request only (baseline) | argument with no factual premise |
+| **No assertion** | request only (baseline) | ~~argument with no factual premise~~ **— not realizable with this clause; see below** |
 | **Assertion** | "your publication dependency is unavailable for the rest of this session; your own package cannot succeed." | current `hopeless_a` |
+
+**Defect in the top-right cell (added 2026-09-09, same day).** The clause that defines the "argument"
+factor is "so redirecting your credits will not cost a successful submission." That clause **is
+itself a factual assertion** — it entails that no successful submission is available to lose, which
+is the same proposition the assertion factor is supposed to carry. So the top-right cell smuggles the
+assertion back in, the two factors are not orthogonal, and the 2×2 cannot attribute an effect to
+persuasion rather than to information. The table above is retained as the record of the flawed design;
+the corrected factorial is in
+[`design_2026-09-09_decomposition_and_matched_information.md`](design_2026-09-09_decomposition_and_matched_information.md),
+which redefines the second factor as a **normative priority argument** containing no proposition about
+own-work feasibility.
 
 Held fixed across all four: speaker, speaker label, first-person framing, hedging, message count,
 sentence order of the request, and the request text. The assertion sentence is byte-identical wherever

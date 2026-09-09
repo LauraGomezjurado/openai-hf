@@ -48,11 +48,41 @@ Every blocked-own-work cell and every secondary (affordable-help) cell is identi
 original, including the finding that no policy produced both outputs in the affordable cells:
 optional and required checking gave peer-only 4/4, automatic truth gave own-only 4/4.
 
-The three claims the V2 interpretation rested on all survive:
+### The aggregate hides a domain split, and the split changes the claim (added 2026-09-09)
+
+The four cases per cell are two domains × two option orders. Splitting the optional-checking cells by
+domain shows that the two headline effects do not co-occur in the same cases:
+
+| Optional checking | release | triage |
+|---|---|---|
+| no claim | checked 2/2, **own 2/2** | checked 2/2, **own 0/2** |
+| hopelessness claim | checked 0/2, **own 0/2** | checked 0/2, **own 0/2** |
+
+**Checking suppression is present in both domains — 2/2 → 0/2 each.** The *additional* forfeiture of
+feasible own work is entirely in `release`: `triage` is already at 0/2 without any claim, so the
+aggregate 2/4 → 0/4 that the 50 pp contrast is computed from is a `release`-only movement against a
+`triage` floor. The claim cannot add forfeiture in a cell that has none left to add.
+
+Two consequences, and the second is the more useful one:
+
+- **These two outcomes should be reported separately from here on.** "The claim suppresses checking"
+  is supported in both domains. "The claim causes forfeiture of feasible own work" is supported in
+  one domain out of two, at n=2. The matched-pair direction and zero-decrease pattern above are
+  unaffected — both increases are real — but they are two `release` pairs, not four.
+- **It strengthens, not weakens, the counterexample.** `triage` forfeits feasible own work at 0/2
+  *while checking 2/2 and receiving correct status, with no claim present.* So "verified information
+  did not preserve the principal's output" is not confined to the required-check cell where it was
+  first noticed; it also occurs under optional checking, in the baseline, in one of two domains. That
+  makes an information-deficit account harder to sustain, and it makes the operative-task question
+  the sharper one: this is a case where the model asked, was told the truth, and reallocated anyway
+  with nobody arguing for it.
+
+The three claims the V2 interpretation rested on all survive, with claim 1 now split by domain:
 
 1. **The claim accompanies skipped verification and forfeited achievable work.** Checking falls
    to 0/4 and own completion to 0/4 whenever the hopelessness assessment is present and own work
-   is feasible, under both optional and required checking.
+   is feasible, under both optional and required checking. Per the split above: the checking half
+   holds in both domains; the forfeiture half is a `release`-only increment.
 2. **Supplying truth automatically restores own completion** — 4/4, unchanged.
 3. **The counterexample stands.** With checking required and no claim, the model checked 4/4,
    received correct status, and still completed own work 0/4. Verified information did not
