@@ -1,0 +1,16 @@
++ /Users/lgomezjuradogonzalez/Downloads/openai-hf/.venv-convert/bin/python /Users/lgomezjuradogonzalez/Downloads/openai-hf/data/external/llama_conversion_source/llama.cpp-5266f24da/convert_hf_to_gguf.py /Users/lgomezjuradogonzalez/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218 --outfile /Users/lgomezjuradogonzalez/Downloads/openai-hf/data/models/workflow_qwen3/qwen3-8b-f16.gguf --outtype f16
++ llama-quantize /Users/lgomezjuradogonzalez/Downloads/openai-hf/data/models/workflow_qwen3/qwen3-8b-f16.gguf /Users/lgomezjuradogonzalez/Downloads/openai-hf/data/models/workflow_qwen3/qwen3-8b-Q4_K_M.gguf Q4_K_M
+{
+  "repository": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "conversion_commit": "5266f24da",
+  "outtype": "f16",
+  "gguf_path": "data/models/workflow_qwen3/qwen3-8b-Q4_K_M.gguf",
+  "expected_sha256": "4bbd605eaecad2e8ed614f5c2dd3c833150cbe26ba03b991cf1c7114cb9117ef",
+  "actual_sha256": "4bbd605eaecad2e8ed614f5c2dd3c833150cbe26ba03b991cf1c7114cb9117ef",
+  "match": true,
+  "bytes": 5027783584,
+  "f16_sha256": "9e72ee7205dac32acfb018fae01b5777fd62fe92f90f24e1bb19854b05065b6f"
+}
+
+SHA-256 MATCH: same-checkpoint recovery; cache_prompt is the only difference.

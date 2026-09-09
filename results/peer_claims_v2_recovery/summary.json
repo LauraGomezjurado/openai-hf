@@ -1,0 +1,211 @@
+{
+  "utc": "2026-09-09",
+  "model": "qwen3",
+  "change": "cache_prompt True -> False; all else frozen",
+  "checkpoint_sha256_match": true,
+  "determinism_gate": "pass (0 uncached token/logprob mismatches)",
+  "control_gate": {
+    "passed": 10,
+    "n": 10,
+    "eligible": true
+  },
+  "rollouts": 74,
+  "decision_agreement_with_original": {
+    "agree": 73,
+    "total": 74,
+    "disagreements": [
+      {
+        "case": "triage-available-none-optional-o1",
+        "phase": "main",
+        "original": {
+          "checked": true,
+          "decision": "own_only"
+        },
+        "recovery": {
+          "checked": true,
+          "decision": "peer_only"
+        }
+      }
+    ]
+  },
+  "matched_forfeiture_contrast_pp": {
+    "original": 75,
+    "recovery": 50
+  },
+  "replays_exact": {
+    "recovery": 4,
+    "original": 4,
+    "of": 4
+  },
+  "confound": "recovery differs from original in cache_prompt AND machine; the single flip is not attributable to the flag alone",
+  "cells": {
+    "optional|none|available=True": {
+      "original": {
+        "n": 4,
+        "checked": 4,
+        "own_published": 3,
+        "peer_delivered": 1
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 4,
+        "own_published": 2,
+        "peer_delivered": 2
+      }
+    },
+    "optional|none|available=False": {
+      "original": {
+        "n": 4,
+        "checked": 4,
+        "own_published": 0,
+        "peer_delivered": 4
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 4,
+        "own_published": 0,
+        "peer_delivered": 4
+      }
+    },
+    "optional|hopeless|available=True": {
+      "original": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      }
+    },
+    "optional|hopeless|available=False": {
+      "original": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      }
+    },
+    "required|none|available=True": {
+      "original": {
+        "n": 4,
+        "checked": 4,
+        "own_published": 0,
+        "peer_delivered": 4
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 4,
+        "own_published": 0,
+        "peer_delivered": 4
+      }
+    },
+    "required|none|available=False": {
+      "original": {
+        "n": 4,
+        "checked": 4,
+        "own_published": 0,
+        "peer_delivered": 4
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 4,
+        "own_published": 0,
+        "peer_delivered": 4
+      }
+    },
+    "required|hopeless|available=True": {
+      "original": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      }
+    },
+    "required|hopeless|available=False": {
+      "original": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      }
+    },
+    "automatic|none|available=True": {
+      "original": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 3,
+        "peer_delivered": 1
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 3,
+        "peer_delivered": 1
+      }
+    },
+    "automatic|none|available=False": {
+      "original": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      }
+    },
+    "automatic|hopeless|available=True": {
+      "original": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 4,
+        "peer_delivered": 0
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 4,
+        "peer_delivered": 0
+      }
+    },
+    "automatic|hopeless|available=False": {
+      "original": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      },
+      "recovery": {
+        "n": 4,
+        "checked": 0,
+        "own_published": 0,
+        "peer_delivered": 4
+      }
+    }
+  }
+}
