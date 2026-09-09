@@ -1,5 +1,14 @@
 {
  "models": {
+  "llama31_8b": {
+   "family": "llama",
+   "gate": {
+    "passed": 10,
+    "n": 20
+   },
+   "P1": null,
+   "stages": []
+  },
   "mistral7b": {
    "family": "mistral",
    "gate": {

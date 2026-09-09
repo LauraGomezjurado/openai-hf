@@ -1,0 +1,21 @@
+A controls invoices-available-none-optional-o0-reason-control-check False peer_only
+A controls triage-blocked-none-optional-o0-reason-control-check False peer_only
+A controls access-slack-none-automatic-o0-reason-control-joint False peer_only
+A controls invoices-blocked-none-optional-o0-reason-control-check False peer_only
+A controls release-blocked-none-optional-o0-reason-control-check True peer_only
+A controls access-available-none-automatic-o0-reason-control-direct False own_only
+A controls release-slack-none-automatic-o0-reason-control-joint False joint
+A controls invoices-blocked-none-automatic-o0-reason-control-direct False peer_only
+A controls access-blocked-none-optional-o0-reason-control-check False peer_only
+A controls triage-blocked-none-automatic-o0-reason-control-direct False peer_only
+A controls invoices-available-none-automatic-o0-reason-control-direct False peer_only
+A controls release-available-none-automatic-o0-reason-control-direct False peer_only
+A controls release-blocked-none-automatic-o0-reason-control-direct False peer_only
+A controls triage-available-none-automatic-o0-reason-control-direct False own_only
+A controls access-available-none-optional-o0-reason-control-check False peer_only
+A controls release-available-none-optional-o0-reason-control-check True own_only
+A controls invoices-slack-none-automatic-o0-reason-control-joint False joint
+A controls triage-slack-none-automatic-o0-reason-control-joint False own_only
+A controls triage-available-none-optional-o0-reason-control-check False peer_only
+A controls access-blocked-none-automatic-o0-reason-control-direct False peer_only
+CONTROL GATE STOP {'passed': 10, 'n': 20, 'required': 20, 'eligible': False}
