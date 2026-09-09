@@ -11,7 +11,7 @@ September 8, 2026. This memo addresses every shortfall in [the alignment review]
 | Model diversity | One qualified Qwen checkpoint | **Model-agnostic runner and five source records** (Mistral-7B-v0.3, Llama-3.1-8B, Phi-3.5-mini, Gemma-2-9B with a template caveat, Qwen3 as a within-family reasoning arm), priority-ordered with acquisition notes | Weights must be downloaded on the study machine and hashed as an amendment; Mistral's earlier download failed |
 | Wording robustness | One assessment wording | Three paraphrases frozen; robustness rule preregistered (P2) | — |
 | Interface dependence | Unknown whether constrained decoding created the effect | Direct-mode replication of the primary contrast (byte-identical to V2's prompts, verified by test) with rule P6 | — |
-| Formal evidence aggregation | Prose and matched tables | **ACH matrix built and second-rated.** 20 rows × 7 hypotheses; a second rater working in a fresh context, denied access to the first ratings, rated every cell: exact agreement 0.786, Cohen's kappa 0.645; both raters put H3 first and H1 last, and both give H4 exactly one inconsistency (X04). Consensus ranking (disagreed cells set to N) reported alongside | Both raters are AI contexts, not humans; the systematic disagreement (whether matched-presentation content effects count against the artifact account H6) needs a human adjudicator |
+| Formal evidence aggregation | Prose and matched tables | **Not achieved; a structured audit trail was built instead.** ACH matrix, 20 rows × 7 hypotheses, second-rated in a fresh context denied access to the first ratings: exact agreement 0.786, Cohen's kappa 0.645; both raters put H3 first and H1 last, both give H4 exactly one inconsistency (X04). Consensus ranking reported alongside | The "formal aggregation" claim was **withdrawn 2026-09-09**: the hypotheses overlap so the ranking is not a partition, breadth is rewarded rather than penalized, and rater agreement measures rubric consistency rather than truth. Both raters are AI contexts, not humans. H1's last place is not evidence against conditional peer preference — the contrast that would test it has not been run ([limits](ach_evidence_matrix.md#limits)) |
 | Ground truth for motivation | Absent | **Phase-3 identifiability pipeline built, frozen and validated in simulation.** Four prompt-constructed organisms on the V3 environment; mechanical censoring L5→L0 (L1 = investigator paraphrase, L0 = aggregates); analyst with abstention; three no-forensics baselines; accuracy/abstention/overclaim/assert-when-non-separable per rung with Wilson intervals; synthetic end-to-end run and set-size table | No organism rollouts on a real checkpoint yet (no weights reachable here); construction-method spread is a two-point sample; L2′ spoofing is exogenous |
 | Original-agent intervention | Impossible | Impossible | — |
 
@@ -25,7 +25,36 @@ September 8, 2026. This memo addresses every shortfall in [the alignment review]
 
 **Exposure across the whole record** (`scripts/analyze_cache_exposure.py` → `results/determinism/cache_exposure.json`). Replay pairs are a small sample, so the same classification was applied to every recorded decision: 825 episodes, 1,598 calls, **83.7% of calls split** (`timings.cache_n > 0`). Because `cache_prompt` was a per-study setting, exposure is all-or-nothing: the eleven ACH rows drawn from `cache_prompt=true` studies sit at ~100%, and the three drawn from `cache_prompt=false` studies (escalation pilot, duty continuations, behavioral pilot) sit at 0%, which is the internal check that the metric tracks the configuration. The most extreme splits evaluated a fresh suffix of **1 to 4 tokens**, including in the cell that supplies the headline checking-suppression contrast.
 
-**Consequence for interpretation.** The instability is therefore not confined to the informed-sacrifice cells, as first reported here: essentially every decision in the peer-claims, opportunity-allocation, workflow-obligation and workflow-completion studies was generated under a split evaluation. What that does *not* license is treating all of those findings as equally suspect, because exposure is uniform while the perturbation is small. The measured cached deviation was at most ~0.22 nats, which moves only near-ties, so a contrast that is large and uniform across matched pairs and checkpoints survives full exposure — the +100 pp Costly/Blocked difference on every pair for both checkpoints is not a rounding artifact. The fragile case is the one that combines exposure with a four-case cell and an independently failed replay set: the V2 informed sacrifices, whose field-order diagnostic matched only 6/8 exact replays. Those should be read as choices near a decision boundary, not as evidence of a stable priority. The V2 primary contrast (checking 4/4 → 0/4; forfeiture 1/4 → 4/4) keeps its direction for the same effect-size reason, and its replication under the fixed backend is the P1 test of V3. Nothing here can be settled from the saved records, because no study recorded `n_probs` and so no decision margins exist to compare against the perturbation.
+**Consequence for interpretation.** The instability is not confined to the informed-sacrifice cells, as first reported here: essentially every decision in the peer-claims, opportunity-allocation, workflow-obligation and workflow-completion studies was generated under a split evaluation. Exposure is uniform across those studies, so exposure alone cannot say which findings are fragile. Nothing about which of them are fragile can be settled from the saved records, because no study recorded `n_probs` and so no decision margins exist to compare against the perturbation. The only way to settle it is to re-run the target contexts under the fixed backend.
+
+> **Retracted 2026-09-09 — the effect-size protection argument.** This paragraph originally argued
+> that "the measured cached deviation was at most ~0.22 nats, which moves only near-ties, so a
+> contrast that is large and uniform across matched pairs and checkpoints survives full exposure,"
+> and on that basis declared the +100 pp Costly/Blocked contrast and the direction of the V2
+> primary contrast protected. **That inference was invalid and is withdrawn.**
+>
+> Three things are wrong with it. First, the 0.22-nat figure comes from a random-weight
+> llama-architecture model (`gate_selftest_tiny.json`); a small-model diagnostic is not a numerical
+> bound on perturbation magnitude for an 8B checkpoint, and treating it as one was the load-bearing
+> step. Second, the real-model gates run on 2026-09-09 measured cached perturbations up to
+> **5.05 nats**, roughly 23× the asserted ceiling, so the ceiling was not merely unjustified but
+> false ([gate record](peer_claims_v3_cross_family_gates.md)). Third, the argument assumed margin
+> predicts safety, and it does not: the observed `llama31_8b` greedy flips occurred at decision
+> margins of **0.35 and 2.59 nats**, so a wide margin did not protect a decision. Related prompts
+> can also share correlated vulnerabilities, which breaks the implicit independence behind "uniform
+> across matched pairs."
+>
+> The sentence in [`ach_evidence_matrix.md`](ach_evidence_matrix.md) that reasons the same way from
+> the same ~0.22-nat figure is withdrawn on the same grounds; see the correction recorded there.
+>
+> What replaced the argument is a measurement rather than a bound. The V2 contrast was re-run on a
+> bit-identical checkpoint with `cache_prompt=False`: 73 of 74 decisions unchanged, all three claims
+> the interpretation rested on reproduced, and the headline matched contrast moving from 75 pp to
+> 50 pp because of one flipped baseline decision
+> ([recovery results](peer_claims_v2_recovery_results.md)). So the observed counts were retained and
+> the target contexts were re-run, which is what should have been said here in the first place. The
+> opportunity-allocation +100 pp contrast has **not** yet been re-run and its status is
+> correspondingly weaker than this paragraph originally claimed: exposed, plausible, unconfirmed.
 
 **Fix.** `cache_prompt=false` everywhere; single slot; explicit `-b 2048 -ub 512`; a gate that must report bit-identical uncached repetitions on the target model before main cases run (`run_peer_claims_v3_cpu.py` refuses otherwise). Retrofit for earlier studies: run `determinism_gate.py --rollouts <study>/rollouts.jsonl` on the study machine to bound how many recorded decisions had margins below the observed cached perturbation.
 

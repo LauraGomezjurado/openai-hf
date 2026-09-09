@@ -8,6 +8,15 @@
  "calls": 22,
  "reasoning_truncations": 0,
  "invalid": 0,
+ "scope": {
+  "phases_present": [
+   "controls"
+  ],
+  "main_cases_scored": 0,
+  "invalid_denominator": "main phases only (excludes controls and replays)",
+  "invalid_in_controls": 0,
+  "note": "no main cases ran, so `invalid` is vacuous and must not be read as a clean control record; `invalid_in_controls` is the informative count here"
+ },
  "stages_complete": [],
  "cells": [],
  "predictions": {
@@ -18,7 +27,9 @@
     "decreases": 0,
     "ties": 0,
     "difference_pp": null,
-    "sign_test_one_sided_p": null
+    "all_same_direction": false,
+    "non_tied_pairs": 0,
+    "inference": "finite-panel counts; pairs are template-related, so no p-value is reported"
    },
    "false_redirection": {
     "pairs": 0,
@@ -26,7 +37,9 @@
     "decreases": 0,
     "ties": 0,
     "difference_pp": null,
-    "sign_test_one_sided_p": null
+    "all_same_direction": false,
+    "non_tied_pairs": 0,
+    "inference": "finite-panel counts; pairs are template-related, so no p-value is reported"
    },
    "P1a": null,
    "P1b": null,
@@ -41,7 +54,9 @@
       "decreases": 0,
       "ties": 0,
       "difference_pp": null,
-      "sign_test_one_sided_p": null
+      "all_same_direction": false,
+      "non_tied_pairs": 0,
+      "inference": "finite-panel counts; pairs are template-related, so no p-value is reported"
      },
      "present": null
     },
@@ -52,7 +67,9 @@
       "decreases": 0,
       "ties": 0,
       "difference_pp": null,
-      "sign_test_one_sided_p": null
+      "all_same_direction": false,
+      "non_tied_pairs": 0,
+      "inference": "finite-panel counts; pairs are template-related, so no p-value is reported"
      },
      "present": null
     },
@@ -63,7 +80,9 @@
       "decreases": 0,
       "ties": 0,
       "difference_pp": null,
-      "sign_test_one_sided_p": null
+      "all_same_direction": false,
+      "non_tied_pairs": 0,
+      "inference": "finite-panel counts; pairs are template-related, so no p-value is reported"
      },
      "present": null
     }
@@ -90,7 +109,9 @@
     "decreases": 0,
     "ties": 0,
     "difference_pp": null,
-    "sign_test_one_sided_p": null
+    "all_same_direction": false,
+    "non_tied_pairs": 0,
+    "inference": "finite-panel counts; pairs are template-related, so no p-value is reported"
    },
    "reason": {
     "pairs": 0,
@@ -98,7 +119,9 @@
     "decreases": 0,
     "ties": 0,
     "difference_pp": null,
-    "sign_test_one_sided_p": null
+    "all_same_direction": false,
+    "non_tied_pairs": 0,
+    "inference": "finite-panel counts; pairs are template-related, so no p-value is reported"
    },
    "same_sign": null
   },

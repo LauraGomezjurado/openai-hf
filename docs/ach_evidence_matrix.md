@@ -1,6 +1,6 @@
 # ACH evidence matrix: what the accumulated evidence discriminates
 
-September 8, 2026. Built by `scripts/build_ach_matrix.py` from `experiments/ach/ratings_v1.json`; outputs in `results/ach/`. This supplies the formal aggregation that Model Forensics lists among its own limitations. Every cell is an analyst judgment with a written rationale and a source path; the single rater is the assistant, so the table is a contestable record, not an adjudication. A second rater can copy the file, re-rate blind, and the script will report exact agreement and Cohen's kappa.
+September 8, 2026. Built by `scripts/build_ach_matrix.py` from `experiments/ach/ratings_v1.json`; outputs in `results/ach/`. It is a structured, contestable record of analyst judgments — an audit trail, **not** the formal evidence aggregation that Model Forensics lists among its own limitations; see [Limits](#limits) for why that earlier claim was withdrawn on 2026-09-09. Every cell is an analyst judgment with a written rationale and a source path; the single rater is the assistant, so the table is a contestable record, not an adjudication. A second rater can copy the file, re-rate blind, and the script will report exact agreement and Cohen's kappa.
 
 ## Hypotheses
 
@@ -56,14 +56,64 @@ Robust across the first rating, the blind rating and the consensus: **H1 is last
 
 The zero rows are the studies that requested `cache_prompt=false`, which is the internal check that the metric measures the configuration rather than noise. The smallest freshly evaluated suffixes are extreme: **1 token** in the blocked/hopeless/required cell and **4 tokens** in the costly/none/optional cell that supplies X01 — the most severe batch splits in the record, and the same regime in which the tiny-model gate produced greedy-token flips.
 
-**This widens the scope of the caveat but does not change the ranking, and it is worth being precise about why.** Exposure is uniform across the affected studies, so it cannot by itself say which findings are fragile. What discriminates is effect size against the size of the perturbation. The measured cached deviation was at most ~0.22 nats, which flips only near-ties. So:
+**This widens the scope of the caveat. Exposure is uniform across the affected studies, so exposure by itself cannot say which findings are fragile — and neither can effect size.**
 
-- **X06 survives full exposure**: +100 pp on every matched pair, both checkpoints, both option orders. A sub-0.25-nat perturbation does not manufacture a uniform 16/16-versus-0/16 split.
-- **X04 does not**: four cases, and its own field-order diagnostic independently failed 2/8 exact replays. Exposure plus a small cell plus demonstrated replay failure is the combination that makes it fragile, not exposure alone.
-- **X10, X11 and X14 carry no artifact risk at all.** That raises their standing relative to the rest, and X11 is among the widest-spread rows in the matrix, so the obligation-competition evidence (H5) is now the best-protected experimental result in the project.
+> **Corrected 2026-09-09.** This passage previously read: "What discriminates is effect size against
+> the size of the perturbation. The measured cached deviation was at most ~0.22 nats, which flips
+> only near-ties," and concluded that **X06 survives full exposure** because "a sub-0.25-nat
+> perturbation does not manufacture a uniform 16/16-versus-0/16 split." **That reasoning is
+> withdrawn.** The ~0.22-nat figure is from a random-weight model and is not a bound for an 8B
+> checkpoint; real-model gates on 2026-09-09 measured up to **5.05 nats**; and the observed greedy
+> flips occurred at margins of **0.35 and 2.59 nats**, so margin does not predict safety. The full
+> retraction is in [`forensic_rigor_upgrade.md`](forensic_rigor_upgrade.md) §1.
+
+Replacing that argument with measurement changes two rows, in opposite directions:
+
+- **X04 is now the better-supported of the two, on evidence rather than on an effect-size argument.**
+  Its underlying contrast was re-run on a bit-identical checkpoint with `cache_prompt=False`:
+  73/74 decisions unchanged, all three load-bearing claims reproduced, headline matched contrast
+  75 pp → 50 pp from one flipped baseline decision
+  ([recovery results](peer_claims_v2_recovery_results.md)). Its independent weakness stands and is
+  separate: the field-order diagnostic that failed 2/8 exact replays covers a different context
+  subset and has **not** been re-run, so X04's stability claim is still not clean.
+- **X06 has not been re-run and is now the weaker of the two.** It was previously called protected
+  by the retracted argument alone. Its correct status is exposed, plausible, unconfirmed. Re-running
+  the opportunity-allocation panel under the fixed backend is the outstanding item.
+- **X10, X11 and X14 carry no artifact risk at all**, and that is unaffected by the retraction. X11 is
+  among the widest-spread rows, so the obligation-competition evidence (H5) is the best-protected
+  experimental result in the project — now by a wider relative margin, since X06's protection was
+  withdrawn.
+
+The ranking is unchanged by all of this, but for a weaker reason than before: no row moved enough
+to reorder the hypotheses, not that the rows were shown to be robust.
 
 Exposure is an upper bound on how many decisions *could* have been perturbed, not an estimate of how many were. No study recorded `n_probs`, so no decision margins exist in the record and the question cannot be settled from the saved data — only by re-running under the fixed backend, which is V3's P1 and P5.
 
 ## Limits
 
 Ratings are ordinal judgments by one rater; the scoring weights are conventional, not estimated; rows are not independent (several come from the same checkpoint and task skeleton); and a hypothesis with zero inconsistencies can still be false. ACH ranks by what the evidence fails to refute. It does not identify a mechanism, and it does not transfer to the original HF agents.
+
+**This matrix is an audit trail for judgments, not calibrated evidence aggregation.** Added
+2026-09-09, because the framing elsewhere in the repository has overreached on this point and the
+distinction matters for how the ranking is read:
+
+- **The hypotheses overlap, so the ranking is not a partition.** H1 (conditional peer preference)
+  and the information-mediated accounts can both be consistent with the same row, and a row rated
+  inconsistent with one is not thereby evidence for another. Ranking overlapping hypotheses by
+  unrefuted-ness does not distribute credence among them.
+- **Breadth is rewarded, not penalized.** A broad hypothesis evades contradiction by predicting
+  less, so "H3 has zero inconsistent rows" is partly a statement about H3's specificity. The
+  scoring does not correct for this and cannot.
+- **Rating agreement is not explanatory truth.** Exact agreement 0.786 and kappa 0.645 between two
+  raters measures whether the rubric is applied consistently. Both raters are AI contexts reading
+  the same repository, so agreement is not independent confirmation, and two consistent readers can
+  be consistently wrong.
+- **H1 being last does not rule out conditional peer preference.** It means the rows collected so
+  far do not contradict the alternatives more than they contradict H1, on one rater's rubric. The
+  design that would actually bear on H1 — holding verified feasibility, own cost, expected own
+  benefit and request content fixed while varying only recipient relation — has not been run. Until
+  it is, H1's position in this table should not be cited as evidence against peer preference.
+
+The claim in the repository memos that this matrix "supplies the formal evidence aggregation that
+Model Forensics lists among its own limitations" is withdrawn. It supplies a contestable,
+cell-by-cell record of one analyst's judgments, which is useful and is less than that.

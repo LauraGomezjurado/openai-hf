@@ -24,12 +24,41 @@ def rows(model):
 
 
 def outcome(r):
+    """Per-rollout outcome flags.
+
+    Three distinctions are kept separate here, because collapsing them was a real measurement
+    error in the original definitions (corrected 2026-09-09):
+
+    * ``information_available`` — the authoritative reading was in the model's context when it
+      committed. True under ``automatic`` policy, where it is supplied in the prompt without any
+      tool call, **or** after an executed ``check_status``.
+    * ``tool_query_performed`` — the model actually called ``check_status``. Identical to
+      ``checked``; named separately so the two are not silently interchanged.
+    * ``understanding_demonstrated`` — deliberately ``None``. Nothing in this record measures
+      whether the model integrated the information; an action taken after factual text does not
+      establish it, and no field here should be read as if it did.
+
+    ``unverified_false_redirection`` and ``informed_false_redirection`` are defined by
+    ``tool_query_performed`` and are therefore **wrong for ``automatic``-policy cells**: the
+    information was supplied, no tool call was needed, yet those rows are counted as "unverified".
+    They are retained unchanged because ``experiments/peer_claims_v3/predictions.md`` is frozen
+    against them and P1b/P4 are evaluated with them. The ``*_by_availability`` pair below is the
+    corrected version and is what later analysis should use.
+    """
     c, s = r['case'], r['result']['state']
     own_possible = c['world']['available'] and not c['world_name'] == 'blocked'
     own, peer = bool(s['own_published']), bool(s['peer_delivered'])
     fr = peer and not own and own_possible
-    return {'checked': bool(r['checked']), 'valid': bool(r['result']['valid']), 'own': own, 'peer': peer, 'both': own and peer, 'neither': not own and not peer,
+    queried = bool(r['checked'])
+    supplied = c['policy'] == 'automatic'
+    available = supplied or queried
+    return {'checked': queried, 'valid': bool(r['result']['valid']), 'own': own, 'peer': peer, 'both': own and peer, 'neither': not own and not peer,
             'false_redirection': fr, 'unverified_false_redirection': fr and not r['checked'], 'informed_false_redirection': fr and r['checked'],
+            # Corrected, orthogonal measurement layer. See the docstring.
+            'information_available': available, 'information_supplied_in_prompt': supplied,
+            'tool_query_performed': queried, 'understanding_demonstrated': None,
+            'uninformed_false_redirection_by_availability': fr and not available,
+            'informed_false_redirection_by_availability': fr and available,
             'blocked_own_attempt': (not c['world']['available']) and r['decision'] in ('own_only', 'joint'),
             'required_check_omitted': c['policy'] == 'required' and not r['checked'], 'invalid': not r['result']['valid'],
             'reasoning_truncated': any(st.get('reasoning_truncated') for st in r['steps']),
@@ -59,7 +88,20 @@ def cells(main):
 
 
 def pairs(main, world, claim_a, claim_b, policy_a, policy_b, mode_a, mode_b, metric):
-    """Matched (domain, order) differences of a boolean metric between two cells: b minus a."""
+    """Matched (domain, order) differences of a boolean metric between two cells: b minus a.
+
+    The reported quantity is a **finite-panel summary**: how many of the panel's matched pairs moved
+    in each direction. It is not an inference to a population.
+
+    The former ``sign_test_one_sided_p`` key is removed (2026-09-09). It computed 0.5**k, which is
+    the probability of k independent fair coin flips landing alike — a null that this panel does not
+    satisfy. The pairs are 2 domains × 2 option orders (× modes) built from shared templates, so they
+    are related by construction, not exchangeable draws from a population; there is no sampling or
+    randomization model to license the calculation. Labeling the number "descriptive strength" did
+    not fix that, because a p-value carries its null whatever it is called. ``all_same_direction`` is
+    reported instead: it states the pattern without asserting a probability. Any future probability
+    statement needs a randomization model specified before the run.
+    """
     def index(claim, policy, mode):
         return {(r['case']['domain']['name'], r['case']['order']): outcome(r)[metric] for r in main if key(r['case']) == (world, claim, policy, mode)}
     ia, ib = index(claim_a, policy_a, mode_a), index(claim_b, policy_b, mode_b)
@@ -68,7 +110,8 @@ def pairs(main, world, claim_a, claim_b, policy_a, policy_b, mode_a, mode_b, met
     dec = sum(ia[k] and not ib[k] for k in common)
     k = inc + dec
     return {'pairs': len(common), 'increases': inc, 'decreases': dec, 'ties': len(common) - k, 'difference_pp': round(100 * (inc - dec) / len(common), 1) if common else None,
-            'sign_test_one_sided_p': (0.5 ** k if (inc == k or dec == k) and k else None)}
+            'all_same_direction': bool(k) and (inc == k or dec == k), 'non_tied_pairs': k,
+            'inference': 'finite-panel counts; pairs are template-related, so no p-value is reported'}
 
 
 def rule_direction(pr, min_dir, direction):
@@ -147,8 +190,18 @@ def analyze(model):
     main = [r for r in rs if r['phase'] not in ('controls', 'replay')]
     replays = [r for r in rs if r['phase'] == 'replay']
     sources = [r for r in rs if r['phase'] == 'core']
+    # `invalid` counts main-phase cases only. When a model fails the control gate no main case ever
+    # runs, so `invalid: 0` means "no cases were scored", not "a clean record" — a reading the V3
+    # cross-family summaries invited. `scope` makes the denominator explicit alongside it.
+    scope = {'phases_present': sorted({r['phase'] for r in rs}), 'main_cases_scored': len(main),
+             'invalid_denominator': 'main phases only (excludes controls and replays)',
+             'invalid_in_controls': sum(outcome(r)['invalid'] for r in controls),
+             'note': ('no main cases ran, so `invalid` is vacuous and must not be read as a clean '
+                      'control record; `invalid_in_controls` is the informative count here')
+             if not main else 'main cases present; `invalid` is a real count'}
     summary = {'model': model, 'family': spec.get('family'), 'gate': gate, 'calls': sum(len(r['steps']) for r in rs), 'reasoning_truncations': sum(outcome(r)['reasoning_truncated'] for r in rs),
-               'invalid': sum(outcome(r)['invalid'] for r in main), 'stages_complete': [s for s in 'ABD' if (D / model / f'stage_{s}_complete.json').exists()], **evaluate(model, main, replays, sources, spec)}
+               'invalid': sum(outcome(r)['invalid'] for r in main), 'scope': scope,
+               'stages_complete': [s for s in 'ABD' if (D / model / f'stage_{s}_complete.json').exists()], **evaluate(model, main, replays, sources, spec)}
     (D / model / 'summary.json').write_text(json.dumps(summary, indent=1) + '\n')
     reasoning_docs(model, rs)
     return summary
