@@ -126,7 +126,13 @@ Remaining frozen-list models, and why none is runnable here:
   not in the repository, so unavailable on this machine. `qwen3_think` is same-family in any
   case and would be a reasoning-arm comparison, not the cross-family replication.
 
-Downstream, the [identifiability protocol](../experiments/identifiability/protocol.md)
-requires a **gated** model for its organism rollouts. Neither excluded checkpoint qualifies,
-so that pipeline remains blocked on the same dependency and its status is unchanged:
-simulation-validated only.
+Downstream, the [identifiability protocol](../experiments/identifiability/protocol.md) is
+**not** blocked by these exclusions, contrary to an earlier draft of this note. Its run-order
+comment ("or any gated model; supplies the determinism gate") means *a model that has passed
+the determinism gate*, not a model behind an access restriction, and it names only that gate.
+`mistral7b` passed it, so identifiability's organism rollouts are runnable on this machine with
+`mistral7b` as the base checkpoint; see
+[the identifiability run record](identifiability_mistral7b_organisms.md). A control-gate
+exclusion does not transfer to identifiability, whose organisms are prompt-constructed and
+whose claim is about recovering *which construct is operative*, not about the checkpoint's
+baseline compliance.

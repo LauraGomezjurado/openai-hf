@@ -7,7 +7,8 @@ repository is public." This amendment supplies both. No design parameter changes
 model spec is left byte-unchanged to preserve its hash in `freeze.json`.
 
 This is the second cross-family attempt, after `mistral7b` was excluded at the control gate
-(14/20, [record](../../docs/peer_claims_v3_mistral_gate.md)).
+(14/20, [record](../../docs/peer_claims_v3_cross_family_gates.md) — the single-model note cited
+when this amendment was written was superseded by that combined record later the same day).
 
 ## Acquisition
 
