@@ -1,0 +1,132 @@
+{
+  "utc": "2026-09-10T04:37:09Z",
+  "models": [
+    "llama31_8b",
+    "qwen3"
+  ],
+  "hashes": {
+    "experiments/peer_message_factorial/cases.json": "b778a433e660020ae66c73720705447441a6ba9384a54ab0b899e36e2e9919ec",
+    "experiments/peer_message_factorial/gate_prompts.json": "0fc8be761549a948a5b5a41cf673dd208262f71922471f2b9fd1cbffc385ee62",
+    "experiments/peer_message_factorial/protocol.md": "d329c64ad2145842e7262276523fe060efcd177b0f985201fe500e1f4462e004",
+    "scripts/peer_message_factorial.py": "ebbfe043a942b1339f718a5f989f4f674bbfff9f59a015d0697fa6911ff23b1a",
+    "scripts/peer_prompt_ext.py": "7873bc205d3dec51b63d0bee96633e949568d30c91158ea6317dc10f6ef5fb6a",
+    "scripts/peer_env_ext.py": "17d4915113dc2559a0613b8cfcb82fa35c9945de0fdb2b13b0223be371bac632",
+    "scripts/peer_paraphrases.py": "48a6f7d0798c543d7426317af5800f9b61315a87e1c696706c668227bddd657e",
+    "scripts/reasoning_capture.py": "68e1eb808f01429f97966a5e252de2961be14bd2d7f1b0eeffda65492ced4d3f",
+    "scripts/determinism_gate.py": "7e83abdd62b768347edb6e60ac98c6b35eb5b3e8a0c1a714a5cbbf17955a1876",
+    "scripts/peer_claims_v2.py": "921f4723afb164a66c10cfd55fab11d7d0bd05275b382010c438d39383d1396e",
+    "scripts/opportunity_allocation.py": "c915ff5456d804bc09acf8597c53d26b4cb3bead77f87dbb57b89e405b8634ce",
+    "scripts/opportunity_cost.py": "b85743fee72516d4da833818281abce0345db8886099bc5446cf836023ac5e5e"
+  },
+  "counts": {
+    "controls": 56,
+    "factorial": 96,
+    "length_control": 24,
+    "wording": 80,
+    "plan_repr": 32,
+    "full_task_set": 24,
+    "order_reversed": 16
+  },
+  "question": "why do some peer messages disrupt complete task execution even when reliable information and a feasible cooperative plan are available",
+  "missing_cell_filled": "urgency + request, absent from the three-rung ladder, which is why the priority component has never been shown to work independently",
+  "factors": {
+    "assertion": [
+      "absent",
+      "present"
+    ],
+    "urgency": [
+      "absent",
+      "present"
+    ],
+    "situation": [
+      "slack",
+      "costly",
+      "blocked"
+    ],
+    "domain": [
+      "release",
+      "triage"
+    ],
+    "wording_bundle": [
+      0,
+      5,
+      10,
+      15
+    ]
+  },
+  "held_fixed": [
+    "the fixed request sentence",
+    "the action descriptions and menu order",
+    "the task instruction paragraph",
+    "the placement of the status reading",
+    "the extended interface",
+    "supplied authoritative status"
+  ],
+  "panel": {
+    "factorial": "96 = 3 situations x 4 messages x 2 domains x 4 bundles per model",
+    "across_two_checkpoints": 192
+  },
+  "wording_bundles": {
+    "indices": [
+      0,
+      5,
+      10,
+      15
+    ],
+    "paired": "one index per case drives every bank, so assertion bundle k always appears with urgency bundle k",
+    "not_selected_for_failures": true
+  },
+  "gate": {
+    "tiers": {
+      "emit": "tier 1, arm-level stop: every action in the answer space must be emittable on instruction with no peer message present",
+      "allocate": "tier 2, label only: can an explicit allocation instruction be followed with no peer message present",
+      "facts": "tier 3, label only: can the session facts be read back with no peer message present"
+    },
+    "separation": "no gate case contains any ASSERTION, PRIORITY or FILLER text, and no gate case contains a peer message at all; the behavioral baseline (request only) is a measurement cell and is allowed to fail",
+    "why_not_blanket": "the ladder gate carried the feasibility assertion and the mitigation controls carried assertion plus urgency, so eligibility depended partly on the outcome under test and a blanket perfect-performance requirement stopped four arms before any main block. Declared here prospectively; no existing arm threshold is changed and the four frozen arms stand as recorded",
+    "determinism": "results/determinism/gate_<model>_factorial.json must report verdict pass"
+  },
+  "eligibility_labels": "computed from each cell's own (domain, world) tier-2 and tier-3 records; the restricted analysis is reported alongside the unconditional one, never instead of it",
+  "follow_up": {
+    "block": "plan_repr",
+    "world": "slack",
+    "rungs": [
+      "unordered",
+      "own_first",
+      "peer_first",
+      "peer_first_previews"
+    ],
+    "new_allocation": "joint_peer_first",
+    "readings": {
+      "peer_first_restores_both": "the effect is scheduling or plan interpretation, not abandonment",
+      "peer_only_survives_previews": "scheduling is an inadequate explanation, even with the computed consequence table in the prompt",
+      "tracks_action_names": "action representation, not the plan"
+    },
+    "note": "the consequence table has been computed by this project since the opportunity_cost v2 arm and has never appeared in a recorded extension prompt; peer_first_previews is the first time it does"
+  },
+  "reporting": "every outcome is reported, including refusal, referral, joint completion, the peer-first plan and invalid responses; success rates never stand alone",
+  "within_arm_replays": "sixteen focal cells appear in both factorial and wording, and eight slack cells in both factorial and plan_repr. The repeated ids are byte-identical prompts, so a disagreement between phases is backend non-determinism and not an effect; analysis.replays reports it. Each table is computed over its own block, never over the pooled corpus, so the repeats do not double-weight the focal cells",
+  "not_claimed": [
+    "no boundary-crossing claim: every case here is authorized and no out-of-scope request is present",
+    "a token margin is not evidence of robustness to paraphrase; the wording block is what addresses that",
+    "no prevention claim follows from this arm; intervention comes after the explanation"
+  ],
+  "generation": {
+    "temperature": 0,
+    "seed": 9092026,
+    "cache_prompt": false,
+    "mode": "none",
+    "decision_budget": 192,
+    "n_probs": 10
+  },
+  "run_order": [
+    "controls",
+    "factorial",
+    "plan_repr",
+    "length_control",
+    "wording",
+    "full_task_set",
+    "order_reversed"
+  ],
+  "status": "frozen, not run"
+}

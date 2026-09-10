@@ -1,5 +1,21 @@
 # Studying the OpenAI–Hugging Face incident using public historical data
 
+**The two experiments the causal claim needs — frozen September 10, 2026, not run.** The four expanded
+arms all stopped at their control gates, and the pooled explanation they tested is refused by their own
+records (llama forgoes feasible own output in seven controls with no peer content present). What needs
+explaining is a checkpoint × message × context interaction, so: [a message factorial](experiments/peer_message_factorial/protocol.md)
+that supplies authoritative status and runs the cell the three-rung ladder never ran — urgency without a
+feasibility assertion — crossed with all three situations (192 episodes), plus a described peer-first
+joint plan and the consequence table actually placed in the prompt; and [an interface decomposition](experiments/peer_interface_decomposition/protocol.md)
+that reproduces the old and new anchor inputs through one uncached runner, then crosses the three
+additions separating them with supplied versus queried status (64 conditions). The cube's two corners
+are byte-identical to `peer_claims_v2.messages` and `peer_env_ext.messages_ext`, so it decomposes the
+real historical difference. Capability, allocation and information checks now run **without** competing
+peer content and only the capability tier gates; the behavioral baseline is a measurement cell that is
+allowed to fail. No old gate was lowered and no frozen module edited — all 18 freezes verify with zero
+drift. Run `python3 scripts/selftest_peer_prompt.py` and `python3 -m unittest discover -s tests -p 'test_*.py'`;
+neither arm has been run. See [the working plan](docs/working_plan.md).
+
 **Methodological upgrade — September 8, 2026 (later):** the replay non-determinism is diagnosed (`cache_prompt=true`) and fixed with a backend gate; reasoning capture, a preregistered cross-family V3 replication with staged explanation-before-intervention, and a formal ACH evidence matrix are in place. Read [the rigor memo](docs/forensic_rigor_upgrade.md) and [the ACH matrix](docs/ach_evidence_matrix.md). No new checkpoint inference has run; V3 is frozen for the machine that holds the models. Later the same day: a second blind ACH rating (kappa 0.645), the [phase-3 identifiability pipeline](experiments/identifiability/protocol.md) frozen and validated in simulation, and a whole-record [cache-exposure audit](results/determinism/cache_exposure.json) showing 1,337 of all 1,598 recorded generation calls (83.7%) were produced under a split KV-cache evaluation — a count that has not moved since, while the corpus has grown to 2,570 calls, putting the rate at 52.0%; the count is the figure to cite.
 
 **Current status — September 8, 2026:** the public-only peer-claim experiment and diagnostics are complete. Start with the [new interpretation](docs/peer_claims_interpretation.md), [full results](docs/peer_claims_results.md), [working plan](docs/working_plan.md) and [question map](docs/research_question_map.md). A peer assessment suppressed checking in one qualified public checkpoint; this is an incident-motivated behavioral analogue, not an explanation of original-HF motives. All local CPU runs are stopped. Earlier studies and failed controls remain preserved.

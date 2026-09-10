@@ -213,3 +213,55 @@ confident* decisions in the panel (median 13.98 nats, minimum 3.53 over fifteen)
 decision in that cell is its least confident (0.32).
 Both servers were stopped afterwards. The four `protocol.md` files still read "frozen, not run"
 because they are hashed and must not be edited; the results document is their amendment.
+
+## The two arms the causal claim requires — frozen 2026-09-10, not run
+
+The four arms above establish an empirical problem and no explanation of it. The pooled reading they
+were built to test is refused by their own records: llama forgoes feasible own output in seven
+controls with **no peer content present**, so "qwen prioritizes peers, llama is overcautious" is not
+available. What an explanation has to account for is a **checkpoint × message × context interaction**,
+and neither arm above can estimate one. Two more arms are frozen for that, and only that.
+
+[**Message factorial**](../experiments/peer_message_factorial/protocol.md) — 328 rollouts per model,
+656 across two checkpoints. Authoritative status is supplied in the first turn of every measurement
+cell, so "is mistaken about feasibility" is removed from the measurement rather than argued with
+afterwards. Its factorial block is the bounded panel: 3 situations × 4 messages × 2 tasks × 4 wording
+bundles × 2 checkpoints = **192 episodes**. The fourth message is the cell the three-rung ladder never
+ran — **urgency without an assertion** — which is why nothing in this repo yet shows the priority
+component working on its own. A `plan_repr` block offers a described peer-first joint plan
+(`joint_peer_first`) that completes both tasks in the same budget, against own-first joint and
+peer-only, with and without the executor's computed consequence table **in the prompt**; that table was
+computed but never placed in a recorded prompt before, which is why the earlier notification result is
+weak.
+
+[**Interface decomposition**](../experiments/peer_interface_decomposition/protocol.md) — 160 rollouts
+per model, 320 across two checkpoints. It first reproduces the old and the new anchor inputs through
+*this* runner (`cache_prompt=false`, one uncached primitive), then crosses the three additions that
+separate them — scope notice, expanded action menu, authorization information — with supplied versus
+queried status: **64 conditions over two checkpoints and two task structures, before any wording
+replication**. The two corners of that cube are byte-identical to `peer_claims_v2.messages` and
+`peer_env_ext.messages_ext`, asserted at freeze time, at run time and in 9,024 selftest comparisons, so
+the cross decomposes the actual historical difference rather than three plausible new strings. The
+wording replication and the matched task-priority reminder are declared as **conditional** follow-ups
+and no cases are built for them. V2 succeeding would not rule out recency; it would rule out recency
+being sufficient in every context.
+
+**The gates are restructured, and the old ones are untouched.** The four arms above embedded the
+manipulation in eligibility — their gate cases carried the assertion, or assertion plus urgency — so a
+model had to behave correctly while the peer message was present in order to reach the block that
+measures what it does when the peer message is present. Both new arms separate three tiers, with the
+peer turn **off** in all of them: capability (can the action be emitted on instruction), allocation
+(can an explicit allocation instruction be followed), information (can the supplied facts be read
+back). **Only the capability tier stops the arm**; tier-2 and tier-3 failures label the cell and the
+restricted analysis is reported next to the unconditional one, never instead of it. The behavioral
+baseline — bare request competing with own work — is a measurement cell that is allowed to fail,
+because that failure is the measurement. `tests/test_peer_ext.py::CapabilityGateSeparation` enforces
+this, including that a single capability failure still stops an arm. **No threshold in the four frozen
+arms was lowered, no frozen module was edited, and no configuration was searched for that passes an old
+gate**; all 18 freezes in `experiments/` verify with zero drift.
+
+New code is a wrapper: `scripts/peer_prompt_ext.py` makes the interface configurable by toggles over
+the frozen modules, adding zero generation primitives (the repo still has exactly two `rc.generate`
+call sites, both uncached). `scripts/selftest_peer_prompt.py` executes the byte-identity claims rather
+than stating them. **Neither arm has been run** — running one needs the machine that holds the models
+and a fresh authorization; both `freeze.json` files read `frozen, not run`.

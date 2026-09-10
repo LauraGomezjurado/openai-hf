@@ -1,0 +1,122 @@
+{
+  "utc": "2026-09-10T04:37:09Z",
+  "models": [
+    "llama31_8b",
+    "qwen3"
+  ],
+  "hashes": {
+    "experiments/peer_interface_decomposition/cases.json": "024bc2950cffbc2f2bff7eabbcc67f117c881764303810c2188d5d597b1e75fd",
+    "experiments/peer_interface_decomposition/gate_prompts.json": "57390ba044d8073e0303ae758256a3620d026a90a54e4814719f60112d702a39",
+    "experiments/peer_interface_decomposition/protocol.md": "46f31aeebdf41af11d7a2d28077d27b73eaa46234fc0f00f716bb0706ddad19d",
+    "scripts/peer_interface_decomposition.py": "492c2453ec7bd2bc349fb25563e8e81e552dc30fb9aecf19321543e03a1d8b7a",
+    "scripts/peer_prompt_ext.py": "7873bc205d3dec51b63d0bee96633e949568d30c91158ea6317dc10f6ef5fb6a",
+    "scripts/peer_env_ext.py": "17d4915113dc2559a0613b8cfcb82fa35c9945de0fdb2b13b0223be371bac632",
+    "scripts/peer_paraphrases.py": "48a6f7d0798c543d7426317af5800f9b61315a87e1c696706c668227bddd657e",
+    "scripts/reasoning_capture.py": "68e1eb808f01429f97966a5e252de2961be14bd2d7f1b0eeffda65492ced4d3f",
+    "scripts/determinism_gate.py": "7e83abdd62b768347edb6e60ac98c6b35eb5b3e8a0c1a714a5cbbf17955a1876",
+    "scripts/peer_claims_v2.py": "921f4723afb164a66c10cfd55fab11d7d0bd05275b382010c438d39383d1396e",
+    "scripts/opportunity_allocation.py": "c915ff5456d804bc09acf8597c53d26b4cb3bead77f87dbb57b89e405b8634ce",
+    "scripts/opportunity_cost.py": "b85743fee72516d4da833818281abce0345db8886099bc5446cf836023ac5e5e"
+  },
+  "counts": {
+    "controls": 72,
+    "anchors": 16,
+    "cross": 32,
+    "full_task_set": 32,
+    "order_reversed": 8
+  },
+  "question": "what changed between the older interface whose controls succeed and the extended interface whose corresponding controls fail",
+  "step_1": {
+    "block": "anchors",
+    "purpose": "reproduce the old and the new input through this runner before decomposing anything",
+    "identity": {
+      "old_anchor_matches_peer_claims_v2": true,
+      "new_anchor_matches_peer_env_ext": true,
+      "old_cases": 8,
+      "new_cases": 8,
+      "second_turn_prefix_shared": true,
+      "mismatches": [],
+      "scope": "system turn and first user turn; the second turn is source-neutral by design and identical across conditions rather than identical to the frozen label"
+    }
+  },
+  "step_2": {
+    "block": "cross",
+    "factors": {
+      "scope_notice": [
+        false,
+        true
+      ],
+      "action_menu": [
+        "frozen",
+        "extended"
+      ],
+      "authorization_info": [
+        false,
+        true
+      ],
+      "status_mode": [
+        "supplied_matched",
+        "queried_matched"
+      ]
+    },
+    "panel": "32 conditions per checkpoint = 2x2x2 interface x 2 status modes x 2 task structures; 64 across two checkpoints, before any wording replication",
+    "world": "costly",
+    "peer_message": "the bare fixed request, unchanged"
+  },
+  "held_fixed": [
+    "the peer message",
+    "the second user turn, byte-identical between the supplied and the queried condition",
+    "the final decision wording",
+    "the task instruction paragraph",
+    "own work feasible"
+  ],
+  "prospective_assignment": "supplied and queried membership is forced by a single-member enum, so it is assigned by condition. Selecting the cases where a model volunteered to check would condition on behaviour, which is the defect the information ladder was built to remove",
+  "what_each_factor_separates": {
+    "action_menu": "the effect of introducing refusal and referral alternatives",
+    "authorization_info": "the effect of receiving a permission statement",
+    "scope_notice": "the effect of irrelevant restriction language",
+    "status_mode": "the same three, in a queried context rather than a supplied one"
+  },
+  "recency": "V2 succeeding does not rule out a recency account; it rules out recency being sufficient in every context. No cell here is read as ruling recency out",
+  "statistical_reading": "one deterministic episode per condition. A single cell is one bit and is never reported as an effect; the predeclared reading is the factor marginals (16 episodes per level per checkpoint) and the anchors. Counts, not inference",
+  "gate": {
+    "tiers": {
+      "emit": "tier 1, arm-level stop: every action on the offered menu must be emittable on instruction with no peer message present. Run per menu, because the two menus are different answer spaces",
+      "allocate": "tier 2, label only: can an explicit allocation instruction be followed",
+      "facts": "tier 3, label only: can the session facts be read back -- run in both status modes, since one of them delivers the facts in a second turn"
+    },
+    "separation": "no gate case contains a peer message at all; the behavioral baseline is the bare request in the measurement blocks and is allowed to fail",
+    "labels_keyed_by": "domain, world, interface corner and status mode",
+    "why_not_blanket": "the four expanded arms stopped at blanket control gates that also embedded the manipulation in eligibility. Declared prospectively; no existing arm threshold is changed and those arms stand as recorded",
+    "determinism": "results/determinism/gate_<model>_interface.json must report verdict pass"
+  },
+  "conditional_followups": {
+    "trigger": "an interaction between a single interface factor and the status mode",
+    "then": [
+      "repeat that one contrast with new wording",
+      "add a matched task-priority reminder to the same contrast"
+    ],
+    "not_now": "no cases are built for either. Expanding every combination in advance is the move this arm exists to avoid, and a follow-up chosen after seeing the interaction is reported as exploratory"
+  },
+  "reporting": "every outcome is reported, including refusal, referral, joint completion and invalid responses",
+  "not_claimed": [
+    "no boundary-crossing claim: every case is authorized and the scope notice is irrelevant to every case by construction, which is exactly why it is a candidate explanation",
+    "no prevention claim; intervention follows the explanation"
+  ],
+  "generation": {
+    "temperature": 0,
+    "seed": 9092026,
+    "cache_prompt": false,
+    "mode": "none",
+    "decision_budget": 192,
+    "n_probs": 10
+  },
+  "run_order": [
+    "controls",
+    "anchors",
+    "cross",
+    "full_task_set",
+    "order_reversed"
+  ],
+  "status": "frozen, not run"
+}

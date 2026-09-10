@@ -1,9 +1,14 @@
-"""Tests for the extended allocation environment and the four new peer arms.
+"""Tests for the extended allocation environment and the six peer arms.
 
-No model, no server, no network. These enforce the contracts the four protocols claim, so that a
+No model, no server, no network. These enforce the contracts the six protocols claim, so that a
 later null cannot be an instrumentation artifact nobody looked for. The stimulus-level properties
-duplicate ``scripts/selftest_peer_ext.py`` deliberately: the selftest writes a dated record for the
-run, and these fail the build.
+duplicate ``scripts/selftest_peer_ext.py`` and ``scripts/selftest_peer_prompt.py`` deliberately: the
+selftests write a dated record for the run, and these fail the build.
+
+The two causal-claim arms (``peer_message_factorial``, ``peer_interface_decomposition``) add one
+contract the first four did not have to satisfy: their capability gates must not contain the
+manipulation they measure. ``CapabilityGateSeparation`` is that contract. The first four arms are held
+to their recorded behaviour, thresholds included; nothing here relaxes one of them.
 """
 import ast
 import inspect
@@ -21,13 +26,21 @@ import opportunity_cost as w  # noqa: E402
 import peer_authority as pa  # noqa: E402
 import peer_env_ext as x  # noqa: E402
 import peer_information_ladder as pl  # noqa: E402
+import peer_interface_decomposition as pi  # noqa: E402
 import peer_message_decomposition as pd  # noqa: E402
+import peer_message_factorial as pf  # noqa: E402
 import peer_mitigations as pm  # noqa: E402
 import peer_paraphrases as pb  # noqa: E402
+import peer_prompt_ext as q  # noqa: E402
 import selftest_peer_ext as st  # noqa: E402
+import selftest_peer_prompt as sq  # noqa: E402
 
 ARMS = {'peer_information_ladder': pl, 'peer_message_decomposition': pd,
-        'peer_authority': pa, 'peer_mitigations': pm}
+        'peer_authority': pa, 'peer_mitigations': pm,
+        'peer_message_factorial': pf, 'peer_interface_decomposition': pi}
+
+# The arms whose capability gate must be free of the manipulation it gates on.
+SEPARATED = {'peer_message_factorial': pf, 'peer_interface_decomposition': pi}
 
 
 class ParaphraseBanks(unittest.TestCase):
@@ -187,9 +200,18 @@ class Design(unittest.TestCase):
         """Paraphrase is the replicate unit; a block that samples a few wordings cannot support a
         claim about a condition rather than about a sentence."""
         for name in ('peer_information_ladder', 'peer_message_decomposition', 'peer_authority',
-                     'peer_mitigations'):
+                     'peer_mitigations', 'peer_message_factorial'):
             cs = ARMS[name].build_cases()['wording']
             self.assertEqual({c['paraphrase'] for c in cs}, set(range(pb.N)), name)
+
+    def test_the_interface_arm_declares_why_it_has_no_wording_block(self):
+        """Its stimulus is one bare request, so there is no manipulated wording to replicate. The
+        wording replication is the *conditional* follow-up, and the protocol has to say so -- an arm
+        with no wording block and no statement about it is indistinguishable from an oversight."""
+        self.assertNotIn('wording', pi.build_cases())
+        text = (ROOT / 'experiments/peer_interface_decomposition/protocol.md').read_text()
+        self.assertIn('No wording block', text)
+        self.assertIn('conditional', text)
 
     def test_paraphrase_is_crossed_with_the_focal_factor_not_nested(self):
         """Every level of the main factor must appear with every block wording, or the factor is
@@ -262,6 +284,162 @@ class JointCriterion(unittest.TestCase):
         self.assertEqual(set(s['none']['by_situation']), set(x.SITUATIONS))
 
 
+class CapabilityGateSeparation(unittest.TestCase):
+    """The contract the external assessment required, and the one the first four arms fail by design.
+
+    Those arms embedded the manipulation in eligibility: a model had to behave correctly *while the
+    peer message was present* to reach the main block, so the gate decided the outcome it existed to
+    measure. Their records stand as they are. The two causal-claim arms must instead separate
+    capability from behaviour, and "must" here means a test, not a paragraph.
+    """
+
+    def test_no_gate_case_contains_the_manipulation(self):
+        rep = sq.t6_capability_separation()
+        self.assertTrue(rep['ok'], json.dumps(rep['violations'], indent=2))
+        self.assertGreater(rep['gate_cases_checked'], 0)
+
+    def test_the_peer_turn_is_off_in_every_gate_case(self):
+        for name, mod in SEPARATED.items():
+            for c in mod.build_cases()['controls']:
+                self.assertFalse(q.interface(c)['peer_turn'], f'{name}/{c["id"]}')
+
+    def test_every_gate_case_carries_an_explicit_instruction(self):
+        """A capability check that does not say what to do measures the same thing as the treatment."""
+        for name, mod in SEPARATED.items():
+            for c in mod.build_cases()['controls']:
+                self.assertTrue(q.capability_instruction(c), f'{name}/{c["id"]}')
+                self.assertIn(q.capability_tier(c), ('emit', 'allocate', 'facts'), name)
+
+    # The action each situation's explicit allocation instruction asks for.
+    ALLOC_FOR = {'slack': 'joint', 'costly': 'own_only', 'blocked': 'peer_only'}
+
+    @classmethod
+    def control_rows(cls, mod, failing=()):
+        """Synthetic control rollouts whose verdicts are computed by the arm's real criteria.
+
+        Not by writing a ``capability_ok`` field: a test that sets the answer it then reads back
+        would pass against a gate that ignored the tiers entirely.
+        """
+        rows = []
+        for c in mod.build_cases()['controls']:
+            tier, bad, r = q.capability_tier(c), q.capability_tier(c) in failing, {'case': c}
+            if tier == 'emit':
+                want = c['control'][len('emit_'):]
+                r['decision'] = want if not bad else ('own_only' if want != 'own_only'
+                                                      else 'no_work')
+            elif tier == 'allocate':
+                r['decision'] = cls.ALLOC_FOR[c['world_name']]
+                r['result'] = q.evaluate_plus(c, 'no_work' if bad else r['decision'])
+                r['checked'] = True
+            else:
+                r['decoded'] = {} if bad else q.facts_oracle(c)
+            rows.append(r)
+        return rows
+
+    def test_only_the_capability_tier_sets_eligibility(self):
+        """Tier 2 and tier 3 failures are per-cell labels. If they gated, a model that could emit
+        every action but misread one status object would be stopped before the measurement -- which is
+        the failure mode the assessment named: another blanket perfect-performance requirement
+        preventing the diagnostic experiment."""
+        for name, mod in SEPARATED.items():
+            good = mod.gate(self.control_rows(mod))
+            self.assertTrue(good['eligible'], name)
+            self.assertEqual(good['uninterpretable_cells'], [], name)
+            # Fail every non-capability control: eligibility must survive, and label the cells.
+            v = mod.gate(self.control_rows(mod, failing=('allocate', 'facts')))
+            self.assertTrue(v['eligible'], f'{name}: a tier-2/3 failure stopped the arm')
+            self.assertTrue(v['uninterpretable_cells'], name)
+            self.assertFalse(any(all(lab.values()) for lab in v['labels'].values()), name)
+            # Fail the capability tier: eligibility must not survive.
+            self.assertFalse(mod.gate(self.control_rows(mod, failing=('emit',)))['eligible'],
+                             f'{name}: a capability failure did not stop the arm')
+            # And a single capability failure is enough to stop it.
+            one = self.control_rows(mod)
+            for r in one:
+                if q.capability_tier(r['case']) == 'emit':
+                    r['decision'] = 'no_work' if r['decision'] != 'no_work' else 'own_only'
+                    break
+            self.assertFalse(mod.gate(one)['eligible'], f'{name}: one capability failure passed')
+
+    def test_the_behavioral_baseline_is_a_measurement_cell(self):
+        """The bare request has to be somewhere a rate is computed. It may fail, and that failure is
+        the measurement -- so it cannot live in the block that decides whether to measure."""
+        for name, mod in SEPARATED.items():
+            cases = mod.build_cases()
+            self.assertFalse(any(pb.REQUEST in mod.peer_message(c) for c in cases['controls']), name)
+            outside = [c for phase, cs in cases.items() if phase != 'controls' for c in cs
+                       if not c.get('control') and pb.REQUEST in mod.peer_message(c)]
+            self.assertTrue(outside, f'{name}: the bare request is never measured')
+
+    def test_both_anchors_are_byte_identical_to_the_frozen_inputs(self):
+        """The interface cross is a decomposition of the real old-to-new difference only if its
+        corners *are* the old and new prompts."""
+        rep = pi.anchor_identity_report()
+        self.assertTrue(rep['old_anchor_matches_peer_claims_v2'], json.dumps(rep['mismatches'][:5]))
+        self.assertTrue(rep['new_anchor_matches_peer_env_ext'], json.dumps(rep['mismatches'][:5]))
+        self.assertTrue(rep['second_turn_prefix_shared'])
+        for probe in (sq.t1_old_anchor(), sq.t2_new_anchor()):
+            self.assertTrue(probe['ok'], json.dumps(probe['violations'], indent=2))
+            self.assertGreater(probe['comparisons'], 0)
+
+    def test_the_status_contrast_is_matched_and_assigned_by_condition(self):
+        for rep in (sq.t3_matched_second_turn(), sq.t8_forcing_is_by_condition()):
+            self.assertTrue(rep['ok'], json.dumps(rep, indent=2))
+
+    def test_the_wrapper_does_not_change_the_executor(self):
+        for rep in (sq.t4_one_executor(), sq.t5_peer_first_plan()):
+            self.assertTrue(rep['ok'], json.dumps(rep['violations'], indent=2))
+
+    def test_the_cell_the_ladder_never_ran_is_present(self):
+        rep = sq.t7_missing_cell()
+        self.assertTrue(rep['ok'], json.dumps(rep, indent=2))
+        self.assertTrue(rep['urgency_only_present'])
+        ladder = {pl.peer_message(pl.case(pl.domain('release'), 'costly', r, 'none', 0))
+                  for r in pl.RUNGS}
+        urgency_only = pf.peer_message(pf.case(pf.domain('release'), 'costly',
+                                               'urgency_request', 0))
+        self.assertNotIn(urgency_only, ladder)
+
+    def test_the_consequence_table_is_in_a_prompt_or_in_no_cell(self):
+        """The earlier arm computed the numerical consequence table and never placed it in a recorded
+        prompt, so its notification result rests on content the model never saw. Here the table is a
+        factor: the cells that claim it must contain it, and the others must not."""
+        shown, hidden = 0, 0
+        for c in pf.build_cases()['plan_repr']:
+            user = q.messages_plus(c, pf.peer_message(c))[-1]['content']
+            if q.interface(c)['plan_presentation'] == 'peer_first_previews':
+                self.assertIn(q.PREVIEW_PHRASE, user, c['id'])
+                shown += 1
+            else:
+                self.assertNotIn(q.PREVIEW_PHRASE, user, c['id'])
+                hidden += 1
+        self.assertTrue(shown and hidden)
+
+    def test_the_recorded_gate_prompts_are_what_the_arm_would_send(self):
+        """``gate_prompts.json`` is the inspectable record of the determinism gate's inputs. If it
+        were rendered by a different path than ``execute``, the gate would certify a prompt nobody
+        runs. Recomputed from the frozen ``cases.json``, so it also pins that the artifact came from
+        the frozen panel."""
+        for name, mod in SEPARATED.items():
+            cases = json.loads((ROOT / 'experiments' / name / 'cases.json').read_text())
+            on_disk = json.loads((ROOT / 'experiments' / name / 'gate_prompts.json').read_text())
+            self.assertEqual(mod.gate_prompts(cases), on_disk, name)
+            shapes = set()
+            for pay in on_disk:
+                enums = [tuple(v['enum']) for v in pay['json_schema']['properties'].values()
+                         if 'enum' in v]
+                shapes.add(tuple(enums))
+                if pay['json_schema'] == q.FACTS_SCHEMA:
+                    self.assertNotIn('Peer message', pay['messages'][-1]['content'], name)
+            self.assertGreater(len(shapes), 1, f'{name}: the gate covers one answer space only')
+
+    def test_the_peer_first_plan_is_offered_only_where_both_packages_fit(self):
+        for phase, cs in pf.build_cases().items():
+            for c in cs:
+                if q.NEW_PLAN in q.allocations(c):
+                    self.assertEqual(x.situation(c), 'both_fit', f'{phase}/{c["id"]}')
+
+
 class Provenance(unittest.TestCase):
     def test_no_arm_edits_a_module_hashed_by_an_existing_freeze(self):
         """``freeze.json`` hashes file bytes only, so editing a hashed module from a new caller
@@ -291,7 +469,7 @@ class Provenance(unittest.TestCase):
         return [n for n in ast.walk(tree) if isinstance(n, ast.Call)]
 
     def test_no_arm_enables_the_prompt_cache_at_a_call_site(self):
-        for name in list(ARMS) + ['peer_env_ext']:
+        for name in list(ARMS) + ['peer_env_ext', 'peer_prompt_ext']:
             for call in self.calls(name):
                 for kw in call.keywords:
                     if kw.arg == 'cache_prompt':
@@ -300,7 +478,7 @@ class Provenance(unittest.TestCase):
 
     def test_no_arm_records_a_cached_generation_in_its_freeze(self):
         """A freeze that claims ``cache_prompt: True`` would preregister the defect."""
-        for name in list(ARMS) + ['peer_env_ext']:
+        for name in list(ARMS) + ['peer_env_ext', 'peer_prompt_ext']:
             tree = ast.parse((ROOT / 'scripts' / f'{name}.py').read_text())
             for node in ast.walk(tree):
                 if not isinstance(node, ast.Dict):
@@ -310,7 +488,7 @@ class Provenance(unittest.TestCase):
                         self.assertIs(getattr(v, 'value', None), False, name)
 
     def test_no_arm_calls_a_frozen_cached_generator(self):
-        for name in list(ARMS) + ['peer_env_ext']:
+        for name in list(ARMS) + ['peer_env_ext', 'peer_prompt_ext']:
             for call in self.calls(name):
                 f = call.func
                 if isinstance(f, ast.Attribute) and isinstance(f.value, ast.Name):
@@ -323,7 +501,7 @@ class Provenance(unittest.TestCase):
         and records ``n_probs``. ``peer_authority``'s manipulation-check probe is the one arm-level
         call, and it is also mode ``'none'``."""
         found = 0
-        for name in list(ARMS) + ['peer_env_ext']:
+        for name in list(ARMS) + ['peer_env_ext', 'peer_prompt_ext']:
             for call in self.calls(name):
                 f = call.func
                 if not (isinstance(f, ast.Attribute) and f.attr == 'generate'

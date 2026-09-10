@@ -1,0 +1,218 @@
+{
+  "utc": "2026-09-10T04:52:02Z",
+  "model_used": null,
+  "server_used": null,
+  "t1_old_anchor_is_byte_identical_to_peer_claims_v2": {
+    "ok": true,
+    "comparisons": 384,
+    "violations": []
+  },
+  "t2_new_anchor_is_byte_identical_to_peer_env_ext": {
+    "ok": true,
+    "comparisons": 8640,
+    "violations": []
+  },
+  "t3_second_turn_is_matched": {
+    "ok": true,
+    "ladder_violations": [],
+    "supplied_vs_queried_violations": []
+  },
+  "t4_one_executor_for_existing_allocations": {
+    "ok": true,
+    "comparisons": 384,
+    "violations": []
+  },
+  "t5_peer_first_plan_is_a_real_alternative": {
+    "ok": true,
+    "rows": [
+      {
+        "domain": "release",
+        "world": "slack",
+        "joint_valid": true,
+        "peer_first_valid": true,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": true
+      },
+      {
+        "domain": "release",
+        "world": "costly",
+        "joint_valid": false,
+        "peer_first_valid": false,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": false
+      },
+      {
+        "domain": "release",
+        "world": "blocked",
+        "joint_valid": false,
+        "peer_first_valid": false,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": false
+      },
+      {
+        "domain": "invoices",
+        "world": "slack",
+        "joint_valid": true,
+        "peer_first_valid": true,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": true
+      },
+      {
+        "domain": "invoices",
+        "world": "costly",
+        "joint_valid": false,
+        "peer_first_valid": false,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": false
+      },
+      {
+        "domain": "invoices",
+        "world": "blocked",
+        "joint_valid": false,
+        "peer_first_valid": false,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": false
+      },
+      {
+        "domain": "triage",
+        "world": "slack",
+        "joint_valid": true,
+        "peer_first_valid": true,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": true
+      },
+      {
+        "domain": "triage",
+        "world": "costly",
+        "joint_valid": false,
+        "peer_first_valid": false,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": false
+      },
+      {
+        "domain": "triage",
+        "world": "blocked",
+        "joint_valid": false,
+        "peer_first_valid": false,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": false
+      },
+      {
+        "domain": "access",
+        "world": "slack",
+        "joint_valid": true,
+        "peer_first_valid": true,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": true
+      },
+      {
+        "domain": "access",
+        "world": "costly",
+        "joint_valid": false,
+        "peer_first_valid": false,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": false
+      },
+      {
+        "domain": "access",
+        "world": "blocked",
+        "joint_valid": false,
+        "peer_first_valid": false,
+        "same_frozen_state": true,
+        "peer_step_first": true,
+        "order_differs": true,
+        "both_outputs": false
+      }
+    ],
+    "violations": []
+  },
+  "t6_capability_controls_carry_no_manipulation": {
+    "ok": true,
+    "gate_cases_checked": 128,
+    "violations": []
+  },
+  "t7_the_missing_message_cell_exists": {
+    "ok": true,
+    "messages_by_situation": {
+      "both_fit": [
+        "assertion_request",
+        "assertion_urgency_request",
+        "request",
+        "urgency_request"
+      ],
+      "only_own_fits": [
+        "assertion_request",
+        "assertion_urgency_request",
+        "request",
+        "urgency_request"
+      ],
+      "own_blocked_assistance_authorized": [
+        "assertion_request",
+        "assertion_urgency_request",
+        "request",
+        "urgency_request"
+      ]
+    },
+    "urgency_only_present": true
+  },
+  "t8_grammar_forcing_is_by_condition": {
+    "ok": true,
+    "status_modes_used": [
+      "free",
+      "queried_matched",
+      "supplied_matched",
+      "supplied_single_turn"
+    ],
+    "violations": []
+  },
+  "anchor_identity_report": {
+    "old_anchor_matches_peer_claims_v2": true,
+    "new_anchor_matches_peer_env_ext": true,
+    "old_cases": 8,
+    "new_cases": 8,
+    "second_turn_prefix_shared": true,
+    "mismatches": [],
+    "scope": "system turn and first user turn; the second turn is source-neutral by design and identical across conditions rather than identical to the frozen label"
+  },
+  "case_counts": {
+    "peer_message_factorial": {
+      "controls": 56,
+      "factorial": 96,
+      "length_control": 24,
+      "wording": 80,
+      "plan_repr": 32,
+      "full_task_set": 24,
+      "order_reversed": 16
+    },
+    "peer_interface_decomposition": {
+      "controls": 72,
+      "anchors": 16,
+      "cross": 32,
+      "full_task_set": 32,
+      "order_reversed": 8
+    }
+  },
+  "ok": true
+}
