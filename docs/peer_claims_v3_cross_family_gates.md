@@ -246,12 +246,16 @@ Read against the [cache-exposure audit](../results/determinism/cache_exposure.js
 **1,337 recorded generation calls were produced under a split KV-cache evaluation** — point 1 is
 the load-bearing one.
 
-> **Recomputed 2026-09-09.** An earlier version of this sentence gave "1,337 of 1,598 … (83.7%)".
-> The **numerator is unchanged at exactly 1,337**; the denominator has grown to 2,301 calls because
-> every arm run since the fix is uncached (identifiability 438, the V2 recovery 94, the three V3
-> gate runs 147, the reasoning arm 24), so the *rate* is now **58.1%**. Both percentages were
-> correct for their corpus snapshot, which is exactly why the percentage is the wrong thing to
-> cite: it falls whenever clean work is added, without a single exposed call being cleaned. **Quote
+> **Recomputed 2026-09-09, and again later the same day.** An earlier version of this sentence gave
+> "1,337 of 1,598 … (83.7%)", and its first correction gave 58.1% of 2,301. The **numerator is
+> unchanged at exactly 1,337** across all three; only the denominator moved, to **2,570**, because
+> every arm run since the fix is uncached — most recently the four new peer arms and the
+> `llama31_8b` direct gate, whose nine rollout files add **269 calls at 0 split calls**
+> (`peer_authority` 65, `peer_mitigations` 64, `peer_information_ladder` 56,
+> `peer_message_decomposition` 56, `peer_claims_v3_direct_gate`/`llama31_8b` 28). So the *rate* is
+> now **52.0%**. All three percentages were correct for their corpus snapshot, which is exactly why
+> the percentage is the wrong thing to cite: it falls whenever clean work is added, without a single
+> exposed call being cleaned — and it has now fallen twice in one day on that basis alone. **Quote
 > the absolute count and name the arms**, not the rate. The regime that demonstrably flips greedy
 tokens is the regime that produced the large majority of the project's existing records, and
 points 2 and 3 remove the two arguments that might have limited the concern. This does not

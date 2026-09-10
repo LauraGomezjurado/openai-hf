@@ -82,8 +82,9 @@ near-identical announcement —
 
 **Not a cache artifact.** `decision_settings.cache_prompt` is `false` throughout, the
 configuration the [gate record](peer_claims_v3_cross_family_gates.md) established as
-bit-identical. This run is not exposed to the split-cache problem affecting 83.7% of the
-project's earlier calls.
+bit-identical. This run is not exposed to the split-cache problem affecting 1,337 of the
+project's earlier calls (83.7% of the corpus when this was written, 52.0% of the 2,570 recorded
+now — the exposed count has never moved, only the denominator).
 
 **Not an inflated count.** An earlier pass of this analysis reported "36 of 66 unchecked
 rollouts narrate a check anyway." That figure is not usable: 54 of those 66 are `automatic`

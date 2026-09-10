@@ -2,9 +2,10 @@
 
 Executed 2026-09-09. The V2 headline result was produced with `cache_prompt=True`, the regime
 later shown to flip greedy tokens; **1,337 of the project's recorded generation calls ran under it**
-(58.1% of the 2,301 now recorded — an earlier version of this line said 83.7%, which was the rate
-against a 1,598-call corpus; the exposed count is unchanged and only the denominator grew as
-uncached arms were added, so the count is the figure to cite, not the rate). This run repeats the
+(52.0% of the 2,570 now recorded — earlier versions of this line said 83.7% against a 1,598-call
+corpus and then 58.1% against 2,301; the exposed count has never moved through either revision and
+only the denominator grew as uncached arms were added, so the count is the figure to cite, not the
+rate). This run repeats the
 frozen V2 experiment with that one flag corrected. **The contrast
 reproduces, and 73 of 74 decisions are unchanged.** One decision differs, in the no-claim
 baseline cell, which reduces the headline matched contrast from 75 to 50 percentage points.

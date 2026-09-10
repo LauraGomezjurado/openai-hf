@@ -47,7 +47,7 @@ Robust across the first rating, the blind rating and the consensus: **H1 is last
 
 `scripts/analyze_cache_exposure.py` extends the determinism audit from the 76 replay pairs to **every recorded decision in the project**: 825 episodes, 1,598 generation calls. A call is classified `split` when its saved response reports `timings.cache_n > 0`, meaning a prefix was served from the resident KV cache and only a suffix was freshly evaluated — the condition under which the greedy choice can flip. Full table in `results/determinism/cache_exposure.json`.
 
-**83.7% of all recorded calls were split, and exposure is all-or-nothing per study** because `cache_prompt` was set per study, not per case:
+**1,337 recorded calls were split, and exposure is all-or-nothing per study** because `cache_prompt` was set per study, not per case (that count was 83.7% of the 1,598-call corpus this row was written against and is 52.0% of the 2,570 recorded now; the count is the figure to cite, because the rate falls whenever clean uncached work is added without a single exposed call being cleaned):
 
 | Exposure | Rows |
 |---|---|

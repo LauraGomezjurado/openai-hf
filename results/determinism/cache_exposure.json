@@ -47,13 +47,13 @@
  "method": "A call is split when the saved response reports timings.cache_n > 0, meaning a prefix was served from the resident KV cache and only a suffix was freshly evaluated.",
  "caveat": "Exposure is an upper bound on how many decisions could have been perturbed, not an estimate of how many were. No study recorded n_probs, so no decision margins exist in the record.",
  "overall": {
-  "episodes": 1113,
-  "calls": 2301,
+  "episodes": 1309,
+  "calls": 2570,
   "split_calls": 1337,
-  "split_call_rate": 0.581,
-  "first_call_split_rate": 0.598,
-  "final_call_split_rate": 0.602,
-  "any_call_split_rate": 0.602,
+  "split_call_rate": 0.52,
+  "first_call_split_rate": 0.509,
+  "final_call_split_rate": 0.512,
+  "any_call_split_rate": 0.512,
   "fresh_suffix_tokens_min_median_max": [
    1,
    126,
@@ -233,6 +233,26 @@
     437
    ]
   },
+  "results/peer_authority/llama31_8b/rollouts.jsonl": {
+   "episodes": 24,
+   "calls": 33,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/peer_authority/qwen3/rollouts.jsonl": {
+   "episodes": 24,
+   "calls": 32,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
   "results/peer_claim_order/qwen3/rollouts.jsonl": {
    "episodes": 16,
    "calls": 16,
@@ -371,9 +391,79 @@
    "any_call_split_rate": 0.0,
    "fresh_suffix_tokens_min_median_max": null
   },
+  "results/peer_claims_v3_direct_gate/llama31_8b/rollouts.jsonl": {
+   "episodes": 20,
+   "calls": 28,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
   "results/peer_claims_v3_direct_gate/mistral7b/rollouts.jsonl": {
    "episodes": 20,
    "calls": 35,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/peer_information_ladder/llama31_8b/rollouts.jsonl": {
+   "episodes": 20,
+   "calls": 28,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/peer_information_ladder/qwen3/rollouts.jsonl": {
+   "episodes": 20,
+   "calls": 28,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/peer_message_decomposition/llama31_8b/rollouts.jsonl": {
+   "episodes": 20,
+   "calls": 28,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/peer_message_decomposition/qwen3/rollouts.jsonl": {
+   "episodes": 20,
+   "calls": 28,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/peer_mitigations/llama31_8b/rollouts.jsonl": {
+   "episodes": 24,
+   "calls": 32,
+   "split_calls": 0,
+   "split_call_rate": 0.0,
+   "first_call_split_rate": 0.0,
+   "final_call_split_rate": 0.0,
+   "any_call_split_rate": 0.0,
+   "fresh_suffix_tokens_min_median_max": null
+  },
+  "results/peer_mitigations/qwen3/rollouts.jsonl": {
+   "episodes": 24,
+   "calls": 32,
    "split_calls": 0,
    "split_call_rate": 0.0,
    "first_call_split_rate": 0.0,

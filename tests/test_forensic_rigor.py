@@ -262,10 +262,11 @@ class CacheExposure(unittest.TestCase):
         for row in ['X01', 'X04', 'X06', 'X12']:
             self.assertEqual(d['ach_rows'][row]['any_call_split_rate'], 1.0, row)
         # Pin the ABSOLUTE exposed count, not the rate. The rate is denominator-dependent: it fell
-        # from 0.837 to 0.581 purely because 946 uncached calls were added by arms run after the fix,
-        # with the numerator unchanged. Asserting a rate floor would fail on every future clean run,
-        # which is backwards. This assertion instead catches the real regression -- a NEW arm run
-        # with cache_prompt=true, which would raise the count above 1337.
+        # from 0.837 to 0.581 and then to 0.520 purely because 972 uncached calls were added by
+        # arms run after the fix, with the numerator unchanged at 1337 throughout. Asserting a rate
+        # floor would fail on every future clean run, which is backwards -- and it would have failed
+        # twice already on 2026-09-09 alone. This assertion instead catches the real regression -- a
+        # NEW arm run with cache_prompt=true, which would raise the count above 1337.
         self.assertEqual(d['overall']['split_calls'], 1337)
         # The retracted margin argument must not reappear: 0.22 nats came from a random-weight
         # self-test, while real checkpoints reach 5.05 nats and flip at margins up to 2.59.
