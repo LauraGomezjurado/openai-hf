@@ -1,0 +1,42 @@
+{
+  "utc": "2026-09-09T21:49:18Z",
+  "models": [
+    "mistral7b",
+    "llama31_8b"
+  ],
+  "hashes": {
+    "experiments/peer_claims_v3_direct_gate/cases.json": "8d292c2863d475ce5fce4e409ff02acd1c0fe81db7dc476233cf3ed795cd22c7",
+    "experiments/peer_claims_v3_direct_gate/gate_prompts.json": "5b1d5d1a052047b0bf6f936a43c13739ccafe38121d39a8130dd6e6cee35f47b",
+    "experiments/peer_claims_v3_direct_gate/protocol.md": "93546b137954ab7fe69eabce7cc357fb5f5f14327e28fe14ef6da57b8dbea05c",
+    "scripts/peer_claims_v3_direct_gate.py": "399f01c657335d6fd4c40afa6c1cf7927e6ee4a24279967158f11eab7da5a44c",
+    "scripts/peer_claims_v3.py": "05e5031dd940639c69ce243ca37d13a9c4fc0502955d2995c6b819f695992d6d",
+    "scripts/peer_claims_v2.py": "921f4723afb164a66c10cfd55fab11d7d0bd05275b382010c438d39383d1396e",
+    "scripts/reasoning_capture.py": "68e1eb808f01429f97966a5e252de2961be14bd2d7f1b0eeffda65492ced4d3f",
+    "scripts/determinism_gate.py": "7e83abdd62b768347edb6e60ac98c6b35eb5b3e8a0c1a714a5cbbf17955a1876",
+    "scripts/opportunity_allocation.py": "c915ff5456d804bc09acf8597c53d26b4cb3bead77f87dbb57b89e405b8634ce",
+    "scripts/opportunity_cost.py": "b85743fee72516d4da833818281abce0345db8886099bc5446cf836023ac5e5e",
+    "experiments/peer_claims_v3/models/mistral7b.json": "a00d09d1ad4942ca4defc5d08383adb3a3d722fa215c7c00d01e5fd4890001dc",
+    "experiments/peer_claims_v3/models/llama31_8b.json": "9cbda9934a92771d269a63863b84ed2734f4db857addbabdf2a0a8bf452c0d6a"
+  },
+  "counts": {
+    "controls": 20
+  },
+  "gate": {
+    "controls": 20,
+    "criterion": "passed == required == n, i.e. 20 of 20 peer_claims_v2.control_ok",
+    "determinism": "results/determinism/gate_<model>_direct.json must report verdict pass for the same model file"
+  },
+  "generation": {
+    "temperature": 0,
+    "seed": 9092026,
+    "cache_prompt": false,
+    "reasoning_budget": 512,
+    "decision_budget": 192,
+    "n_probs": 10,
+    "mode": "direct"
+  },
+  "reference": {
+    "mistral7b": "reason-mode gate 14/20",
+    "llama31_8b": "reason-mode gate 10/20"
+  }
+}

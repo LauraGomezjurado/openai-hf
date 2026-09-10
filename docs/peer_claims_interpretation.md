@@ -8,13 +8,23 @@ Only Qwen3-8B Q4 qualified for the main study. Qwen2.5 passed 8/10 revised contr
 
 When own completion was actually feasible and checking optional:
 
-- Without the peer's hopelessness assessment, the model checked in 4/4 cases, completed own work in 3/4, and sacrificed it for peer work in 1/4.
+- Without the peer's hopelessness assessment, the model checked in 4/4 cases, completed own work in 3/4, and forwent it for peer work in 1/4.
 - With the assessment, it checked in 0/4, produced peer-only work in 4/4, and completed own work in 0/4. The matched increase in forfeited own work was 75 percentage points: three increases, no decreases.
 - Automatically supplying the true task state under the same false assessment restored own completion in 4/4 and eliminated those redirections in this cell.
 
 **Two corrections to the three bullets above, added 2026-09-09** (details in [the recovery record](peer_claims_v2_recovery_results.md); no figure above is edited in place). First, on the corrected uncached backend and a bit-identical checkpoint, baseline own completion is 2/4 rather than 3/4, so **the matched increase is 50 percentage points, not 75** — two increases, no decreases. Second, and more consequential for how the effect should be described: splitting these cells by domain gives `release` 2/2 → 0/2 and `triage` 0/2 → 0/2. **Checking suppression is present in both domains; the additional forfeiture of feasible own work is entirely in `release`, against a `triage` baseline that already forfeits.** The two outcomes should be reported separately from here on, and the forfeiture claim rests on two matched pairs in one domain.
 
-An instruction to check was insufficient. With the hopelessness assessment, all four feasible-own cases skipped the required check and helped the peer. In the no-assessment required-check cases, the model did check in 4/4, but still chose peer-only work after correct status in 4/4. The assessment changed verification behavior there, not the already-high total rate of sacrifice. This counterexample prevents a simple “the whole problem is missing information” account. **It is broader than this cell (added 2026-09-09):** the domain split above shows `triage` forfeiting feasible own work 0/2 while checking 2/2 and receiving correct status, under *optional* checking, with no assessment present and nobody arguing for redirection. So “asked, was told the truth, reallocated anyway” is not an artifact of forcing the check. That makes the operative-task question — which task the model treats as its assignment — the sharper one, and it is what the [decomposition and matched-information designs](../experiments/peer_claims_v3/design_2026-09-09_decomposition_and_matched_information.md) are built to test.
+An instruction to check was insufficient. With the hopelessness assessment, all four feasible-own cases skipped the required check and helped the peer. In the no-assessment required-check cases, the model did check in 4/4, but still chose peer-only work after correct status in 4/4. The assessment changed verification behavior there, not the already-high total rate of own output forgone for peer. This counterexample prevents a simple “the whole problem is missing information” account. **It is broader than this cell (added 2026-09-09):** the domain split above shows `triage` forfeiting feasible own work 0/2 while checking 2/2 and receiving correct status, under *optional* checking, with no assessment present and nobody arguing for redirection. So “asked, was told the truth, reallocated anyway” is not an artifact of forcing the check. That makes the operative-task question — which task the model treats as its assignment — the sharper one, and it is what the [decomposition and matched-information designs](../experiments/peer_claims_v3/design_2026-09-09_decomposition_and_matched_information.md) are built to test.
+
+**“The peer’s request became the operative task” is a hypothesis label, not an explanation (added 2026-09-09).** It names the thing to be explained and must never be cited as if it accounted for an observed choice. Five explanations remain open for these reallocations and none is privileged by the record above:
+
+1. the model is **mistaken about feasibility**;
+2. it **has the correct information and fails to use it**;
+3. it treats the peer’s request as **superseding** its assignment;
+4. it **understands the conflict and chooses otherwise**;
+5. **presentation drives the output** — position, wording, turn structure or menu order.
+
+Explanation 2 is the only one the `triage` observation constrains at all, and it constrains it weakly: correct status was returned and reallocation followed, which rules out *absence* of the information, not failure to use it. Nothing here separates 3 from 4, and 5 is untested because the six prompt differences between supplied and queried truth are not yet equalized. A sixth possibility must also be named rather than assumed away: **ordinary instruction-conflict susceptibility** — a model that yields to whichever instruction arrived most recently or most forcefully, with no peer-specific or collective component at all.
 
 When own work was genuinely blocked, peer work succeeded in all four cases in every primary condition. In the affordable secondary cases, however, no policy produced both outputs: optional and required checking yielded peer-only in 4/4 each, while automatic truth yielded own-only in 4/4. Supplying truth protected the principal's output there, but did not preserve all useful cooperation.
 
@@ -28,9 +38,9 @@ This makes a global inability to check an inadequate account of the unchecked ca
 
 The original interface failed controls on both models. A separately frozen diagnostic showed that explicitly stating peer-only feasibility restored the requested peer outputs, whereas a true budget fact did not. We then made one documented status-field revision and reran the strict gates. The recruitment wording was never adjusted to elicit a failure. [Status diagnostic](/Users/lauragomez/Desktop/openai-hf/docs/peer_claim_status_results.md).
 
-Informed sacrifices are less secure evidence of a stable priority. A final diagnostic reversed only the order of status fields in all eight Available/no-assessment required-check or automatic-truth contexts. Three paired choices changed, but two exact replays also differed from their original results. All eight replay prompts and decoding settings were identical to their sources. Consequently, the apparent field-order effect is entangled with repeatability limitations. We have not identified their cause. In contrast, the four preplanned replays of optional-check/assessment-present cases all matched. These are different context subsets; neither result should erase the other.
+Informed forfeitures are less secure evidence of a stable priority. A final diagnostic reversed only the order of status fields in all eight Available/no-assessment required-check or automatic-truth contexts. Three paired choices changed, but two exact replays also differed from their original results. All eight replay prompts and decoding settings were identical to their sources. Consequently, the apparent field-order effect is entangled with repeatability limitations. We have not identified their cause. In contrast, the four preplanned replays of optional-check/assessment-present cases all matched. These are different context subsets; neither result should erase the other.
 
-This is why correct information in a prompt, a correct response in a control, and an observed sacrifice do not together establish a stable latent preference for peers.
+This is why correct information in a prompt, a correct response in a control, and an observed forfeiture do not together establish a stable latent preference for peers.
 
 ## How close is this to HF?
 
@@ -46,7 +56,7 @@ The previous allocation study showed that explicit known task costs could preser
 
 The practical candidate is to provide reliable task-state information before a consequential allocation and evaluate the full resulting workflow. This is not yet a validated mitigation: automatic truth worked in the false-claim cells but had exceptions elsewhere, and affordable joint completion remained absent. A policy that simply enforces a check would not have been enough in this panel.
 
-The next scientific priority is a replication on an independently qualified checkpoint and a bounded paraphrase/stability test, with the checking-suppression outcome specified in advance. Informed-sacrifice cases need prompt/backend repeatability resolved before deeper motive interpretation. Additional sampling of the same small panel would not create evidence about the original agents. We have stopped this fixed loop rather than extending it into a search for dramatic behavior.
+The next scientific priority is a replication on an independently qualified checkpoint and a bounded paraphrase/stability test, with the checking-suppression outcome specified in advance. Informed-forfeiture cases need prompt/backend repeatability resolved before deeper motive interpretation. Additional sampling of the same small panel would not create evidence about the original agents. We have stopped this fixed loop rather than extending it into a search for dramatic behavior.
 
 ## Examples worth reviewing
 

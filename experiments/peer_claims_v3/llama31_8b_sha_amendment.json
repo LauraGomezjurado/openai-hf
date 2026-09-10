@@ -1,0 +1,19 @@
+{
+  "utc": "2026-09-09",
+  "amends": "experiments/peer_claims_v3/models/llama31_8b.json",
+  "why_a_separate_file": "That spec is hashed into experiments/peer_claims_v3/freeze.json, so editing it in place would break verify_freeze() and destroy the provenance the freeze exists to protect. The spec's own acquisition field anticipates this and instructs: 'Record repository revision and file SHA-256 at download time as an amendment.' This is that amendment.",
+  "fields_amended": {
+    "gguf_sha256": {
+      "frozen_value": null,
+      "measured_value": "7b064f5842bf9532c91456deda288a1b672397a54fa729aa665952863033557c",
+      "measured_from": "data/models/peer_claims_v3/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+      "command": "shasum -a 256 data/models/peer_claims_v3/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"
+    },
+    "status": {
+      "frozen_value": "not acquired",
+      "measured_value": "available on the study machine"
+    }
+  },
+  "limitation": "This pins the file that is on disk now; it does not establish that this file is what the frozen repository reference would produce today. The GGUF is a third-party quantization from bartowski/Meta-Llama-3.1-8B-Instruct-GGUF with revision recorded as null, so there is no upstream revision to reproduce it from. Unlike the qwen3 checkpoint -- which was reproduced from pinned inputs and matched bit for bit -- this one is trusted as downloaded. Any cross-checkpoint claim that rests on it inherits that weaker provenance and must say so.",
+  "consequence_for_runs": "serve_v3_cpu.py only asserts the digest when the spec carries a gguf_sha256, and the frozen spec carries null, so llama31_8b runs are NOT hash-gated at launch. The digest above is the reference to compare against results/peer_claims_v3/llama31_8b_server.json's resolved_gguf_sha256 by hand after each run."
+}

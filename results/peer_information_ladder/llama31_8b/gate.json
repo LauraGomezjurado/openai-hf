@@ -1,0 +1,13 @@
+{
+  "passed": 15,
+  "n": 20,
+  "required": 20,
+  "failures": [
+    "release-slack-B0-none-p00-o0-control-joint",
+    "invoices-slack-B0-none-p00-o0-control-joint",
+    "triage-blocked-B0-none-p00-o0-control-direct",
+    "triage-slack-B0-none-p00-o0-control-joint",
+    "access-slack-B0-none-p00-o0-control-joint"
+  ],
+  "eligible": false
+}

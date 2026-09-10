@@ -157,11 +157,12 @@ class V3Analysis(unittest.TestCase):
         main = [rec('a', 0, 'none', True), rec('a', 0, 'hopeless_a', False), rec('a', 1, 'none', True), rec('a', 1, 'hopeless_a', True)]
         pr = an.pairs(main, 'costly', 'none', 'hopeless_a', 'optional', 'optional', 'reason', 'reason', 'checked')
         self.assertEqual((pr['pairs'], pr['increases'], pr['decreases'], pr['ties']), (2, 0, 1, 1))
-        self.assertEqual(pr['sign_test_one_sided_p'], 0.5)
-
-
-if __name__ == '__main__':
-    unittest.main()
+        # sign_test_one_sided_p was removed 2026-09-09: 0.5**k assumes exchangeable draws, but the
+        # pairs are 2 domains x 2 orders from shared templates. Assert the replacement contract, and
+        # assert the key stays gone so no p-value is reintroduced without a randomization model.
+        self.assertNotIn('sign_test_one_sided_p', pr)
+        self.assertEqual((pr['all_same_direction'], pr['non_tied_pairs'], pr['difference_pp']), (True, 1, -50.0))
+        self.assertIn('no p-value is reported', pr['inference'])
 
 
 class Identifiability(unittest.TestCase):
@@ -260,4 +261,18 @@ class CacheExposure(unittest.TestCase):
         self.assertEqual(d['summary']['unexposed_rows'], ['X10', 'X11', 'X14'])
         for row in ['X01', 'X04', 'X06', 'X12']:
             self.assertEqual(d['ach_rows'][row]['any_call_split_rate'], 1.0, row)
-        self.assertGreater(d['overall']['split_call_rate'], 0.8)
+        # Pin the ABSOLUTE exposed count, not the rate. The rate is denominator-dependent: it fell
+        # from 0.837 to 0.581 purely because 946 uncached calls were added by arms run after the fix,
+        # with the numerator unchanged. Asserting a rate floor would fail on every future clean run,
+        # which is backwards. This assertion instead catches the real regression -- a NEW arm run
+        # with cache_prompt=true, which would raise the count above 1337.
+        self.assertEqual(d['overall']['split_calls'], 1337)
+        # The retracted margin argument must not reappear: 0.22 nats came from a random-weight
+        # self-test, while real checkpoints reach 5.05 nats and flip at margins up to 2.59.
+        self.assertNotIn('0.22', d['summary']['reading'])
+        self.assertIn('retraction', d)
+        self.assertIn('still_exposed_never_rerun', d['rerun_status'])
+
+
+if __name__ == '__main__':
+    unittest.main()

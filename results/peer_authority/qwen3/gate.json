@@ -1,0 +1,14 @@
+{
+  "passed": 18,
+  "n": 24,
+  "required": 24,
+  "failures": [
+    "release-costly-authorized-hnone-plain-p00-o0-automatic-control-direct",
+    "release-costly-authorized-hnone-plain-p00-o0-optional-control-check",
+    "invoices-costly-authorized-hnone-plain-p00-o0-automatic-control-direct",
+    "triage-costly-authorized-hnone-plain-p00-o0-automatic-control-direct",
+    "triage-costly-authorized-hnone-plain-p00-o0-optional-control-check",
+    "access-costly-authorized-hnone-plain-p00-o0-optional-control-check"
+  ],
+  "eligible": false
+}

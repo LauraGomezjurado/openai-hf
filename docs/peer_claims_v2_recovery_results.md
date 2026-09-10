@@ -1,8 +1,11 @@
 # The V2 peer-claim contrast survives the cache fix
 
 Executed 2026-09-09. The V2 headline result was produced with `cache_prompt=True`, the regime
-later shown to flip greedy tokens; 83.7% of the project's recorded generation calls ran under
-it. This run repeats the frozen V2 experiment with that one flag corrected. **The contrast
+later shown to flip greedy tokens; **1,337 of the project's recorded generation calls ran under it**
+(58.1% of the 2,301 now recorded — an earlier version of this line said 83.7%, which was the rate
+against a 1,598-call corpus; the exposed count is unchanged and only the denominator grew as
+uncached arms were added, so the count is the figure to cite, not the rate). This run repeats the
+frozen V2 experiment with that one flag corrected. **The contrast
 reproduces, and 73 of 74 decisions are unchanged.** One decision differs, in the no-claim
 baseline cell, which reduces the headline matched contrast from 75 to 50 percentage points.
 
@@ -22,6 +25,13 @@ logs: 399 tensors, 16.4G f16, quant size 4789.19 MiB at 4.90 BPW.
 Recorded in `results/peer_claims_v2_recovery/acquisition.json`. The comparison is therefore a
 same-checkpoint comparison, not an approximation, and quantization is excluded as a source of
 any difference below.
+
+> **Note added 2026-09-09.** "Absent from this machine" above describes the state **before** this
+> recovery run and must not be read as a current blocker. The reproduced GGUF is on disk now, as are
+> `Mistral-7B-Instruct-v0.3-Q4_K_M` and `Meta-Llama-3.1-8B-Instruct-Q4_K_M` with llama.cpp 0.4.0
+> installed, so **new arms are runnable here today** — an audit that reported no reachable weights,
+> and concluded the designs were paper-only, was wrong. The one genuine gap is **Qwen2.5-7B**, which
+> is not present: *cross-checkpoint replication of V2* is blocked, local inference is not.
 
 ## Both gates pass
 

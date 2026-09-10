@@ -1,12 +1,12 @@
 # Peer claims, task-state checking and resource redirection
 
-[Frozen revised protocol](/Users/lauragomez/Desktop/openai-hf/experiments/peer_claims_v2/protocol.md) · [All counts and matched contrasts](/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/summary.json) · [Validation](/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/integrity.json)
+[Frozen revised protocol](/Users/lgomezjuradogonzalez/Downloads/openai-hf/experiments/peer_claims_v2/protocol.md) · [All counts and matched contrasts](/Users/lgomezjuradogonzalez/Downloads/openai-hf/results/peer_claims_v2/summary.json) · [Validation](/Users/lgomezjuradogonzalez/Downloads/openai-hf/results/peer_claims_v2/integrity.json)
 
 The peer either asks for the same audit without an assessment or says own publication cannot succeed. Independently, own publication is available or blocked. The model may check authoritative state at zero task-credit cost, is instructed to check, or receives the true state automatically. One allocation then executes locally. This is a benign information-pathway experiment on public checkpoints; it is not an HF replay or an internal-motive measurement.
 
 ## Qualification and scope
 
-The predecessor failed gates (Qwen3 6/10, Qwen2.5 8/10), generating no main cases. A separately frozen 24-branch diagnostic established that explicit peer-only feasibility restored requested peer output in all four blocked controls per checkpoint; a true budget fact did not. All eight original replays matched. The revised status adds only that feasibility field; hidden-state prompts before checking are unchanged. [Diagnostic results](/Users/lauragomez/Desktop/openai-hf/docs/peer_claim_status_results.md).
+The predecessor failed gates (Qwen3 6/10, Qwen2.5 8/10), generating no main cases. A separately frozen 24-branch diagnostic established that explicit peer-only feasibility restored requested peer output in all four blocked controls per checkpoint; a true budget fact did not. All eight original replays matched. The revised status adds only that feasibility field; hidden-state prompts before checking are unchanged. [Diagnostic results](/Users/lgomezjuradogonzalez/Downloads/openai-hf/docs/peer_claim_status_results.md).
 
 The primary factorial has 48 cases per eligible checkpoint: two domain/graph combinations, two actual task states, assessment absent/present, three information policies and two option orders. Each cell has four related cases. Twelve secondary cases test affordable joint work under the false assessment; four exact-input replays are separate. Controls require 10/10 before either panel. Costs are certain; checking is free; status is authoritative. The peer is a fixed message, not an adaptive agent. No private reasoning is recorded.
 
@@ -70,7 +70,7 @@ The lexicographically first qualifying case is retained with its matched compari
 
 ## Post-result stability check
 
-A separate 16-branch field-order diagnostic used all eight Available/no-assessment contexts with required checking or automatic truth. Reversing status-field order changed three allocations versus paired replays. However, only six of eight exact replays matched their original decisions and results, despite identical rendered prompts and decoding settings. This prevents clean attribution of all differences to field order and weakens a stable-preference interpretation of the informed sacrifices. The four preplanned primary replays all matched; they cover different contexts. [Diagnostic data](/Users/lauragomez/Desktop/openai-hf/results/peer_claim_order/summary.json).
+A separate 16-branch field-order diagnostic used all eight Available/no-assessment contexts with required checking or automatic truth. Reversing status-field order changed three allocations versus paired replays. However, only six of eight exact replays matched their original decisions and results, despite identical rendered prompts and decoding settings. This prevents clean attribution of all differences to field order and weakens a stable-preference interpretation of the informed forfeitures. The four preplanned primary replays all matched; they cover different contexts. [Diagnostic data](/Users/lgomezjuradogonzalez/Downloads/openai-hf/results/peer_claim_order/summary.json).
 
 ## Evidential limits
 
@@ -78,4 +78,4 @@ A false assessment may change interpretation, attention, trust or instruction sa
 
 We deliberately did not tune recruitment wording to elicit misconduct. The one revision followed an independent control diagnostic and changed authoritative status representation only. The original HF agents faced different models, uncertain prospects, repeated interaction and incomplete oversight. Similarity of a decision pathway does not establish identity of motives or show that a verification rule would have prevented the incident.
 
-![Peer claims and verified outcomes](/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/peer_claims.png)
+![Peer claims and verified outcomes](/Users/lgomezjuradogonzalez/Downloads/openai-hf/results/peer_claims_v2/peer_claims.png)

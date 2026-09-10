@@ -33,7 +33,7 @@ The ordering controls are especially informative. Qwen3 changed its allocation i
 
 **Sensitivity to remaining own-task opportunity is supported in this setting.** Changing the actual ability to complete own work changes assistance from never to always across the fixed matched Costly/Blocked pairs. But a policy of accomplishing any remaining feasible work produces the same pattern. We did not manipulate peer identity against a non-peer recipient, so this is not evidence of peer-specific concern.
 
-**A disposition to sacrifice own completion is not observed here.** This is a meaningful negative result on the tested prompts, not a general finding about Qwen or the HF agents. Costs are certain, explicit and extreme; the principal instruction is clear. These conditions may remove the uncertainty or interpretation that makes the historical behavior interesting.
+**A disposition to forgo own completion for a peer is not observed here.** This is a meaningful negative result on the tested prompts, not a general finding about Qwen or the HF agents. Costs are certain, explicit and extreme; the principal instruction is clear. These conditions may remove the uncertainty or interpretation that makes the historical behavior interesting.
 
 **The personal-benefit explanation remains unresolved.** Shared input increases help, but it also makes joint completion feasible. It is not an isolated intervention on expected personal reward or reciprocity. Even Shared versus Slack changes production details and the resource budget. We cannot recover a latent utility function from these choices.
 

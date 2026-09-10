@@ -15,6 +15,14 @@ ran for either, no prompt was adapted, and both records are kept.
 replication claim** — but that conclusion now rests on two executed attempts rather than on
 unacquired files.
 
+> **Superseded for `llama31_8b`, 2026-09-09 later the same day.** Both exclusions below were
+> recorded on the **scratchpad** interface. Re-run on the **direct** interface — the one the V2
+> effect was actually measured on — `llama31_8b` passes **20/20** and `mistral7b` reaches 19/20.
+> This file remains the accurate record of the reason-mode gates; read it together with
+> [the direct-mode gate record](peer_claims_v3_direct_gate_results.md), which supersedes the
+> eligibility conclusion. `results/peer_claims_v3/summary.json` is deliberately left reporting
+> `cross_family_eligible` empty, because that is what the V3 arm itself ran.
+
 | Model | Gate 1 hash | Gate 2 determinism | Gate 3 controls | Outcome |
 |---|---|---|---|---|
 | `mistral7b` | pass | **pass** | **14/20** | excluded |
@@ -52,10 +60,20 @@ That second pattern is worth stating carefully, because it superficially resembl
 V3 exists to measure. **It is not evidence for it.** A peer-favoring default that appears
 without any peer assessment present, together with unconditional refusal to check when
 checking is requested, is a baseline compliance failure: the model's non-checking is not
-*induced* by a hopelessness claim, it is simply what the model does. Its error rate would be
+*induced* by a hopelessness claim. Its error rate would be
 confounded with the effect under study in every cell, which is exactly why the control gate
 precedes the panel. Neither model's behavior here supports any claim about whether models
 verify a peer's claim before redirecting resources.
+
+> **Corrected 2026-09-09, later the same day.** The sentence above used to end "…it is simply what
+> the model does." **That is falsified.** On the *direct* interface the same checkpoint, quantization,
+> hardware and frozen cases calls `check_status` in **8/8** `check` controls instead of 2/8, produces
+> **zero** incorrect `peer_only` commitments, and passes **20/20** — see
+> [the direct-mode gate record](peer_claims_v3_direct_gate_results.md). All ten of its reason-mode
+> failures are interface-dependent. It is what the model does **when given a scratchpad**, which is a
+> claim about the instrumentation, not about the checkpoint. The narrower inference — that the
+> non-checking was not *induced by the hopelessness claim* — survives untouched, because no claim was
+> present in these controls either way.
 
 ### What the `llama31_8b` reasoning actually contains (added 2026-09-09)
 
@@ -136,17 +154,24 @@ Three things scope it, and all three matter:
 3. **The fabrication did not cause the allocation.** This is where the original review's inference
    was too strong, and that part of the retraction stands. The trace asserts that own work *is*
    feasible, states that it *can* complete its own package, and then commits `peer_only` anyway, on
-   the stated ground that the peer needs the audit. A fabricated reading favourable to own work
-   cannot explain a choice against own work. Whatever moved the allocation, it was not this.
+   the stated ground that the peer needs the audit. A fabricated reading *favourable* to own work
+   cannot explain the choice **by the route of representing own work as impossible** — that specific
+   pathway is closed here. It does not follow that the fabrication was causally irrelevant by every
+   route: substituting an invented reading for an available check may itself matter, independently of
+   what the invented reading said. An earlier version of this line read "Whatever moved the
+   allocation, it was not this", which is more than the record supports and is withdrawn.
 
 So the corrected position is narrower than either previous statement. **Fabricated observation and
 announced-versus-executed checking both occur in these records, at different rates and in different
 cases**, and D2c must stay in the analyzer as a live category rather than a placeholder that these
 records were taken to have ruled out. Point 3 is the more interesting one for the main line: it is
-the cleanest instance in the corpus of an allocation that runs against the model's own stated
-feasibility finding, and it is direct support for treating "the peer's request became the operative
-task" as a hypothesis worth testing rather than a reading of one Qwen trace. It is one context on an
-excluded checkpoint in reason mode, so it generates that hypothesis and cannot test it.
+the clearest instance in the corpus of an allocation that runs against the model's own stated
+feasibility finding, which is one reason to keep "the peer's request became the operative task" on
+the list of hypotheses worth testing. It is **one** context on an excluded checkpoint in reason mode,
+so it generates that hypothesis and cannot test it, and it does not by itself favour that hypothesis
+over the other four live explanations — a mistaken premise elsewhere in the trace, ordinary
+instruction-conflict susceptibility, presentation effects, or an understood conflict resolved the
+other way. "Operative task" is a label for the thing to be explained, not an explanation of it.
 
 A related reporting defect is fixed rather than argued: `results/peer_claims_v3/<model>/summary.json`
 reported `"invalid": 0` for both checkpoints, because that counter covers main-phase cases and no
@@ -165,6 +190,20 @@ checkpoints attempted across the project have failed a baseline gate. That is a 
 the design's reach, not about any model: **this interface cannot be replicated cross-family at
 7–8B scale**, and a future replication attempt should either move up in scale or simplify the
 allocation interface before spending more download time.
+
+> **The bolded conclusion is falsified, 2026-09-09 later the same day.** It can be replicated
+> cross-family at 8B: `llama31_8b` passes **20/20** on the direct interface
+> ([record](peer_claims_v3_direct_gate_results.md)). The obstacle was the **instrumentation, not the
+> scale**. Of the two remedies suggested above, "simplify the allocation interface" was right and
+> "move up in scale" was unnecessary. The corrected standing count is **five exclusions and one
+> qualification**, and `llama31_8b` is the project's first eligible cross-family checkpoint —
+> eligible to *run* the panel, which is not a replication result. `mistral7b` improves 14/20 → 19/20
+> and remains excluded.
+>
+> The durable lesson is narrower than the one drawn above: **run the battery on the interface the
+> study actually uses before concluding a checkpoint cannot meet it.** The scratchpad cost the
+> qualifying checkpoint 2 of 10 controls, `mistral7b` 5 of 20, and `llama31_8b` 10 of 20 — the
+> largest single source of measured non-compliance in this project.
 
 ## Gate 2 — the cache diagnosis, corroborated and strengthened
 
@@ -204,8 +243,16 @@ Three observations follow, and they matter for how the existing record should be
    split-cache records.
 
 Read against the [cache-exposure audit](../results/determinism/cache_exposure.json) —
-**1,337 of 1,598 recorded generation calls (83.7%) were produced under a split KV-cache
-evaluation** — point 1 is the load-bearing one. The regime that demonstrably flips greedy
+**1,337 recorded generation calls were produced under a split KV-cache evaluation** — point 1 is
+the load-bearing one.
+
+> **Recomputed 2026-09-09.** An earlier version of this sentence gave "1,337 of 1,598 … (83.7%)".
+> The **numerator is unchanged at exactly 1,337**; the denominator has grown to 2,301 calls because
+> every arm run since the fix is uncached (identifiability 438, the V2 recovery 94, the three V3
+> gate runs 147, the reasoning arm 24), so the *rate* is now **58.1%**. Both percentages were
+> correct for their corpus snapshot, which is exactly why the percentage is the wrong thing to
+> cite: it falls whenever clean work is added, without a single exposed call being cleaned. **Quote
+> the absolute count and name the arms**, not the rate. The regime that demonstrably flips greedy
 tokens is the regime that produced the large majority of the project's existing records, and
 points 2 and 3 remove the two arguments that might have limited the concern. This does not
 invalidate those records, but it does mean their exact-replay checks cannot be treated as

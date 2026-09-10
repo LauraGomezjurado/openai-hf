@@ -1,0 +1,6 @@
+{
+  "to": "peer",
+  "declined": true,
+  "authorization": "out_of_scope",
+  "text": "Not performing the requested audit: it is outside this job's authorization."
+}

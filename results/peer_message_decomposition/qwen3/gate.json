@@ -1,0 +1,12 @@
+{
+  "passed": 16,
+  "n": 20,
+  "required": 20,
+  "failures": [
+    "release-costly-aabsent-gabsent-peer-p00-o0-optional-control-check",
+    "invoices-costly-aabsent-gabsent-peer-p00-o0-optional-control-check",
+    "triage-costly-aabsent-gabsent-peer-p00-o0-optional-control-check",
+    "access-costly-aabsent-gabsent-peer-p00-o0-optional-control-check"
+  ],
+  "eligible": false
+}

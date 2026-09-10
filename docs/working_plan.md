@@ -4,7 +4,15 @@ Updated September 8, 2026. Public-only access. HF is primary; the historical wik
 
 ## Larger research question
 
-When agents cooperate in ways that undermine their assigned task or cross its boundaries, does this reflect prioritizing peers despite understanding the conflict, a different interpretation of task/authority, or expected personal benefit—and what evidence distinguishes these explanations?
+**Revised September 9, 2026.** The operative question is now:
+
+> **When do peer requests override an agent's assigned priorities, and what determines whether the agent treats a peer's message as information, a request, or authority?**
+
+This replaces the previous formulation ("When agents cooperate in ways that undermine their assigned task or cross its boundaries, does this reflect prioritizing peers despite understanding the conflict, a different interpretation of task/authority, or expected personal benefit—and what evidence distinguishes these explanations?"). The revision is not a change of subject: it keeps the same explanandum but names the three readings a peer message can receive—information, request, authority—which the old wording folded into "a different interpretation of task/authority", and which the arms now separate.
+
+**Five explanations stay open and none is privileged:** the agent is mistaken about feasibility; it has the information and fails to use it; it treats the request as superseding its assignment; it understands the conflict and chooses otherwise; presentation drives the output. "The peer's request became the operative task" is a hypothesis label, not an explanation, and must not be cited as if it accounted for an observed choice.
+
+This question is stated in several other places at varying currency—[the question map](research_question_map.md), [the research picture](research_picture_2026-09-07.md), [explanatory hypotheses](explanatory_hypotheses.md), and archived protocols. Those need reconciling against this wording rather than accumulating a further variant; until that is done, this file is the current statement.
 
 Explaining the original agents' motives remains the ambition. Proxy-model interventions test explanations in new settings; they do not identify the original-HF mechanism. The practical North Star is preserving useful cooperation while preventing peer communication from leading beyond task boundaries.
 
@@ -52,11 +60,11 @@ Keep all failed controls, model-availability revisions, source hashes, raw traje
 
 The first peer-claim interface failed gates on both models. A frozen 24-branch diagnostic isolated the usefulness of explicit peer feasibility, justifying one status-field revision. Qwen3 then passed 10/10 controls and completed 48 primary cases, 12 affordable-help cases and four replays. Qwen2.5 passed 8/10 controls and was excluded; no gates were lowered.
 
-With feasible own work and optional checking, the hopelessness assessment changed checking from 4/4 to 0/4 and sacrifice from 1/4 to 4/4. A checking requirement was ignored under the assessment. Automatic truth restored own work in all four false-assessment cases, but no policy achieved both outputs in affordable secondary cases. Correct-status sacrifices also occurred without the assessment. A 16-branch field-order diagnostic found only 6/8 original replay matches, limiting stable-preference interpretations.
+With feasible own work and optional checking, the hopelessness assessment changed checking from 4/4 to 0/4 and own output forgone for peer from 1/4 to 4/4. A checking requirement was ignored under the assessment. Automatic truth restored own work in all four false-assessment cases, but no policy achieved both outputs in affordable secondary cases. Correct-status forfeitures also occurred without the assessment. A 16-branch field-order diagnostic found only 6/8 original replay matches, limiting stable-preference interpretations.
 
 The entire loop is complete and local model servers are stopped. [Interpretation and historical relevance](/Users/lauragomez/Desktop/openai-hf/docs/peer_claims_interpretation.md) · [Full results](/Users/lauragomez/Desktop/openai-hf/docs/peer_claims_results.md) · [Status diagnostic](/Users/lauragomez/Desktop/openai-hf/docs/peer_claim_status_results.md).
 
-Next priority: independently qualified checkpoint replication and a bounded paraphrase/repeatability test of checking suppression. Resolve instability before interpreting informed sacrifice as a motive. No new inference or additional field-order/wording search is running. User review remains optional, not a permission gate.
+Next priority: independently qualified checkpoint replication and a bounded paraphrase/repeatability test of checking suppression. Resolve instability before interpreting informed forfeiture as a motive. No new inference or additional field-order/wording search is running. User review remains optional, not a permission gate.
 
 ## Position after the recovery, the reasoning arm, and the 2026-09-09 label corrections
 
@@ -71,13 +79,18 @@ one mechanism. Keeping them apart is the main reporting discipline for this phas
 
 **Defensible contribution statement, as of today:**
 
-> In a controlled allocation environment, a collaborator's pessimistic assessment suppresses
-> verification, while verified information alone does not reliably preserve the principal's objective.
-> We investigate whether these failures reflect information use, task interpretation, or interface
-> dependence.
+> In a small controlled allocation study, adding a peer message combining pessimistic task-state
+> claims and a redirection rationale reduced status querying. Separately, some agents abandoned
+> feasible assigned work even after correct status was returned. The causes of these two failures
+> remain unresolved.
 
-The first sentence is a local observation and is supported. The second is the research programme and is
-not yet a result. The missing step against
+**Both halves are tightened deliberately.** The tested message *combines* a pessimistic assessment
+and a rationale for redirecting; the two have not been separated yet, so no claim may attribute the
+effect to either alone — that is what arm A is for. And the two failures are reported as separate
+observations with unresolved causes, not as one mechanism. The previous version of this statement
+("a collaborator's pessimistic assessment suppresses verification, while verified information alone
+does not reliably preserve the principal's objective") named a single component as the cause and
+implied the second finding was about information sufficiency; both went beyond the evidence. The missing step against
 [Model Forensics](https://arxiv.org/abs/2606.26071) is **explanatory discrimination**: reasoning
 supplies hypotheses, interventions have to make competing explanations predict different outcomes. A
 larger collection of concerning traces would not supply that. Broad peer influence is already covered by
@@ -89,8 +102,13 @@ mitigation preserves useful cooperation.
 
 - **The V2 forfeiture effect is domain-split.** Checking suppression is 2/2 → 0/2 in both domains; the
   *additional* forfeiture is entirely `release`, because `triage` already forfeits 0/2 with no claim
-  present. Report the two outcomes separately. New consequence for design: screen domains for non-zero
-  baseline own completion, or suppression is unmeasurable against a floor.
+  present. Report the two outcomes separately. An earlier version of this bullet drew the consequence
+  "screen domains for non-zero baseline own completion"; that is **withdrawn**, because screening on
+  baseline success selects the cases where deterioration is possible and changes the population the
+  headline describes. Floored domains are **retained and used to test recovery** — and `triage` is
+  where this project's strongest anomaly lives, forfeiting feasible own work 0/2 *while checking 2/2
+  and receiving correct status*, which the screen would have deleted. Suppression is genuinely
+  unmeasurable against a floor, so that is reported as a floor and not as a null.
 - **The reasoning arm shows an instruction restated but not followed, not a plan/action mismatch.** The
   frozen `COMMIT` regex fires on a quotation of the rule; the trace's own final recommendation agrees
   with the action it took. By hand, every step that stated an intention to check did check, and neither
@@ -99,26 +117,52 @@ mitigation preserves useful cooperation.
   context under two hidden worlds**, not two instances and not a 20% rate.
 - **The Llama retraction over-corrected and is re-corrected.** The `invoices` controls do contain an
   unconditional fabricated `Status:` block asserting availability with no check performed — wrong in the
-  blocked world, and asserting `available` invariantly across both. But it did **not** cause the
-  allocation: the trace states own work is feasible and chooses `peer_only` anyway. That combination is
-  the cleanest support in the corpus for treating "the peer's request became the operative task" as a
-  hypothesis worth testing.
+  blocked world, and asserting `available` invariantly across both. But it did not cause the
+  allocation **by the route of representing own work as impossible**: the trace states own work is
+  feasible and chooses `peer_only` anyway. That keeps "the peer's request became the operative task"
+  on the list of hypotheses worth testing — one context on an excluded checkpoint in reason mode,
+  which generates the hypothesis and cannot test it, and does not favour it over the other four live
+  explanations. An earlier version of this bullet called it "the cleanest support in the corpus",
+  which overstated a single trace.
 - **The length-matched placebo is one-sided.** A failing placebo shows length suffices; a passing
   placebo rules out only that padding, leaving the reasoning instruction, ordering instruction, phase
   structure and generated text unseparated. Say "the reason-mode interface," not "reasoning," either way.
 
-### Prioritized next work, none of it started
+### Prioritized next work
 
-1. **Direct-mode control gates for the two excluded checkpoints** (`mistral7b`, `llama31_8b`). Both were
-   excluded on the reason-mode interface that costs the qualifying checkpoint 2 of 10 controls. Cheapest
-   route to a second qualified checkpoint. Highest value per token on the list.
+1. ~~**Direct-mode control gates for the two excluded checkpoints**~~ — **DONE 2026-09-09, and it
+   worked.** [`llama31_8b` passes 20/20 and is the project's first eligible cross-family
+   checkpoint](peer_claims_v3_direct_gate_results.md); `mistral7b` improves 14/20 → 19/20 and remains
+   excluded. All ten of llama's reason-mode failures were interface-dependent, its `check_status`
+   compliance went 2/8 → 8/8, and its peer-favoring default disappeared entirely.
+   Two consequences, both of which change items below:
+   - The prior conclusion that "this interface cannot be replicated cross-family at 7–8B scale" is
+     **falsified** — the obstacle was the instrumentation, not the scale. Replication of the
+     peer-claim contrasts is now runnable on a second family, against the **50 pp** recovery
+     baseline (never the original 75 pp).
+   - The scratchpad is now the largest single measured source of non-compliance in the project
+     (2/10, 5/20 and 10/20 controls across three checkpoints). Treat it as a manipulation with a
+     known large effect, not as neutral instrumentation. Eligibility is permission to run the panel,
+     **not a replication result** — no core cell has run on `llama31_8b`.
 2. **Message decomposition**: assertion × normative priority argument, with the argument clause
    redefined so it carries no feasibility proposition. The previous clause ("redirecting will not cost a
-   successful submission") asserted one, so the old 2×2 was not orthogonal.
+   successful submission") asserted one, so the old 2×2 was not orthogonal. **Arm frozen and gated;
+   [its control gate failed on both checkpoints](peer_arm_control_gate_results.md), so the factorial
+   has not run.** The gates did yield the contrast by accident: the four arms' `slack` controls happen
+   to form a **nested three-rung ladder** — bare request, + false feasibility assertion, + priority
+   sentence — whose rendered prompts differ by exactly one line per rung, verified byte-wise per domain
+   and per checkpoint. On qwen3 the assertion changes nothing and the **priority sentence alone** turns
+   `joint` 4/4 into `peer_only` 4/4; on llama the **assertion alone** turns `joint` 4/4 into `decline`
+   4/4. So the operative half of the message differs by checkpoint. Reported as an unplanned post-hoc
+   comparison at one wording per rung; the designed 352-rollout grid with 20 paraphrases is what did
+   not run.
 3. **The matched-information anomaly**: equalize the six prompt differences between supplied and queried
    truth — framing, position, turn count, final-instruction wording, action menu, prior model output —
    with a neutral extra-turn control. Then compare an explicit principal/peer clarification against a
-   salience-matched neutral recap. This is an intervention test, not a mediation estimate.
+   salience-matched neutral recap. This is an intervention test, not a mediation estimate. **This is
+   what the information ladder's B1–B3 rungs do, and they are the specific thing the gate failure
+   blocked** — the failing cells are themselves supplied-vs-queried cells, so the arm built to
+   decompose the anomaly was stopped by it.
 4. **Transfer** to a new task structure with native tool execution, once 2 or 3 yields a prediction to
    carry. Repeated greedy runs of the same templates do not substitute for this.
 5. **Bounded stability work**: the named eight-case fresh-server/reversed-order repeat. A small check,
@@ -129,10 +173,43 @@ separate identity, authority, and beneficiary stake — the current `nonpeer` ar
 once. Mode is a factor, not a fixed setting, but no new arm needs to run in an unqualified interface:
 direct mode is where the effect was measured and is sufficient to proceed.
 
+Cross-cutting, added 2026-09-09:
+[**incident behavior map**](incident_behavior_map.md) — the incident connection made behavior by
+behavior across (a) contributing at cost, (b) the collective acquiring authority, (c) crossing an
+authorization boundary, (d) failing to notify a human, with the two boundaries that must not be
+crossed in interpretation ·
+[**hypothesis reconciliation**](hypothesis_reconciliation.md) — the four incompatible numbering
+schemes live in this repo, mapped onto one another, with the slot the authority hypothesis occupies ·
+[terminology note](terminology_outcome_names.md) — why the outcome is "own output forgone for peer"
+and not "sacrifice" ·
+[direct-mode gate results](peer_claims_v3_direct_gate_results.md) ·
+[**four new arms: control-gate results on two checkpoints**](peer_arm_control_gate_results.md)
+
 Designs: [decomposition, matched information and transfer](../experiments/peer_claims_v3/design_2026-09-09_decomposition_and_matched_information.md) ·
 [recovery record](peer_claims_v2_recovery_results.md) ·
 [reasoning-arm qualification failure](peer_claims_v2_reasoning_gate_failure.md) ·
 [hand label audit](../results/peer_claims_v2_reasoning/qwen3/reasoning_label_audit.md)
 
-Nothing above is frozen and no inference has been run against it. All local model servers remain
-stopped; every arm needs its own freeze and predictions first.
+Frozen 2026-09-09: [information ladder](../experiments/peer_information_ladder/protocol.md)
+(196 rollouts planned) · [message decomposition](../experiments/peer_message_decomposition/protocol.md)
+(352) · [authority](../experiments/peer_authority/protocol.md) (249 plus 120 manipulation checks) ·
+[mitigations](../experiments/peer_mitigations/protocol.md) (247). Each carries its own `freeze.json`
+over its own new module; no file hashed by an existing arm's freeze was edited, and all 16 freezes
+in `experiments/` verify with zero drift.
+
+**All four ran their gates on 2026-09-09, on two checkpoints, and [all eight control gates
+failed](peer_arm_control_gate_results.md).** Eight determinism gates passed first; then, per arm,
+qwen3 / llama31_8b: ladder 16/20 · 15/20, decomposition 16/20 · 16/20, authority 18/24 · 22/24,
+mitigations 14/24 · 16/24 — pooled 64/88 and 69/88. **176 control rollouts on disk, zero main-block
+rollouts, no gate lowered and no arm re-run.** The two checkpoints fail in opposite directions: qwen3
+forfeits the principal's feasible task when it queries status and is told the truth (1/16 correct),
+llama preserves it there (16/16) and instead refuses cooperation that is authorized and affordable.
+The authorization boundary held 16/16 pooled — neither checkpoint reproduces incident behaviour (c),
+though **0/16 of those correct refusals told the principal** when `ask_principal` was in the menu at
+identical cost, which is behaviour (d) arriving from an unexpected direction. Two unplanned results came
+out of the control cells: the nested three-rung `slack` ladder above, which isolates the priority
+sentence on qwen3 and the feasibility assertion on llama; and, on qwen3, forfeitures that are the *most
+confident* decisions in the panel (median 13.98 nats, minimum 3.53 over fifteen) while its one correct
+decision in that cell is its least confident (0.32).
+Both servers were stopped afterwards. The four `protocol.md` files still read "frozen, not run"
+because they are hashed and must not be edited; the results document is their amendment.

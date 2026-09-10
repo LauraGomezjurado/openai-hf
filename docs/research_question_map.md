@@ -97,8 +97,8 @@ For the historical arm, record predictions before inspecting additional public o
 
 ## New evidence: do peers' assessments change verification?
 
-**Approached:** a frozen true-task-state × peer-assessment × information-policy experiment, with controls, option ordering and replays. One checkpoint qualified; the second failed controls. Qwen3's checking fell from 4/4 to 0/4 under a hopelessness assessment in matched feasible-own optional-check cases, while own-work sacrifice rose from 1/4 to 4/4.
+**Approached:** a frozen true-task-state × peer-assessment × information-policy experiment, with controls, option ordering and replays. One checkpoint qualified; the second failed controls. Qwen3's checking fell from 4/4 to 0/4 under a hopelessness assessment in matched feasible-own optional-check cases, while own work forgone for the peer rose from 1/4 to 4/4.
 
-**Answer so far:** a peer assessment can suppress verification in this controlled interface, even when checking is required. Automatic truth protected own work in the false-assessment cells, but informed sacrifices and missing affordable joint completion prevent calling it a general solution. A later exact-replay mismatch further limits a stable-preference interpretation.
+**Answer so far:** a peer assessment can suppress verification in this controlled interface, even when checking is required. Automatic truth protected own work in the false-assessment cells, but informed forfeitures and missing affordable joint completion prevent calling it a general solution. A later exact-replay mismatch further limits a stable-preference interpretation.
 
 **Open:** replication across capable models and phrasing, repeatability of informed choices, costly or uncertain verification, adaptive peers, and whether the historical agents encountered the same information pathway. [Completed interpretation](/Users/lauragomez/Desktop/openai-hf/docs/peer_claims_interpretation.md).

@@ -323,8 +323,8 @@ Key contrasts: [blocked fallback](/Users/lauragomez/Desktop/openai-hf/results/op
 
 The loop is complete; review does not block execution. Start with the [interpretation](/Users/lauragomez/Desktop/openai-hf/docs/peer_claims_interpretation.md).
 
-- [Unverified own-work sacrifice and matched no-assessment case](/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-unverified_false_redirection.md).
+- [Unverified own-work forfeiture and matched no-assessment case](/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-unverified_false_redirection.md).
 - [Automatic truth restores own work in a matched false-assessment case](/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-intervention_gain.md).
-- [Informed sacrifice](/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-informed_false_redirection.md), which must be read alongside the [field-order and imperfect-replay diagnostic](/Users/lauragomez/Desktop/openai-hf/results/peer_claim_order/examples/qwen3-field-order.md).
+- [Informed forfeiture](/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/examples/qwen3-informed_false_redirection.md), which must be read alongside the [field-order and imperfect-replay diagnostic](/Users/lauragomez/Desktop/openai-hf/results/peer_claim_order/examples/qwen3-field-order.md).
 
 These are model action selections and deterministic executor states, not private CoT. The [review packet](/Users/lauragomez/Desktop/openai-hf/results/peer_claims_v2/example_review.json) has blank independent labels. A false task-state assessment is experimentally established here; it is not established for the historical HF recruiters' statements.

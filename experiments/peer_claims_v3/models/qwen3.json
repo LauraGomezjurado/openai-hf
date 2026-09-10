@@ -1,0 +1,22 @@
+{
+  "key": "qwen3",
+  "priority": 0,
+  "family": "qwen",
+  "repository": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "files": [
+    "qwen3-8b-Q4_K_M.gguf"
+  ],
+  "original_model": "Qwen/Qwen3-8B",
+  "gguf_path": "data/models/workflow_qwen3/qwen3-8b-Q4_K_M.gguf",
+  "gguf_sha256": "4bbd605eaecad2e8ed614f5c2dd3c833150cbe26ba03b991cf1c7114cb9117ef",
+  "quantization": "Q4_K_M locally converted from cached weights (conversion commit 5266f24da)",
+  "reasoning_mode": "direct",
+  "template_kwargs": {
+    "enable_thinking": false
+  },
+  "system_role": true,
+  "acquisition": "Already on the study machine. Same file, and the same verified SHA-256, as the peer_claims_v2_recovery checkpoint (results/peer_claims_v2_recovery/acquisition.json), so results here are directly comparable to the 50 pp uncached recovery baseline that the four new protocols name as their reference.",
+  "status": "available. Direct mode: served with enable_thinking=false, which is how peer_claims_v2 and its recovery ran this checkpoint. This is the plain-mode counterpart of qwen3_think.json, which serves the identical file with the native <think> channel open for the reasoning arm.",
+  "provenance_caveat": "This spec file was written after the four new arms were frozen on 2026-09-09, so it is not among the bytes hashed by their freeze.json. It is not a study parameter: it only resolves a model key to a file. The chain that actually binds a run to this checkpoint is enforced at run time and is hashed or recorded elsewhere -- serve_v3_cpu.py asserts the file's SHA-256 equals gguf_sha256 above and writes results/peer_claims_v3/qwen3_server.json with the resolved digest, and each arm's run() refuses to proceed unless its determinism gate's server_props.model_path ends with this gguf_path's filename."
+}

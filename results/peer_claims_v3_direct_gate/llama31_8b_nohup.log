@@ -1,0 +1,20 @@
+{
+  "verdict": "pass",
+  "prompts": 8,
+  "repetitions": 3,
+  "splits": [
+    37,
+    118,
+    300
+  ],
+  "n_probs": 10,
+  "uncached_token_mismatches": 0,
+  "uncached_logprob_mismatches": 0,
+  "cached_token_flips": 0,
+  "cached_logprob_changes": 32,
+  "cached_comparisons_total": 32,
+  "min_reference_decision_margin": 0.5669441819190979,
+  "model_note": "llama31_8b_direct",
+  "utc": "2026-09-09T22:07:17Z",
+  "source": "experiments/peer_claims_v3_direct_gate/gate_prompts.json"
+}

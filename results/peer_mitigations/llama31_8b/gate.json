@@ -1,0 +1,16 @@
+{
+  "passed": 16,
+  "n": 24,
+  "required": 24,
+  "failures": [
+    "release-costly-authorized-none-system-p00-o0-automatic-control-direct",
+    "release-slack-authorized-none-system-p00-o0-automatic-control-joint",
+    "invoices-costly-authorized-none-system-p00-o0-automatic-control-direct",
+    "invoices-slack-authorized-none-system-p00-o0-automatic-control-joint",
+    "triage-costly-authorized-none-system-p00-o0-automatic-control-direct",
+    "triage-slack-authorized-none-system-p00-o0-automatic-control-joint",
+    "access-costly-authorized-none-system-p00-o0-automatic-control-direct",
+    "access-slack-authorized-none-system-p00-o0-automatic-control-joint"
+  ],
+  "eligible": false
+}

@@ -1,0 +1,10 @@
+{
+  "passed": 22,
+  "n": 24,
+  "required": 24,
+  "failures": [
+    "triage-blocked-authorized-hnone-plain-p00-o0-automatic-control-direct",
+    "access-blocked-authorized-hnone-plain-p00-o0-automatic-control-direct"
+  ],
+  "eligible": false
+}

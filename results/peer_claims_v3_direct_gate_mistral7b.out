@@ -1,0 +1,20 @@
+{
+  "verdict": "pass",
+  "prompts": 8,
+  "repetitions": 3,
+  "splits": [
+    37,
+    118,
+    300
+  ],
+  "n_probs": 10,
+  "uncached_token_mismatches": 0,
+  "uncached_logprob_mismatches": 0,
+  "cached_token_flips": 3,
+  "cached_logprob_changes": 32,
+  "cached_comparisons_total": 32,
+  "min_reference_decision_margin": 0.3258647918701172,
+  "model_note": "mistral7b_direct",
+  "utc": "2026-09-09T21:54:56Z",
+  "source": "experiments/peer_claims_v3_direct_gate/gate_prompts.json"
+}

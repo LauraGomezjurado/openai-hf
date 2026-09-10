@@ -20,9 +20,27 @@ evaluated in one fresh pass:
 
 **This is an exposure upper bound, not an effect estimate.** No study recorded `n_probs`, so
 no decision margin exists in the record and we cannot say which split decisions were actually
-near a tie. The observed cached perturbation was at most ~0.22 nats on the tiny model; a split
-decision with a margin far above that was almost certainly unaffected. Exposure says how much
-of a finding *rests on* calls that carry the risk at all.
+near a tie. Exposure says how much of a finding *rests on* calls that carry the risk at all.
+
+**RETRACTED 2026-09-09 — the margin argument this module used to make.** Earlier versions of
+this docstring and of the emitted ``summary.reading`` argued that the cached perturbation was
+"at most ~0.22 nats", so "a split decision with a margin far above that was almost certainly
+unaffected", and therefore that large uniform contrasts survive full exposure. **Both steps are
+now contradicted by direct measurement on real study checkpoints**
+(``docs/peer_claims_v3_cross_family_gates.md``, Gate 2):
+
+* The 0.22-nat figure came from a **random-weight tiny self-test model**. Real checkpoints reach
+  **5.05 nats** — an order of magnitude larger. The self-test validated the *mechanism* and badly
+  understated its *magnitude*; it must not be cited as a bound.
+* **Flips are not confined to near-ties.** ``mistral7b`` had the far smaller reference decision
+  margin (0.0102 vs 0.3514 nats) and flipped nothing, while ``llama31_8b`` flipped at margins of
+  0.35 and 2.59 nats.
+
+So a comfortable margin is **not** evidence that a cached record was safe, and margin cannot be
+used post hoc to rehabilitate split-cache records. Exposure is reported here without any
+accompanying claim about which findings survive it. Ranking fragility requires re-running the
+arm with ``cache_prompt=false``, which is what
+``experiments/peer_claims_v2_recovery`` did for V2 and what no other exposed arm has had.
 
 Outputs `results/determinism/cache_exposure.json`, including a per-ACH-row table so each
 evidence row in `experiments/ach/ratings_v1.json` can be read with its exposure attached.
@@ -157,10 +175,36 @@ def main():
         'summary': {
             'exposed_rows': exposed, 'unexposed_rows': unexposed,
             'reading': ('Exposure is close to all-or-nothing per study, because the setting was per-study: every cache_prompt=true row is at ~1.0 and '
-                        'every cache_prompt=false row is at 0.0. Exposure therefore does not by itself rank which findings are fragile. What ranks them is '
-                        'effect size against the size of the perturbation: the measured cached deviation was at most ~0.22 nats, which flips only near-ties, '
-                        'so a large contrast that is uniform across matched pairs and checkpoints (X06) survives full exposure, while a four-case cell whose '
-                        'own field-order diagnostic already failed 2/8 replays (X04) does not. The unexposed rows are the subset carrying no artifact risk at all.'),
+                        'every cache_prompt=false row is at 0.0. Exposure therefore does not by itself rank which findings are fragile, and nothing '
+                        'else in this artifact ranks them either: the margin-based argument this field used to make is retracted (see the retraction '
+                        'block). The only demonstrated way to establish that an exposed finding survives is to re-run the arm with cache_prompt=false. '
+                        'The unexposed rows are the subset carrying no artifact risk at all.'),
+        },
+        'retraction': {
+            'utc': '2026-09-09',
+            'what': ('Earlier versions of summary.reading argued that the measured cached deviation was "at most ~0.22 nats, which flips only '
+                     'near-ties", and concluded that a large contrast uniform across matched pairs and checkpoints (X06) survives full exposure '
+                     'while the four-case X04 cell does not. That ranking argument is withdrawn.'),
+            'why': ('Both premises are contradicted by direct measurement on real study checkpoints (docs/peer_claims_v3_cross_family_gates.md, '
+                    'Gate 2). (1) The 0.22-nat figure came from a random-weight tiny self-test model; real checkpoints reach 5.05 nats, an order of '
+                    'magnitude larger. (2) Flips are not confined to near-ties: mistral7b had the smaller reference margin (0.0102 vs 0.3514 nats) '
+                    'and flipped nothing, while llama31_8b flipped at margins of 0.35 and 2.59 nats. A comfortable margin is therefore not evidence '
+                    'that a cached record was safe, and margin cannot be used post hoc to rehabilitate split-cache records.'),
+            'status_of_the_exposure_numbers': ('Unaffected. The retraction is of the interpretation layered on top of them, not of the counts. '
+                                               'Cite split_call_rate from this file directly; a recomputed 59.0%/2266 figure that surfaced in '
+                                               'planning notes is unverified and should not be quoted without re-running this module.'),
+        },
+        'rerun_status': {
+            'note': ('Hand-maintained ledger: whether an exposed arm has ever been re-executed with cache_prompt=false. Not derivable from the '
+                     'rollout files, which record only the configuration each arm actually used.'),
+            'rerun_clean': {'peer_claims_v2': 'experiments/peer_claims_v2_recovery reproduced it uncached on a bit-identical checkpoint; '
+                                              '73/74 decisions unchanged, headline matched contrast 75pp -> 50pp. Cite the 50pp figure.'},
+            'still_exposed_never_rerun': ['peer_claim_order', 'peer_claims (V1)', 'opportunity_cost (V1)',
+                                          'opportunity_cost (V2, including the +100pp Costly/Blocked contrast)',
+                                          'workflow_obligations', 'workflow_completion'],
+            'never_exposed': ['escalation_pilot (requested cache_prompt=false)'],
+            'consequence': ('Exact-replay checks inside the still-exposed arms cannot be treated as clean repeatability evidence. This does not '
+                            'invalidate those records; it means their stability claims are unestablished rather than established.'),
         },
         'method': 'A call is split when the saved response reports timings.cache_n > 0, meaning a prefix was served from the resident KV cache and only a suffix was freshly evaluated.',
         'caveat': 'Exposure is an upper bound on how many decisions could have been perturbed, not an estimate of how many were. No study recorded n_probs, so no decision margins exist in the record.',

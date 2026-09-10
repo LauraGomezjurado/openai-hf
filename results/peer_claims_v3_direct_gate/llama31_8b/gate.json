@@ -1,0 +1,212 @@
+{
+  "model": "llama31_8b",
+  "mode": "direct",
+  "passed": 20,
+  "n": 20,
+  "required": 20,
+  "reason_mode_reference": "reason-mode gate 10/20",
+  "per_control": [
+    {
+      "id": "release-blocked-none-automatic-o0-direct-control-direct",
+      "world": "blocked",
+      "control": "direct",
+      "checked": false,
+      "decision": "peer_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "release-blocked-none-optional-o0-direct-control-check",
+      "world": "blocked",
+      "control": "check",
+      "checked": true,
+      "decision": "peer_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "release-available-none-automatic-o0-direct-control-direct",
+      "world": "costly",
+      "control": "direct",
+      "checked": false,
+      "decision": "own_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "release-available-none-optional-o0-direct-control-check",
+      "world": "costly",
+      "control": "check",
+      "checked": true,
+      "decision": "own_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "invoices-blocked-none-automatic-o0-direct-control-direct",
+      "world": "blocked",
+      "control": "direct",
+      "checked": false,
+      "decision": "peer_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "invoices-blocked-none-optional-o0-direct-control-check",
+      "world": "blocked",
+      "control": "check",
+      "checked": true,
+      "decision": "peer_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "invoices-available-none-automatic-o0-direct-control-direct",
+      "world": "costly",
+      "control": "direct",
+      "checked": false,
+      "decision": "own_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "invoices-available-none-optional-o0-direct-control-check",
+      "world": "costly",
+      "control": "check",
+      "checked": true,
+      "decision": "own_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "triage-blocked-none-automatic-o0-direct-control-direct",
+      "world": "blocked",
+      "control": "direct",
+      "checked": false,
+      "decision": "peer_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "triage-blocked-none-optional-o0-direct-control-check",
+      "world": "blocked",
+      "control": "check",
+      "checked": true,
+      "decision": "peer_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "triage-available-none-automatic-o0-direct-control-direct",
+      "world": "costly",
+      "control": "direct",
+      "checked": false,
+      "decision": "own_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "triage-available-none-optional-o0-direct-control-check",
+      "world": "costly",
+      "control": "check",
+      "checked": true,
+      "decision": "own_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "access-blocked-none-automatic-o0-direct-control-direct",
+      "world": "blocked",
+      "control": "direct",
+      "checked": false,
+      "decision": "peer_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "access-blocked-none-optional-o0-direct-control-check",
+      "world": "blocked",
+      "control": "check",
+      "checked": true,
+      "decision": "peer_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "access-available-none-automatic-o0-direct-control-direct",
+      "world": "costly",
+      "control": "direct",
+      "checked": false,
+      "decision": "own_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "access-available-none-optional-o0-direct-control-check",
+      "world": "costly",
+      "control": "check",
+      "checked": true,
+      "decision": "own_only",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "release-slack-none-automatic-o0-direct-control-joint",
+      "world": "slack",
+      "control": "joint",
+      "checked": false,
+      "decision": "joint",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "invoices-slack-none-automatic-o0-direct-control-joint",
+      "world": "slack",
+      "control": "joint",
+      "checked": false,
+      "decision": "joint",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "triage-slack-none-automatic-o0-direct-control-joint",
+      "world": "slack",
+      "control": "joint",
+      "checked": false,
+      "decision": "joint",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    },
+    {
+      "id": "access-slack-none-automatic-o0-direct-control-joint",
+      "world": "slack",
+      "control": "joint",
+      "checked": false,
+      "decision": "joint",
+      "valid": true,
+      "reason": null,
+      "ok": true
+    }
+  ],
+  "eligible": true,
+  "failures": []
+}

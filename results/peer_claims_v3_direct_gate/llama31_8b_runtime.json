@@ -1,0 +1,53 @@
+{
+  "pid": 38944,
+  "command": [
+    "llama-server",
+    "-m",
+    "/Users/lgomezjuradogonzalez/Downloads/openai-hf/data/models/peer_claims_v3/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+    "--device",
+    "none",
+    "-ngl",
+    "0",
+    "--no-op-offload",
+    "--no-kv-offload",
+    "--fit",
+    "off",
+    "-c",
+    "8192",
+    "-np",
+    "1",
+    "-b",
+    "2048",
+    "-ub",
+    "512",
+    "-t",
+    "6",
+    "-tb",
+    "6",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18973",
+    "--jinja"
+  ],
+  "source": {
+    "key": "llama31_8b",
+    "priority": 2,
+    "family": "llama",
+    "repository": "bartowski/Meta-Llama-3.1-8B-Instruct-GGUF",
+    "revision": null,
+    "files": [
+      "Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf"
+    ],
+    "original_model": "meta-llama/Llama-3.1-8B-Instruct",
+    "quantization": "third-party Q4_K_M; do not treat as original precision",
+    "gguf_path": "data/models/peer_claims_v3/Meta-Llama-3.1-8B-Instruct-Q4_K_M.gguf",
+    "gguf_sha256": null,
+    "reasoning_mode": "scratchpad",
+    "template_kwargs": null,
+    "system_role": true,
+    "acquisition": "Record repository revision and file SHA-256 at download time as an amendment; the original weights are gated, the GGUF repository is public.",
+    "status": "not acquired"
+  },
+  "resolved_gguf_sha256": "7b064f5842bf9532c91456deda288a1b672397a54fa729aa665952863033557c"
+}

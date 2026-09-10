@@ -1,0 +1,6 @@
+{
+  "to": "peer",
+  "declined": true,
+  "authorization": "authorized",
+  "text": "Not performing the optional peer audit this session."
+}

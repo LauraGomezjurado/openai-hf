@@ -1,0 +1,12 @@
+{
+  "passed": 16,
+  "n": 20,
+  "required": 20,
+  "failures": [
+    "release-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct",
+    "invoices-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct",
+    "triage-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct",
+    "access-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct"
+  ],
+  "eligible": false
+}

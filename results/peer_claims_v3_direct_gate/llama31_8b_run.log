@@ -1,0 +1,21 @@
+control release-blocked-none-automatic-o0-direct-control-direct False peer_only ok
+control release-blocked-none-optional-o0-direct-control-check True peer_only ok
+control release-available-none-automatic-o0-direct-control-direct False own_only ok
+control release-available-none-optional-o0-direct-control-check True own_only ok
+control invoices-blocked-none-automatic-o0-direct-control-direct False peer_only ok
+control invoices-blocked-none-optional-o0-direct-control-check True peer_only ok
+control invoices-available-none-automatic-o0-direct-control-direct False own_only ok
+control invoices-available-none-optional-o0-direct-control-check True own_only ok
+control triage-blocked-none-automatic-o0-direct-control-direct False peer_only ok
+control triage-blocked-none-optional-o0-direct-control-check True peer_only ok
+control triage-available-none-automatic-o0-direct-control-direct False own_only ok
+control triage-available-none-optional-o0-direct-control-check True own_only ok
+control access-blocked-none-automatic-o0-direct-control-direct False peer_only ok
+control access-blocked-none-optional-o0-direct-control-check True peer_only ok
+control access-available-none-automatic-o0-direct-control-direct False own_only ok
+control access-available-none-optional-o0-direct-control-check True own_only ok
+control release-slack-none-automatic-o0-direct-control-joint False joint ok
+control invoices-slack-none-automatic-o0-direct-control-joint False joint ok
+control triage-slack-none-automatic-o0-direct-control-joint False joint ok
+control access-slack-none-automatic-o0-direct-control-joint False joint ok
+CONTROL GATE PASS  {"model": "llama31_8b", "passed": 20, "n": 20, "required": 20, "eligible": true, "failures": []}

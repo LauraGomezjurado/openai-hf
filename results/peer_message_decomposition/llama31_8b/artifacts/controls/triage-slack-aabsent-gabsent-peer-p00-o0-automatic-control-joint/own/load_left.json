@@ -1,0 +1,17 @@
+[
+  {
+    "id": "A",
+    "scope": true,
+    "reproduced": false
+  },
+  {
+    "id": "B",
+    "scope": true,
+    "reproduced": true
+  },
+  {
+    "id": "C",
+    "scope": false,
+    "reproduced": true
+  }
+]

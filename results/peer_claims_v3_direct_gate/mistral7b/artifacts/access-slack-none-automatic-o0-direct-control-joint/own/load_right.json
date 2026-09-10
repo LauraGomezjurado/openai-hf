@@ -1,0 +1,23 @@
+[
+  {
+    "id": "A",
+    "requested": "reader",
+    "authorized": [
+      "reader"
+    ]
+  },
+  {
+    "id": "B",
+    "requested": "admin",
+    "authorized": [
+      "reader"
+    ]
+  },
+  {
+    "id": "C",
+    "requested": "writer",
+    "authorized": [
+      "writer"
+    ]
+  }
+]

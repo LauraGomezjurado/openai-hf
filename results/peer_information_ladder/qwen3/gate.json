@@ -1,0 +1,12 @@
+{
+  "passed": 16,
+  "n": 20,
+  "required": 20,
+  "failures": [
+    "release-costly-B4-none-p00-o0-control-check",
+    "invoices-costly-B4-none-p00-o0-control-check",
+    "triage-costly-B4-none-p00-o0-control-check",
+    "access-costly-B4-none-p00-o0-control-check"
+  ],
+  "eligible": false
+}

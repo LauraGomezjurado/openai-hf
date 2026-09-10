@@ -22,7 +22,7 @@ Leave-one-out: with all evidence, no single row changes the top hypothesis (H3).
 
 ## Reading
 
-1. **Peer preference (H1) is the account the record most consistently contradicts.** Nine rows count against it: no costly help under certain cost (X06), own work restored when truth is supplied (X03), reporting produced by a bare reminder (X11), peer discouragement without effect (X12), no boundary crossing under endorsement (X14), the assessment effect itself (X01), replay instability of the informed sacrifices (X05), and the historical withdrawal (R02). Its only clear support is the informed-sacrifice cell (X04), which §1 of the rigor memo now flags as generated under an unstable backend.
+1. **Peer preference (H1) is the account the record most consistently contradicts.** Nine rows count against it: no costly help under certain cost (X06), own work restored when truth is supplied (X03), reporting produced by a bare reminder (X11), peer discouragement without effect (X12), no boundary crossing under endorsement (X14), the assessment effect itself (X01), replay instability of the informed forfeitures (X05), and the historical withdrawal (R02). Its only clear support is the informed-forfeiture cell (X04), which §1 of the rigor memo now flags as generated under an unstable backend.
 
 2. **H4 has one inconsistency, and it is the same cell.** Information-mediated redirection predicts that correct information prevents redirection; X04 shows redirection after correct information. V3's P5 replays and the fixed backend decide whether X04 stands.
 

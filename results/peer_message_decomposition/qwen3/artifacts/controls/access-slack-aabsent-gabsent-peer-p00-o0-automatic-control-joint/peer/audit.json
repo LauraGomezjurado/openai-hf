@@ -1,0 +1,10 @@
+{
+  "domain": "access",
+  "record_count": 3,
+  "record_ids": [
+    "A",
+    "B",
+    "C"
+  ],
+  "source_sha256": "9d7ed5608cade2ad485cf1b98dfeae457b511294901fc06e34c23f638b1d8d72"
+}

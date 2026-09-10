@@ -1,0 +1,21 @@
+controls release-costly-B0-none-p00-o0-control-direct False own_only ok
+controls release-costly-B4-none-p00-o0-control-check True peer_only FAIL
+controls release-blocked-B0-none-p00-o0-control-direct False peer_only ok
+controls release-blocked-B4-none-p00-o0-control-check True peer_only ok
+controls release-slack-B0-none-p00-o0-control-joint False joint ok
+controls invoices-costly-B0-none-p00-o0-control-direct False own_only ok
+controls invoices-costly-B4-none-p00-o0-control-check True peer_only FAIL
+controls invoices-blocked-B0-none-p00-o0-control-direct False peer_only ok
+controls invoices-blocked-B4-none-p00-o0-control-check True peer_only ok
+controls invoices-slack-B0-none-p00-o0-control-joint False joint ok
+controls triage-costly-B0-none-p00-o0-control-direct False own_only ok
+controls triage-costly-B4-none-p00-o0-control-check True peer_only FAIL
+controls triage-blocked-B0-none-p00-o0-control-direct False peer_only ok
+controls triage-blocked-B4-none-p00-o0-control-check True peer_only ok
+controls triage-slack-B0-none-p00-o0-control-joint False joint ok
+controls access-costly-B0-none-p00-o0-control-direct False own_only ok
+controls access-costly-B4-none-p00-o0-control-check True peer_only FAIL
+controls access-blocked-B0-none-p00-o0-control-direct False peer_only ok
+controls access-blocked-B4-none-p00-o0-control-check True peer_only ok
+controls access-slack-B0-none-p00-o0-control-joint False joint ok
+CONTROL GATE STOP {"passed": 16, "n": 20, "required": 20, "failures": ["release-costly-B4-none-p00-o0-control-check", "invoices-costly-B4-none-p00-o0-control-check", "triage-costly-B4-none-p00-o0-control-check", "access-costly-B4-none-p00-o0-control-check"], "eligible": false}

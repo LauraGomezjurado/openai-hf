@@ -42,7 +42,7 @@ overwritten; the comparison is the point.
 All four phases run, exactly as frozen: **10 controls, 48 main, 12 secondary, 4 replays.** The
 12 secondary cases are the affordable-help (`slack`) cells where no V2 policy produced both
 outputs, and the main grid contains the required-check/no-claim cell where the model checked
-4/4 and still sacrificed own work 4/4. Both are recovered alongside the headline contrast,
+4/4 and still forwent own work 4/4. Both are recovered alongside the headline contrast,
 because the headline cell alone cannot distinguish an information-acquisition account from a
 priority account.
 

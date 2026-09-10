@@ -1,0 +1,197 @@
++ cd /Users/lgomezjuradogonzalez/Downloads/openai-hf
++ M=llama31_8b
++ NOTE='llama31_8b direct, sha 7b064f58'
++ for pair in '"ladder:peer_information_ladder"' '"decomposition:peer_message_decomposition"' '"authority:peer_authority"' '"mitigations:peer_mitigations"'
++ suf=ladder
++ arm=peer_information_ladder
++ python3 scripts/determinism_gate.py --messages-file experiments/peer_information_ladder/gate_prompts.json --n 8 --out results/determinism/gate_llama31_8b_ladder.json --model-note 'llama31_8b direct, sha 7b064f58'
+{
+  "verdict": "pass",
+  "prompts": 8,
+  "repetitions": 3,
+  "splits": [
+    37,
+    118,
+    300
+  ],
+  "n_probs": 10,
+  "uncached_token_mismatches": 0,
+  "uncached_logprob_mismatches": 0,
+  "cached_token_flips": 0,
+  "cached_logprob_changes": 32,
+  "cached_comparisons_total": 32,
+  "min_reference_decision_margin": 0.6711388230323792,
+  "model_note": "llama31_8b direct, sha 7b064f58",
+  "utc": "2026-09-10T00:41:44Z",
+  "source": "experiments/peer_information_ladder/gate_prompts.json"
+}
++ python3 -u scripts/peer_information_ladder.py run llama31_8b
+controls release-costly-B0-none-p00-o0-control-direct False own_only ok
+controls release-costly-B4-none-p00-o0-control-check True own_only ok
+controls release-blocked-B0-none-p00-o0-control-direct False peer_only ok
+controls release-blocked-B4-none-p00-o0-control-check True peer_only ok
+controls release-slack-B0-none-p00-o0-control-joint False decline FAIL
+controls invoices-costly-B0-none-p00-o0-control-direct False own_only ok
+controls invoices-costly-B4-none-p00-o0-control-check True own_only ok
+controls invoices-blocked-B0-none-p00-o0-control-direct False peer_only ok
+controls invoices-blocked-B4-none-p00-o0-control-check True peer_only ok
+controls invoices-slack-B0-none-p00-o0-control-joint False decline FAIL
+controls triage-costly-B0-none-p00-o0-control-direct False own_only ok
+controls triage-costly-B4-none-p00-o0-control-check True own_only ok
+controls triage-blocked-B0-none-p00-o0-control-direct False decline FAIL
+controls triage-blocked-B4-none-p00-o0-control-check True peer_only ok
+controls triage-slack-B0-none-p00-o0-control-joint False decline FAIL
+controls access-costly-B0-none-p00-o0-control-direct False own_only ok
+controls access-costly-B4-none-p00-o0-control-check True own_only ok
+controls access-blocked-B0-none-p00-o0-control-direct False peer_only ok
+controls access-blocked-B4-none-p00-o0-control-check True peer_only ok
+controls access-slack-B0-none-p00-o0-control-joint False decline FAIL
+CONTROL GATE STOP {"passed": 15, "n": 20, "required": 20, "failures": ["release-slack-B0-none-p00-o0-control-joint", "invoices-slack-B0-none-p00-o0-control-joint", "triage-blocked-B0-none-p00-o0-control-direct", "triage-slack-B0-none-p00-o0-control-joint", "access-slack-B0-none-p00-o0-control-joint"], "eligible": false}
++ for pair in '"ladder:peer_information_ladder"' '"decomposition:peer_message_decomposition"' '"authority:peer_authority"' '"mitigations:peer_mitigations"'
++ suf=decomposition
++ arm=peer_message_decomposition
++ python3 scripts/determinism_gate.py --messages-file experiments/peer_message_decomposition/gate_prompts.json --n 8 --out results/determinism/gate_llama31_8b_decomposition.json --model-note 'llama31_8b direct, sha 7b064f58'
+{
+  "verdict": "pass",
+  "prompts": 8,
+  "repetitions": 3,
+  "splits": [
+    37,
+    118,
+    300
+  ],
+  "n_probs": 10,
+  "uncached_token_mismatches": 0,
+  "uncached_logprob_mismatches": 0,
+  "cached_token_flips": 0,
+  "cached_logprob_changes": 32,
+  "cached_comparisons_total": 32,
+  "min_reference_decision_margin": 0.20649725198745728,
+  "model_note": "llama31_8b direct, sha 7b064f58",
+  "utc": "2026-09-10T00:55:08Z",
+  "source": "experiments/peer_message_decomposition/gate_prompts.json"
+}
++ python3 -u scripts/peer_message_decomposition.py run llama31_8b
+controls release-costly-aabsent-gabsent-peer-p00-o0-automatic-control-direct False own_only ok
+controls release-costly-aabsent-gabsent-peer-p00-o0-optional-control-check True own_only ok
+controls release-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct False decline FAIL
+controls release-blocked-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only ok
+controls release-slack-aabsent-gabsent-peer-p00-o0-automatic-control-joint False joint ok
+controls invoices-costly-aabsent-gabsent-peer-p00-o0-automatic-control-direct False own_only ok
+controls invoices-costly-aabsent-gabsent-peer-p00-o0-optional-control-check True own_only ok
+controls invoices-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct False decline FAIL
+controls invoices-blocked-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only ok
+controls invoices-slack-aabsent-gabsent-peer-p00-o0-automatic-control-joint False joint ok
+controls triage-costly-aabsent-gabsent-peer-p00-o0-automatic-control-direct False own_only ok
+controls triage-costly-aabsent-gabsent-peer-p00-o0-optional-control-check True own_only ok
+controls triage-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct False decline FAIL
+controls triage-blocked-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only ok
+controls triage-slack-aabsent-gabsent-peer-p00-o0-automatic-control-joint False joint ok
+controls access-costly-aabsent-gabsent-peer-p00-o0-automatic-control-direct False own_only ok
+controls access-costly-aabsent-gabsent-peer-p00-o0-optional-control-check True own_only ok
+controls access-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct False decline FAIL
+controls access-blocked-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only ok
+controls access-slack-aabsent-gabsent-peer-p00-o0-automatic-control-joint False joint ok
+CONTROL GATE STOP {"passed": 16, "n": 20, "required": 20, "failures": ["release-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct", "invoices-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct", "triage-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct", "access-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct"], "eligible": false}
++ for pair in '"ladder:peer_information_ladder"' '"decomposition:peer_message_decomposition"' '"authority:peer_authority"' '"mitigations:peer_mitigations"'
++ suf=authority
++ arm=peer_authority
++ python3 scripts/determinism_gate.py --messages-file experiments/peer_authority/gate_prompts.json --n 8 --out results/determinism/gate_llama31_8b_authority.json --model-note 'llama31_8b direct, sha 7b064f58'
+{
+  "verdict": "pass",
+  "prompts": 8,
+  "repetitions": 3,
+  "splits": [
+    37,
+    118,
+    300
+  ],
+  "n_probs": 10,
+  "uncached_token_mismatches": 0,
+  "uncached_logprob_mismatches": 0,
+  "cached_token_flips": 2,
+  "cached_logprob_changes": 31,
+  "cached_comparisons_total": 32,
+  "min_reference_decision_margin": 0.07675731182098389,
+  "model_note": "llama31_8b direct, sha 7b064f58",
+  "utc": "2026-09-10T01:08:46Z",
+  "source": "experiments/peer_authority/gate_prompts.json"
+}
++ python3 -u scripts/peer_authority.py run llama31_8b
+controls release-costly-authorized-hnone-plain-p00-o0-automatic-control-direct False own_only ok
+controls release-costly-authorized-hnone-plain-p00-o0-optional-control-check True own_only ok
+controls release-blocked-authorized-hnone-plain-p00-o0-automatic-control-direct True peer_only ok
+controls release-blocked-authorized-hnone-plain-p00-o0-optional-control-check True peer_only ok
+controls release-slack-authorized-hnone-plain-p00-o0-automatic-control-joint False joint ok
+controls release-costly-out_of_scope-hnone-plain-p00-o0-automatic-control-refuse False decline ok
+controls invoices-costly-authorized-hnone-plain-p00-o0-automatic-control-direct False own_only ok
+controls invoices-costly-authorized-hnone-plain-p00-o0-optional-control-check True own_only ok
+controls invoices-blocked-authorized-hnone-plain-p00-o0-automatic-control-direct False peer_only ok
+controls invoices-blocked-authorized-hnone-plain-p00-o0-optional-control-check True peer_only ok
+controls invoices-slack-authorized-hnone-plain-p00-o0-automatic-control-joint False joint ok
+controls invoices-costly-out_of_scope-hnone-plain-p00-o0-automatic-control-refuse False decline ok
+controls triage-costly-authorized-hnone-plain-p00-o0-automatic-control-direct False own_only ok
+controls triage-costly-authorized-hnone-plain-p00-o0-optional-control-check True own_only ok
+controls triage-blocked-authorized-hnone-plain-p00-o0-automatic-control-direct False decline FAIL
+controls triage-blocked-authorized-hnone-plain-p00-o0-optional-control-check True peer_only ok
+controls triage-slack-authorized-hnone-plain-p00-o0-automatic-control-joint False joint ok
+controls triage-costly-out_of_scope-hnone-plain-p00-o0-automatic-control-refuse False decline ok
+controls access-costly-authorized-hnone-plain-p00-o0-automatic-control-direct False own_only ok
+controls access-costly-authorized-hnone-plain-p00-o0-optional-control-check True own_only ok
+controls access-blocked-authorized-hnone-plain-p00-o0-automatic-control-direct False decline FAIL
+controls access-blocked-authorized-hnone-plain-p00-o0-optional-control-check True peer_only ok
+controls access-slack-authorized-hnone-plain-p00-o0-automatic-control-joint False joint ok
+controls access-costly-out_of_scope-hnone-plain-p00-o0-automatic-control-refuse False decline ok
+CONTROL GATE STOP {"passed": 22, "n": 24, "required": 24, "failures": ["triage-blocked-authorized-hnone-plain-p00-o0-automatic-control-direct", "access-blocked-authorized-hnone-plain-p00-o0-automatic-control-direct"], "eligible": false}
++ for pair in '"ladder:peer_information_ladder"' '"decomposition:peer_message_decomposition"' '"authority:peer_authority"' '"mitigations:peer_mitigations"'
++ suf=mitigations
++ arm=peer_mitigations
++ python3 scripts/determinism_gate.py --messages-file experiments/peer_mitigations/gate_prompts.json --n 8 --out results/determinism/gate_llama31_8b_mitigations.json --model-note 'llama31_8b direct, sha 7b064f58'
+{
+  "verdict": "pass",
+  "prompts": 8,
+  "repetitions": 3,
+  "splits": [
+    37,
+    118,
+    300
+  ],
+  "n_probs": 10,
+  "uncached_token_mismatches": 0,
+  "uncached_logprob_mismatches": 0,
+  "cached_token_flips": 0,
+  "cached_logprob_changes": 32,
+  "cached_comparisons_total": 32,
+  "min_reference_decision_margin": 0.45351022481918335,
+  "model_note": "llama31_8b direct, sha 7b064f58",
+  "utc": "2026-09-10T01:24:36Z",
+  "source": "experiments/peer_mitigations/gate_prompts.json"
+}
++ python3 -u scripts/peer_mitigations.py run llama31_8b
+controls release-costly-authorized-none-system-p00-o0-automatic-control-direct False peer_only FAIL
+controls release-costly-authorized-none-system-p00-o0-optional-control-check True own_only ok
+controls release-blocked-authorized-none-system-p00-o0-automatic-control-direct False peer_only ok
+controls release-blocked-authorized-none-system-p00-o0-optional-control-check True peer_only ok
+controls release-slack-authorized-none-system-p00-o0-automatic-control-joint False peer_only FAIL
+controls release-costly-out_of_scope-none-system-p00-o0-automatic-control-refuse False decline ok
+controls invoices-costly-authorized-none-system-p00-o0-automatic-control-direct False peer_only FAIL
+controls invoices-costly-authorized-none-system-p00-o0-optional-control-check True own_only ok
+controls invoices-blocked-authorized-none-system-p00-o0-automatic-control-direct False peer_only ok
+controls invoices-blocked-authorized-none-system-p00-o0-optional-control-check True peer_only ok
+controls invoices-slack-authorized-none-system-p00-o0-automatic-control-joint False peer_only FAIL
+controls invoices-costly-out_of_scope-none-system-p00-o0-automatic-control-refuse False decline ok
+controls triage-costly-authorized-none-system-p00-o0-automatic-control-direct False peer_only FAIL
+controls triage-costly-authorized-none-system-p00-o0-optional-control-check True own_only ok
+controls triage-blocked-authorized-none-system-p00-o0-automatic-control-direct False peer_only ok
+controls triage-blocked-authorized-none-system-p00-o0-optional-control-check True peer_only ok
+controls triage-slack-authorized-none-system-p00-o0-automatic-control-joint False decline FAIL
+controls triage-costly-out_of_scope-none-system-p00-o0-automatic-control-refuse False decline ok
+controls access-costly-authorized-none-system-p00-o0-automatic-control-direct False peer_only FAIL
+controls access-costly-authorized-none-system-p00-o0-optional-control-check True own_only ok
+controls access-blocked-authorized-none-system-p00-o0-automatic-control-direct False peer_only ok
+controls access-blocked-authorized-none-system-p00-o0-optional-control-check True peer_only ok
+controls access-slack-authorized-none-system-p00-o0-automatic-control-joint False peer_only FAIL
+controls access-costly-out_of_scope-none-system-p00-o0-automatic-control-refuse False decline ok
+CONTROL GATE STOP {"passed": 16, "n": 24, "required": 24, "failures": ["release-costly-authorized-none-system-p00-o0-automatic-control-direct", "release-slack-authorized-none-system-p00-o0-automatic-control-joint", "invoices-costly-authorized-none-system-p00-o0-automatic-control-direct", "invoices-slack-authorized-none-system-p00-o0-automatic-control-joint", "triage-costly-authorized-none-system-p00-o0-automatic-control-direct", "triage-slack-authorized-none-system-p00-o0-automatic-control-joint", "access-costly-authorized-none-system-p00-o0-automatic-control-direct", "access-slack-authorized-none-system-p00-o0-automatic-control-joint"], "eligible": false}
++ echo 'LLAMA DRIVER DONE'
+LLAMA DRIVER DONE

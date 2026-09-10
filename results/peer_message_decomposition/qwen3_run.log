@@ -1,0 +1,21 @@
+controls release-costly-aabsent-gabsent-peer-p00-o0-automatic-control-direct False own_only ok
+controls release-costly-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only FAIL
+controls release-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct False peer_only ok
+controls release-blocked-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only ok
+controls release-slack-aabsent-gabsent-peer-p00-o0-automatic-control-joint False joint ok
+controls invoices-costly-aabsent-gabsent-peer-p00-o0-automatic-control-direct False own_only ok
+controls invoices-costly-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only FAIL
+controls invoices-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct False peer_only ok
+controls invoices-blocked-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only ok
+controls invoices-slack-aabsent-gabsent-peer-p00-o0-automatic-control-joint False joint ok
+controls triage-costly-aabsent-gabsent-peer-p00-o0-automatic-control-direct False own_only ok
+controls triage-costly-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only FAIL
+controls triage-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct False peer_only ok
+controls triage-blocked-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only ok
+controls triage-slack-aabsent-gabsent-peer-p00-o0-automatic-control-joint False joint ok
+controls access-costly-aabsent-gabsent-peer-p00-o0-automatic-control-direct False own_only ok
+controls access-costly-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only FAIL
+controls access-blocked-aabsent-gabsent-peer-p00-o0-automatic-control-direct False peer_only ok
+controls access-blocked-aabsent-gabsent-peer-p00-o0-optional-control-check True peer_only ok
+controls access-slack-aabsent-gabsent-peer-p00-o0-automatic-control-joint False joint ok
+CONTROL GATE STOP {"passed": 16, "n": 20, "required": 20, "failures": ["release-costly-aabsent-gabsent-peer-p00-o0-optional-control-check", "invoices-costly-aabsent-gabsent-peer-p00-o0-optional-control-check", "triage-costly-aabsent-gabsent-peer-p00-o0-optional-control-check", "access-costly-aabsent-gabsent-peer-p00-o0-optional-control-check"], "eligible": false}
