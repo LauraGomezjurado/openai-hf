@@ -16,3 +16,6 @@ results/identifiability/selftest_*/packets.jsonl
 results/identifiability/selftest_*/attributions_*.jsonl
 results/identifiability/selftest_*.log
 results/identifiability/simulation/rollouts.jsonl
+
+# Build output of release/build_release.py. Regenerate it, do not commit it.
+release/staging/

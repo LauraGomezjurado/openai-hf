@@ -1,0 +1,69 @@
+[
+  {
+    "path": "data/raw/metr/agent-data.js",
+    "url": "https://metr.org/assets/js/agent_timeline/data.js",
+    "retrieved_date": "2026-09-06",
+    "sha256": "b92cb6f42e141781b748c7051ccaff49653ce68426b56be7b3938defaaf314ad",
+    "bytes": 191538,
+    "role": "Source of agents.csv and cohort_followup.csv. Holds the JavaScript variable AGENT_TIMELINE_DATA.",
+    "affects_tables": true,
+    "known_changes": []
+  },
+  {
+    "path": "data/raw/metr/workstream-data.js",
+    "url": "https://metr.org/assets/js/workstream_chart/data.js",
+    "retrieved_date": "2026-09-06",
+    "sha256": "56c9d973c6277cce3c9b5febbb046530bed2791c2c3c13b24c3a7e10d89294af",
+    "bytes": 47791,
+    "role": "Source of workstream_counts.csv. Holds the JavaScript variable WORKSTREAM_TRAFFIC_DATA.",
+    "affects_tables": true,
+    "known_changes": []
+  },
+  {
+    "path": "data/raw/metr/agent-chart.js",
+    "url": "https://metr.org/assets/js/agent_timeline/chart.js",
+    "retrieved_date": "2026-09-06",
+    "sha256": "af1df7d5439bbe7323a4f3ee82bcea8c58e60aa61c64e20f6ad09aa9cde8dfb6",
+    "bytes": 46934,
+    "role": "Drawing code for the agent timeline chart. Read to work out what the numbers in agent-data.js mean.",
+    "affects_tables": false,
+    "known_changes": []
+  },
+  {
+    "path": "data/raw/metr/workstream-chart.js",
+    "url": "https://metr.org/assets/js/workstream_chart/chart.js",
+    "retrieved_date": "2026-09-06",
+    "sha256": "9830ca9588d4fe8150d1870babfe77bd49834220bf871df3470b6f6b1fcd5049",
+    "bytes": 50973,
+    "role": "Drawing code for the workstream traffic chart. Read to work out what the numbers in workstream-data.js mean.",
+    "affects_tables": false,
+    "known_changes": []
+  },
+  {
+    "path": "data/raw/metr/report.html",
+    "url": "https://metr.org/blog/2026-08-26-openai-hugging-face-incident-investigation/",
+    "retrieved_date": "2026-09-06",
+    "sha256": "46d1714f05d7e3dbb716cb82c47f89eaa95415bde7df2003ac9060923d9fe643",
+    "bytes": 428403,
+    "role": "The report page. Read for figure captions, footnotes and the described method. No table is derived from it.",
+    "affects_tables": false,
+    "known_changes": [
+      {
+        "observed_date": "2026-09-10",
+        "sha256": "693effbc5388de107acb29045c100d70499556b0175914d984b5045dc4f90375",
+        "bytes": 428399,
+        "summary": "Three edits against the 2026-09-06 copy. The Figure 3 caption changed the launch days of the additional agent sets from 'July 10th and 11th' to 'July 9th and 10th'. A stylesheet version string changed. One quoted reasoning snippet had 'injecting' corrected to 'inject'. The first edit changes what the report says about launch timing, so read the current caption before interpreting the day groups in cohort_followup.csv."
+      }
+    ]
+  },
+  {
+    "path": "data/raw/hf/replay.html",
+    "url": "https://huggingface-anatomy-of-frontier-lab-model-intrusion.static.hf.space/index.html",
+    "retrieved_date": "2026-09-06",
+    "sha256": "2ca3b58bdfe18c9cda267ca0eb246eada95eb731d7ac8fb952303e3b0ec722cf",
+    "bytes": 43983,
+    "role": "Hugging Face's own replay page. Read for an outside chronology. No table is derived from it.",
+    "affects_tables": false,
+    "known_changes": []
+  }
+]
