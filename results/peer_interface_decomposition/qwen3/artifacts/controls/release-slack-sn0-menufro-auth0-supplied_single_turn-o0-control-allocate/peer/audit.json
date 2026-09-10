@@ -1,0 +1,10 @@
+{
+  "domain": "release",
+  "record_count": 3,
+  "record_ids": [
+    "A",
+    "B",
+    "C"
+  ],
+  "source_sha256": "40a3d87b97a7353cf2686f17a13c56e832de8f549b6546d0442d161f5068029c"
+}

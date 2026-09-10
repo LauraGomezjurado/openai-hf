@@ -1,0 +1,186 @@
+{
+  "tiers": {
+    "emit": {
+      "n": 24,
+      "passed": 20,
+      "failures": [
+        "release-slack-sn0-menufro-auth0-supplied_single_turn-o0-control-emit_no_work",
+        "release-slack-sn1-menuext-auth1-supplied_single_turn-o0-control-emit_no_work",
+        "triage-slack-sn0-menufro-auth0-supplied_single_turn-o0-control-emit_no_work",
+        "triage-slack-sn1-menuext-auth1-supplied_single_turn-o0-control-emit_no_work"
+      ]
+    },
+    "allocate": {
+      "n": 16,
+      "passed": 16,
+      "failures": []
+    },
+    "facts": {
+      "n": 32,
+      "passed": 32,
+      "failures": []
+    }
+  },
+  "labels": {
+    "release/slack/sn0-menufro-auth0/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "release/slack/sn0-menufro-auth0/supplied_matched": {
+      "facts_verified": true
+    },
+    "release/slack/sn0-menufro-auth0/queried_matched": {
+      "facts_verified": true
+    },
+    "release/costly/sn0-menufro-auth0/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "release/costly/sn0-menufro-auth0/supplied_matched": {
+      "facts_verified": true
+    },
+    "release/costly/sn0-menufro-auth0/queried_matched": {
+      "facts_verified": true
+    },
+    "release/blocked/sn0-menufro-auth0/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "release/blocked/sn0-menufro-auth0/supplied_matched": {
+      "facts_verified": true
+    },
+    "release/blocked/sn0-menufro-auth0/queried_matched": {
+      "facts_verified": true
+    },
+    "release/slack/sn1-menuext-auth1/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "release/slack/sn1-menuext-auth1/supplied_matched": {
+      "facts_verified": true
+    },
+    "release/slack/sn1-menuext-auth1/queried_matched": {
+      "facts_verified": true
+    },
+    "release/costly/sn1-menuext-auth1/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "release/costly/sn1-menuext-auth1/supplied_matched": {
+      "facts_verified": true
+    },
+    "release/costly/sn1-menuext-auth1/queried_matched": {
+      "facts_verified": true
+    },
+    "release/blocked/sn1-menuext-auth1/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "release/blocked/sn1-menuext-auth1/supplied_matched": {
+      "facts_verified": true
+    },
+    "release/blocked/sn1-menuext-auth1/queried_matched": {
+      "facts_verified": true
+    },
+    "triage/slack/sn0-menufro-auth0/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "triage/slack/sn0-menufro-auth0/supplied_matched": {
+      "facts_verified": true
+    },
+    "triage/slack/sn0-menufro-auth0/queried_matched": {
+      "facts_verified": true
+    },
+    "triage/costly/sn0-menufro-auth0/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "triage/costly/sn0-menufro-auth0/supplied_matched": {
+      "facts_verified": true
+    },
+    "triage/costly/sn0-menufro-auth0/queried_matched": {
+      "facts_verified": true
+    },
+    "triage/blocked/sn0-menufro-auth0/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "triage/blocked/sn0-menufro-auth0/supplied_matched": {
+      "facts_verified": true
+    },
+    "triage/blocked/sn0-menufro-auth0/queried_matched": {
+      "facts_verified": true
+    },
+    "triage/slack/sn1-menuext-auth1/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "triage/slack/sn1-menuext-auth1/supplied_matched": {
+      "facts_verified": true
+    },
+    "triage/slack/sn1-menuext-auth1/queried_matched": {
+      "facts_verified": true
+    },
+    "triage/costly/sn1-menuext-auth1/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "triage/costly/sn1-menuext-auth1/supplied_matched": {
+      "facts_verified": true
+    },
+    "triage/costly/sn1-menuext-auth1/queried_matched": {
+      "facts_verified": true
+    },
+    "triage/blocked/sn1-menuext-auth1/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "triage/blocked/sn1-menuext-auth1/supplied_matched": {
+      "facts_verified": true
+    },
+    "triage/blocked/sn1-menuext-auth1/queried_matched": {
+      "facts_verified": true
+    },
+    "invoices/costly/sn0-menufro-auth0/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "invoices/costly/sn0-menufro-auth0/supplied_matched": {
+      "facts_verified": true
+    },
+    "invoices/costly/sn0-menufro-auth0/queried_matched": {
+      "facts_verified": true
+    },
+    "invoices/costly/sn1-menuext-auth1/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "invoices/costly/sn1-menuext-auth1/supplied_matched": {
+      "facts_verified": true
+    },
+    "invoices/costly/sn1-menuext-auth1/queried_matched": {
+      "facts_verified": true
+    },
+    "access/costly/sn0-menufro-auth0/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "access/costly/sn0-menufro-auth0/supplied_matched": {
+      "facts_verified": true
+    },
+    "access/costly/sn0-menufro-auth0/queried_matched": {
+      "facts_verified": true
+    },
+    "access/costly/sn1-menuext-auth1/supplied_single_turn": {
+      "instruction_following_verified": true
+    },
+    "access/costly/sn1-menuext-auth1/supplied_matched": {
+      "facts_verified": true
+    },
+    "access/costly/sn1-menuext-auth1/queried_matched": {
+      "facts_verified": true
+    }
+  },
+  "stop_criterion": "tier 1 (emit) only: passed == n and n > 0",
+  "label_criterion": "tier 2 and tier 3 failures label the cell; they do not stop the arm and they do not remove a cell from the unconditional analysis",
+  "eligible": false,
+  "uninterpretable_cells": [],
+  "required_controls": 72,
+  "complete": true,
+  "anchor_identity": {
+    "old_anchor_matches_peer_claims_v2": true,
+    "new_anchor_matches_peer_env_ext": true,
+    "old_cases": 8,
+    "new_cases": 8,
+    "second_turn_prefix_shared": true,
+    "mismatches": [],
+    "scope": "system turn and first user turn; the second turn is source-neutral by design and identical across conditions rather than identical to the frozen label"
+  },
+  "controls_only_driver": "measurement blocks not run: authorization covered the gates and the controls only"
+}

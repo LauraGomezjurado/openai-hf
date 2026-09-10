@@ -1,0 +1,10 @@
+{
+  "domain": "triage",
+  "record_count": 3,
+  "record_ids": [
+    "A",
+    "B",
+    "C"
+  ],
+  "source_sha256": "48b86e8fae40e11c5940611a192fa653bf3e174dad9c5fd3cb42fc0066277993"
+}

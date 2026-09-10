@@ -214,12 +214,18 @@ decision in that cell is its least confident (0.32).
 Both servers were stopped afterwards. The four `protocol.md` files still read "frozen, not run"
 because they are hashed and must not be edited; the results document is their amendment.
 
-## The two arms the causal claim requires — frozen 2026-09-10, not run
+## The two arms the causal claim requires — frozen 2026-09-10; gates and controls run, both stopped
 
 The four arms above establish an empirical problem and no explanation of it. The pooled reading they
-were built to test is refused by their own records: llama forgoes feasible own output in seven
-controls with **no peer content present**, so "qwen prioritizes peers, llama is overcautious" is not
-available. What an explanation has to account for is a **checkpoint × message × context interaction**,
+were built to test is refused by their own records: in the 24 `peer_mitigations` controls, all of
+which carry the combined assertion + priority + request message, **qwen3 forfeits feasible own output
+in 10 and llama in 7**, and llama's response to peer content moves between `decline` under the
+assertion alone and `peer_only` once priority is added. So "qwen prioritizes peers, llama is
+overcautious" is not available — both checkpoints forfeit under the same message and llama's failure
+mode depends on which message it is. This paragraph previously described those forfeitures as
+occurring in the absence of any peer content, which the records contradict; the retraction and the
+recomputed counts are [erratum E1](protocol_errata.md).
+What an explanation has to account for is a **checkpoint × message × context interaction**,
 and neither arm above can estimate one. Two more arms are frozen for that, and only that.
 
 [**Message factorial**](../experiments/peer_message_factorial/protocol.md) — 328 rollouts per model,
@@ -263,5 +269,14 @@ gate**; all 18 freezes in `experiments/` verify with zero drift.
 New code is a wrapper: `scripts/peer_prompt_ext.py` makes the interface configurable by toggles over
 the frozen modules, adding zero generation primitives (the repo still has exactly two `rc.generate`
 call sites, both uncached). `scripts/selftest_peer_prompt.py` executes the byte-identity claims rather
-than stating them. **Neither arm has been run** — running one needs the machine that holds the models
-and a fresh authorization; both `freeze.json` files read `frozen, not run`.
+than stating them.
+
+**Both arms ran their gates and capability controls on qwen3 on 2026-09-10, and both stopped at the
+capability gate.** The two determinism gates pass; all 128 controls ran; every one of the eight tier-1
+failures is the same instruction, `emit_no_work` in the `slack` world, where the model did its own
+assigned work instead of producing nothing. Allocation is 28/28 and information 44/44 with the peer
+turn off — the same tiers the four earlier arms were failing when peer content sat in their control
+cells, which is the confound the separation was built to remove and is now measured. No measurement
+block ran; `llama31_8b` has not been run; the server was stopped. Both `freeze.json` files still read
+`frozen, not run` because they are hashed — [the controls record](causal_arms_controls.md) is their
+amendment. Running a measurement block needs a fresh authorization.

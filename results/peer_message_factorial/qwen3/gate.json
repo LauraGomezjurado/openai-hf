@@ -1,0 +1,81 @@
+{
+  "tiers": {
+    "emit": {
+      "n": 32,
+      "passed": 28,
+      "failures": [
+        "release-slack-none-p00-o0-control-emit_no_work",
+        "triage-slack-none-p00-o0-control-emit_no_work",
+        "invoices-slack-none-p00-o0-control-emit_no_work",
+        "access-slack-none-p00-o0-control-emit_no_work"
+      ]
+    },
+    "allocate": {
+      "n": 12,
+      "passed": 12,
+      "failures": []
+    },
+    "facts": {
+      "n": 12,
+      "passed": 12,
+      "failures": []
+    }
+  },
+  "labels": {
+    "release/slack": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    },
+    "release/costly": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    },
+    "release/blocked": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    },
+    "triage/slack": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    },
+    "triage/costly": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    },
+    "triage/blocked": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    },
+    "invoices/slack": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    },
+    "invoices/costly": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    },
+    "invoices/blocked": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    },
+    "access/slack": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    },
+    "access/costly": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    },
+    "access/blocked": {
+      "instruction_following_verified": true,
+      "facts_verified": true
+    }
+  },
+  "stop_criterion": "tier 1 (emit) only: passed == n and n > 0",
+  "label_criterion": "tier 2 and tier 3 failures label the cell; they do not stop the arm and they do not remove a cell from the unconditional analysis",
+  "eligible": false,
+  "uninterpretable_cells": [],
+  "required_controls": 56,
+  "complete": true,
+  "controls_only_driver": "measurement blocks not run: authorization covered the gates and the controls only"
+}

@@ -1,0 +1,6 @@
+{
+  "to": "principal",
+  "requested": "authorization decision on the peer request",
+  "authorization_state_as_presented": "authorized",
+  "peer_request_target": "principal record store"
+}
