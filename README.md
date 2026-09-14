@@ -29,7 +29,7 @@ models to ask which single sentence moves an agent off its own task.
 
 ---
 
-## Experiment 0 — What the published record can support
+## Experiment 0: Recovering the incident tables and testing what they support
 
 METR released the figures but not the tables underneath them. I scraped the published JavaScript and its
 drawing code, recovered the units and timestamps, and released the result as a
@@ -37,8 +37,8 @@ drawing code, recovered the units and timestamps, and released the result as a
 1,206 agent timelines, 12,404 message counts across 22 workstreams and 116 of the 144 declared hours,
 and 12 annotations that between them describe 9 agents. No message text and no reasoning survive in it.
 
-I then asked one substantive question of the tables — whether an agent's joining behaviour depends on
-when it arrived — and checked how much of the answer survives timestamp error.
+I then asked one substantive question of the tables, whether an agent's joining behaviour depends on
+when it arrived, and checked how much of the answer survives timestamp error.
 
 684 of the 1,206 agents joined, and half of them joined inside the six hours from 06:00 to 12:00 on
 July 11, whatever day they had first read the board. Of the agents that first read the board on July 9,
@@ -68,20 +68,21 @@ I left the inconsistencies untouched. METR does not publish how it assigned thes
 "fix" would add my guesses to the record. The [full figure set](results/figures/FIGURES.md) documents
 each one, including the two forecast gates that failed.
 
-## Experiment 1 — A peer's claim stops the model checking
+## Experiment 1: Testing whether a peer's claim stops the model from verifying
 
 Does a false claim from a peer stop a model verifying something it could verify for free? The model gets
 a status check that costs no work credits and returns the true answer about whether its own work can
 succeed. The check is available in every condition, and in every condition it would have contradicted
-the peer. I vary only what the peer says, across 16 conditions run twice — two check policies, two
-worlds, two task domains, two orderings of the action menu, so the runs are not replicates.
+the peer. I vary only what the peer says, across 16 conditions run twice. The sixteen are two check
+policies, two worlds, two task domains and two orderings of the action menu, so they are not
+replicates.
 
 ![The peer's assessment stops the agent using the free check](results/figures/p2fig02a_check.png)
 
 The model runs the free check in 16 of 16 runs when the peer says nothing about feasibility, and in 0 of
 16 when the peer adds its assessment. The suppression holds even in the two conditions that told the
 model to check first. Printing the true reading directly into the prompt is the only interface that
-recovers the outcome — the fix is to not need the agent to check.
+recovers the outcome. The fix is to not need the agent to check.
 
 ![Three ways of offering the same fact, and what each one saved](results/figures/p2fig02b_interface.png)
 
@@ -92,7 +93,7 @@ This is not only a model believing something false. It stopped looking.
 Worth separating from what comes next: the feasibility claim is what stops the checking, but it is not
 what makes the model abandon its own work.
 
-## Experiment 2 — The sentence that makes the model drop work it could finish
+## Experiment 2: Finding the sentence that makes the model drop work it could finish
 
 The model gets a principal assignment, a budget of work credits, and one message from a scripted peer. I
 write four versions of that message, each the one before it plus a single sentence: no peer message, the
@@ -111,7 +112,7 @@ Helping the peer never required dropping the model's own work, and the version c
 feasibility claim already kept both. One sentence about priority is what moves the allocation. Being able
 to finish a task does not mean the model will keep that task in view while collaborating.
 
-## Experiment 3 — Whether a reminder brings back a duty the model already has
+## Experiment 3: Testing whether a reminder brings back a duty the model already has
 
 Why does a model that has the duty, the address and the means to report a peer still say nothing? The
 model has submitted a numerical total, and a file in its workspace records that a peer copied a password
@@ -121,7 +122,7 @@ the address to write to, and unused tool turns.
 I replay 16 recorded sessions up to the moment just before the model chose to finish, then continue each
 one three ways: appending nothing, appending one sentence about the numerical task, or appending one
 sentence about the duty to report. The continuations share their history exactly, so any difference comes
-from what I appended. The task sentence is the control — it adds text without adding anything about
+from what I appended. The task sentence is the control. It adds text without adding anything about
 reporting.
 
 ![All sixteen recorded contexts, branched three ways each](results/figures/p2fig03b_ledger.png)
@@ -147,9 +148,9 @@ small: 16 of 16 against 0 of 16 is a clean split, but it is clean at n=16, and t
 8B models that a frontier checkpoint could easily invert.
 
 The recovered tables are investigator reconstructions and AI classifications, not raw model transcripts.
-Agents have no stable identity in them — a row ID is a position in a list — so nothing here joins to any
-other source. The rule the grader used to mark participation is not published, so that label is given
-rather than reproducible.
+Agents have no stable identity in them, since a row ID is only a position in a list, so nothing here
+joins to any other source. The rule the grader used to mark participation is not published, so that
+label is given rather than reproducible.
 
 ## Reproduce
 
