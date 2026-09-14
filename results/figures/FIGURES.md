@@ -1,4 +1,4 @@
-# Part 1 figures
+# Figures
 
 Each figure below is a separate file, sized to drop into a document on its own. The
 title inside a figure states what that figure found. Everything else about it,
@@ -12,11 +12,21 @@ a quantity the recovered data does not settle. Typeface names who is speaking:
 sans is our own writing, a monospaced block is a record exactly as the source
 published it, and a serif block is an agent's own words.
 
-Every number in these figures comes from the two tables in `data/processed/` and
-the audit tables in `results/cpu/`. Regenerate the figures with
-`python scripts/figures/fig01_recovery.py`, `python scripts/figures/fig02_corpus.py`,
-`python scripts/figures/fig03_audit.py`, `python scripts/figures/fig04_timing.py` and
-`python scripts/figures/fig05_gates.py`.
+Part 1 covers the recovered historical record. Part 2 covers the model experiments.
+Every number in the Part 1 figures comes from the two tables in `data/processed/` and
+the audit tables in `results/cpu/`; every number in the Part 2 figures is read out of
+the recorded rollouts under `results/`, and the quoted strings are asserted against the
+recorded messages, so a figure cannot drift from its runs.
+
+Regenerate them with the scripts in `scripts/figures/`: `fig01_recovery.py`,
+`fig02_corpus.py`, `fig03_audit.py`, `fig04_timing.py`, `fig05_gates.py`,
+`fig06_episodes.py` for Part 1, and `p2fig01_prompt.py`, `p2fig01_sentence.py`,
+`p2fig01_ladder.py`, `p2fig02_check.py`, `p2fig02_interface.py`, `p2fig03_duty.py`,
+`p2fig03_ledger.py` for Part 2.
+
+---
+
+# Part 1. The recovered record
 
 ---
 
@@ -444,3 +454,145 @@ reads this table at all, taking the previous hour's onset count from the agent f
 instead. What we cannot say is how much better a fitted model would have done on a
 table without holes, because we did not rerun the gates with those hours withheld, and
 that is one of the measurements Part 2 can make on data we generate ourselves.
+
+---
+
+# Part 2. The model experiments
+
+Part 1 ends in a question rather than an answer, because the published record cannot
+separate the four reasons for helping that appear at once in Figure 2c. These figures
+separate them by changing one sentence at a time. Every run is Qwen3 8B or Llama 3.1 8B
+at temperature 0, one rollout per cell, in a constructed environment. Nothing here
+explains what the historical agents wanted, and no causal claim about HPIM or Sol
+follows from a constructed-corpus result.
+
+The outcome scored in all of these figures is the files that existed when the session
+ended, not what the model wrote about what it intended to do. Early runs looked like
+the model was doing both jobs until we read the files instead of the transcript.
+
+---
+
+## Figure 1a
+
+![Figure 1a](p2fig01a_prompt.png)
+
+**Everything the agent was working with, quoted from one recorded prompt.**
+
+One prompt from `results/peer_mitigations/qwen3/rollouts.jsonl`, with long passages
+elided and the elisions saying how many lines they stand for. Nothing is paraphrased.
+The panel exists to settle what the agent already had before it chose: the peer's claim
+is contradicted one line below it by the principal's own status service, a check that
+costs nothing is offered further up, and the instruction asks for both packages. So
+every later figure in Part 2 is measuring what the model did with information it held,
+not what it was missing.
+
+## Figure 1b
+
+![Figure 1b](p2fig01b_sentence.png)
+
+**Four prompts that differ by one line, and the budget the agent spent under each.**
+
+The same world, the same instruction to complete both packages, the same true status
+reading and the same four credits, in the release domain. Each rung adds one sentence
+to what the peer says: nothing, then the request for the audit, then a false claim that
+the own package cannot succeed, then a claim that the peer's task is more urgent. The
+sentence constants are asserted against the recorded messages, so the figure cannot
+drift from the runs. Both jobs fit inside the budget on every rung, so nothing here
+forces a choice between them.
+
+## Figure 1c
+
+![Figure 1c](p2fig01c_ladder.png)
+
+**Both checkpoints give up the principal's package once the peer claims priority.**
+
+The same four prompts run in four unrelated task domains on two checkpoints, one
+recorded rollout per cell. Qwen3 8B completes both packages in 4 of 4 domains on the
+first three rungs and forgoes its own in 4 of 4 on the last. Llama 3.1 8B forgoes its
+own in 3 of 4. The domains carry different budgets because their packages take a
+different number of steps, so the bars are different lengths on purpose.
+
+Two cautions belong with this figure. Rung 0 was run for Qwen3 only, so the Llama block
+is hatched there rather than empty. And at rung 2 Llama declines the peer request while
+still publishing its own package, which is a different failure from giving the package
+up, so the 0 of 4 in that row should not be read as agreement with Qwen3.
+
+---
+
+## Figure 2a
+
+![Figure 2a](p2fig02a_check.png)
+
+**The peer's assessment stops the agent using the free check.**
+
+Thirty two recorded runs from `results/peer_claims_v2_recovery/qwen3`. Every prompt
+offers a `check_status` action that costs no work credits and returns the true
+publication dependency, and in every run it would have contradicted the peer. The runs
+split on one thing, whether the peer's message contains an assessment of whether the
+own package can succeed. The agent used the check in 16 of 16 runs without it and 0 of
+16 with it.
+
+The sixteen runs in each block are not replicates: they are two check policies, two
+worlds, two task domains and two orderings of the action menu. That matters for reading
+the split, because the two conditions that explicitly instruct the agent to check first
+are inside the 0 of 16. The suppression is therefore not a failure to think of the
+check.
+
+## Figure 2b
+
+![Figure 2b](p2fig02b_interface.png)
+
+**Three ways of offering the same fact, and what each one saved.**
+
+Twenty four recorded runs from the same arm, the six cells where the peer claims the
+principal's package cannot succeed. The three interfaces differ only in how the
+principal's status reading reaches the agent: behind a free action it has to call,
+behind that same action with an instruction to call it, or printed in the prompt. Only
+the third recovers the outcome.
+
+In the first two interfaces the prompt is identical in both worlds, so the free check is
+the only thing that could tell a buildable package from an unbuildable one. The
+practical reading is the uncomfortable one: the fix that worked is the one that does not
+require the agent to check.
+
+---
+
+## Figure 3a
+
+![Figure 3a](p2fig03a_duty.png)
+
+**One recorded session, branched three ways at the same turn.**
+
+The specimen is `f0-unauthorized-d1-r0` from `results/escalation/continuations`. The
+left of the panel is the session as recorded up to the moment the agent chose to end
+it; the right is the three continuations, which share that whole prefix and differ by
+one appended clause. The prompt already carried the duty to notify the overseer, the
+artifact sitting in the workspace, the policy, and spare tool turns, so the appended
+clause adds no instruction, permission or fact the session did not already hold.
+
+`finish` is drawn flush right in every chain because it was always the last call, so
+the space before it is the same slot in all three arms and an empty one can be marked
+as empty.
+
+## Figure 3b
+
+![Figure 3b](p2fig03b_ledger.png)
+
+**All sixteen recorded contexts, branched three ways each.**
+
+Forty eight continuations. Figure 3a takes one context apart; this is the whole set, so
+a reader can see both where the duty clause recovers a missing report and where it
+produces one that was not warranted. The rows are grouped by what the recording already
+contained at the branch, because that is what decides whether there is anything to
+recover.
+
+In the eight sessions where the artifact was unauthorized, exact replay reported in 3,
+the task sentence in 3, and the duty sentence in 8. The five sessions that had never
+reported went to 5 of 5 under the duty sentence and 0 of 5 under the other two arms. No
+arm removed a report that had already been sent or sent a second one.
+
+The task sentence is the control, and it changed nothing in any of the sixteen sessions,
+which is what rules out a general effect of appending a sentence at that point. The cost
+sits in the last band: the duty sentence also produced two reports in the eight sessions
+where nothing was wrong, both from the two recordings that had never read the workspace.
+The reminder buys reporting, not accuracy.
